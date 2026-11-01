@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Early Warning Signals",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Norwegian business distress and sector risk monitoring.",
+    "published": "2026-11-01",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/early-warning-signals-norway/"
+  },
+  {
+    "title": "Household Debt Pressure Index",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Household affordability and interest-rate stress testing.",
+    "published": "2026-11-01",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/household-debt-pressure-index/"
+  }
+]
