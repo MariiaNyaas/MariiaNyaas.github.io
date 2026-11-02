@@ -1,0 +1,101 @@
+{
+  "edition": "2026-11-02",
+  "research_id": "01-credit-risk",
+  "category": "Credit Risk Intelligence",
+  "title": "Norway’s Mortgage Risk Is Moving Towards the Boundary",
+  "source_verification_date": "2026-11-02",
+  "trigger": "Finanstilsynet published its 2026 mortgage lending survey on 29 October. The weighted average debt-to-income ratio rose to 333% from 329% in 2025, while first-time buyers’ average LTV rose to 79% from 77%.",
+  "observations": [
+    {
+      "label": "All borrowers DTI 2025",
+      "value": 329,
+      "unit": "%"
+    },
+    {
+      "label": "All borrowers DTI 2026",
+      "value": 333,
+      "unit": "%"
+    },
+    {
+      "label": "First-time DTI 2025",
+      "value": 380,
+      "unit": "%"
+    },
+    {
+      "label": "First-time DTI 2026",
+      "value": 376,
+      "unit": "%"
+    }
+  ],
+  "reported_indicators": [
+    {
+      "value": "333%",
+      "label": "Average DTI · 2026"
+    },
+    {
+      "value": "+4 pp",
+      "label": "vs 2025"
+    },
+    {
+      "value": "79%",
+      "label": "First-time buyer LTV"
+    },
+    {
+      "value": "≈12k",
+      "label": "New mortgages sampled"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Finanstilsynet · Mortgage survey summary · 29 Oct 2026",
+      "url": "https://www.finanstilsynet.no/publikasjoner-og-analyser/boliglansundersokelser/2026/boliglansundersokelsen-2026/oppsummering/"
+    },
+    {
+      "title": "Finanstilsynet · Key findings · 29 Oct 2026",
+      "url": "https://www.finanstilsynet.no/publikasjoner-og-analyser/boliglansundersokelser/2026/boliglansundersokelsen-2026/i-korte-trekk/"
+    },
+    {
+      "title": "Finanstilsynet · Sample definition · 29 Oct 2026",
+      "url": "https://www.finanstilsynet.no/publikasjoner-og-analyser/boliglansundersokelser/2026/boliglansundersokelsen-2026/informasjon-om-boliglansundersokelsen/"
+    }
+  ],
+  "scenario_inputs": [
+    {
+      "id": "home",
+      "label": "Illustrative home value",
+      "kind": "range",
+      "min": 2000000,
+      "max": 12000000,
+      "step": 500000,
+      "default": 5000000,
+      "unit": "NOK",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "ltv",
+      "label": "Origination LTV",
+      "kind": "range",
+      "min": 50,
+      "max": 95,
+      "step": 1,
+      "default": 79,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "decline",
+      "label": "House-price decline",
+      "kind": "range",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 20,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    }
+  ],
+  "limitations": "Survey of approximately 12,000 new loans from 25 banks, not a full mortgage stock. Observed averages describe different cohorts. The model applies hypothetical LTV and price shocks to a single property; it is not an estimate of bank losses, PD or LGD.",
+  "formula": "Loan = home value × origination LTV. Stressed collateral value = home value × (1 − price decline). Equity buffer = stressed collateral value − loan. Stressed LTV = loan / stressed collateral value. No amortisation, recovery costs or borrower cash flow are modelled.",
+  "decision": "Use origination LTV bands and stressed collateral buffers jointly, rather than relying on the average debt-to-income ratio alone. Validate results with loan-level affordability, guarantees and geographic exposures.",
+  "worked_example": "Illustrative worked example: a NOK 5.0m home financed at 79% LTV carries NOK 3.95m of debt. A 20% price decline leaves NOK 50,000 collateral equity and produces a 98.75% stressed LTV."
+}
