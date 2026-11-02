@@ -5,7 +5,8 @@
     "summary": "Norwegian business distress and sector risk monitoring.",
     "published": "2026-11-01",
     "status": "published",
-    "url": "https://mariianyaas.github.io/early-warning-signals-norway/"
+    "url": "https://mariianyaas.github.io/early-warning-signals-norway/",
+    "topic": "Sector Risk"
   },
   {
     "title": "Household Debt Pressure Index",
@@ -13,6 +14,16 @@
     "summary": "Household affordability and interest-rate stress testing.",
     "published": "2026-11-01",
     "status": "published",
-    "url": "https://mariianyaas.github.io/household-debt-pressure-index/"
+    "url": "https://mariianyaas.github.io/household-debt-pressure-index/",
+    "topic": "Affordability"
+  },
+  {
+    "title": "Norway’s Mortgage Risk Is Moving Towards the Boundary",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Mortgage leverage and collateral sensitivity: LTV, DTI and housing-price stress scenarios based on recent Norwegian supervisory statistics.",
+    "published": "2026-11-02",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-02/01-credit-risk/",
+    "topic": "Mortgage Risk"
   }
 ]
