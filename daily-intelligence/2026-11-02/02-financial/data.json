@@ -1,0 +1,119 @@
+{
+  "edition": "2026-11-02",
+  "research_id": "02-financial",
+  "category": "Financial Intelligence",
+  "title": "The ECB Hold and the Two-Sided Margin Squeeze",
+  "source_verification_date": "2026-11-02",
+  "trigger": "On 29 October the ECB kept deposit, main refinancing and marginal lending rates at 2.50%, 2.65% and 2.90%. It warned that higher energy prices could lift inflation and weaken growth.",
+  "observations": [
+    {
+      "label": "Deposit facility",
+      "value": 2.5,
+      "unit": "%"
+    },
+    {
+      "label": "Main refinancing",
+      "value": 2.65,
+      "unit": "%"
+    },
+    {
+      "label": "Marginal lending",
+      "value": 2.9,
+      "unit": "%"
+    },
+    {
+      "label": "HICP Sep 2026",
+      "value": 3.8,
+      "unit": "%"
+    }
+  ],
+  "reported_indicators": [
+    {
+      "value": "2.50%",
+      "label": "Deposit facility"
+    },
+    {
+      "value": "2.65%",
+      "label": "Main refinancing"
+    },
+    {
+      "value": "2.90%",
+      "label": "Marginal lending"
+    },
+    {
+      "value": "3.8%",
+      "label": "Sep 2026 EA inflation"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "ECB · Monetary policy decisions · 29 Oct 2026",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html"
+    },
+    {
+      "title": "Eurostat · September HICP · 16 Oct 2026",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-16102026-ap"
+    }
+  ],
+  "scenario_inputs": [
+    {
+      "id": "assets",
+      "label": "Rate-sensitive assets",
+      "kind": "range",
+      "min": 500,
+      "max": 5000,
+      "step": 100,
+      "default": 1500,
+      "unit": "€m",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "liabilities",
+      "label": "Rate-sensitive liabilities",
+      "kind": "range",
+      "min": 400,
+      "max": 5000,
+      "step": 100,
+      "default": 1300,
+      "unit": "€m",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "rate",
+      "label": "Parallel rate shock",
+      "kind": "range",
+      "min": -200,
+      "max": 300,
+      "step": 25,
+      "default": 100,
+      "unit": "bp",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "depositbeta",
+      "label": "Liability repricing beta",
+      "kind": "range",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 65,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "assetbeta",
+      "label": "Asset repricing beta",
+      "kind": "range",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 50,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    }
+  ],
+  "limitations": "All balance-sheet amounts, betas and shocks are hypothetical. Parallel instantaneous repricing assumes a one-year static balance sheet, no hedges, floors, behavioural deposits, credit migration or FX. September HICP is an earlier release and is not an October flash estimate.",
+  "formula": "Illustrative annual ΔNII (€m) = rate shock (bp)/10,000 × [rate-sensitive assets × asset beta − rate-sensitive liabilities × liability beta]. The model is a first-order sensitivity, not a forecast or a bank-specific asset-liability model.",
+  "decision": "Monitor deposit and asset repricing betas alongside stress-driven liquidity migration. Avoid extrapolating the ECB’s unchanged decision into a forecast of future rates.",
+  "worked_example": "Illustrative worked example: €1.5bn of assets, €1.3bn of liabilities, a +100bp parallel shock, 50% asset beta and 65% deposit beta yield −€0.95m annual ΔNII. The deposit beta break-even is approximately 57.7%."
+}
