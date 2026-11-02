@@ -1,0 +1,109 @@
+{
+  "edition": "2026-11-02",
+  "research_id": "04-governance",
+  "category": "Risk & Governance Intelligence",
+  "title": "Tokenised Collateral: Speed Is Not the Same as Liquidity",
+  "source_verification_date": "2026-11-02",
+  "trigger": "On 26 October Finanstilsynet highlighted ESMA’s call for evidence on tokenised collateral at CCPs. Stakeholder responses are due 15 January 2027.",
+  "observations": [],
+  "reported_indicators": [
+    {
+      "value": "26 Oct",
+      "label": "Norwegian notice"
+    },
+    {
+      "value": "15 Jan",
+      "label": "Response deadline · 2027"
+    },
+    {
+      "value": "CCPs",
+      "label": "Regulatory focus"
+    },
+    {
+      "value": "0",
+      "label": "Observed haircut estimates"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Finanstilsynet · CCP collateral consultation · 26 Oct 2026",
+      "url": "https://www.finanstilsynet.no/nyhetsarkiv/horinger/2026/esma-ber-om-faktagrunnlag-tokenisering-av-sikkerheit-som-blir-stilt-overfor-sentrale-motpartar-ccp/"
+    },
+    {
+      "title": "ESMA · Call for evidence · 9 Oct 2026",
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-seeks-evidence-use-tokenised-collateral-central-clearing"
+    }
+  ],
+  "scenario_inputs": [
+    {
+      "id": "nominal",
+      "label": "Collateral face value",
+      "kind": "range",
+      "min": 20,
+      "max": 500,
+      "step": 10,
+      "default": 100,
+      "unit": "€m",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "haircut",
+      "label": "Market haircut",
+      "kind": "range",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 6,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "holdback",
+      "label": "Legal / operational holdback",
+      "kind": "range",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 8,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "days",
+      "label": "Mobilisation delay",
+      "kind": "range",
+      "min": 0,
+      "max": 7,
+      "step": 1,
+      "default": 2,
+      "unit": "days",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "move",
+      "label": "Adverse daily price move",
+      "kind": "range",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "default": 1.5,
+      "unit": "%",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "need",
+      "label": "Margin requirement",
+      "kind": "range",
+      "min": 20,
+      "max": 400,
+      "step": 10,
+      "default": 90,
+      "unit": "€m",
+      "provenance": "illustrative analyst assumption"
+    }
+  ],
+  "limitations": "ESMA is gathering evidence; the consultation does not establish new collateral eligibility or haircut rules. Every monetary value, haircut, delay and adverse price move in this dashboard is illustrative and not calibrated to any CCP or tokenised asset.",
+  "formula": "Usable collateral = nominal × (1 − market haircut) × (1 − legal/operational holdback) × (1 − adverse daily move)^delay days. Coverage = usable collateral / illustrative margin requirement. Compounding is a transparent hypothetical stress convention, not a regulatory formula.",
+  "decision": "Require legal finality, custody segregation, operational fallback and liquidity testing before treating tokenised collateral as equivalent to immediately available traditional collateral.",
+  "worked_example": "Illustrative worked example: €100m collateral with a 6% market haircut, 8% operational/legal holdback and 1.5% daily adverse move for two days produces approximately €83.91m usable value, or a €6.09m shortfall against a hypothetical €90m requirement."
+}
