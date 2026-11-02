@@ -7,7 +7,7 @@ from datetime import date
 DOMAINS={'01-credit-risk':'Credit Risk Intelligence','02-financial':'Financial Intelligence','03-accounting':'Accounting & Audit Intelligence','04-governance':'Risk & Governance Intelligence','05-business':'Business & Economic Intelligence','06-public-finance':'Public Finance Intelligence'}
 ALLOWED={'index.html','data.json','README.md','methodology.md','executive-brief.md','project.json'}
 MAX_UNCOMPRESSED=30*1024*1024
-MAX_FILES=100
+MAX_FILES=200
 
 def ingest(inbox:Path,site:Path):
     if not inbox.exists():
