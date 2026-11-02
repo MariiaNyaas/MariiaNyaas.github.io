@@ -22,12 +22,12 @@ def ingest(inbox:Path,site:Path):
                 path=PurePosixPath(name)
                 parts=path.parts
                 if (len(parts)!=4 or parts[0]!='daily-intelligence'
-                    or not re.fullmatch(r'20\d{2}-\d{2}-\d{2}',parts[1])
+                    or not re.fullmatch(r'20\d{2}-\d{2}-\d{2}(?:-r[2-9][0-9]*)?',parts[1])
                     or parts[2] not in DOMAINS or parts[3] not in ALLOWED
                     or '..' in parts or '\\' in name or name.startswith('/')
                     or (info.external_attr>>16)&0o170000 == stat.S_IFLNK):
                     raise ValueError(f'Invalid archive entry in {archive.name}: {name!r}')
-                date.fromisoformat(parts[1])
+                date.fromisoformat(parts[1][:10])
                 if info.file_size>MAX_UNCOMPRESSED: raise ValueError('Single file too large')
                 if name in files or name in seen:raise ValueError('Duplicate file across ZIPs: '+name)
                 files[name]=info
@@ -38,7 +38,7 @@ def ingest(inbox:Path,site:Path):
             for group, filenames in groups.items():
                 if filenames != ALLOWED: raise ValueError(f'Incomplete project {group}: missing {sorted(ALLOWED-filenames)}')
                 metadata=json.loads(z.read('/'.join(group)+'/project.json'))
-                if metadata.get('domain')!=DOMAINS[group[2]] or metadata.get('published')!=group[1]:
+                if metadata.get('domain')!=DOMAINS[group[2]] or metadata.get('published')!=group[1][:10][:10]:
                     raise ValueError(f'Metadata mismatch: {group}')
                 expected='https://mariianyaas.github.io/'+'/'.join(group)+'/'
                 if metadata.get('url')!=expected or metadata.get('status','published')!='published':
