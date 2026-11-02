@@ -1,0 +1,108 @@
+{
+  "edition": "2026-11-02",
+  "research_id": "05-business",
+  "category": "Business & Economic Intelligence",
+  "title": "Europe’s Positive GDP Print Conceals a Slower Impulse",
+  "source_verification_date": "2026-11-02",
+  "trigger": "Eurostat’s 30 October flash estimate showed euro-area GDP growth easing from 0.6% q/q in Q2 to 0.4% in Q3, and EU growth easing from 0.7% to 0.5%.",
+  "observations": [
+    {
+      "label": "EA Q2",
+      "value": 0.6,
+      "unit": "% q/q"
+    },
+    {
+      "label": "EA Q3",
+      "value": 0.4,
+      "unit": "% q/q"
+    },
+    {
+      "label": "EU Q2",
+      "value": 0.7,
+      "unit": "% q/q"
+    },
+    {
+      "label": "EU Q3",
+      "value": 0.5,
+      "unit": "% q/q"
+    }
+  ],
+  "reported_indicators": [
+    {
+      "value": "0.4%",
+      "label": "EA GDP Q3 q/q"
+    },
+    {
+      "value": "0.5%",
+      "label": "EU GDP Q3 q/q"
+    },
+    {
+      "value": "−0.2 pp",
+      "label": "Q2-to-Q3 slowdown"
+    },
+    {
+      "value": "6.5%",
+      "label": "EA unemployment · Sep"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Eurostat · Q3 2026 GDP flash · 30 Oct 2026",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap"
+    },
+    {
+      "title": "Eurostat · September unemployment · 30 Oct 2026",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/3-30102026-bp"
+    }
+  ],
+  "scenario_inputs": [
+    {
+      "id": "region",
+      "label": "Demand region",
+      "kind": "select",
+      "min": null,
+      "max": null,
+      "step": null,
+      "default": "EA",
+      "unit": "",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "revenue",
+      "label": "Illustrative annual EU sales",
+      "kind": "range",
+      "min": 100,
+      "max": 5000,
+      "step": 100,
+      "default": 1000,
+      "unit": "€m",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "elasticity",
+      "label": "Revenue / GDP-growth elasticity",
+      "kind": "range",
+      "min": 0,
+      "max": 4,
+      "step": 0.25,
+      "default": 1.5,
+      "unit": "×",
+      "provenance": "illustrative analyst assumption"
+    },
+    {
+      "id": "extra",
+      "label": "Additional growth shock",
+      "kind": "range",
+      "min": -2,
+      "max": 2,
+      "step": 0.25,
+      "default": 0,
+      "unit": "pp",
+      "provenance": "illustrative analyst assumption"
+    }
+  ],
+  "limitations": "GDP is a preliminary flash estimate subject to revision; growth figures are quarter-on-quarter, not annual rates. Elasticity and annual revenue are hypothetical; the scenario applies a quarterly GDP-growth difference mechanically to an annual sales base solely for sensitivity illustration.",
+  "formula": "Observed growth momentum = Q3 q/q growth − Q2 q/q growth (−0.2 pp for both EU and EA). Illustrative revenue delta (€m) = annual exposed revenue × elasticity × (observed momentum + additional scenario shock) / 100. No causal estimate or time-series regression is implied.",
+  "decision": "Use leading order-book indicators and customer concentration to test whether European growth deceleration affects the next two quarters of sales. Do not treat aggregate GDP as a direct export-demand forecast.",
+  "worked_example": "Illustrative worked example: the observed −0.2 percentage-point change in euro-area quarterly GDP growth, applied with an assumed 1.5× revenue elasticity to €1bn of annual exposed sales, yields a −€3m sensitivity. It is not a revenue forecast."
+}
