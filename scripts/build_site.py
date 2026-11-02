@@ -41,6 +41,9 @@ def main():
     if p.is_file() and p.suffix.lower() in {'.html','.css','.js','.json','.xml','.txt','.png','.jpg','.jpeg','.webp','.svg','.ico','.pdf'}:
       shutil.copy2(p,OUT/p.name)
     elif p.is_dir() and (p.name in allowed_folders or p.name in {'assets','images'}):shutil.copytree(p,OUT/p.name)
+  # Expand validated daily research bundles into the publication staging area.
+  from ingest_bundles import ingest
+  ingest(ROOT/'inbox', OUT)
   data=[]
   registry=ROOT/'research.json'
   if registry.exists():
@@ -48,7 +51,7 @@ def main():
     if not isinstance(items,list):raise ValueError('research.json must be an array')
     for item in items:
       if item.get('status','published')=='published':data.append(standard(item))
-  for p in sorted((ROOT/'daily-intelligence').rglob('project.json')) if (ROOT/'daily-intelligence').exists() else []:
+  for p in sorted((OUT/'daily-intelligence').rglob('project.json')) if (OUT/'daily-intelligence').exists() else []:
     if not (p.parent/'index.html').exists():
       print('SKIP unpublished project (no index.html):',p)
       continue
