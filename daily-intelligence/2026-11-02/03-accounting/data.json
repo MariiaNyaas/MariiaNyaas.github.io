@@ -7,125 +7,27 @@
   "trigger": "EFRAG held its final ESRS-40a outreach event on 29 October 2026, ahead of the 31 October consultation deadline for certain non-EU undertakings.",
   "observations": [],
   "reported_indicators": [
-    {
-      "value": "29 Oct",
-      "label": "Final EFRAG outreach"
-    },
-    {
-      "value": "31 Oct",
-      "label": "Consultation closed"
-    },
-    {
-      "value": "8",
-      "label": "Illustrative control tests"
-    },
-    {
-      "value": "0",
-      "label": "Verified firm assessments"
-    }
+    {"value": "29 Oct", "label": "Final EFRAG outreach"},
+    {"value": "31 Oct", "label": "Consultation closed"},
+    {"value": "8", "label": "Illustrative control tests"},
+    {"value": "0", "label": "Verified firm assessments"}
   ],
   "primary_sources": [
-    {
-      "title": "EFRAG · ESRS-40a outreach · 29 Oct 2026",
-      "url": "https://www.efrag.org/en/news-and-calendar/meetings-calendar/efrag-outreach-event-esrs40a-for-all-stakeholders"
-    },
-    {
-      "title": "ESMA · 2026 enforcement priorities · 13 Oct 2026",
-      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-2026-european-common-enforcement-priorities"
-    }
+    {"title": "EFRAG · ESRS-40a outreach · 29 Oct 2026", "url": "https://www.efrag.org/en/news-and-calendar/meetings-calendar/efrag-outreach-event-esrs40a-for-all-stakeholders"},
+    {"title": "ESMA · 2026 enforcement priorities · 13 Oct 2026", "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-2026-european-common-enforcement-priorities"}
   ],
   "scenario_inputs": [
-    {
-      "id": "scope",
-      "label": "Scope mapping",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "partial",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "boundary",
-      "label": "Entity boundaries",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "missing",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "materiality",
-      "label": "Materiality rationale",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "partial",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "iro",
-      "label": "IRO-to-metric linkage",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "missing",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "data",
-      "label": "Data lineage",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "partial",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "owners",
-      "label": "Control owners",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "ready",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "cross",
-      "label": "Report cross-references",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "missing",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    },
-    {
-      "id": "assurance",
-      "label": "Assurance trail",
-      "kind": "select",
-      "min": null,
-      "max": null,
-      "step": null,
-      "default": "missing",
-      "unit": "",
-      "provenance": "illustrative analyst assumption"
-    }
+    {"id": "scope", "label": "Scope mapping", "kind": "select", "min": null, "max": null, "step": null, "default": "partial", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "boundary", "label": "Entity boundaries", "kind": "select", "min": null, "max": null, "step": null, "default": "missing", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "materiality", "label": "Materiality rationale", "kind": "select", "min": null, "max": null, "step": null, "default": "partial", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "iro", "label": "IRO-to-metric linkage", "kind": "select", "min": null, "max": null, "step": null, "default": "missing", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "data", "label": "Data lineage", "kind": "select", "min": null, "max": null, "step": null, "default": "partial", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "owners", "label": "Control owners", "kind": "select", "min": null, "max": null, "step": null, "default": "ready", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "cross", "label": "Report cross-references", "kind": "select", "min": null, "max": null, "step": null, "default": "missing", "unit": "", "provenance": "illustrative analyst assumption"},
+    {"id": "assurance", "label": "Assurance trail", "kind": "select", "min": null, "max": null, "step": null, "default": "missing", "unit": "", "provenance": "illustrative analyst assumption"}
   ],
-  "limitations": "The eight checks and their weights are an original illustrative governance diagnostic, not a list of ESRS-40a mandatory requirements or a published assurance standard. All starting statuses are synthetic. ESRS-40a was a consultation exposure draft at the cited event; no company-specific compliance conclusion is made.",
-  "formula": "Illustrative readiness score = Σ(weight_i × status_i), where Ready=1, Partial=0.5, Missing=0. Weights sum to 100 and are analyst assumptions: scope 15, boundary 15, materiality 10, IRO linkage 15, lineage 15, owners 10, cross-references 10, assurance trail 10.",
-  "decision": "Prioritise boundary, data lineage and cross-report connectivity before drafting narrative disclosures. Obtain legal advice on scope and do not treat an exposure draft as adopted law.",
-  "worked_example": "Illustrative worked example: the default synthetic evidence statuses produce a weighted readiness score of 30/100. This is not a firm assessment, regulatory score or assurance conclusion."
+  "limitations": "The eight controls, their weights and the resulting score constitute an original, illustrative internal governance diagnostic. They are not prescribed ESRS-40a requirements, an official compliance assessment, an assurance opinion or a regulatory scoring methodology. All default control statuses are synthetic and do not represent evidence obtained from any undertaking. The cited ESRS-40a material was at consultation stage; applicability and final legal requirements must be assessed separately against the relevant adopted framework.",
+  "formula": "Illustrative diagnostic score = Σ(weight_i × status_factor_i), where Ready = 1, Partial = 0.5 and Missing = 0. Analyst-defined weights sum to 100: scope 15, boundary 15, materiality 10, IRO linkage 15, data lineage 15, control owners 10, cross-references 10 and assurance trail 10. Neither the weights nor the status factors are regulatory parameters.",
+  "decision": "Use the diagnostic to identify potential evidence gaps and prioritise entity-boundary documentation, data lineage and cross-report traceability. Confirm the applicable legal reporting framework and assurance requirements independently. Do not use the diagnostic score to assert ESRS compliance or audit readiness.",
+  "worked_example": "Under the synthetic default scenario, three controls are Partial, one is Ready and four are Missing, producing an analyst-defined diagnostic score of 30/100. The result is not based on company evidence and must not be interpreted as a regulatory compliance score, assurance conclusion or verified assessment of audit readiness."
 }
