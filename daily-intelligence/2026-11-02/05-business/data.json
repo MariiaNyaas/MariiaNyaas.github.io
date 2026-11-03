@@ -1,3 +1,4 @@
+
 {
   "edition": "2026-11-02",
   "research_id": "05-business",
@@ -69,7 +70,7 @@
     },
     {
       "id": "revenue",
-      "label": "Illustrative annual EU sales",
+      "label": "Annual exposed revenue reference base",
       "kind": "range",
       "min": 100,
       "max": 5000,
@@ -80,7 +81,7 @@
     },
     {
       "id": "elasticity",
-      "label": "Revenue / GDP-growth elasticity",
+      "label": "Assumed revenue sensitivity multiplier",
       "kind": "range",
       "min": 0,
       "max": 4,
@@ -91,7 +92,7 @@
     },
     {
       "id": "extra",
-      "label": "Additional growth shock",
+      "label": "Additional GDP-growth momentum shock",
       "kind": "range",
       "min": -2,
       "max": 2,
@@ -101,8 +102,8 @@
       "provenance": "illustrative analyst assumption"
     }
   ],
-  "limitations": "GDP is a preliminary flash estimate subject to revision; growth figures are quarter-on-quarter, not annual rates. Elasticity and annual revenue are hypothetical; the scenario applies a quarterly GDP-growth difference mechanically to an annual sales base solely for sensitivity illustration.",
-  "formula": "Observed growth momentum = Q3 q/q growth − Q2 q/q growth (−0.2 pp for both EU and EA). Illustrative revenue delta (€m) = annual exposed revenue × elasticity × (observed momentum + additional scenario shock) / 100. No causal estimate or time-series regression is implied.",
-  "decision": "Use leading order-book indicators and customer concentration to test whether European growth deceleration affects the next two quarters of sales. Do not treat aggregate GDP as a direct export-demand forecast.",
-  "worked_example": "Illustrative worked example: the observed −0.2 percentage-point change in euro-area quarterly GDP growth, applied with an assumed 1.5× revenue elasticity to €1bn of annual exposed sales, yields a −€3m sensitivity. It is not a revenue forecast."
+  "limitations": "GDP observations are preliminary quarter-on-quarter growth estimates and may be revised. The model applies a change in quarterly GDP growth to a hypothetical annual revenue reference base as a simplified sensitivity convention; the time horizons are not aligned. The revenue sensitivity multiplier is assumed rather than empirically estimated. The calculation does not identify causality, incorporate transmission lags, FX movements, sector composition or customer-specific demand, and must not be interpreted as a forecast or an estimate of actual revenue losses.",
+  "formula": "Observed GDP-growth momentum (pp) = Q3 GDP growth (% q/q) − Q2 GDP growth (% q/q). Illustrative sensitivity indicator (€m) = annual exposed revenue reference base (€m) × assumed sensitivity multiplier × [observed GDP-growth momentum (pp) + additional momentum shock (pp)] / 100. The output is a hypothetical monetary sensitivity indicator, not a time-aligned annual revenue forecast or an empirically calibrated causal estimate.",
+  "decision": "Use leading order-book indicators and customer concentration to test whether European growth deceleration affects the next two quarters of sales. Reconcile the time horizons and validate against company-specific demand and FX exposure before using the scenario for financial planning.",
+  "worked_example": "Illustrative scenario: euro-area quarterly GDP growth decelerated by 0.2 percentage points. Applying this change mechanically to a hypothetical €1,000m annual exposed revenue reference base, with an assumed sensitivity multiplier of 1.5 and no additional shock, produces a −€3.0m sensitivity indicator. This is neither an observed revenue loss nor a projected annual revenue decline."
 }
