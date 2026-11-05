@@ -35,7 +35,8 @@ def main():
   if OUT.exists():shutil.rmtree(OUT)
   OUT.mkdir()
   # Copy existing site without modifying the repository. Do not expose private config/code.
-  allowed_folders={'credit-risk','financial','accounting','governance','business','public-finance','daily-intelligence','early-warning-signals-norway','household-debt-pressure-index'}
+  
+allowed_folders={'credit-risk','financial','accounting','governance','business','public-finance','daily-intelligence','early-warning-signals-norway','household-debt-pressure-index','art-capital'}
   for p in ROOT.iterdir():
     if p.name.startswith('.') or p.name in {'scripts','_site','__pycache__'}:continue
     if p.is_file() and p.suffix.lower() in {'.html','.css','.js','.json','.xml','.txt','.png','.jpg','.jpeg','.webp','.svg','.ico','.pdf'}:
