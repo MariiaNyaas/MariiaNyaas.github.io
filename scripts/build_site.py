@@ -34,8 +34,7 @@ def standard(record):
 def main():
   if OUT.exists():shutil.rmtree(OUT)
   OUT.mkdir()
-  # Copy existing site without modifying the repository. Do not expose private config/code.
-  
+  # Copy existing site without modifying the repository. Do not expose private config/code.  
 allowed_folders={'credit-risk','financial','accounting','governance','business','public-finance','daily-intelligence','early-warning-signals-norway','household-debt-pressure-index','art-capital'}
   for p in ROOT.iterdir():
     if p.name.startswith('.') or p.name in {'scripts','_site','__pycache__'}:continue
