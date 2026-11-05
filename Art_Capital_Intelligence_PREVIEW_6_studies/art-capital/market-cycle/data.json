@@ -1,0 +1,18 @@
+{
+  "title": "Art Market Cycle",
+  "metric": "Global art sales (USD bn)",
+  "years": [
+    2023,
+    2024,
+    2025
+  ],
+  "values": [
+    65,
+    57.5,
+    59.6
+  ],
+  "unit": "USD bn",
+  "source": "https://theartmarket.artbasel.com/the-art-market-2026/global-sales",
+  "data_note": "Reported or rounded estimates; online 2023 inferred from 2024 decline of 11%, dealer 2023 approximately 36.1; not artwork return series.",
+  "scenario_note": "All slider assumptions hypothetical, not observed or predictive."
+}
