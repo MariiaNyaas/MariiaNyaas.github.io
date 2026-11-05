@@ -1,0 +1,35 @@
+/* Art & Capital Intelligence — approved art-direction, scoped to the six special studies only. */
+:root{--art-ivory:#f4eee4;--art-gold:#e1b65e;--art-muted:#c2cad1;--art-line:#65717e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at 55% 0%,#112436 0%,#091624 67%);color:var(--art-ivory);font:16px/1.65 Georgia,'Times New Roman',serif}
+a{color:var(--art-gold)}
+header{max-width:none!important;background:#071521!important;border-top:1px solid rgba(206,179,130,.7);border-bottom:1px solid rgba(206,179,130,.7)!important;padding:18px max(27px,calc((100vw - 1150px)/2))!important;font:16px Georgia,serif!important;letter-spacing:0!important}
+header a{color:#f0e8dd;text-decoration:none}header a:hover{color:var(--art-gold)}
+main{max-width:1150px!important;padding:31px 26px!important}
+.art-study-hero{position:relative;isolation:isolate;overflow:hidden;min-height:300px;border-radius:0!important;border:1px solid #566477!important;border-bottom:1px solid var(--art-gold)!important;padding:51px 42px!important;background:#081521!important;margin-bottom:25px!important}
+.art-study-hero:before{content:"";position:absolute;z-index:-2;inset:0;background:radial-gradient(ellipse at 78% 0%,rgba(172,135,73,.13),transparent 54%),repeating-radial-gradient(ellipse at 105% -20%,transparent 0 19px,rgba(156,173,195,.035) 20px,transparent 22px),#081521;pointer-events:none}
+.art-study-hero:after{content:"";position:absolute;z-index:-1;top:0!important;right:0!important;height:100%!important;width:62%!important;border-radius:0!important;transform:none!important;opacity:1!important;filter:none!important;box-shadow:none!important;background-image:linear-gradient(to right,#081521 1%,rgba(8,21,33,.3) 50%,rgba(8,21,33,.01) 100%),url('/art-capital/assets/art-hero.avif')!important;background-size:cover,cover!important;background-repeat:no-repeat!important;background-position:center,right center!important;pointer-events:none}
+.art-study-hero h1{max-width:720px!important;font:400 clamp(38px,5vw,61px)/1.12 Georgia,serif!important;letter-spacing:-.02em;margin:23px 0 17px!important;color:var(--art-ivory)!important;text-shadow:0 2px 12px rgba(0,0,0,.26)}
+.art-study-hero p{font:17px/1.65 Georgia,serif!important;color:#d6d9d9!important;max-width:640px!important;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.art-study-hero .gold{color:var(--art-gold)!important;letter-spacing:.23em!important;font:12px Georgia,serif!important}
+main>.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:21px!important}
+.card{isolation:isolate;position:relative;overflow:hidden;border-radius:13px!important;border:1px solid #607084!important;background:linear-gradient(125deg,rgba(11,24,36,.99),rgba(11,24,36,.89))!important;padding:29px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 8px 28px rgba(0,0,0,.10)!important}
+.card:after{content:"";position:absolute;z-index:-1;inset:0 0 0 auto;width:47%;background-image:url('/art-capital/assets/art-textures-atlas.avif');background-position:var(--texture-x,0%) var(--texture-y,0%);background-size:300% 200%;background-repeat:no-repeat;opacity:.38;mask-image:linear-gradient(to right,transparent,black 75%);pointer-events:none}
+.card h2,main>section>h2{font:400 clamp(25px,2.9vw,33px)/1.22 Georgia,serif!important;color:#f2e9db!important;margin:0 0 18px!important}
+.card p{font:15px/1.65 Georgia,serif;color:#d3d8dd}
+.card .muted,main .muted{color:#b5c0cc!important}
+.card .value{font:400 clamp(26px,3vw,39px)/1.2 Georgia,serif!important;color:var(--art-gold)!important}
+.card .grid{gap:19px!important}
+.card .grid .value{margin-top:8px}
+main>section.card{margin:25px 0 15px!important;background:radial-gradient(ellipse at 100% 15%,rgba(115,146,163,.15),transparent 53%),#101e30!important}
+.card label{background:rgba(8,18,29,.72)!important;border:1px solid #46596c!important;border-radius:9px!important;padding:17px!important;margin:0!important;color:#f0e8db!important;font:14px/1.5 Georgia,serif!important}
+.card label strong{color:var(--art-gold)!important;font:20px Georgia,serif!important}
+input[type=range]{accent-color:var(--art-gold)!important;cursor:pointer;max-width:100%;margin:17px 0 5px}
+main>section:not(.card):not(.art-study-hero){margin-top:38px!important;border-top:1px solid #647180!important;padding-top:31px!important}
+main>section:not(.card):not(.art-study-hero) p{font:15px/1.75 Georgia,serif;color:#b9c3cc}
+main>section:not(.card):not(.art-study-hero) a{border-bottom:1px solid var(--art-gold)}
+footer{border-top:1px solid #627086!important;padding:22px 26px 35px!important;color:#b1bfcb!important;font:13px Georgia,serif}
+a:focus-visible,input:focus-visible{outline:2px solid var(--art-gold);outline-offset:4px}
+@media(max-width:750px){main>.grid{grid-template-columns:1fr}.art-study-hero{padding:36px 25px!important}.art-study-hero:after{width:89%!important;opacity:.55!important}.card{padding:22px!important}}
+@media(max-width:530px){header{font-size:13px!important;padding:15px 18px!important}main{padding:18px!important}.art-study-hero h1{font-size:39px!important}.art-study-hero p{font-size:15px!important}.card .grid{grid-template-columns:1fr}.card .card h2{font-size:25px}}
