@@ -10,6 +10,8 @@ permissions:
 concurrency:
   group: github-pages
   cancel-in-progress: false
+# A new workflow run is required after a cancelled attempt: rerunning a single
+# build job can leave two github-pages artifacts in the same run.
 jobs:
   build:
     runs-on: ubuntu-latest
