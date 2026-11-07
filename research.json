@@ -34,5 +34,50 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-07/electricity-research-pilot/",
     "topic": "Electricity Transition · Research Pilot"
+  },
+  {
+    "title": "Corporate Credit Cycles and Bankruptcy Risk",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Corporate credit growth and Norwegian bankruptcy cycles; historical HAC regression and interactive credit-growth sensitivity.",
+    "published": "2026-11-07",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-07/01-credit-risk/",
+    "topic": "Credit cycle"
+  },
+  {
+    "title": "Bank Funding: Loans, Deposits and the Structural Gap",
+    "domain": "Financial Intelligence",
+    "summary": "Thirty-year bank loan and deposit balance comparison with adjustable funding stress.",
+    "published": "2026-11-07",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-07/02-financial/",
+    "topic": "Bank funding"
+  },
+  {
+    "title": "Headline Versus Underlying Inflation: Policy Signal Risk",
+    "domain": "Risk & Governance Intelligence",
+    "summary": "Headline CPI versus CPI-ATE inflation: variable comparisons and hypothetical inflation shocks.",
+    "published": "2026-11-07",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-07/03-governance/",
+    "topic": "Inflation signals"
+  },
+  {
+    "title": "The Allocation of Norway's R&D Budget: Scale Versus Priorities",
+    "domain": "Public Finance Intelligence",
+    "summary": "Norwegian public R&D appropriations, ministry composition and interactive allocation scenarios.",
+    "published": "2026-11-07",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-07/04-public-finance/",
+    "topic": "R&D allocation"
+  },
+  {
+    "title": "Input Costs Versus Output Prices: The Margin Pressure Lens",
+    "domain": "Accounting & Audit Intelligence",
+    "summary": "Labour costs versus producer prices: rebased indices and audit-oriented cost sensitivities.",
+    "published": "2026-11-07",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-07/05-accounting-audit/",
+    "topic": "Cost pressure"
   }
 ]
