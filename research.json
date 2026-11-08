@@ -88,5 +88,59 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/art-capital/the-price-of-silence/",
     "topic": "Art × Capital · Monetary transmission"
+  },
+  {
+    "title": "Credit Loss Stress: A Transparent Sensitivity Engine",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Interactive PD × LGD × EAD stress scenario; illustrative inputs, not a calibrated credit scorecard.",
+    "published": "2026-11-08",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/credit/credit-loss-stress-lab-2026-11-08/",
+    "topic": "Credit loss stress · Scenario"
+  },
+  {
+    "title": "Bank Earnings: When More Accounting Drivers Fail the Forecast Test",
+    "domain": "Financial Intelligence",
+    "summary": "Bank quarterly flows and 38-quarter expanding-window forecast benchmark; revised-data limitations.",
+    "published": "2026-11-08",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/financial/bank-earnings-forecast-benchmark-2026-11-08/",
+    "topic": "Bank earnings · Backtest"
+  },
+  {
+    "title": "Retail Investment: Audit-Ready Scenario Reconciliation",
+    "domain": "Accounting & Audit Intelligence",
+    "summary": "SSB investment index observations and editable hypothetical aggregation weights; not an audit opinion.",
+    "published": "2026-11-08",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/accounting/retail-investment-audit-lab-2026-11-08/",
+    "topic": "Retail investment · Scenario"
+  },
+  {
+    "title": "Governance Risk: Control Coverage and Residual Exposure",
+    "domain": "Risk & Governance Intelligence",
+    "summary": "Interactive event frequency, loss severity and control-effectiveness sensitivities; illustrative inputs.",
+    "published": "2026-11-08",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/risk/governance-control-stress-lab-2026-11-08/",
+    "topic": "Operational controls · Scenario"
+  },
+  {
+    "title": "Fiscal Space: Revenue, Spending and Rate Shock",
+    "domain": "Public Finance Intelligence",
+    "summary": "Editable fiscal balance and debt-service sensitivities for a hypothetical public entity.",
+    "published": "2026-11-08",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/public/public-finance-fiscal-space-lab-2026-11-08/",
+    "topic": "Fiscal space · Scenario"
+  },
+  {
+    "title": "When More Variables Add Less Information",
+    "domain": "Business & Economic Intelligence",
+    "summary": "Norwegian industrial forecast robustness: AR(2) versus multifactor models, pseudo-out-of-sample.",
+    "published": "2026-11-08",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/business/industrial-forecast-robustness-2026-11-08/",
+    "topic": "Industrial forecasting · Backtest"
   }
 ]
