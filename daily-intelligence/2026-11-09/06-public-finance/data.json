@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-09",
+  "primarySource": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261104~78299c3eaf.en.html",
+  "observations": [
+    [
+      "Publication date",
+      "4 Nov 2026"
+    ],
+    [
+      "Hazard focus",
+      "Heat, drought, wildfire"
+    ],
+    [
+      "Geography",
+      "Europe"
+    ],
+    [
+      "Research status",
+      "Scenario, not calibration"
+    ]
+  ],
+  "scenario": {
+    "drivers": [
+      [
+        "Annual event probability (%)",
+        12
+      ],
+      [
+        "Loss per event (€m)",
+        250
+      ],
+      [
+        "Mitigation effectiveness (%)",
+        35
+      ]
+    ],
+    "formula": "(weights[0]/100)*weights[1]*(1-weights[2]/100)",
+    "disclaimer": "The ECB article supplies the hazard narrative, not a calibrated probability, severity or mitigation effect. All slider values are illustrative."
+  },
+  "hypothesis": "Fiscal resilience can be understated when public capital appraisal excludes contingent climate losses and avoided-loss benefits.",
+  "falsification": "Reconcile exposure maps, insurance claims, local loss histories and mitigation costs; observed losses may contradict assumed distributions."
+}
