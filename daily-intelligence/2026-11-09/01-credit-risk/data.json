@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-09",
+  "source": "https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-11-05-rate/",
+  "sourceName": "Norges Bank, 5 Nov 2026",
+  "observations": [
+    {
+      "label": "Policy rate",
+      "value": "4.50%"
+    },
+    {
+      "label": "Sep CPI",
+      "value": "3.4%"
+    },
+    {
+      "label": "Sep CPI-ATE",
+      "value": "3.0%"
+    },
+    {
+      "label": "Inflation target",
+      "value": "2.0%"
+    }
+  ],
+  "scenario": {
+    "inputs": [
+      {
+        "label": "Floating debt share",
+        "min": 0,
+        "max": 100,
+        "defaultValue": 65,
+        "unit": "%"
+      },
+      {
+        "label": "Refinancing spread shock",
+        "min": 0,
+        "max": 500,
+        "defaultValue": 150,
+        "unit": "bp"
+      },
+      {
+        "label": "Interest cover baseline",
+        "min": 1,
+        "max": 8,
+        "defaultValue": 3.2,
+        "unit": "×"
+      }
+    ],
+    "formula": "newICR = baselineICR / (1 + floatingShare × spreadShock / 10000 / assumedBaselineInterestRate)",
+    "limitations": "Illustrative 6.5% starting borrowing cost, fixed EBITDA and principal. This is not a portfolio PD model."
+  },
+  "hypothesis": "A policy-rate hold is not a neutral credit event: refinancing spreads and debt maturities can still erode covenant headroom.",
+  "alternative": "Covenant buffers depend on hedges, amortisation, cash holdings, lender margins and EBITDA sensitivity.",
+  "falsifier": "Company disclosures show fixed-rate protection, earlier refinancing or offsetting EBITDA improvement."
+}
