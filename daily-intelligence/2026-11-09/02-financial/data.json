@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-09",
+  "source": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/4-05112026-ap",
+  "publication": "2026-11-05",
+  "period": "2026-04 to 2026-09",
+  "unit": "monthly percentage change in domestic-market industrial PPI; country series are total-industry national indices, not energy-sector prices",
+  "months": [
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep"
+  ],
+  "series": {
+    "energy": [
+      -0.3,
+      -1,
+      -1.5,
+      5.8,
+      5.6,
+      7.8
+    ],
+    "exEnergy": [
+      0.9,
+      0.7,
+      0.2,
+      0,
+      0.3,
+      0.1
+    ],
+    "total": [
+      0.6,
+      0.2,
+      -0.3,
+      1.6,
+      2,
+      2.5
+    ],
+    "Norway": [
+      1.9,
+      -0.1,
+      -2.3,
+      1.4,
+      2.3,
+      2.5
+    ],
+    "Sweden": [
+      -0.3,
+      1.8,
+      -0.3,
+      -1.1,
+      1.5,
+      3.5
+    ],
+    "Finland": [
+      2.2,
+      0.8,
+      -1,
+      -1.6,
+      2.6,
+      2.6
+    ],
+    "Denmark": [
+      3,
+      0,
+      -0.5,
+      0.4,
+      3,
+      3.6
+    ]
+  },
+  "annualSep": {
+    "euroAreaTotal": 11.1,
+    "euroAreaEnergy": 30.8,
+    "euroAreaExEnergy": 3.5,
+    "Norway": 15.9,
+    "Sweden": 10.4,
+    "Finland": 9.2,
+    "Denmark": 15.1
+  },
+  "scenario": {
+    "description": "Hypothetical one-month procurement cost shock and margin bridge; weights and pass-through are user assumptions, not estimates.",
+    "formula": "costShock = energyShare*energyPPI+(1-energyShare)*nonEnergyPPI; priceRecovery = costShock*passThrough; profitImpactOnRevenue = -costShare*(costShock-priceRecovery)/100; revenue=100",
+    "defaults": {
+      "energyShare": 0.25,
+      "passThrough": 0.4,
+      "costShare": 0.65
+    }
+  },
+  "limitations": [
+    "National total-industry PPI does not measure company energy bills",
+    "Monthly rates must be compounded, not summed, for cumulative index changes",
+    "Energy and non-energy PPI components are not procurement cost indices",
+    "Cross-country differences cannot be causally attributed to energy",
+    "No forecast backtest, confidence intervals or causal identification"
+  ]
+}
