@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-09",
+  "source": "https://www.ssb.no/energi-og-industri/industri-og-bergverksdrift/statistikk/produksjonsindeks-for-olje-og-gass-industri-bergverk-og-kraftforsyning/artikler/nesten-uendra-industriproduksjon-i-3.kvartal",
+  "sourceName": "Statistics Norway, 6 Nov 2026",
+  "observations": [
+    {
+      "label": "Manufacturing Q3",
+      "value": "0.1%"
+    },
+    {
+      "label": "Shipbuilding",
+      "value": "2.4%"
+    },
+    {
+      "label": "Chemicals",
+      "value": "−3.8%"
+    },
+    {
+      "label": "Metals",
+      "value": "−2.1%"
+    }
+  ],
+  "scenario": {
+    "inputs": [
+      {
+        "label": "Shipbuilding exposure",
+        "min": 0,
+        "max": 100,
+        "defaultValue": 20,
+        "unit": "%"
+      },
+      {
+        "label": "Chemicals exposure",
+        "min": 0,
+        "max": 100,
+        "defaultValue": 20,
+        "unit": "%"
+      },
+      {
+        "label": "Metals exposure",
+        "min": 0,
+        "max": 100,
+        "defaultValue": 15,
+        "unit": "%"
+      }
+    ],
+    "formula": "portfolioShock=(shipShare×2.4+chemicalShare×(−3.8)+metalShare×(−2.1))/100; other sectors assumed 0",
+    "limitations": "The three user-defined weights are portfolio proxies, not official industry weights. Residual allocation assumes zero change solely for illustration."
+  },
+  "hypothesis": "A flat aggregate can hide opposite sector movements; investable implications depend on economic weights and persistence, not raw percentage changes.",
+  "alternative": "Different sector output shares, seasonal adjustment, index aggregation and petroleum supplier demand can explain aggregate stability.",
+  "falsifier": "Official weighted contribution series show negligible sector concentration or subsequent months reverse the divergence."
+}
