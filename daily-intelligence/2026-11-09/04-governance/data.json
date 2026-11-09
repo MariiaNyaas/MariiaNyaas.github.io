@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-09",
+  "source": "https://www.norges-bank.no/en/news-events/news/Press-releases/2026/2026-11-05-rate/",
+  "sourceName": "Norges Bank, 5 Nov 2026",
+  "observations": [
+    {
+      "label": "Policy rate",
+      "value": "4.5%"
+    },
+    {
+      "label": "CPI",
+      "value": "3.4%"
+    },
+    {
+      "label": "CPI-ATE",
+      "value": "3.0%"
+    },
+    {
+      "label": "Target",
+      "value": "2.0%"
+    }
+  ],
+  "scenario": {
+    "inputs": [
+      {
+        "label": "CPI-ATE scenario",
+        "min": 0,
+        "max": 8,
+        "defaultValue": 3,
+        "unit": "%"
+      },
+      {
+        "label": "Unemployment scenario",
+        "min": 0,
+        "max": 8,
+        "defaultValue": 2,
+        "unit": "%"
+      },
+      {
+        "label": "Board risk appetite score",
+        "min": 0,
+        "max": 100,
+        "defaultValue": 55,
+        "unit": "/100"
+      }
+    ],
+    "formula": "indicatorScore=40×max(0,CPIATE−2)/4 + 35×max(0,unemployment−2)/4 + 25×riskAppetiteScore/100 (clamped 0–100)",
+    "limitations": "Weights and thresholds are explicitly arbitrary governance design assumptions; this is not Norges Bank's model."
+  },
+  "hypothesis": "An unchanged policy rate can coexist with changing macro risks; board triggers should depend on risk limits, not the rate headline.",
+  "alternative": "The policy decision includes FX, labour market and energy shocks; a single inflation reading is not sufficient.",
+  "falsifier": "Backtesting of firm-level risk triggers shows no material incremental value beyond existing risk limits."
+}
