@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-09",
+  "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+  "sourceName": "ECB wage tracker, 4 Nov 2026",
+  "observations": [
+    {
+      "label": "H2 2026 headline",
+      "value": "2.7%"
+    },
+    {
+      "label": "H1 2027 headline",
+      "value": "2.8%"
+    },
+    {
+      "label": "Q3 2027 headline",
+      "value": "2.4%"
+    },
+    {
+      "label": "H1 2027 coverage",
+      "value": "31.8%"
+    }
+  ],
+  "scenario": {
+    "inputs": [
+      {
+        "label": "Annual payroll base",
+        "min": 10,
+        "max": 1000,
+        "defaultValue": 250,
+        "unit": "€m"
+      },
+      {
+        "label": "Recurring wage uplift",
+        "min": 0,
+        "max": 8,
+        "defaultValue": 2.8,
+        "unit": "%"
+      },
+      {
+        "label": "One-off component",
+        "min": 0,
+        "max": 5,
+        "defaultValue": 0.5,
+        "unit": "%"
+      }
+    ],
+    "formula": "recurringAnnualCost=payrollBase×recurringUplift/100; oneOffCost=payrollBase×oneOffComponent/100",
+    "limitations": "Scenario uses user-entered payroll and rates; ECB tracker is an aggregate negotiation indicator, not a firm-specific accounting accrual."
+  },
+  "hypothesis": "Wage agreements can create a timing and recognition problem: headline negotiated growth and permanent recurring pay need not match.",
+  "alternative": "Coverage of the ECB tracker varies materially by horizon; one-off timing, headcount and social costs affect actual accruals.",
+  "falsifier": "Payroll records, contracts and accrual schedules reconcile recurring and one-off payments without unexplained variances."
+}
