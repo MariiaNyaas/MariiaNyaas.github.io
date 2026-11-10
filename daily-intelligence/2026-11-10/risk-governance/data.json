@@ -1,0 +1,29 @@
+{
+  "published": "2026-11-10",
+  "source": "https://ec.europa.eu/eurostat/web/products/euro-indicators/w/4-06112026-ap",
+  "observations": [
+    {
+      "label": "Euro area Sep retail m/m %",
+      "value": -0.7
+    },
+    {
+      "label": "EU Sep retail m/m %",
+      "value": -0.6
+    },
+    {
+      "label": "Euro area Aug revised m/m %",
+      "value": 0.4
+    },
+    {
+      "label": "Euro area Aug initially reported m/m %",
+      "value": 0.1
+    }
+  ],
+  "scenario": {
+    "formula": "w*A+(1-w)*B",
+    "type": "illustrative",
+    "validation": "NOT PERFORMED"
+  },
+  "thesis": "Statistical revisions can change escalation signals without new economic events.",
+  "action": "Archive statistical vintages and use revision-aware thresholds."
+}
