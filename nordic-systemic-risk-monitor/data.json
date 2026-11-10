@@ -1,16 +1,210 @@
 {
-  "checked_at": null,
-  "last_success": null,
-  "status": "awaiting_first_source_refresh",
+  "checked_at": "2026-11-10T12:31:55+00:00",
   "countries": {
-    "NOR": {},
-    "SWE": {},
-    "DNK": {},
-    "FIN": {},
-    "ISL": {}
+    "DNK": {
+      "capital": {
+        "indicator": "FB.BNK.CAPA.ZS",
+        "source": "World Bank Indicators API",
+        "value": 5.316206,
+        "year": "2025"
+      },
+      "credit": {
+        "indicator": "FS.AST.PRVT.GD.ZS",
+        "source": "World Bank Indicators API",
+        "value": 144.062237,
+        "year": "2024"
+      },
+      "gdp": {
+        "indicator": "NY.GDP.MKTP.KD.ZG",
+        "source": "World Bank Indicators API",
+        "value": 2.928433,
+        "year": "2025"
+      },
+      "inflation": {
+        "indicator": "FP.CPI.TOTL.ZG",
+        "source": "World Bank Indicators API",
+        "value": 1.890061,
+        "year": "2025"
+      },
+      "npl": {
+        "indicator": "FB.AST.NPER.ZS",
+        "source": "World Bank Indicators API",
+        "value": 1.47148,
+        "year": "2025"
+      },
+      "unemployment": {
+        "indicator": "SL.UEM.TOTL.ZS",
+        "source": "World Bank Indicators API",
+        "value": 5.529,
+        "year": "2025"
+      }
+    },
+    "FIN": {
+      "capital": {
+        "indicator": "FB.BNK.CAPA.ZS",
+        "source": "World Bank Indicators API",
+        "value": 6.341385,
+        "year": "2025"
+      },
+      "credit": {
+        "indicator": "FS.AST.PRVT.GD.ZS",
+        "source": "World Bank Indicators API",
+        "value": 92.024435,
+        "year": "2024"
+      },
+      "gdp": {
+        "indicator": "NY.GDP.MKTP.KD.ZG",
+        "source": "World Bank Indicators API",
+        "value": 0.173445,
+        "year": "2025"
+      },
+      "inflation": {
+        "indicator": "FP.CPI.TOTL.ZG",
+        "source": "World Bank Indicators API",
+        "value": 0.332787,
+        "year": "2025"
+      },
+      "npl": {
+        "indicator": "FB.AST.NPER.ZS",
+        "source": "World Bank Indicators API",
+        "value": 1.41371,
+        "year": "2025"
+      },
+      "unemployment": {
+        "indicator": "SL.UEM.TOTL.ZS",
+        "source": "World Bank Indicators API",
+        "value": 9.461,
+        "year": "2025"
+      }
+    },
+    "ISL": {
+      "capital": {
+        "indicator": "FB.BNK.CAPA.ZS",
+        "source": "World Bank Indicators API",
+        "value": 12.983309,
+        "year": "2025"
+      },
+      "credit": {
+        "indicator": "FS.AST.PRVT.GD.ZS",
+        "source": "World Bank Indicators API",
+        "value": 88.647385,
+        "year": "2025"
+      },
+      "gdp": {
+        "indicator": "NY.GDP.MKTP.KD.ZG",
+        "source": "World Bank Indicators API",
+        "value": 1.279462,
+        "year": "2025"
+      },
+      "inflation": {
+        "indicator": "FP.CPI.TOTL.ZG",
+        "source": "World Bank Indicators API",
+        "value": 4.090851,
+        "year": "2025"
+      },
+      "npl": {
+        "indicator": "FB.AST.NPER.ZS",
+        "source": "World Bank Indicators API",
+        "value": 1.561314,
+        "year": "2025"
+      },
+      "unemployment": {
+        "indicator": "SL.UEM.TOTL.ZS",
+        "source": "World Bank Indicators API",
+        "value": 3.625,
+        "year": "2025"
+      }
+    },
+    "NOR": {
+      "capital": {
+        "indicator": "FB.BNK.CAPA.ZS",
+        "source": "World Bank Indicators API",
+        "value": 7.767857,
+        "year": "2025"
+      },
+      "credit": {
+        "indicator": "FS.AST.PRVT.GD.ZS",
+        "source": "World Bank Indicators API",
+        "value": 124.389622,
+        "year": "2024"
+      },
+      "gdp": {
+        "indicator": "NY.GDP.MKTP.KD.ZG",
+        "source": "World Bank Indicators API",
+        "value": 1.085282,
+        "year": "2025"
+      },
+      "inflation": {
+        "indicator": "FP.CPI.TOTL.ZG",
+        "source": "World Bank Indicators API",
+        "value": 3.03967,
+        "year": "2025"
+      },
+      "npl": {
+        "indicator": "FB.AST.NPER.ZS",
+        "source": "World Bank Indicators API",
+        "value": 0.448877,
+        "year": "2025"
+      },
+      "unemployment": {
+        "indicator": "SL.UEM.TOTL.ZS",
+        "source": "World Bank Indicators API",
+        "value": 4.637,
+        "year": "2025"
+      }
+    },
+    "SWE": {
+      "capital": {
+        "indicator": "FB.BNK.CAPA.ZS",
+        "source": "World Bank Indicators API",
+        "value": 5.828295,
+        "year": "2025"
+      },
+      "credit": {
+        "indicator": "FS.AST.PRVT.GD.ZS",
+        "source": "World Bank Indicators API",
+        "value": 125.289615,
+        "year": "2024"
+      },
+      "gdp": {
+        "indicator": "NY.GDP.MKTP.KD.ZG",
+        "source": "World Bank Indicators API",
+        "value": 1.543164,
+        "year": "2025"
+      },
+      "inflation": {
+        "indicator": "FP.CPI.TOTL.ZG",
+        "source": "World Bank Indicators API",
+        "value": 0.679015,
+        "year": "2025"
+      },
+      "npl": {
+        "indicator": "FB.AST.NPER.ZS",
+        "source": "World Bank Indicators API",
+        "value": 0.425544,
+        "year": "2025"
+      },
+      "unemployment": {
+        "indicator": "SL.UEM.TOTL.ZS",
+        "source": "World Bank Indicators API",
+        "value": 8.694,
+        "year": "2025"
+      }
+    }
   },
-  "source": "https://api.worldbank.org/v2/",
-  "successful_series": 0,
+  "errors": [],
   "failed_series": 0,
-  "methodology": "No invented values. Scheduled source refresh will populate observations."
+  "indicators": {
+    "capital": "FB.BNK.CAPA.ZS",
+    "credit": "FS.AST.PRVT.GD.ZS",
+    "gdp": "NY.GDP.MKTP.KD.ZG",
+    "inflation": "FP.CPI.TOTL.ZG",
+    "npl": "FB.AST.NPER.ZS",
+    "unemployment": "SL.UEM.TOTL.ZS"
+  },
+  "last_success": "2026-11-10T12:31:55+00:00",
+  "methodology": "Latest non-null observations per country and series. Annual vintages vary. No imputation, no predictive claims.",
+  "source": "https://api.worldbank.org/v2/",
+  "status": "ok",
+  "successful_series": 30
 }
