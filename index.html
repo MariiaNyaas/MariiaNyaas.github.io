@@ -97,7 +97,7 @@ animation:nordic-leather-flow 12s ease-in-out infinite alternate;will-change:tra
   <div class="section-heading"><div><div class="eyebrow">Research dispatches</div><h2>Latest Research</h2></div>
     <p class="note">The ten most recently published analytical studies, across all intelligence disciplines.</p></div>
   <div id="latest-research" class="latest-list" aria-live="polite">
-    <p class="latest-fallback">Loading published research…</p>
+    <a class="latest-item" href="https://mariianyaas.github.io/art-capital/resale-right-paradox/"><span class="latest-number">01 / 2026-11-10</span><span><h3 class="latest-heading">The Resale Right Paradox</h3><p class="latest-summary">Eight interactive laboratories on UK artist resale royalties, auction economics and investor returns.</p></span><span class="latest-domain">Art &amp; Capital Intelligence</span><span class="latest-arrow">↗</span></a>
   </div>
   <div class="latest-bottom"><p class="note">Looking for a specific field of expertise? Browse the complete collection by discipline.</p>
     <a class="btn" href="#intelligence">Explore All Research &nbsp; ↑</a></div>
@@ -106,10 +106,10 @@ animation:nordic-leather-flow 12s ease-in-out infinite alternate;will-change:tra
 (function(){
  const root=document.getElementById('latest-research');
  const safe=(x)=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- fetch('/research.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Catalog missing');return r.json()}).then(data=>{
+ fetch('/research.json?v=20261110-resale-fix-2',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Catalog missing');return r.json()}).then(data=>{
    const items=Array.isArray(data)?data:[];
    const recent=items.filter(x=>(x.status==='published'||x.status==='published-exploratory')&&x.title&&x.url&&/^https:\/\//.test(x.url)&&/^\d{4}-\d{2}-\d{2}$/.test(x.published))
-      .sort((a,b)=>b.published.localeCompare(a.published)||String(a.title).localeCompare(String(b.title))).slice(0,10);
+      .sort((a,b)=>b.published.localeCompare(a.published)||(a.url?.includes('/resale-right-paradox/')?-1:0)-(b.url?.includes('/resale-right-paradox/')?-1:0)||String(a.title).localeCompare(String(b.title))).slice(0,10);
    if(!recent.length){root.innerHTML='<p class="latest-fallback">Research publications will appear here.</p>';return}
    root.innerHTML=recent.map((x,i)=>`<a class="latest-item" href="${safe(x.url)}"><span class="latest-number">${String(i+1).padStart(2,'0')} / ${safe(x.published)}</span><div><h3 class="latest-heading">${safe(x.title)}</h3><p class="latest-summary">${safe(x.summary||'Independent analytical research')}</p></div><span class="latest-domain">${safe(x.domain)}</span><span aria-hidden="true" class="latest-arrow">↗</span></a>`).join('');
  }).catch(()=>{root.innerHTML='<p class="latest-fallback">The research index is temporarily unavailable. Please browse the intelligence disciplines above.</p>'});
