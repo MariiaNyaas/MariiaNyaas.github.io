@@ -269,20 +269,10 @@
   {
     "title": "The Resale Right Paradox",
     "domain": "Art & Capital Intelligence",
-    "summary": "UK Artist’s Resale Right: eight interactive laboratories examining royalty tiers, the 2024 sterling reform, investor net returns, threshold incentives and economic incidence. Regulatory calculations and transparent hypothetical scenarios.",
+    "summary": "Eight interactive laboratories on UK artist resale royalties, the 2024 reform, economic incidence, auction fees and investment returns.",
     "published": "2026-11-10",
     "status": "published",
     "url": "https://mariianyaas.github.io/art-capital/resale-right-paradox/",
     "topic": "Artist’s Resale Right · Art-market regulation · Investment economics"
-  },
-  {
-    "title": "The Resale Right Paradox — Artist's Resale Right & Art Investment",
-    "domain": "Art & Capital Intelligence",
-    "summary": "Eight interactive laboratories on UK artist resale royalties, the 2024 currency reform, buyer–seller incidence, auction fees and investment returns. Statutory models and explicitly hypothetical scenarios.",
-    "published": "2026-11-10",
-    "status": "published",
-    "path": "art-capital/resale-right-paradox/",
-    "url": "https://mariianyaas.github.io/art-capital/resale-right-paradox/",
-    "topic": "Art Market Regulation"
   }
 ]
