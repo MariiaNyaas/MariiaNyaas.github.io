@@ -1,0 +1,30 @@
+{
+  "published": "2026-11-10",
+  "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+  "observations": [
+    {
+      "label": "2026 headline wage tracker %",
+      "value": 2.3
+    },
+    {
+      "label": "H1 2027 tracker %",
+      "value": 2.8
+    },
+    {
+      "label": "H1 2027 coverage %",
+      "value": 31.8
+    },
+    {
+      "label": "Q3 2027 coverage %",
+      "value": 23.3
+    }
+  ],
+  "model": {
+    "type": "illustrative sensitivity only",
+    "formula": "w*A+(1-w)*B",
+    "validation": "NOT PERFORMED",
+    "causality": "NOT ESTABLISHED"
+  },
+  "thesis": "Falling wage-agreement coverage makes extrapolation of negotiated wage trackers increasingly conditional.",
+  "action": "Reconcile contracted payroll obligations with tracker coverage, one-off components and actual headcount."
+}
