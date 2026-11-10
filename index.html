@@ -108,7 +108,7 @@ animation:nordic-leather-flow 12s ease-in-out infinite alternate;will-change:tra
  const safe=(x)=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  fetch('/research.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Catalog missing');return r.json()}).then(data=>{
    const items=Array.isArray(data)?data:[];
-   const recent=items.filter(x=>x.status==='published'&&x.title&&x.url&&/^https:\/\//.test(x.url)&&/^\d{4}-\d{2}-\d{2}$/.test(x.published))
+   const recent=items.filter(x=>(x.status==='published'||x.status==='published-exploratory')&&x.title&&x.url&&/^https:\/\//.test(x.url)&&/^\d{4}-\d{2}-\d{2}$/.test(x.published))
       .sort((a,b)=>b.published.localeCompare(a.published)||String(a.title).localeCompare(String(b.title))).slice(0,10);
    if(!recent.length){root.innerHTML='<p class="latest-fallback">Research publications will appear here.</p>';return}
    root.innerHTML=recent.map((x,i)=>`<a class="latest-item" href="${safe(x.url)}"><span class="latest-number">${String(i+1).padStart(2,'0')} / ${safe(x.published)}</span><div><h3 class="latest-heading">${safe(x.title)}</h3><p class="latest-summary">${safe(x.summary||'Independent analytical research')}</p></div><span class="latest-domain">${safe(x.domain)}</span><span aria-hidden="true" class="latest-arrow">↗</span></a>`).join('');
