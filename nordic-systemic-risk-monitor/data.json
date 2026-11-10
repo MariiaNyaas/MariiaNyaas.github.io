@@ -1,0 +1,16 @@
+{
+  "checked_at": null,
+  "last_success": null,
+  "status": "awaiting_first_source_refresh",
+  "countries": {
+    "NOR": {},
+    "SWE": {},
+    "DNK": {},
+    "FIN": {},
+    "ISL": {}
+  },
+  "source": "https://api.worldbank.org/v2/",
+  "successful_series": 0,
+  "failed_series": 0,
+  "methodology": "No invented values. Scheduled source refresh will populate observations."
+}
