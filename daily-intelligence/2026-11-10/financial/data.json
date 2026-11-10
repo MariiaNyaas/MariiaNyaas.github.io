@@ -1,0 +1,30 @@
+{
+  "published": "2026-11-10",
+  "source": "https://www.ssb.no/en/priser-og-prisindekser/produsent-og-engrosprisindekser/statistikk/produsentprisindeksen",
+  "observations": [
+    {
+      "label": "Total PPI Oct 2026 m/m",
+      "value": 6.7
+    },
+    {
+      "label": "Energy PPI Oct 2026 m/m",
+      "value": 10
+    },
+    {
+      "label": "Non-energy PPI Oct 2026 m/m",
+      "value": 0.6
+    },
+    {
+      "label": "Energy PPI weight per 1000",
+      "value": 496
+    }
+  ],
+  "model": {
+    "type": "illustrative sensitivity only",
+    "formula": "w*A+(1-w)*B",
+    "validation": "NOT PERFORMED",
+    "causality": "NOT ESTABLISHED"
+  },
+  "thesis": "Energy-price acceleration may exaggerate the breadth of nominal producer-price growth.",
+  "action": "Decompose nominal exposures by energy intensity before changing growth forecasts."
+}
