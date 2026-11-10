@@ -205,5 +205,65 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-09/06-public-finance/",
     "topic": "Climate resilience · Contingent liabilities"
+  },
+  {
+    "title": "Collateral Inflation Is Not Cash-Flow Protection",
+    "domain": "Credit Risk Intelligence",
+    "published": "2026-11-10",
+    "status": "published-exploratory",
+    "path": "daily-intelligence/2026-11-10/credit-risk/",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-10/credit-risk/",
+    "summary": "PPI dispersion may raise collateral replacement values without improving debt-service capacity.",
+    "source": "https://www.ssb.no/en/priser-og-prisindekser/produsent-og-engrosprisindekser/statistikk/produsentprisindeksen"
+  },
+  {
+    "title": "The Energy Weighting Trap in Norwegian Nominal Growth",
+    "domain": "Financial Intelligence",
+    "published": "2026-11-10",
+    "status": "published-exploratory",
+    "path": "daily-intelligence/2026-11-10/financial/",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-10/financial/",
+    "summary": "Energy-price acceleration may exaggerate the breadth of nominal producer-price growth.",
+    "source": "https://www.ssb.no/en/priser-og-prisindekser/produsent-og-engrosprisindekser/statistikk/produsentprisindeksen"
+  },
+  {
+    "title": "The Wage Tracker Coverage Blind Spot",
+    "domain": "Accounting & Audit Intelligence",
+    "published": "2026-11-10",
+    "status": "published-exploratory",
+    "path": "daily-intelligence/2026-11-10/accounting-audit/",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-10/accounting-audit/",
+    "summary": "Falling wage-agreement coverage makes extrapolation of negotiated wage trackers increasingly conditional.",
+    "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html"
+  },
+  {
+    "title": "The One-Month Revision Governance Test",
+    "domain": "Risk & Governance Intelligence",
+    "published": "2026-11-10",
+    "status": "published-exploratory",
+    "path": "daily-intelligence/2026-11-10/risk-governance/",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-10/risk-governance/",
+    "summary": "Statistical revisions can change escalation signals without new economic events.",
+    "source": "https://ec.europa.eu/eurostat/web/products/euro-indicators/w/4-06112026-ap"
+  },
+  {
+    "title": "Non-Food Demand as an Early Margin Warning",
+    "domain": "Business & Economic Intelligence",
+    "published": "2026-11-10",
+    "status": "published-exploratory",
+    "path": "daily-intelligence/2026-11-10/business-economic/",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-10/business-economic/",
+    "summary": "A disproportionate decline in non-food retail volumes may be an early signal of markdown pressure, but firm margins must be tested separately.",
+    "source": "https://ec.europa.eu/eurostat/web/products/euro-indicators/w/4-06112026-ap"
+  },
+  {
+    "title": "The VAT Revenue Elasticity Question",
+    "domain": "Public Finance Intelligence",
+    "published": "2026-11-10",
+    "status": "published-exploratory",
+    "path": "daily-intelligence/2026-11-10/public-finance/",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-10/public-finance/",
+    "summary": "Retail volume changes alone cannot identify nominal VAT revenue without prices, tax mix and compliance.",
+    "source": "https://ec.europa.eu/eurostat/web/products/euro-indicators/w/4-06112026-ap"
   }
 ]
