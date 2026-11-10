@@ -1,0 +1,29 @@
+{
+  "published": "2026-11-10",
+  "source": "https://ec.europa.eu/eurostat/web/products/euro-indicators/w/4-06112026-ap",
+  "observations": [
+    {
+      "label": "EU retail Sep m/m %",
+      "value": -0.6
+    },
+    {
+      "label": "EU retail Sep y/y %",
+      "value": 0.9
+    },
+    {
+      "label": "Euro area retail Sep y/y %",
+      "value": 0.4
+    },
+    {
+      "label": "Euro area non-food Sep m/m %",
+      "value": -1.2
+    }
+  ],
+  "scenario": {
+    "formula": "w*A+(1-w)*B",
+    "type": "illustrative",
+    "validation": "NOT PERFORMED"
+  },
+  "thesis": "Retail volume changes alone cannot identify nominal VAT revenue without prices, tax mix and compliance.",
+  "action": "Reconcile nominal taxable consumption, exemptions, rate mix and payment lags."
+}
