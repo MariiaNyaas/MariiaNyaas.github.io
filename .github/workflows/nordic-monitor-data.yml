@@ -1,0 +1,45 @@
+name: Nordic Monitor — source observations
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * *'
+  push:
+    paths:
+      - '.github/workflows/nordic-monitor-data.yml'
+permissions:
+  contents: write
+concurrency:
+  group: nordic-monitor-source-update
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retrieve thirty official indicator series
+        run: python nordic-systemic-risk-monitor/refresh.py
+      - name: Validate source coverage and provenance
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('nordic-systemic-risk-monitor/data.json').read_text())
+          n=sum(bool(d['countries'].get(c,{}).get(k)) for c in ('NOR','SWE','DNK','FIN','ISL') for k in ('unemployment','inflation','gdp','credit','npl','capital'))
+          print(f'Observed series: {n}/30; status: {d["status"]}; timestamp: {d["checked_at"]}')
+          if n==0: raise SystemExit('Refusing to publish an empty dataset')
+          PY
+      - name: Commit observations for the site build
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add nordic-systemic-risk-monitor/data.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Nordic Monitor source observations [automated]'
+            git push
+          fi
