@@ -1,0 +1,29 @@
+{
+  "published": "2026-11-10",
+  "source": "https://ec.europa.eu/eurostat/web/products/euro-indicators/w/4-06112026-ap",
+  "observations": [
+    {
+      "label": "Euro area retail Sep m/m %",
+      "value": -0.7
+    },
+    {
+      "label": "Non-food retail Sep m/m %",
+      "value": -1.2
+    },
+    {
+      "label": "Food retail Sep m/m %",
+      "value": -0.3
+    },
+    {
+      "label": "Fuel retail Sep m/m %",
+      "value": 1
+    }
+  ],
+  "scenario": {
+    "formula": "w*A+(1-w)*B",
+    "type": "illustrative",
+    "validation": "NOT PERFORMED"
+  },
+  "thesis": "A disproportionate decline in non-food retail volumes may be an early signal of markdown pressure, but firm margins must be tested separately.",
+  "action": "Monitor inventory days, discounting, category mix and reported gross margins."
+}
