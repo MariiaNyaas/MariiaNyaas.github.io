@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T12:31:55+00:00",
+  "checked_at": "2026-11-11T05:28:15+00:00",
   "countries": {
     "DNK": {
       "capital": {
@@ -202,7 +202,7 @@
     "npl": "FB.AST.NPER.ZS",
     "unemployment": "SL.UEM.TOTL.ZS"
   },
-  "last_success": "2026-11-10T12:31:55+00:00",
+  "last_success": "2026-11-11T05:28:15+00:00",
   "methodology": "Latest non-null observations per country and series. Annual vintages vary. No imputation, no predictive claims.",
   "source": "https://api.worldbank.org/v2/",
   "status": "ok",
