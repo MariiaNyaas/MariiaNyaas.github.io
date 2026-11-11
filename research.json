@@ -274,5 +274,59 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/art-capital/resale-right-paradox/",
     "topic": "Artist’s Resale Right · Art-market regulation · Investment economics"
+  },
+  {
+    "title": "Retail Investment Stress Persistence",
+    "domain": "Credit Risk Intelligence",
+    "summary": "AR(1) retail-investment proxy; 39 out-of-sample forecasts. Not a credit-default model.",
+    "published": "2026-11-11",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/credit-risk/",
+    "topic": "Historical forecasting laboratory · SSB 07266"
+  },
+  {
+    "title": "Investment Momentum and Mean Reversion",
+    "domain": "Financial Intelligence",
+    "summary": "AR(2) machinery investment forecasting; 39 out-of-sample forecasts.",
+    "published": "2026-11-11",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/financial/",
+    "topic": "Historical forecasting laboratory · SSB 07266"
+  },
+  {
+    "title": "Transport Capital Spending: Seasonal Signals",
+    "domain": "Accounting & Audit Intelligence",
+    "summary": "Seasonal autoregression of transport investment; not an audit opinion.",
+    "published": "2026-11-11",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/accounting-audit/",
+    "topic": "Historical forecasting laboratory · SSB 07266"
+  },
+  {
+    "title": "Capital Investment Anomaly Monitoring",
+    "domain": "Risk & Governance Intelligence",
+    "summary": "Regularized four-lag forecasting of building investment; screening diagnostic.",
+    "published": "2026-11-11",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/risk-governance/",
+    "topic": "Historical forecasting laboratory · SSB 07266"
+  },
+  {
+    "title": "Aggregate Retail Capital Cycle",
+    "domain": "Business & Economic Intelligence",
+    "summary": "Seasonal-drift model underperforms the naive benchmark; transparent negative result.",
+    "published": "2026-11-11",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/business-economic/",
+    "topic": "Historical forecasting laboratory · SSB 07266"
+  },
+  {
+    "title": "Investment Growth and Fiscal Signal Limits",
+    "domain": "Public Finance Intelligence",
+    "summary": "Year-on-year investment-growth model underperforms baseline; not a tax-revenue forecast.",
+    "published": "2026-11-11",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/public-finance/",
+    "topic": "Historical forecasting laboratory · SSB 07266"
   }
 ]
