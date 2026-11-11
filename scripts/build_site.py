@@ -23,7 +23,7 @@ def standard(record):
   if not isinstance(record,dict):raise ValueError('Metadata must be JSON object')
   for k in ('title','domain','summary','published','url'):
     if not isinstance(record.get(k),str) or not record[k].strip():raise ValueError(f'Missing/invalid {k}: {record}')
-  if record['domain'] not in DOMAINS:raise ValueError('Unknown domain: '+record['domain'])
+  if record['domain'] not in DOMAINS and record['domain']!='Art & Capital Intelligence':raise ValueError('Unknown domain: '+record['domain'])
   if not re.fullmatch(r'\d{4}-\d{2}-\d{2}',record['published']):raise ValueError('Invalid published date')
   from datetime import date
   date.fromisoformat(record['published'])
