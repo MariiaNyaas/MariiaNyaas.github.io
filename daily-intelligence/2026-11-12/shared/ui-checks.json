@@ -1,0 +1,80 @@
+{
+  "surface": "Node VM DOM-adapter calculation checks; live browser QA recorded separately",
+  "checks": [
+    {
+      "study": "credit",
+      "check": "default calculation and initial charts",
+      "result": "1.347"
+    },
+    {
+      "study": "credit",
+      "check": "all 11 assumption controls respond and reset",
+      "passed": true
+    },
+    {
+      "study": "storage",
+      "check": "default calculation and initial charts",
+      "result": "-3.179"
+    },
+    {
+      "study": "storage",
+      "check": "all 11 assumption controls respond and reset",
+      "passed": true
+    },
+    {
+      "study": "storage",
+      "check": "all evidence selectors render",
+      "passed": true
+    },
+    {
+      "study": "accounting",
+      "check": "default calculation and initial charts",
+      "result": "13.167"
+    },
+    {
+      "study": "accounting",
+      "check": "all 10 assumption controls respond and reset",
+      "passed": true
+    },
+    {
+      "study": "accounting",
+      "check": "all evidence selectors render",
+      "passed": true
+    },
+    {
+      "study": "governance",
+      "check": "default calculation and initial charts",
+      "result": "12.659"
+    },
+    {
+      "study": "governance",
+      "check": "all 11 assumption controls respond and reset",
+      "passed": true
+    },
+    {
+      "study": "business",
+      "check": "default calculation and initial charts",
+      "result": "0.348"
+    },
+    {
+      "study": "business",
+      "check": "all 10 assumption controls respond and reset",
+      "passed": true
+    },
+    {
+      "study": "public",
+      "check": "default calculation and initial charts",
+      "result": "0.062"
+    },
+    {
+      "study": "public",
+      "check": "all 11 assumption controls respond and reset",
+      "passed": true
+    },
+    {
+      "study": "public",
+      "check": "all evidence selectors render",
+      "passed": true
+    }
+  ]
+}

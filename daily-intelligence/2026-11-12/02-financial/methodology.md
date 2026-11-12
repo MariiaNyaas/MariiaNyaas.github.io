@@ -1,0 +1,24 @@
+# The Economics of Stored Electricity
+
+NTNU-hosted Power Market NO 2025 workbook, Strømpris sheet: 8,760 indexed records × five zones. Convert øre/kWh to NOK/MWh by ×10. Partition each zone into 365 sequential 24-index blocks; the workbook lacks timestamp/time-zone columns. Train on blocks 0–180. Evaluate all 276 ordered pairs i<j and choose the pair maximising average 0.9×p_j−p_i in training. Freeze that pair for blocks 181–364. A cycle charges 1 MWh in one hour and delivers 0.9 MWh in a later hour; initial and final state are zero. The hindsight benchmark takes max(0,max_(i<j)(0.9p_j−p_i)); it is an upper bound for this restricted one-cycle model, not all conceivable battery operations. Bootstrap 184 holdout daily outcomes in circular seven-block clusters, 2,000 draws with fixed seed 20261112. Efficiency sensitivity holds the original schedule fixed. NPV repeats the held-out mean as a scenario, applies cost/availability/fade assumptions and discounts annual cash flows.
+
+## Limits
+
+One year, one chronological split, no seasonal replication. The hosting institution is NTNU; underlying prices are compiled from Nord Pool/Statnett/Norges Bank. The final all-zone zero hour is retained and flagged. The workbook MD5 is checked against the repository record. Exact timestamps and daylight-saving treatment are not authenticated. Reserve sheets and FX are not treated as executable revenue. A 1 MWh charge-equivalent unit is not a fully specified battery procurement quote.
+
+## Equations
+
+Gross frozen spread = efficiency × sale_price − purchase_price.
+Annual cash = (mean_spread − fee − degradation) × dispatch_days × availability − fixed_opex.
+NPV = −capex + Σ cash_1(1−fade)^(t−1)/(1+discount)^t + residual/(1+discount)^T.
+The efficiency response is linear because the schedule is frozen.
+
+## Reproduction
+
+Run `python analyze.py /path/to/the/28/source/files` with Python 3, numpy, pandas, scipy and openpyxl. The analysis does not access the network. Results use a latest-available vintage as of 12 November 2026. A historical holdout formed from revised observations is a chronological validation, not a true real-time vintage backtest.
+
+## Falsification
+
+- A cost-inclusive, timestamp-verified out-of-sample policy with durable positive cash flow over multiple years.
+- Market saturation or reduced volatility compressing executable spreads.
+- A credible contracted revenue floor or reserve co-optimisation changing the risk-adjusted result.

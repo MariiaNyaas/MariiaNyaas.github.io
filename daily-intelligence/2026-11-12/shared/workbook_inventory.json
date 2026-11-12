@@ -1,0 +1,37 @@
+[
+  {
+    "sheet": "Statistikk",
+    "rows": 39,
+    "max_columns": 4
+  },
+  {
+    "sheet": "mFRR",
+    "rows": 8761,
+    "max_columns": 21
+  },
+  {
+    "sheet": "FCR-N 1",
+    "rows": 8761,
+    "max_columns": 11
+  },
+  {
+    "sheet": "FCR-N 2",
+    "rows": 8761,
+    "max_columns": 11
+  },
+  {
+    "sheet": "aFRR",
+    "rows": 8761,
+    "max_columns": 21
+  },
+  {
+    "sheet": "Str\u00f8mpris",
+    "rows": 8762,
+    "max_columns": 6
+  },
+  {
+    "sheet": "Valutakurs",
+    "rows": 366,
+    "max_columns": 2
+  }
+]

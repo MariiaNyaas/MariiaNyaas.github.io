@@ -1,0 +1,24 @@
+# The Hidden Concentration of Global Capital
+
+NBIM eq_20260630 and fi_20260630, UTF-16 semicolon exports, NOK market values. Aggregate equities by exact issuer Name, compute w_i=value_i/Σvalue, HHI=Σw_i², effective count=1/HHI and top-ten weight. Country and sector breakdowns use disclosed classifications. For six named firms, substring name matches are made separately in equity and fixed income and remain a watchlist, not legal-group consolidation. The re/ri exports repeat Total country value for every underlying property or project; assert within-country uniqueness and sum only first country totals. No property-level market values are invented. The dashboard stress applies a common equity decline to a chosen fraction of the six-firm basket, a separate decline to other equities, and first-order duration/spread shocks to bonds. Correlation is used only in an illustrative variance diagnostic, not to net deterministic stress losses.
+
+## Limits
+
+Single date; no return panel, factor covariance estimate or global capital census. No cap-weight benchmark data sufficient to measure active risk. Country of listing is not the geographic distribution of revenue. Watchlist name matching can omit financing subsidiaries. Linear duration approximations ignore convexity and optionality.
+
+## Equations
+
+Equity loss = watchlist_weight × exposed_fraction × basket_shock + remaining_equity_weight × other_equity_shock.
+Bond loss ≈ interest_duration × yield_shift_pp + spread_duration × spread_shift_pp.
+Portfolio loss = equity_sleeve × equity_loss + bond_sleeve × bond_loss + residual_sleeve × other_asset_loss.
+All sleeve and shock percentages are user-defined. No probability or VaR interpretation.
+
+## Reproduction
+
+Run `python analyze.py /path/to/the/28/source/files` with Python 3, numpy, pandas, scipy and openpyxl. The analysis does not access the network. Results use a latest-available vintage as of 12 November 2026. A historical holdout formed from revised observations is a chronological validation, not a true real-time vintage backtest.
+
+## Falsification
+
+- A revenue- and holdings-matched return panel showing low common-factor exposure across the selected firms.
+- Contract-level infrastructure evidence that substantially buffers the same AI capex shock.
+- Different current holdings or a complete legal-group consolidation materially changing the watchlist weight.

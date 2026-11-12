@@ -1,0 +1,142 @@
+[
+  {
+    "file": "08551_20261112-143853.csv",
+    "bytes": 1253317,
+    "sha256": "8a04f692dea78ecae649216f754d269f825633e0a3870de35d0c8aed2a0d0622"
+  },
+  {
+    "file": "10721_20261112-145707.csv",
+    "bytes": 41668,
+    "sha256": "ce7cd6e179a2c95a0786591787bf703ab790bf389ad195f99666f27725540282"
+  },
+  {
+    "file": "11561_20261112-144027.csv",
+    "bytes": 76353,
+    "sha256": "c022b6a0cd22e17167477582241732a93b22ef3a9188c42c6346f68d8ac15a8e"
+  },
+  {
+    "file": "Central government fiscal account. Quarterly figures. NOK million..csv",
+    "bytes": 518,
+    "sha256": "eaff3d3be58185933dc86ddb68658fca543852f37938c644d227575d45c417f9"
+  },
+  {
+    "file": "Electricity prices in the end-user market, quarterly. Øre_kWh.csv",
+    "bytes": 1317,
+    "sha256": "b0ec3791c21e3565ff9971391bc5eb3dc42d3f86693bc3efdd5ad1039495a83d"
+  },
+  {
+    "file": "Kraftmarkedet_NO_2025.xlsx",
+    "bytes": 3093739,
+    "sha256": "168d5988f19c5d259fed82cf74dcf3398a11d40e5b4ad99c7a05877eba6fc8b5"
+  },
+  {
+    "file": "Pasted text(20261112-134634).txt",
+    "bytes": 4938072,
+    "sha256": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea"
+  },
+  {
+    "file": "Pasted text(20261112-134719).txt",
+    "bytes": 3250837,
+    "sha256": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0"
+  },
+  {
+    "file": "Pasted text(20261112-134749).txt",
+    "bytes": 4554378,
+    "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd"
+  },
+  {
+    "file": "Pasted text(20261112-134819).txt",
+    "bytes": 2810958,
+    "sha256": "f8e539cea9d363752df2f9bb33078c19ae897ff7f34d49fe4d9a732d032b94f7"
+  },
+  {
+    "file": "Pasted text(20261112-134843).txt",
+    "bytes": 4092966,
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff"
+  },
+  {
+    "file": "Pasted text(20261112-134900).txt",
+    "bytes": 3964639,
+    "sha256": "fe93b258bc0ba8f3076ddebb5d8bb91c46deaa1f7b06d2ff2e3eaed85fee8a63"
+  },
+  {
+    "file": "eq_20260630.csv",
+    "bytes": 1168228,
+    "sha256": "716490d1579681c91fecf641968a36f549691ef1213fcc68832c86dcb0ec33da"
+  },
+  {
+    "file": "fi_20260630.csv",
+    "bytes": 288258,
+    "sha256": "efc70c4367cbee02a19114263f0bd85dd81a746ee76bec1d244d8dde3a9d9916"
+  },
+  {
+    "file": "inventory_of_generation_2025.csv",
+    "bytes": 21908,
+    "sha256": "a0d67e13088376fcf6bf9322b7797cb46614298ecffa88e3e8688b6df3825f1b"
+  },
+  {
+    "file": "inventory_of_transmission_2025.csv",
+    "bytes": 91185,
+    "sha256": "2a67f21568d93f04d99234d71cb787260f5df85ca88fa7e5cfd5afd2e7747965"
+  },
+  {
+    "file": "isoc_eb_ai$defaultview_spreadsheet.xlsx",
+    "bytes": 78402,
+    "sha256": "ee93915186d42fb17f524a5e73bd5702168ad98e857a4ee174026fbec907e711"
+  },
+  {
+    "file": "monthly_domestic_values_2025.csv",
+    "bytes": 433501,
+    "sha256": "fb7128bedcf7373d299c1833be44af93b2eb000f1ae95bee9cb110fb6438002d"
+  },
+  {
+    "file": "monthly_domestic_values_2026.csv",
+    "bytes": 196360,
+    "sha256": "23503e34448c3f52d8629a465fed62f00509c53738f8c8ba20ba8dcbc9ed239a"
+  },
+  {
+    "file": "monthly_hourly_load_values_2025.csv",
+    "bytes": 44358281,
+    "sha256": "cb18e827305823d5a773755ea4b066e4758205674a58ceb01367f22a8216a36a"
+  },
+  {
+    "file": "monthly_hourly_load_values_2026.csv",
+    "bytes": 22084306,
+    "sha256": "e449af0b6c615b473c2e42aa33e7c4248c4bd8672a28a75e35383aee3a190b04"
+  },
+  {
+    "file": "nama_10_lp_ulc$defaultview_spreadsheet.xlsx",
+    "bytes": 81688,
+    "sha256": "593c792dcb65b9d7845870634db71ec411174697b1569c0f22c544a2eeb2ab5a"
+  },
+  {
+    "file": "net_generation_capacity_2025.csv",
+    "bytes": 32032,
+    "sha256": "13cd51df6b45200a9be3a6b989a7992c0bda383d6b916cc91dfe6ef94b3556c6"
+  },
+  {
+    "file": "nrg_pc_205$defaultview_spreadsheet.xlsx",
+    "bytes": 397002,
+    "sha256": "b16685a6b0aa0643bfb62e12e79b83fdcf7955a3dd74b13a69f55e05be18275f"
+  },
+  {
+    "file": "physical_energy_power_flows_2025.csv",
+    "bytes": 1242644,
+    "sha256": "228501d285110a9dbae0fda0b4fa92c301c6a4311dd82b50a166e5ef6bfab8c2"
+  },
+  {
+    "file": "physical_energy_power_flows_2026.csv",
+    "bytes": 607054,
+    "sha256": "9367202b870a83e14a9bc2f8b1ee0fbd0756e6627957716d4dff21acc4376e41"
+  },
+  {
+    "file": "re_20260630.csv",
+    "bytes": 439210,
+    "sha256": "e2c65d1686edea3b9628e860d468c2950742aded3abd9d8f922949f50e8f5610"
+  },
+  {
+    "file": "ri_20260630.csv",
+    "bytes": 3064,
+    "sha256": "7fd5c2eccfbc076badb0aa81f478c4e3aab191ca5deec50d1e58e4c7374707c1"
+  }
+]

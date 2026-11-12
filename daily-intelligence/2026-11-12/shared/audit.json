@@ -1,0 +1,742 @@
+{
+  "type": "Separate automated technical and methodological audit; no external human review claimed",
+  "checks": [
+    {
+      "check": "Input completeness",
+      "passed": true,
+      "evidence": "28 supplied files; all hashes retained"
+    },
+    {
+      "check": "SHA-256 08551_20261112-143853.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 10721_20261112-145707.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 11561_20261112-144027.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Central government fiscal account. Quarterly figures. NOK million..csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Electricity prices in the end-user market, quarterly. Øre_kWh.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Kraftmarkedet_NO_2025.xlsx",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Pasted text(20261112-134634).txt",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Pasted text(20261112-134719).txt",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Pasted text(20261112-134749).txt",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Pasted text(20261112-134819).txt",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Pasted text(20261112-134843).txt",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 Pasted text(20261112-134900).txt",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 eq_20260630.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 fi_20260630.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 inventory_of_generation_2025.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 inventory_of_transmission_2025.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 isoc_eb_ai$defaultview_spreadsheet.xlsx",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 monthly_domestic_values_2025.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 monthly_domestic_values_2026.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 monthly_hourly_load_values_2025.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 monthly_hourly_load_values_2026.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 nama_10_lp_ulc$defaultview_spreadsheet.xlsx",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 net_generation_capacity_2025.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 nrg_pc_205$defaultview_spreadsheet.xlsx",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 physical_energy_power_flows_2025.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 physical_energy_power_flows_2026.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 re_20260630.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "SHA-256 ri_20260630.csv",
+      "passed": true,
+      "evidence": "Raw bytes match analysis manifest"
+    },
+    {
+      "check": "NTNU repository checksum",
+      "passed": true,
+      "evidence": "Matches published Zenodo MD5"
+    },
+    {
+      "check": "Frozen storage NO1",
+      "passed": true,
+      "evidence": "Independent source-unit recomputation, no future clipping"
+    },
+    {
+      "check": "Storage upper bound NO1",
+      "passed": true,
+      "evidence": "Every holdout block obeys foresight dominance"
+    },
+    {
+      "check": "Frozen storage NO2",
+      "passed": true,
+      "evidence": "Independent source-unit recomputation, no future clipping"
+    },
+    {
+      "check": "Storage upper bound NO2",
+      "passed": true,
+      "evidence": "Every holdout block obeys foresight dominance"
+    },
+    {
+      "check": "Frozen storage NO3",
+      "passed": true,
+      "evidence": "Independent source-unit recomputation, no future clipping"
+    },
+    {
+      "check": "Storage upper bound NO3",
+      "passed": true,
+      "evidence": "Every holdout block obeys foresight dominance"
+    },
+    {
+      "check": "Frozen storage NO4",
+      "passed": true,
+      "evidence": "Independent source-unit recomputation, no future clipping"
+    },
+    {
+      "check": "Storage upper bound NO4",
+      "passed": true,
+      "evidence": "Every holdout block obeys foresight dominance"
+    },
+    {
+      "check": "Frozen storage NO5",
+      "passed": true,
+      "evidence": "Independent source-unit recomputation, no future clipping"
+    },
+    {
+      "check": "Storage upper bound NO5",
+      "passed": true,
+      "evidence": "Every holdout block obeys foresight dominance"
+    },
+    {
+      "check": "Original last hour flag",
+      "passed": true,
+      "evidence": "All-zone terminal zero retained; NO1 exclusion sensitivity provided"
+    },
+    {
+      "check": "EU27 OLS slope",
+      "passed": true,
+      "evidence": "scipy.stats.linregress independent implementation"
+    },
+    {
+      "check": "HC3 confidence interval",
+      "passed": true,
+      "evidence": "Recomputed leverage-adjusted sandwich in separate audit process"
+    },
+    {
+      "check": "Credit expanding-origin alignment",
+      "passed": true,
+      "evidence": "Training stops before every target; median count forecast"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. revenue",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. cfo",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. capex",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. net_income",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. da",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. assets",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC cutoff AMAZON.COM, INC.",
+      "passed": true,
+      "evidence": "No later filings used"
+    },
+    {
+      "check": "SEC Alphabet Inc. revenue",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Alphabet Inc. cfo",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Alphabet Inc. capex",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Alphabet Inc. net_income",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Alphabet Inc. da",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Alphabet Inc. assets",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC cutoff Alphabet Inc.",
+      "passed": true,
+      "evidence": "No later filings used"
+    },
+    {
+      "check": "SEC MICROSOFT CORP revenue",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC MICROSOFT CORP cfo",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC MICROSOFT CORP capex",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC MICROSOFT CORP net_income",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC MICROSOFT CORP da",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC MICROSOFT CORP assets",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC cutoff MICROSOFT CORP",
+      "passed": true,
+      "evidence": "No later filings used"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. revenue",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. cfo",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. capex",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. net_income",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. da",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. assets",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC cutoff Meta Platforms, Inc.",
+      "passed": true,
+      "evidence": "No later filings used"
+    },
+    {
+      "check": "SEC NVIDIA CORP revenue",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC NVIDIA CORP cfo",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC NVIDIA CORP capex",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC NVIDIA CORP net_income",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC NVIDIA CORP da",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC NVIDIA CORP assets",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC cutoff NVIDIA CORP",
+      "passed": true,
+      "evidence": "No later filings used"
+    },
+    {
+      "check": "SEC ORACLE CORP revenue",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC ORACLE CORP cfo",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC ORACLE CORP capex",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC ORACLE CORP net_income",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC ORACLE CORP da",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC ORACLE CORP assets",
+      "passed": true,
+      "evidence": "Exact concept / period / filing / accession / value match"
+    },
+    {
+      "check": "SEC cutoff ORACLE CORP",
+      "passed": true,
+      "evidence": "No later filings used"
+    },
+    {
+      "check": "re repeated total Belgium",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Czech Republic",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total France",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Germany",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Hungary",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total International fund",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Italy",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Japan",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Netherlands",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Poland",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Spain",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Sweden",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total Switzerland",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total United Kingdom",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re repeated total United States",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "re corrected total",
+      "passed": true,
+      "evidence": "Sum unique country totals, not property rows"
+    },
+    {
+      "check": "ri repeated total Denmark",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "ri repeated total Germany",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "ri repeated total International fund",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "ri repeated total Netherlands",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "ri repeated total Spain",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "ri repeated total United Kingdom",
+      "passed": true,
+      "evidence": "Within-country total is constant"
+    },
+    {
+      "check": "ri corrected total",
+      "passed": true,
+      "evidence": "Sum unique country totals, not property rows"
+    },
+    {
+      "check": "Fiscal identity 1995",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 1996",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 1997",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 1998",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 1999",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2000",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2001",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2002",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2003",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2004",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2005",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2006",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2007",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2008",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2009",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2010",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2011",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2012",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2013",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2014",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2015",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2016",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2017",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2018",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2019",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2020",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2021",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2022",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2023",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Fiscal identity 2024",
+      "passed": true,
+      "evidence": "Revenue − expenditure reconciles to net lending within 1 NOK million source-rounding tolerance"
+    },
+    {
+      "check": "Public scenario unit conversion",
+      "passed": true,
+      "evidence": "100 MW ×90% =788.4 GWh; at700 NOK/MWh revenue is0.55188 bn NOK"
+    },
+    {
+      "check": "Scenario default public capture",
+      "passed": true,
+      "evidence": "Independent hand-calculated fiscal waterfall"
+    },
+    {
+      "check": "No hourly load duplicate keys",
+      "passed": true,
+      "evidence": "ENTSO-E country/timestamp keys unique; gaps not filled"
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Electricity–credit causal model not identified.",
+    "Storage gross-spread holdout is not a net investable return.",
+    "Accounting replacement horizon is assumed, not estimated.",
+    "Single-date NBIM holdings cannot validate return-factor correlations.",
+    "EU27 association does not identify an AI treatment effect.",
+    "AI-linked fiscal capture cannot be inferred from aggregate fiscal history.",
+    "Browser and deployment checks are recorded separately after publication."
+  ],
+  "credit_robustness": [
+    {
+      "months": 24,
+      "model_mae": 11.42487959172441,
+      "naive_mae": 13.666666666666666
+    },
+    {
+      "months": 36,
+      "model_mae": 11.804734784237754,
+      "naive_mae": 15.472222222222221
+    },
+    {
+      "months": 48,
+      "model_mae": 13.704481809090773,
+      "naive_mae": 16.104166666666668
+    }
+  ]
+}

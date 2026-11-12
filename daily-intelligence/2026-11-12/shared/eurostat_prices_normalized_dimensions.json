@@ -1,0 +1,569 @@
+[
+  {
+    "sheet": "Sheet 1",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 2",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 3",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 4",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 5",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 6",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 7",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 8",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 9",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption less than 20 MWh - band IA",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 10",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 11",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 12",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 13",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 14",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 15",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 16",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 17",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 18",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 MWh to 499 MWh - band IB",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 19",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 20",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 21",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 22",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 23",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 24",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 25",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 26",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 27",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 500 MWh to 1 999 MWh - band IC",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 28",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 29",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 30",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 31",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 32",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 33",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 34",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 35",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 36",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 2 000 MWh to 19 999 MWh - band ID",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 37",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 38",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 39",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 40",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 41",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 42",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 43",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 44",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 45",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 20 000 MWh to 69 999 MWh - band IE",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 46",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 47",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 48",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 49",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 50",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 51",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 52",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 53",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 54",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption from 70 000 MWh to 149 999 MWh - band IF",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 55",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 56",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 57",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 58",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 59",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 60",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "Excluding VAT and other recoverable taxes and levies",
+    "Currency": "National currency"
+  },
+  {
+    "sheet": "Sheet 61",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Euro"
+  },
+  {
+    "sheet": "Sheet 62",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "Purchasing Power Standard"
+  },
+  {
+    "sheet": "Sheet 63",
+    "Time frequency": "Half-yearly, semesterly",
+    "Standard international energy product classification (SIEC)": "Electricity",
+    "Energy consumption": "Consumption 150 000 MWh or over - band IG",
+    "Unit of measure": "Kilowatt-hour",
+    "Taxes": "All taxes and levies included",
+    "Currency": "National currency"
+  }
+]

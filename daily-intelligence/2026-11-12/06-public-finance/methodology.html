@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Methodology | Who Captures the AI Energy Dividend?</title><link rel="stylesheet" href="../shared/app.css"></head><body><main><a href="./">← Return to dashboard</a><h1>Methodology</h1><pre># Who Captures the AI Energy Dividend?
+
+SSB 10721 consolidated General government, 1995–2024. Convert NOK million to NOK billion by ÷1,000. Do not add central and local government totals because intergovernmental flows require consolidation. Reconcile revenue minus total expenditure to net lending within a one-million-NOK rounding tolerance; seven historical years differ by one source unit. SSB 11561, Electricity product, GWh, 1990–2025; retain production, imports, exports, final consumption and distribution losses as distinct balance items. PJ columns are not mixed with GWh; energy-conversion and own-use components are not silently omitted from a claimed full balance identity. ENTSO-E load, domestic production, flows, installed generation and transmission inventory provide a 2025/first-half-2026 system cross-check; missing transmission measures remain missing. The supplied quarterly fiscal summary is excluded because its label and magnitudes are inconsistent; no undocumented ×1,000 correction is made. No historical AI fiscal multiplier is estimated: incremental AI-linked receipts and a credible counterfactual are absent. The forward model is an incidence waterfall, not an econometric projection.
+
+## Limits
+
+No AI-specific tax receipts, public utility profit bridge, marginal generation costs, spatial grid constraints or verified counterfactual power demand. Effective tax and dividend payout are scenario assumptions. Fiscal observations end in 2024; more recent power observations do not extend fiscal history. The aggregate non-petroleum resource-tax line is not treated as total electricity taxation.
+
+## Equations
+
+GWh = MW × 8,760 × load_factor / 1,000.
+Revenue_NOK_bn = GWh × price_NOK_MWh / 1,000,000.
+Profit = revenue × margin; tax = profit × effective_tax.
+Public dividend = (profit−tax) × public_ownership_capture.
+Net public capture = (tax + dividend − public_subsidy − public_grid_cost) × (1−leakage).
+The public ownership control incorporates the assumed dividend payout ratio.
+
+## Reproduction
+
+Run `python analyze.py /path/to/the/28/source/files` with Python 3, numpy, pandas, scipy and openpyxl. The analysis does not access the network. Results use a latest-available vintage as of 12 November 2026. A historical holdout formed from revised observations is a chronological validation, not a true real-time vintage backtest.
+
+## Falsification
+
+- Audited incremental project-level tax, dividend and subsidy accounts establishing positive net public capture.
+- Evidence that grid expansion or foregone alternative uses absorb most of the incremental surplus.
+- Firm contracted load, power and ownership data replacing the stylised incidence assumptions.</pre><a href="../shared/source_manifest.json">Source manifest</a></main></body></html>

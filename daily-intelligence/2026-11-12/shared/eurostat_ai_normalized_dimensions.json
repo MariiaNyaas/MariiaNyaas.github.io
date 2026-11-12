@@ -1,0 +1,162 @@
+[
+  {
+    "sheet": "Sheet 1",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 49 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using at least one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 2",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 49 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises' AI technologies were developed by own employees",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 3",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 49 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises that ever considered to use one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 4",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 49 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using AI technologies for at least one of the purposes: AI_PMS, AI_PPP, AI_PBAM, AI_PLOG, AI_PITS, AI_PFIN, AI_PRDI",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 5",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using at least one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 6",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises' AI technologies were developed by own employees",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 7",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises that ever considered to use one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 8",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 10 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using AI technologies for at least one of the purposes: AI_PMS, AI_PPP, AI_PBAM, AI_PLOG, AI_PITS, AI_PFIN, AI_PRDI",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 9",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "10 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using at least one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 10",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "10 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises' AI technologies were developed by own employees",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 11",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "10 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises that ever considered to use one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 12",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "10 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using AI technologies for at least one of the purposes: AI_PMS, AI_PPP, AI_PBAM, AI_PLOG, AI_PITS, AI_PFIN, AI_PRDI",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 13",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 50 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using at least one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 14",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 50 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises' AI technologies were developed by own employees",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 15",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 50 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises that ever considered to use one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 16",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "From 50 to 249 persons employed",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using AI technologies for at least one of the purposes: AI_PMS, AI_PPP, AI_PBAM, AI_PLOG, AI_PITS, AI_PFIN, AI_PRDI",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 17",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "250 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using at least one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 18",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "250 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises' AI technologies were developed by own employees",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 19",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "250 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises that ever considered to use one of the AI technologies: AI_TTM, AI_TSR, AI_TNLG, AI_TIR, AI_TML, AI_TPA, AI_TAR, E_AI_TPVSG",
+    "Unit of measure": "Percentage of enterprises"
+  },
+  {
+    "sheet": "Sheet 20",
+    "Time frequency": "Annual",
+    "Size classes in number of persons employed": "250 persons employed or more",
+    "Statistical classification of economic activities in the European Community (NACE Rev. 2)": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",
+    "Information society indicator": "Enterprises using AI technologies for at least one of the purposes: AI_PMS, AI_PPP, AI_PBAM, AI_PLOG, AI_PITS, AI_PFIN, AI_PRDI",
+    "Unit of measure": "Percentage of enterprises"
+  }
+]
