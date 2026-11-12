@@ -8,6 +8,11 @@
     },
     {
       "study": "credit",
+      "check": "JSON Blob generation and download filename",
+      "passed": true
+    },
+    {
+      "study": "credit",
       "check": "all 11 assumption controls respond and reset",
       "passed": true
     },
@@ -15,6 +20,11 @@
       "study": "storage",
       "check": "default calculation and initial charts",
       "result": "-3.179"
+    },
+    {
+      "study": "storage",
+      "check": "JSON Blob generation and download filename",
+      "passed": true
     },
     {
       "study": "storage",
@@ -33,6 +43,11 @@
     },
     {
       "study": "accounting",
+      "check": "JSON Blob generation and download filename",
+      "passed": true
+    },
+    {
+      "study": "accounting",
       "check": "all 10 assumption controls respond and reset",
       "passed": true
     },
@@ -48,6 +63,11 @@
     },
     {
       "study": "governance",
+      "check": "JSON Blob generation and download filename",
+      "passed": true
+    },
+    {
+      "study": "governance",
       "check": "all 11 assumption controls respond and reset",
       "passed": true
     },
@@ -58,6 +78,11 @@
     },
     {
       "study": "business",
+      "check": "JSON Blob generation and download filename",
+      "passed": true
+    },
+    {
+      "study": "business",
       "check": "all 10 assumption controls respond and reset",
       "passed": true
     },
@@ -65,6 +90,11 @@
       "study": "public",
       "check": "default calculation and initial charts",
       "result": "0.062"
+    },
+    {
+      "study": "public",
+      "check": "JSON Blob generation and download filename",
+      "passed": true
     },
     {
       "study": "public",
