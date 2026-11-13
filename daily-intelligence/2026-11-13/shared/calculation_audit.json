@@ -1,0 +1,868 @@
+{
+  "calculation_status": "PASS",
+  "independence": "Second code path by the same AI session. Source bytes re-read; csv/Decimal, direct cells and QR solver used. Not independent external human peer review. Source interpretation and study design remain shared.",
+  "checks": [
+    {
+      "check": "SHA256 sec_companyfacts_0000789019_2026-11-13.json",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 sec_companyfacts_0001018724_2026-11-13.json",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 sec_companyfacts_0001652044_2026-11-13.json",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 sec_companyfacts_0001326801_2026-11-13.json",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 sec_companyfacts_0001341439_2026-11-13.json",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 sec_companyfacts_0001045810_2026-11-13.json",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 08551_20261112-143853.csv",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 10721_20261113-110703.csv",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 Kraftmarkedet_NO_2025.xlsx",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 eq_20260630.csv",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "SHA256 isoc_eb_ai$defaultview_spreadsheet (1).xlsx",
+      "status": "PASS",
+      "scope": "Original uncompressed bytes"
+    },
+    {
+      "check": "Credit origin 2023-09",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2023-10",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2023-11",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2023-12",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-01",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-02",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-03",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-04",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-05",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-06",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-07",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-08",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-09",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-10",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-11",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2024-12",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-01",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-02",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-03",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-04",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-05",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-06",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-07",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-08",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-09",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-10",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-11",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2025-12",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-01",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-02",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-03",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-04",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-05",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-06",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-07",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit origin 2026-08",
+      "status": "PASS",
+      "scope": "QR solver; last training target ends before forecast origin; actual source labels"
+    },
+    {
+      "check": "Credit uncertainty crosses zero",
+      "status": "PASS",
+      "scope": "No validated-superiority claim"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2016-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2017-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2018-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2019-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2020-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2021-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2022-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2023-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2024-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2025-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC MICROSOFT CORP 2026-06-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2015-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2016-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2017-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2018-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2019-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2020-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2021-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2022-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2023-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2024-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC AMAZON.COM, INC. 2025-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC NVIDIA CORP 2022-01-30",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC NVIDIA CORP 2023-01-29",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC NVIDIA CORP 2024-01-28",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC NVIDIA CORP 2025-01-26",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC NVIDIA CORP 2026-01-25",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2015-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2016-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2017-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2018-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2019-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2020-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2021-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2022-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2023-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2024-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Meta Platforms, Inc. 2025-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2016-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2017-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2018-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2019-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2020-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2021-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2022-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2023-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2024-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2025-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC ORACLE CORP 2026-05-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2015-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2016-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2017-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2018-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2019-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2020-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2021-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2022-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2023-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2024-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "SEC Alphabet Inc. 2025-12-31",
+      "status": "PASS",
+      "scope": "Re-read source facts; matched start/end; Decimal arithmetic; cash-capex perimeter only"
+    },
+    {
+      "check": "NO1 events and score",
+      "status": "PASS",
+      "scope": "Independent Boolean event runs and Python sums; no calendar authentication"
+    },
+    {
+      "check": "NO2 events and score",
+      "status": "PASS",
+      "scope": "Independent Boolean event runs and Python sums; no calendar authentication"
+    },
+    {
+      "check": "NO3 events and score",
+      "status": "PASS",
+      "scope": "Independent Boolean event runs and Python sums; no calendar authentication"
+    },
+    {
+      "check": "NO4 events and score",
+      "status": "PASS",
+      "scope": "Independent Boolean event runs and Python sums; no calendar authentication"
+    },
+    {
+      "check": "NO5 events and score",
+      "status": "PASS",
+      "scope": "Independent Boolean event runs and Python sums; no calendar authentication"
+    },
+    {
+      "check": "Voting threshold 0.05",
+      "status": "PASS",
+      "scope": "Exact source-decimal comparison, not floating subtraction"
+    },
+    {
+      "check": "Voting threshold 0.1",
+      "status": "PASS",
+      "scope": "Exact source-decimal comparison, not floating subtraction"
+    },
+    {
+      "check": "Voting threshold 0.25",
+      "status": "PASS",
+      "scope": "Exact source-decimal comparison, not floating subtraction"
+    },
+    {
+      "check": "Voting threshold 0.5",
+      "status": "PASS",
+      "scope": "Exact source-decimal comparison, not floating subtraction"
+    },
+    {
+      "check": "Voting threshold 1",
+      "status": "PASS",
+      "scope": "Exact source-decimal comparison, not floating subtraction"
+    },
+    {
+      "check": "Voting share denominator",
+      "status": "PASS",
+      "scope": "All exported listed equities, not total fund"
+    },
+    {
+      "check": "AI Denmark 2021",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Denmark 2024",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Finland 2021",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Finland 2023",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Finland 2024",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Finland 2025",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Norway 2021",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Norway 2023",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Norway 2024",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Norway 2025",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Sweden 2021",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Sweden 2023",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Sweden 2024",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "AI Sweden 2025",
+      "status": "PASS",
+      "scope": "Independent direct source cells; no sampling standard errors supplied"
+    },
+    {
+      "check": "Fiscal 1995",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 1996",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 1997",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 1998",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 1999",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2000",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2001",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2002",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2003",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2004",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2005",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2006",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2007",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2008",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2009",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2010",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2011",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2012",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2013",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2014",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2015",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2016",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2017",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2018",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2019",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2020",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2021",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2022",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2023",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal 2024",
+      "status": "PASS",
+      "scope": "Consolidated source row; NOK million; one-unit rounding tolerance"
+    },
+    {
+      "check": "Fiscal asymmetric years",
+      "status": "PASS",
+      "scope": "Nominal comparisons only; not causal stimulus estimate"
+    },
+    {
+      "check": "Reproduction equality",
+      "status": "PASS",
+      "scope": "All six study payloads re-created from source archive"
+    }
+  ],
+  "warnings": [
+    {
+      "status": "WARNING",
+      "scope": "Credit",
+      "text": "Candidate gain is unresolved; intervals cross zero. Latest-vintage, exploratory evaluation."
+    },
+    {
+      "status": "NOT VERIFIED",
+      "scope": "Financial",
+      "text": "Calendar/time-zone/DST mapping of indexed workbook. No calendar trading or operational claim is published."
+    },
+    {
+      "status": "WARNING",
+      "scope": "Accounting",
+      "text": "Cash capex is not total investment; latest fiscal year ends differ."
+    },
+    {
+      "status": "NOT VERIFIED",
+      "scope": "Governance",
+      "text": "Incorporation fields absent; legal-domicile claim excluded. Issuer-specific explanations require further documents."
+    },
+    {
+      "status": "NOT VERIFIED",
+      "scope": "Business",
+      "text": "Sampling standard errors and matched firm histories unavailable; no inferential confidence intervals or causal claims."
+    },
+    {
+      "status": "NOT VERIFIED",
+      "scope": "Public finance",
+      "text": "Structural non-oil and inflation-adjusted fiscal response not estimated. Sample ends in 2024."
+    }
+  ],
+  "recent_work_scope": "12 November code/methodology and source-manifest orientation only. No claim of complete re-audit or real-time replication of that release.",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  }
+}

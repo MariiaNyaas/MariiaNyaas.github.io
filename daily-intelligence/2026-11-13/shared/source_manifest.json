@@ -1,0 +1,90 @@
+[
+  {
+    "file": "sec_companyfacts_0000789019_2026-11-13.json",
+    "download": "sec_companyfacts_0000789019_2026-11-13.json.gz",
+    "bytes": 4938072,
+    "sha256": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "sec_companyfacts_0001018724_2026-11-13.json",
+    "download": "sec_companyfacts_0001018724_2026-11-13.json.gz",
+    "bytes": 4554378,
+    "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "sec_companyfacts_0001652044_2026-11-13.json",
+    "download": "sec_companyfacts_0001652044_2026-11-13.json.gz",
+    "bytes": 3250837,
+    "sha256": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "sec_companyfacts_0001326801_2026-11-13.json",
+    "download": "sec_companyfacts_0001326801_2026-11-13.json.gz",
+    "bytes": 2810958,
+    "sha256": "f8e539cea9d363752df2f9bb33078c19ae897ff7f34d49fe4d9a732d032b94f7",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "sec_companyfacts_0001341439_2026-11-13.json",
+    "download": "sec_companyfacts_0001341439_2026-11-13.json.gz",
+    "bytes": 3964639,
+    "sha256": "fe93b258bc0ba8f3076ddebb5d8bb91c46deaa1f7b06d2ff2e3eaed85fee8a63",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "sec_companyfacts_0001045810_2026-11-13.json",
+    "download": "sec_companyfacts_0001045810_2026-11-13.json.gz",
+    "bytes": 4092966,
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "08551_20261112-143853.csv",
+    "download": "08551_20261112-143853.csv.gz",
+    "bytes": 1253317,
+    "sha256": "8a04f692dea78ecae649216f754d269f825633e0a3870de35d0c8aed2a0d0622",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "10721_20261113-110703.csv",
+    "download": "10721_20261113-110703.csv.gz",
+    "bytes": 41668,
+    "sha256": "ce7cd6e179a2c95a0786591787bf703ab790bf389ad195f99666f27725540282",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "Kraftmarkedet_NO_2025.xlsx",
+    "download": "Kraftmarkedet_NO_2025.xlsx.gz",
+    "bytes": 3093739,
+    "sha256": "168d5988f19c5d259fed82cf74dcf3398a11d40e5b4ad99c7a05877eba6fc8b5",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "eq_20260630.csv",
+    "download": "eq_20260630.csv.gz",
+    "bytes": 1168228,
+    "sha256": "716490d1579681c91fecf641968a36f549691ef1213fcc68832c86dcb0ec33da",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  },
+  {
+    "file": "isoc_eb_ai$defaultview_spreadsheet (1).xlsx",
+    "download": "isoc_eb_ai$defaultview_spreadsheet (1).xlsx.gz",
+    "bytes": 78359,
+    "sha256": "783007ce897ee2860999a459f5947f19a72f27c25b68028c3f49c6d23bb9b349",
+    "provenance": "User-supplied official-source export; receipt 13 November 2026. Filename and embedded metadata retained.",
+    "original_extraction": "See original file; SEC download time not embedded, receipt date is not an asserted retrieval timestamp."
+  }
+]

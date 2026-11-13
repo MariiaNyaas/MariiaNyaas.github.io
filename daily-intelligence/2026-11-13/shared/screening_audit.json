@@ -1,0 +1,138 @@
+{
+  "status": "SOURCE/ARITHMETIC CHECKS ONLY \u2014 SEE FULL AUDIT",
+  "checks": [
+    {
+      "check": "Source checksums",
+      "status": "PASS",
+      "scope": "Byte integrity only; does not authenticate upstream source"
+    },
+    {
+      "check": "AMAZON.COM, INC. cfo source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "AMAZON.COM, INC. capex source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "AMAZON.COM, INC. cash arithmetic",
+      "status": "PASS",
+      "scope": "Independent decimal subtraction"
+    },
+    {
+      "check": "Alphabet Inc. cfo source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "Alphabet Inc. capex source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "Alphabet Inc. cash arithmetic",
+      "status": "PASS",
+      "scope": "Independent decimal subtraction"
+    },
+    {
+      "check": "MICROSOFT CORP cfo source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "MICROSOFT CORP capex source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "MICROSOFT CORP cash arithmetic",
+      "status": "PASS",
+      "scope": "Independent decimal subtraction"
+    },
+    {
+      "check": "Meta Platforms, Inc. cfo source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "Meta Platforms, Inc. capex source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "Meta Platforms, Inc. cash arithmetic",
+      "status": "PASS",
+      "scope": "Independent decimal subtraction"
+    },
+    {
+      "check": "NVIDIA CORP cfo source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "NVIDIA CORP capex source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "NVIDIA CORP cash arithmetic",
+      "status": "PASS",
+      "scope": "Independent decimal subtraction"
+    },
+    {
+      "check": "ORACLE CORP cfo source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "ORACLE CORP capex source record",
+      "status": "PASS",
+      "scope": "Verifies selected record, not semantic capex completeness"
+    },
+    {
+      "check": "ORACLE CORP cash arithmetic",
+      "status": "PASS",
+      "scope": "Independent decimal subtraction"
+    },
+    {
+      "check": "Fiscal balance identities",
+      "status": "PASS",
+      "scope": "30 years; one NOK million rounding tolerance"
+    },
+    {
+      "check": "NO1 negative observations",
+      "status": "PASS",
+      "scope": "No timestamp or DST authentication"
+    },
+    {
+      "check": "NO2 negative observations",
+      "status": "PASS",
+      "scope": "No timestamp or DST authentication"
+    },
+    {
+      "check": "NO3 negative observations",
+      "status": "PASS",
+      "scope": "No timestamp or DST authentication"
+    },
+    {
+      "check": "NO4 negative observations",
+      "status": "PASS",
+      "scope": "No timestamp or DST authentication"
+    },
+    {
+      "check": "NO5 negative observations",
+      "status": "PASS",
+      "scope": "No timestamp or DST authentication"
+    }
+  ],
+  "outside_this_script_scope": [
+    "Full economic interpretation and tag completeness",
+    "Robustness, dependence-adjusted uncertainty and sensitivity",
+    "Dashboard checks are outside this preliminary script",
+    "Desktop/mobile interactions and live deployment",
+    "Final editorial review is outside this preliminary script"
+  ],
+  "independence": "Second code path by same AI session; not external human review. Some source selections shared."
+}

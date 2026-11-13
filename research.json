@@ -328,5 +328,59 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-11/public-finance/",
     "topic": "Historical forecasting laboratory · SSB 07266"
+  },
+  {
+    "title": "The Bankruptcy Acceleration Test",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Can a three-month distress signal beat the seasonal calendar? Transparent empirical limits and an interactive scenario playground.",
+    "published": "2026-11-13",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/01-credit-risk/",
+    "topic": "The Bankruptcy Acceleration Test"
+  },
+  {
+    "title": "When Negative Power Prices Persist",
+    "domain": "Financial Intelligence",
+    "summary": "A state-persistence test, without a battery-profitability claim Transparent empirical limits and an interactive scenario playground.",
+    "published": "2026-11-13",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/02-financial/",
+    "topic": "When Negative Power Prices Persist"
+  },
+  {
+    "title": "The Cash Funding Frontier",
+    "domain": "Accounting & Audit Intelligence",
+    "summary": "Reported operating cash flow versus cash capital expenditure Transparent empirical limits and an interactive scenario playground.",
+    "published": "2026-11-13",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/03-accounting/",
+    "topic": "The Cash Funding Frontier"
+  },
+  {
+    "title": "Ownership Without Equal Voice",
+    "domain": "Risk & Governance Intelligence",
+    "summary": "A stewardship triage map of voting-rights wedges Transparent empirical limits and an interactive scenario playground.",
+    "published": "2026-11-13",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/04-governance/",
+    "topic": "Ownership Without Equal Voice"
+  },
+  {
+    "title": "The In-House AI Capability Gap",
+    "domain": "Business & Economic Intelligence",
+    "summary": "Who develops AI inside the enterprise—and why adoption alone cannot answer that question? Transparent empirical limits and an interactive scenario playground.",
+    "published": "2026-11-13",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/05-business/",
+    "topic": "The In-House AI Capability Gap"
+  },
+  {
+    "title": "The Revenue–Spending Asymmetry",
+    "domain": "Public Finance Intelligence",
+    "summary": "What historical revenue contractions do—and do not—say about fiscal adjustment Transparent empirical limits and an interactive scenario playground.",
+    "published": "2026-11-13",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/06-public-finance/",
+    "topic": "The Revenue–Spending Asymmetry"
   }
 ]

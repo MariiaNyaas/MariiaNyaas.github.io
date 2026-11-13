@@ -1,0 +1,410 @@
+[
+  {
+    "kind": "credit",
+    "slug": "01-credit-risk",
+    "domain": "Credit Risk Intelligence",
+    "title": "The Bankruptcy Acceleration Test",
+    "subtitle": "Can a three-month distress signal beat the seasonal calendar?",
+    "brief": [
+      "The Oslo series has 226 monthly bankruptcy-count observations; the latest observation is 2026-10.",
+      "Across 36 overlapping three-month forecast origins, candidate MAE is 25.60 cases versus 28.50 for the same three months a year earlier.",
+      "The 6-origin block-bootstrap 95% interval for the mean MAE improvement is −5.81 to +11.87 cases. A positive point estimate does not establish predictive superiority.",
+      "The latest trailing-12-month total is 691 cases, a -19.5% change from the preceding 12 months."
+    ],
+    "mechanism": "A quarterly distress signal aggregates noisy monthly cases, but overlapping targets create dependence. Better aggregation is useful only if a forecasting rule survives a genuine forward test. The 11 November financial stability review identifies pressure among property developers; this aggregate Oslo exercise cannot identify that sectoral mechanism.",
+    "method": "SSB 08551, first exported all-industry row, exact total-bankruptcy columns for Oslo code 03. Freeze six regressors: constant, preceding count, preceding 12-month mean, preceding three-month sum and two calendar harmonics. Predict the next three-month sum by OLS. At each origin purge the two most recent training targets because their three-month windows are not yet complete. Use the last 36 origins; compare with the same three months one year earlier. Forecasts are floored at zero. Moving circular bootstrap of paired absolute-error differences: 2,000 draws, seed 20261113, blocks 3/6/12. Latest-vintage holdout, not real-time archival backtesting. Specification is exploratory; no hypothesis-testing claim.",
+    "limits": "Counts are not PD; Oslo only; no firm or credit denominator. Candidate fitted after seeing dataset; exploratory, not preregistered. Counts are cases, not rates or credit losses. Bootstrap intervals do not correct specification selection. The laboratory is a transparent scaling of the latest observed 12-month average, not the estimated forecasting model.",
+    "change": [
+      "A preregistered rolling evaluation with new observations and a persistent loss advantage.",
+      "Borrower-level exposure denominators and sector-consistent records supporting actual credit-risk estimation.",
+      "An advantage that survives structural-break and reporting-change treatment."
+    ],
+    "decision": [
+      [
+        "Monitoring team",
+        "Keep the seasonal baseline visible",
+        "Forward error log and stable geography",
+        "Do not translate count forecasts into PD."
+      ],
+      [
+        "Credit committee",
+        "Investigate corroborating sector signals",
+        "Exposure-weighted borrower data",
+        "An aggregate count is not a loss forecast."
+      ],
+      [
+        "Model governance",
+        "Shadow-run candidate only",
+        "New out-of-sample vintages",
+        "The uncertainty interval crosses zero."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "scale",
+        "label": "Case intensity vs latest 12-month average · %",
+        "value": 100,
+        "min": 0,
+        "max": 200,
+        "step": 5
+      },
+      {
+        "id": "adjust",
+        "label": "Additional scenario adjustment · %",
+        "value": 0,
+        "min": -50,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "horizon",
+        "label": "Scenario horizon · months",
+        "value": 3,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/08551/"
+  },
+  {
+    "kind": "financial",
+    "slug": "02-financial",
+    "domain": "Financial Intelligence",
+    "title": "When Negative Power Prices Persist",
+    "subtitle": "A state-persistence test, without a battery-profitability claim",
+    "brief": [
+      "The supplied 2025 workbook has 8,760 indexed price observations per Norwegian bidding zone. Time-zone and DST alignment are NOT VERIFIED.",
+      "NO4 has 147 negative observations across 55 episodes, with a longest run of 13 consecutive observations; NO1 has 57 across 17 episodes.",
+      "For NO1 the held-out Brier score is 0.00422 for a one-lag state model versus 0.00810 for a frozen unconditional frequency.",
+      "The NO1 168-observation block interval for Brier improvement includes zero. NO4 remains positive at both 24- and 168-observation blocks; rare-event uncertainty remains substantial."
+    ],
+    "mechanism": "Flexible demand depends on the duration of low-price conditions, not just their annual count. State persistence can help describe this duration. It does not make a trading strategy executable: dispatch, fees, publication timing and physical constraints are absent.",
+    "method": "Read the Strømpris worksheet; preserve all 8,760 rows, including the final all-zone zero. Multiply øre/kWh by 10 for NOK/MWh. Define a negative state strictly as price < 0. First 4,344 observations train the unconditional rate and two transition probabilities; remaining 4,416 observations evaluate one-step probabilities with the observed preceding state. No test refitting. Brier = mean squared probability error, compared with the training-only frequency. Bootstrap paired improvement with 2,000 circular draws and 24/168-observation blocks. Episode lengths are full-sample descriptive results. Laboratory: a two-state Markov expectation from a non-negative starting state, with user-selected probabilities; not a calibrated future-price forecast.",
+    "limits": "Indexed 8760 observations; calendar and DST not authenticated. State persistence is not an executable trading strategy. Terminal zero row retained. Brier scores, not investment returns. No trading backtest, revenue stacking or negative-price investment recommendation. Conditional probabilities and clock-hour labels require timestamp authentication before operational use.",
+    "change": [
+      "Authenticated price timestamps and subsequent untouched observations.",
+      "Persistence gains surviving alternative split points and negative-price thresholds.",
+      "Evidence that feasible dispatch costs eliminate the relevance of duration."
+    ],
+    "decision": [
+      [
+        "Flexible load operator",
+        "Investigate duration as well as frequency",
+        "Authenticated price/dispatch timestamps",
+        "No operational schedule from this workbook alone."
+      ],
+      [
+        "Treasury",
+        "Separate negative-price exposure from gross revenue",
+        "Contract settlement and pass-through terms",
+        "Negative wholesale price does not imply negative retail cost."
+      ],
+      [
+        "Research team",
+        "Retain constant-frequency comparator",
+        "Rare-event calibration and new vintages",
+        "Markov improvement is zone dependent."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "p01",
+        "label": "Non-negative → negative probability · %",
+        "value": 1,
+        "min": 0,
+        "max": 100,
+        "step": 0.1
+      },
+      {
+        "id": "p11",
+        "label": "Negative → negative probability · %",
+        "value": 50,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "id": "horizon",
+        "label": "Scenario length · observations",
+        "value": 24,
+        "min": 1,
+        "max": 168,
+        "step": 1
+      }
+    ],
+    "source": "https://zenodo.org/records/20052833"
+  },
+  {
+    "kind": "accounting",
+    "slug": "03-accounting",
+    "domain": "Accounting & Audit Intelligence",
+    "title": "The Cash Funding Frontier",
+    "subtitle": "Reported operating cash flow versus cash capital expenditure",
+    "brief": [
+      "Latest available full-year cash capex / operating cash flow is 174.07% for Oracle and 94.48% for Amazon.",
+      "The same ratio is 63.38% for Microsoft, 60.18% for Meta, 55.52% for Alphabet and 5.88% for NVIDIA.",
+      "These observations have different fiscal year ends: December 2025 through June 2026. They are not one synchronised calendar-year portfolio.",
+      "Cash capex coverage measures a funding relationship; it does not measure AI investment alone or prove financial distress."
+    ],
+    "mechanism": "Operating cash generation can fund physical investment without external capital only to the extent that cash remains after other claims. A ratio above 100% identifies a cash-capex funding gap within the reporting perimeter. It says nothing by itself about financing access, cash reserves, debt maturities or future investment returns.",
+    "method": "Six SEC Company Facts exports, CIKs 789019/1652044/1018724/1326801/1045810/1341439. USD, form 10-K, filing date ≤ 13 November 2026, annual duration 330–380 days, period ends from 2015. Resolve each period using latest filing, then documented tag priority; never sum alternative tags. CFO: NetCashProvidedByUsedInOperatingActivities. Cash capex: PaymentsToAcquirePropertyPlantAndEquipment, falling back to PaymentsToAcquireProductiveAssets. Retain tag, accession, start/end and filing date for every selected record. Latest-vintage restatements are retained; no real-time backtest is claimed. CFO minus cash capex is a research metric, not a standardised free-cash-flow definition. Scenario: CFO×(1+CFO change) − capex×(1+capex change) − extra cash commitments.",
+    "limits": "Cash capex excludes some leases/noncash additions; CFO includes working-capital swings. Fiscal years differ; do not sum latest rows into a calendar-year total. Not an AI-specific spending measure. Missing payout tags remain missing. No empirical causal model or return prediction: the question is accounting reconciliation, so forecast backtesting is not applicable. Source-tag semantic completeness remains a limitation; no claim that cash capex covers total economic investment.",
+    "change": [
+      "A filing-note reconciliation showing material omitted lease or financing flows.",
+      "Persistently improved cash generation through the next investment cycle.",
+      "Evidence that the ratio is driven mainly by temporary working-capital effects."
+    ],
+    "decision": [
+      [
+        "Lender",
+        "Reconcile the funding gap with liquidity and maturities",
+        "Audited cash-flow statement plus leases",
+        "A cash gap alone does not imply default."
+      ],
+      [
+        "Investor",
+        "Compare cash commitments across each fiscal history",
+        "Like-for-like tag perimeter",
+        "Do not synchronise unmatched fiscal years."
+      ],
+      [
+        "Audit team",
+        "Trace selected facts to accession and tag",
+        "Primary records in downloadable sources",
+        "A fallback capex tag is not an automatic total-investment measure."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "cfo",
+        "label": "Operating cash flow change · %",
+        "value": 0,
+        "min": -100,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "capex",
+        "label": "Cash capex change · %",
+        "value": 0,
+        "min": -100,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "extra",
+        "label": "Additional cash commitments · USD bn",
+        "value": 0,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      }
+    ],
+    "source": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+  },
+  {
+    "kind": "governance",
+    "slug": "04-governance",
+    "domain": "Risk & Governance Intelligence",
+    "title": "Ownership Without Equal Voice",
+    "subtitle": "A stewardship triage map of voting-rights wedges",
+    "brief": [
+      "The 30 June 2026 equity snapshot contains 7,077 rows with both reported ownership and voting percentages.",
+      "At an absolute 0.10-percentage-point threshold, 414 rows enter the review set, representing 13.13% of listed equity market value.",
+      "Raising that threshold to 0.50 percentage points reduces the review set to 202 rows; at 1.00 percentage point it is 63 rows.",
+      "The incorporation-country field is empty in all 7,077 rows. Legal-domicile analysis is therefore blocked rather than imputed."
+    ],
+    "mechanism": "Economic participation and voting influence are separate governance dimensions. A reported wedge is a triage signal for checking share classes, voting arrangements and data definitions. Neither its sign nor its size alone establishes entrenchment, control or a return penalty. The new research question concerns stewardship workflow rather than portfolio concentration.",
+    "method": "Read equity holdings in UTF-16, semicolon separated. Parse reported percent strings; retain missing values. Wedge = voting percentage − ownership percentage, rounded to the source’s two decimal places before threshold comparisons, in percentage points, not relative percent. Materiality uses absolute wedge ≥ threshold. Value share uses all exported listed-equity NOK values as denominator; it is not the total sovereign fund. Row counts are holdings rows, not asserted unique ultimate issuers. Exact reported rounded values are not adjusted for unobserved precision. Sensitivity thresholds 0.05/0.10/0.25/0.50/1.00 pp. Laboratory ranks eligible rows by market value, applies a user-chosen proportional price shock and limits review capacity. A uniform price shock changes value, not the reported voting percentage.",
+    "limits": "Snapshot 30 June 2026. Rounded percentages; 0.1 percentage-point threshold is a sensitivity assumption. Differences may reflect share classes or reporting structure; issuer verification needed before attributing governance causes. No causal return or control inference. Rounding can move boundary cases across thresholds. No cross-sectional return test is warranted without returns, share-class reconciliation and confounders. Incorporation data is NOT VERIFIED / unavailable and excluded from the research claim.",
+    "change": [
+      "Issuer-level reconciliation explaining apparent voting discrepancies.",
+      "A harmonised share-class dataset materially changing the review set.",
+      "Evidence that rounding dominates small-threshold results."
+    ],
+    "decision": [
+      [
+        "Stewardship",
+        "Review high-value wedges first",
+        "Issuer voting/share-class documents",
+        "A flag is not a governance allegation."
+      ],
+      [
+        "Risk committee",
+        "Track economic exposure and voting influence separately",
+        "Aligned reporting dates",
+        "Market value is not voting power."
+      ],
+      [
+        "Data owner",
+        "Resolve absent legal-jurisdiction fields",
+        "Original issuer registers",
+        "Do not infer domicile from listing country."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "threshold",
+        "label": "Absolute voting wedge threshold · pp",
+        "value": 0.1,
+        "min": 0,
+        "max": 2,
+        "step": 0.05
+      },
+      {
+        "id": "shock",
+        "label": "Assumed market-value decline · %",
+        "value": 0,
+        "min": 0,
+        "max": 80,
+        "step": 5
+      },
+      {
+        "id": "capacity",
+        "label": "Number of holdings reviewed",
+        "value": 10,
+        "min": 1,
+        "max": 100,
+        "step": 1
+      }
+    ],
+    "source": "https://www.nbim.no/en/investments/all-investments/"
+  },
+  {
+    "kind": "business",
+    "slug": "05-business",
+    "domain": "Business & Economic Intelligence",
+    "title": "The In-House AI Capability Gap",
+    "subtitle": "Who develops AI inside the enterprise—and why adoption alone cannot answer that question?",
+    "brief": [
+      "Norway’s 2025 reported own-employee AI-development share is 3.91% for enterprises with 10–49 employees and 24.59% for enterprises with 250+ employees: a 20.68 percentage-point gap.",
+      "The comparable 2025 gap is 19.38 pp in Sweden (5.50% versus 24.88%) and 26.04 pp in Finland (4.96% versus 31.00%).",
+      "Denmark has no usable 2025 observation for this indicator in the supplied export. Its latest paired values are from 2024: 4.89% and 22.52%, a 17.63 pp gap.",
+      "Norway’s all-enterprise-size 10+ reported share rises from 3.00% in 2023 to 5.25% in 2025. This measures the source’s own-development indicator, not a share of AI users or outsourced spending."
+    ],
+    "mechanism": "Adopting an AI product and developing AI with employees are different organisational capabilities. Internal development may require complementary skills, governance and scale. The reported size gradient is consistent with that mechanism, but sector composition and selection can also produce it. This new question examines own-employee development; yesterday’s study examined adoption and productivity. An enterprise can both develop internally and buy external technology, so absence of internal development is not evidence of outsourcing.",
+    "method": "Eurostat isoc_eb_ai export, extracted 13 November 2026, last updated 15 June 2026. Select the exact indicator “Enterprises' AI technologies were developed by own employees”, not the any-AI adoption indicator. Preserve the source unit label “Percentage of enterprises”, size category, NACE scope, year and flags. Compare 10–49 with 250+ employee categories within identical geography and year. The 10+ overall category is reported directly, never reconstructed by averaging size classes. Available survey years are 2021/2023/2024/2025; missing cells remain missing, including Denmark 2025. Gap = large-category share minus small-category share, in percentage points. No division by adoption or inference about the fraction of AI users, external procurement or vendor dependence is made. Repeated cross-sections cannot identify a causal scale effect. The laboratory adds user-assumed annual pp gains from each country’s latest paired observation, with a 100% ceiling; it is not a fitted forecast.",
+    "limits": "Source percentages and survey populations are retained; no conditional AI-user denominator is inferred. Denmark 2025 is missing. Sweden 2023 carries a source break flag. No matched firm panel, sampling standard errors, employment weights, AI expenditure or skill-cost data are supplied. Consequently causal estimates, statistical confidence intervals and forecast validation are NOT VERIFIED and are not claimed. Enterprises below 10 employees and the financial sector are outside the stated survey perimeter.",
+    "change": [
+      "A stable-definition enterprise panel overturning the within-country size gradient.",
+      "Survey denominator documentation or revisions materially changing interpretation.",
+      "Evidence that reported internal development reflects classification rather than organisational capability."
+    ],
+    "decision": [
+      [
+        "SME strategy",
+        "Separate AI adoption from internal development capacity",
+        "Process, skills and governance evidence",
+        "Internal development is not automatically the best strategy."
+      ],
+      [
+        "Policy team",
+        "Investigate complementary capabilities",
+        "Comparable survey definitions and firm evaluation",
+        "This gradient is not a causal policy effect."
+      ],
+      [
+        "Investor",
+        "Inspect build-and-buy capabilities together",
+        "Firm-level architecture and procurement evidence",
+        "Absence of internal development does not imply vendor dependence."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "small",
+        "label": "Small-enterprise own-development annual gain · pp",
+        "value": 3,
+        "min": 0,
+        "max": 15,
+        "step": 0.5
+      },
+      {
+        "id": "large",
+        "label": "Large-enterprise own-development annual gain · pp",
+        "value": 1,
+        "min": 0,
+        "max": 15,
+        "step": 0.5
+      },
+      {
+        "id": "horizon",
+        "label": "Scenario horizon · years",
+        "value": 5,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "source": "https://ec.europa.eu/eurostat/databrowser/view/isoc_eb_ai/default/table?lang=en"
+  },
+  {
+    "kind": "public_finance",
+    "slug": "06-public-finance",
+    "domain": "Public Finance Intelligence",
+    "title": "The Revenue–Spending Asymmetry",
+    "subtitle": "What historical revenue contractions do—and do not—say about fiscal adjustment",
+    "brief": [
+      "The consolidated general-government sample has 30 annual observations, 1995–2024, and 29 adjacent-year growth observations.",
+      "Nominal revenue contracts in seven years: 1998, 2002, 2009, 2013, 2015, 2020 and 2023.",
+      "Nominal expenditure rises in all seven revenue-contraction years. This is a descriptive pattern, not an estimate of discretionary stimulus.",
+      "Revenue minus expenditure reconciles with reported net lending within one NOK million in every sampled year."
+    ],
+    "mechanism": "Government spending is less mechanically tied to current receipts than a household budget. Automatic stabilisers, nominal commitments, petroleum-related revenue and discretionary policy can all separate the paths. That makes a headline surplus an incomplete measure of adjustment capacity. The study concerns revenue/spending asymmetry, not yesterday’s hypothetical AI-energy fiscal dividend.",
+    "method": "SSB 10721, consolidated General government only, NOK million, 1995–2024. Do not add central and local totals. Adjacent growth = value_t/value_(t−1)−1. Identify contraction strictly at negative nominal revenue growth and inspect concurrent nominal expenditure growth. Reconcile A−E−F within one source unit. The Spearman rank statistic is exploratory and not a causal response estimate. Annual sample is short and regime dependent; no fiscal multiplier, sovereign default model or structural forecast is estimated. Laboratory anchors to a selected observed year, compounds an assumed annual revenue decline and spending increase, and reports nominal net lending in NOK billion.",
+    "limits": "Nominal general-government flows through 2024; petroleum exposure, inflation and policy confound associations. Not the structural non-oil budget balance or fiscal-rule headroom; no sovereign PD inference. Latest observation is 2024, not 2026. No claim about today’s structural non-oil budget, fiscal-rule compliance, available cash or fiscal space. No GDP deflator, output gap or commodity-price instrument is supplied; real or causal adjustment estimates are NOT VERIFIED.",
+    "change": [
+      "Structural non-oil and cyclically adjusted series overturning the nominal pattern.",
+      "A decomposition separating automatic stabilisers, petroleum receipts and policy decisions.",
+      "New comparable annual data showing expenditure contracts consistently with revenue."
+    ],
+    "decision": [
+      [
+        "Budget team",
+        "Stress receipts and commitments separately",
+        "Consolidated structural budget bridge",
+        "Historic nominal surpluses are not current fiscal headroom."
+      ],
+      [
+        "Public-sector risk",
+        "Inspect spending rigidity and timing",
+        "Budget obligations and stabilisers",
+        "The scenario is not a forecast."
+      ],
+      [
+        "Analyst",
+        "Reconcile the perimeter before interpreting balances",
+        "SSB table definitions and units",
+        "No central-plus-local double counting."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "revenue",
+        "label": "Assumed annual revenue decline · %",
+        "value": 10,
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "id": "spending",
+        "label": "Assumed annual expenditure increase · %",
+        "value": 3,
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "id": "horizon",
+        "label": "Scenario horizon · years",
+        "value": 3,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/10721/"
+  }
+]

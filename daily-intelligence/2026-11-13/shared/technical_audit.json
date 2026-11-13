@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "JSON 01-credit-risk/project.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON 03-accounting/project.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON 05-business/project.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON 06-public-finance/project.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON 02-financial/project.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/technical_audit.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/calculation_audit.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/extraction_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/studies.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/source_metadata.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/ui_audit.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/screening_audit.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/screening.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON shared/results.json",
+      "status": "PASS"
+    },
+    {
+      "check": "JSON 04-governance/project.json",
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths index.html",
+      "count": 9,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 01-credit-risk/methodology.html",
+      "count": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 01-credit-risk/index.html",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 03-accounting/methodology.html",
+      "count": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 03-accounting/index.html",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 05-business/methodology.html",
+      "count": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 05-business/index.html",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 06-public-finance/methodology.html",
+      "count": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 06-public-finance/index.html",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 02-financial/methodology.html",
+      "count": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 02-financial/index.html",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths shared/audit.html",
+      "count": 24,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 04-governance/methodology.html",
+      "count": 6,
+      "status": "PASS"
+    },
+    {
+      "check": "Internal paths 04-governance/index.html",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "01-credit-risk brief/config parity and required sections",
+      "status": "PASS"
+    },
+    {
+      "check": "02-financial brief/config parity and required sections",
+      "status": "PASS"
+    },
+    {
+      "check": "03-accounting brief/config parity and required sections",
+      "status": "PASS"
+    },
+    {
+      "check": "04-governance brief/config parity and required sections",
+      "status": "PASS"
+    },
+    {
+      "check": "05-business brief/config parity and required sections",
+      "status": "PASS"
+    },
+    {
+      "check": "06-public-finance brief/config parity and required sections",
+      "status": "PASS"
+    }
+  ],
+  "external_source_link_http": "NOT VERIFIED for every endpoint; exact provider URLs and archived source bytes supplied",
+  "deployment": "Post-commit check, not asserted here"
+}

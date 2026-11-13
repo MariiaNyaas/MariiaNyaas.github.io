@@ -1,0 +1,84 @@
+{
+  "surface": "Live Chromium browser via CUA, local Sites preview",
+  "controls": {
+    "studies": 6,
+    "numeric_controls_tested": 18,
+    "reset": "PASS",
+    "selector_options_tested": 127
+  },
+  "exports": [
+    {
+      "study": "credit",
+      "json": "PASS",
+      "csv": "PASS",
+      "csv_rows": 8,
+      "scope": "Actual completed browser downloads parsed; financial/governance exports precede final arithmetic-boundary correction and will be rechecked."
+    },
+    {
+      "study": "financial",
+      "json": "PASS",
+      "csv": "PASS",
+      "csv_rows": 365,
+      "scope": "Actual completed browser downloads parsed after final corrections"
+    },
+    {
+      "study": "accounting",
+      "json": "PASS",
+      "csv": "PASS",
+      "csv_rows": 11,
+      "scope": "Actual completed browser downloads parsed; financial/governance exports precede final arithmetic-boundary correction and will be rechecked."
+    },
+    {
+      "study": "governance",
+      "json": "PASS",
+      "csv": "PASS",
+      "csv_rows": 7077,
+      "scope": "Actual completed browser downloads parsed after final corrections"
+    },
+    {
+      "study": "business",
+      "json": "PASS",
+      "csv": "PASS",
+      "csv_rows": 10,
+      "scope": "Rechecked after own-development indicator refinement; Denmark correctly anchors to 2024, no 2025 imputation"
+    },
+    {
+      "study": "public_finance",
+      "json": "PASS",
+      "csv": "PASS",
+      "csv_rows": 30,
+      "scope": "Actual completed browser downloads parsed; financial/governance exports precede final arithmetic-boundary correction and will be rechecked."
+    }
+  ],
+  "compact_layout": {
+    "css_width": 337,
+    "method": "Browser zoom to test narrow CSS viewport; not physical-device testing",
+    "studies": 6,
+    "horizontal_body_overflow": false,
+    "controls_single_column": true,
+    "status": "PASS"
+  },
+  "fixes": [
+    "Long SEC fact tags wrapped on narrow view",
+    "Voting-wedge thresholds corrected using source decimal precision"
+  ],
+  "physical_mobile_device": "NOT VERIFIED",
+  "integer_input_validation": "PASS: fractional review-capacity rejected in live browser",
+  "built_catalogues": {
+    "status": "PASS",
+    "domains": [
+      "credit-risk",
+      "financial",
+      "accounting",
+      "governance",
+      "business",
+      "public-finance"
+    ],
+    "scope": "All six new titles and exact target hrefs observed in built catalogue pages"
+  },
+  "methodology_navigation": {
+    "status": "PASS",
+    "studies": 6,
+    "scope": "Each separate methodology page opened through its dashboard link and returned through its dashboard backlink"
+  }
+}
