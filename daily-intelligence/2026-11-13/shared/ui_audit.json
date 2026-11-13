@@ -80,5 +80,9 @@
     "status": "PASS",
     "studies": 6,
     "scope": "Each separate methodology page opened through its dashboard link and returned through its dashboard backlink"
+  },
+  "performance_correction": {
+    "status": "PASS",
+    "scope": "Evidence table previews at most 200 selected rows; CSV retains all records. Browser verified 200 preview rows and 7077 exported governance rows. Controls are disabled only until data readiness."
   }
 }
