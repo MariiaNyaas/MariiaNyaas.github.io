@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-13T05:29:13+00:00",
+  "checked_at": "2026-11-13T06:08:11+00:00",
   "countries": {
     "DNK": {
       "capital": {
@@ -193,16 +193,16 @@
     }
   },
   "errors": [
-    "DNK/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
-    "FIN/FP.CPI.TOTL.ZG: TimeoutError: The read operation timed out",
-    "FIN/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
-    "FIN/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
-    "ISL/SL.UEM.TOTL.ZS: TimeoutError: The read operation timed out",
-    "ISL/FP.CPI.TOTL.ZG: TimeoutError: The read operation timed out",
-    "ISL/NY.GDP.MKTP.KD.ZG: TimeoutError: The read operation timed out",
-    "ISL/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
-    "ISL/FB.AST.NPER.ZS: TimeoutError: The read operation timed out",
-    "ISL/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out"
+    "NOR/SL.UEM.TOTL.ZS: TimeoutError: The read operation timed out",
+    "NOR/NY.GDP.MKTP.KD.ZG: TimeoutError: The read operation timed out",
+    "NOR/FB.AST.NPER.ZS: TimeoutError: The read operation timed out",
+    "NOR/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
+    "SWE/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
+    "SWE/FB.AST.NPER.ZS: TimeoutError: The read operation timed out",
+    "SWE/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
+    "DNK/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
+    "DNK/FB.AST.NPER.ZS: TimeoutError: The read operation timed out",
+    "FIN/NY.GDP.MKTP.KD.ZG: TimeoutError: The read operation timed out"
   ],
   "failed_series": 10,
   "indicators": {
@@ -213,7 +213,7 @@
     "npl": "FB.AST.NPER.ZS",
     "unemployment": "SL.UEM.TOTL.ZS"
   },
-  "last_success": "2026-11-13T05:29:13+00:00",
+  "last_success": "2026-11-13T06:08:11+00:00",
   "methodology": "Latest non-null observations per country and series. Annual vintages vary. No imputation, no predictive claims.",
   "source": "https://api.worldbank.org/v2/",
   "status": "partial",
