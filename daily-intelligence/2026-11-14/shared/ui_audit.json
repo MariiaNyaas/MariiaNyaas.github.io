@@ -6,17 +6,7 @@
     "control_definitions": 18,
     "status": "PASS"
   },
-  "local_browser": {
-    "status": "PASS",
-    "dashboard_ready_states": 6,
-    "numeric_controls": 18,
-    "visible_result_changes": 18,
-    "resets": 6,
-    "selector_options": 128,
-    "csv_exports": 6,
-    "methodology_roundtrips": 6,
-    "bad_tokens_found": 0
-  },
-  "postdeployment": {"status": "PENDING"},
+  "local_browser": {"status":"PASS","dashboard_ready_states":6,"numeric_controls":18,"visible_result_changes":18,"resets":6,"selector_options":128,"csv_exports":6,"methodology_roundtrips":6,"bad_tokens_found":0},
+  "postdeployment": {"status":"PASS","verified_content_commit":"828de9cbc4917ad5cad7d2a697d644d04c15b931","dashboard_ready_states":6,"numeric_controls":18,"visible_result_changes":18,"resets":6,"selector_options":128,"csv_exports":6,"methodology_roundtrips":6,"latest_research_entries":6,"domain_catalogue_entries":6,"bad_tokens_found":0,"narrow_css_width_px":539,"horizontal_body_overflow":false},
   "physical_mobile": "NOT VERIFIED"
 }

@@ -6,19 +6,6 @@
     "strict_json": "PASS",
     "calculation_gate": "PASS WITH DISCLOSED WARNINGS"
   },
-  "local_browser_qa": {
-    "status": "PASS",
-    "dashboards": 6,
-    "controls_changed_visible_result": 18,
-    "reset_roundtrips": 6,
-    "selector_options": 128,
-    "csv_exports": 6,
-    "methodology_roundtrips": 6,
-    "latest_research_entries": 6,
-    "domain_catalogue_entries": 6
-  },
-  "postdeployment": {
-    "status": "PENDING",
-    "note": "Filled only after exact-commit deployment and live browser checks."
-  }
+  "local_browser_qa": {"status":"PASS","dashboards":6,"controls_changed_visible_result":18,"reset_roundtrips":6,"selector_options":128,"csv_exports":6,"methodology_roundtrips":6,"latest_research_entries":6,"domain_catalogue_entries":6},
+  "postdeployment": {"status":"PASS","verified_content_commit":"828de9cbc4917ad5cad7d2a697d644d04c15b931","github_actions_run":"https://github.com/MariiaNyaas/MariiaNyaas.github.io/actions/runs/43556512140","actions_conclusion":"success","public_files_byte_matched":10,"dashboards_ready":6,"visible_control_changes":18,"resets":6,"selector_options":128,"csv_exports":6,"methodology_roundtrips":6,"latest_research_entries":6,"domain_catalogue_entries":6,"narrow_css_width_px":539,"horizontal_body_overflow":false,"note":"Physical-device rendering remains NOT VERIFIED; narrow layout was checked in Chromium at a 539 CSS-pixel viewport."}
 }
