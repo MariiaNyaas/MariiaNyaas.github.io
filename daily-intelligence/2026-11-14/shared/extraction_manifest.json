@@ -1,0 +1,182 @@
+[
+  {
+    "file": "08551_20261112-143853.csv.gz",
+    "bytes": 67783,
+    "sha256": "3855bcff961726974972b519f71b74ee3c4668d0d6deb4a8f774b9ae589d9366",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "10721_20261113-110703.csv",
+    "bytes": 41668,
+    "sha256": "ce7cd6e179a2c95a0786591787bf703ab790bf389ad195f99666f27725540282",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "10721_20261113-110703.csv.gz",
+    "bytes": 17393,
+    "sha256": "2a0eba7a01742eaf26547654cdb0fcbc0edc394ff05f117096bb8183b07babdd",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "Kraftmarkedet_NO_2025.xlsx",
+    "bytes": 3093739,
+    "sha256": "168d5988f19c5d259fed82cf74dcf3398a11d40e5b4ad99c7a05877eba6fc8b5",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "Kraftmarkedet_NO_2025.xlsx.gz",
+    "bytes": 3053319,
+    "sha256": "5bee9648ea0f5a4a972d8cbfa986cb6e47862d92928e62b67b394438d3c967e0",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "eq_20260630.csv",
+    "bytes": 1168228,
+    "sha256": "716490d1579681c91fecf641968a36f549691ef1213fcc68832c86dcb0ec33da",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "eq_20260630.csv.gz",
+    "bytes": 207449,
+    "sha256": "5bdf498bc950b1f633d29092031974e01475d39b4f40b133fb86735c647e6061",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "isoc_eb_ai$defaultview_spreadsheet (1).xlsx",
+    "bytes": 78359,
+    "sha256": "783007ce897ee2860999a459f5947f19a72f27c25b68028c3f49c6d23bb9b349",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "isoc_eb_ai$defaultview_spreadsheet (1).xlsx.gz",
+    "bytes": 73590,
+    "sha256": "8f14d435cbf69293b0fee88ff6386b2f0b1f21a1670f5491d09d7db44ae36eb1",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0000789019_2026-11-13.json",
+    "bytes": 4938072,
+    "sha256": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0000789019_2026-11-13.json.gz",
+    "bytes": 318031,
+    "sha256": "f91f307747559598a1af6d62eeb756afaba688fad1f30547d172ea1c1aee9e3f",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001018724_2026-11-13.json",
+    "bytes": 4554378,
+    "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001018724_2026-11-13.json.gz",
+    "bytes": 297597,
+    "sha256": "1c5b7c7c33afaf10eef002d7235d90e2d4246a8aae7068273e21ceed62067f32",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001045810_2026-11-13.json",
+    "bytes": 4092966,
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001045810_2026-11-13.json.gz",
+    "bytes": 275663,
+    "sha256": "610949569a9f9301fee04407e267f6e75494070c791992ce5df2f41ac1c7313c",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001326801_2026-11-13.json",
+    "bytes": 2810958,
+    "sha256": "f8e539cea9d363752df2f9bb33078c19ae897ff7f34d49fe4d9a732d032b94f7",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001326801_2026-11-13.json.gz",
+    "bytes": 178219,
+    "sha256": "5fe5e5f2e9cd031f15f4cbf235c590b2aed08a45da14d9bce05e0824e997f267",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001341439_2026-11-13.json",
+    "bytes": 3964639,
+    "sha256": "fe93b258bc0ba8f3076ddebb5d8bb91c46deaa1f7b06d2ff2e3eaed85fee8a63",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001341439_2026-11-13.json.gz",
+    "bytes": 260180,
+    "sha256": "29f56ecd8132366def0f708ac9990d182d4904f7bf51bbb940610883e2b306ac",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001652044_2026-11-13.json",
+    "bytes": 3250837,
+    "sha256": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "sec_companyfacts_0001652044_2026-11-13.json.gz",
+    "bytes": 188297,
+    "sha256": "89540512b7cbce5bd3aa29fc6c01c858e290c2615c0bb20955b3fc1a26c7a235",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_10745_metadata.json",
+    "bytes": 4024,
+    "sha256": "90a755200fd7a6b346d74c67136f10ee9b0b7374d814dd315bd7d081152ead5a",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_10745_query.json",
+    "bytes": 510,
+    "sha256": "e44c35b1e4e6a6459700dbf3fa6e6a6d0ae8fcd565b90ea6243fd60c96020e1d",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_10745_response.json",
+    "bytes": 12836,
+    "sha256": "d8bb132357afc8b112a484f4d939b018a7f17d8ab413ead64a5a2624ac8428e9",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_12128_metadata.json",
+    "bytes": 1787,
+    "sha256": "a3635a3370dceddde962bb5ae1f1d7616a59e01a9c9d62913c02bdd6a53773c4",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_12128_query.json",
+    "bytes": 616,
+    "sha256": "56a35e639b93c9f4144368de846e3b756f12f45d6b7032fa82b29da55d23cadc",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_12128_response.json",
+    "bytes": 5398,
+    "sha256": "075d1289a374e4434bfb7dc5398be0024e8320bd9c683dcace2b51ed14bdf1db",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_14783_metadata.json",
+    "bytes": 8132,
+    "sha256": "2a654065dad29cdd43115db348c013be1c05f596ad4c2d088715be6229f246e5",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_14783_query.json",
+    "bytes": 859,
+    "sha256": "19c566e487f137de3a63986cfc8f32e094023aff307fbabb5e2cc2fa8aead093",
+    "extracted": "2026-11-14"
+  },
+  {
+    "file": "ssb_14783_response.json",
+    "bytes": 6003,
+    "sha256": "3854b58b47a3f66ab323ae95647f3ba8de981a25f60e8c61a25fe9101c2d5090",
+    "extracted": "2026-11-14"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-14",
+  "predeployment": {
+    "dashboards": 6,
+    "methodology_roundtrips": 6,
+    "control_definitions": 18,
+    "status": "PASS"
+  },
+  "local_browser": {
+    "status": "PASS",
+    "dashboard_ready_states": 6,
+    "numeric_controls": 18,
+    "visible_result_changes": 18,
+    "resets": 6,
+    "selector_options": 128,
+    "csv_exports": 6,
+    "methodology_roundtrips": 6,
+    "bad_tokens_found": 0
+  },
+  "postdeployment": {"status": "PENDING"},
+  "physical_mobile": "NOT VERIFIED"
+}

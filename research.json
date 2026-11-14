@@ -382,5 +382,59 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-13/06-public-finance/",
     "topic": "The Revenue–Spending Asymmetry"
+  },
+  {
+    "title": "The Repayment-Strain Transmission Test",
+    "domain": "Credit Risk Intelligence",
+    "summary": "Mortgage rates, reported payment problems and the limits of a small forward test",
+    "published": "2026-11-14",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/01-credit-risk/",
+    "topic": "The Repayment-Strain Transmission Test"
+  },
+  {
+    "title": "The Power-Diversification Stress Test",
+    "domain": "Financial Intelligence",
+    "summary": "Frozen cross-zone weights versus equal weighting in a held-out half-sample",
+    "published": "2026-11-14",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/02-financial/",
+    "topic": "The Power-Diversification Stress Test"
+  },
+  {
+    "title": "The Capital-Intensity Memory Test",
+    "domain": "Accounting & Audit Intelligence",
+    "summary": "Does smoothing improve the audit-planning baseline?",
+    "published": "2026-11-14",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/03-accounting/",
+    "topic": "The Capital-Intensity Memory Test"
+  },
+  {
+    "title": "The Stewardship-Cell Dominance Map",
+    "domain": "Risk & Governance Intelligence",
+    "summary": "Single-name dependence inside country–industry review cells",
+    "published": "2026-11-14",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/04-governance/",
+    "topic": "The Stewardship-Cell Dominance Map"
+  },
+  {
+    "title": "Why the AI Pipeline Is Not a Funnel",
+    "domain": "Business & Economic Intelligence",
+    "summary": "Current use and “ever considered” are separate survey measures—not conversion stages",
+    "published": "2026-11-14",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/05-business/",
+    "topic": "Why the AI Pipeline Is Not a Funnel"
+  },
+  {
+    "title": "The Fiscal-Balance Forecasting Trap",
+    "domain": "Public Finance Intelligence",
+    "summary": "Component smoothing versus persistence in Norway’s nominal net lending",
+    "published": "2026-11-14",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/06-public-finance/",
+    "topic": "The Fiscal-Balance Forecasting Trap"
   }
 ]

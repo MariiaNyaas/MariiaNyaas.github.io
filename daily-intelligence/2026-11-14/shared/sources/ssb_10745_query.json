@@ -1,0 +1,40 @@
+[
+  {
+    "code": "Utlanstype",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "04",
+        "20"
+      ]
+    }
+  },
+  {
+    "code": "Sektor",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "03",
+        "04b"
+      ]
+    }
+  },
+  {
+    "code": "ContentsCode",
+    "selection": {
+      "filter": "all",
+      "values": [
+        "*"
+      ]
+    }
+  },
+  {
+    "code": "Tid",
+    "selection": {
+      "filter": "all",
+      "values": [
+        "*"
+      ]
+    }
+  }
+]

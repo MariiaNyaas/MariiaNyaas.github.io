@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "predeployment": {
+    "html_pages": 12,
+    "numeric_controls": 18,
+    "strict_json": "PASS",
+    "calculation_gate": "PASS WITH DISCLOSED WARNINGS"
+  },
+  "local_browser_qa": {
+    "status": "PASS",
+    "dashboards": 6,
+    "controls_changed_visible_result": 18,
+    "reset_roundtrips": 6,
+    "selector_options": 128,
+    "csv_exports": 6,
+    "methodology_roundtrips": 6,
+    "latest_research_entries": 6,
+    "domain_catalogue_entries": 6
+  },
+  "postdeployment": {
+    "status": "PENDING",
+    "note": "Filled only after exact-commit deployment and live browser checks."
+  }
+}

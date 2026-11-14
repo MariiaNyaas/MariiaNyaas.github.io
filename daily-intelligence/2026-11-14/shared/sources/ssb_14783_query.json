@@ -1,0 +1,67 @@
+[
+  {
+    "code": "Region",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "0"
+      ]
+    }
+  },
+  {
+    "code": "Formue2",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  {
+    "code": "Alder",
+    "selection": {
+      "filter": "all",
+      "values": [
+        "*"
+      ]
+    }
+  },
+  {
+    "code": "Kjonn",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "0"
+      ]
+    }
+  },
+  {
+    "code": "Populasjon",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "01",
+        "02"
+      ]
+    }
+  },
+  {
+    "code": "ContentsCode",
+    "selection": {
+      "filter": "all",
+      "values": [
+        "*"
+      ]
+    }
+  },
+  {
+    "code": "Tid",
+    "selection": {
+      "filter": "all",
+      "values": [
+        "*"
+      ]
+    }
+  }
+]

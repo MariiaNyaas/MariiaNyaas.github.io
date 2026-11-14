@@ -1,0 +1,40 @@
+{
+  "cutoff": "2026-11-14",
+  "sources": [
+    {
+      "authority": "Statistics Norway",
+      "tables": [
+        "10745",
+        "12128",
+        "14783",
+        "10721"
+      ],
+      "retrieved": "2026-11-14 except retained 10721 export dated 2026-11-13",
+      "notes": "JSON-stat2 API responses retain query and metadata; 10721 is a retained semicolon CSV export."
+    },
+    {
+      "authority": "SEC EDGAR Company Facts",
+      "entities": 6,
+      "retrieved": "2026-11-13",
+      "notes": "Primary JSON facts, accession/tag/start/end/filed retained."
+    },
+    {
+      "authority": "NBIM",
+      "dataset": "Equity holdings at 30 June 2026",
+      "retrieved": "retained source",
+      "notes": "UTF-16 semicolon export; market value in NOK."
+    },
+    {
+      "authority": "Eurostat",
+      "dataset": "isoc_eb_ai workbook",
+      "retrieved": "retained source",
+      "notes": "Flags and exact indicator/size metadata retained; no microdata or standard errors."
+    },
+    {
+      "authority": "NTNU-affiliated Zenodo creator",
+      "dataset": "Kraftmarkedet_NO_2025.xlsx",
+      "retrieved": "retained source",
+      "notes": "Creator MD5 authenticated previously; underlying source descriptions cite Nord Pool, Statnett and Norges Bank. Clock/DST alignment NOT VERIFIED."
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "kind": "credit",
+    "slug": "01-credit-risk",
+    "domain": "Credit Risk Intelligence",
+    "title": "The Repayment-Strain Transmission Test",
+    "subtitle": "Mortgage rates, reported payment problems and the limits of a small forward test",
+    "brief": [
+      "The retained household mortgage-rate series reaches 2026M09 at 5.31%; the annual survey measure ends in 2025.",
+      "Reported mortgage-payment problems were 1.6% for all persons in 2025 and 1.7% in the lowest income quartile.",
+      "Across 8 expanding one-year origins, the exploratory rate-plus-persistence rule has MAE 0.172 pp versus 0.188 pp for persistence.",
+      "The 95% two-year-block interval for mean MAE improvement is -0.094 to 0.128 pp; it crosses zero, so predictive superiority is not established."
+    ],
+    "mechanism": "Higher loan rates can transmit into household cash-flow strain, but survey payment problems also reflect income, buffers, refinancing and sampling variation. The test asks whether the rate level adds forward information beyond simply carrying the last survey reading forward; it does not estimate default probability.",
+    "method": "SSB 10745: monthly rates on outstanding loans secured on dwellings to households, 2013M12–2026M09. SSB 12128: annual percentage reporting problems paying mortgages, 2011–2025, with income-group detail. Average monthly rates by calendar year. At each eligible origin, fit next-year survey percentage on a constant, the current percentage and current annual mortgage rate using only prior rows; compare with persistence. Eight latest-vintage expanding origins. Paired absolute-error improvement uses 4,000 circular block draws, block length two years, seed 20261114. Not a real-time-vintage backtest.",
+    "limits": "Annual survey percentages are not arrears balances, PD or bank losses. Small latest-vintage sample; survey and rate revisions are not archived in real time. The regression is exploratory and its forecast origins are not independent.",
+    "change": [
+      "New untouched annual survey observations with a stable loss advantage.",
+      "Borrower-level arrears, balances and exposure denominators linking strain to realised credit loss.",
+      "A result that survives alternative survey definitions, revision vintages and income controls."
+    ],
+    "decision": [
+      [
+        "Credit monitoring",
+        "Keep persistence as the reference model",
+        "New survey vintages and arrears data",
+        "Do not translate survey percentages into PD."
+      ],
+      [
+        "Collections strategy",
+        "Use income segmentation only as a triage prompt",
+        "Account-level delinquency transitions",
+        "Quartile estimates are not borrower scores."
+      ],
+      [
+        "Model governance",
+        "Shadow-run the rate rule",
+        "A longer genuinely forward record",
+        "The uncertainty interval crosses zero."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "rateShock",
+        "label": "Mortgage-rate shock · percentage points",
+        "value": 0,
+        "min": -3,
+        "max": 5,
+        "step": 0.25
+      },
+      {
+        "id": "passThrough",
+        "label": "Assumed strain response · pp per rate pp",
+        "value": 0.3,
+        "min": 0,
+        "max": 2,
+        "step": 0.1
+      },
+      {
+        "id": "incomeStress",
+        "label": "Additional survey-strain assumption · pp",
+        "value": 0,
+        "min": -2,
+        "max": 10,
+        "step": 0.25
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/10745/"
+  },
+  {
+    "kind": "financial",
+    "slug": "02-financial",
+    "domain": "Financial Intelligence",
+    "title": "The Power-Diversification Stress Test",
+    "subtitle": "Frozen cross-zone weights versus equal weighting in a held-out half-sample",
+    "brief": [
+      "The source contains 8,760 indexed observations for each of five Norwegian bidding zones; clock and DST alignment remain NOT VERIFIED.",
+      "Frozen long-only weights produce held-out volatility of 262.24 NOK/MWh versus 265.21 for an equal-weight price index.",
+      "Average pairwise correlation is 0.585 in training and 0.592 in the held-out half.",
+      "The weekly-block 95% interval for paired variance improvement is -34,964 to 30,610 squared-price units; diversification superiority is not statistically resolved."
+    ],
+    "mechanism": "Geographic procurement can lower price variability only when zone differences persist out of sample. A covariance-optimised index can look stable in training yet concentrate exposure in one zone. The analysis therefore freezes weights before the held-out half and keeps equal weighting visible.",
+    "method": "Read five price columns from the 2025 workbook, retain all 8,760 indexed rows and convert øre/kWh to NOK/MWh by multiplying by ten. First 4,380 rows train the covariance matrix. Add a ridge equal to 10% of its diagonal, solve inverse-covariance weights, clip negative weights to zero and renormalise. Freeze weights for the remaining 4,380 rows. Compare standard deviation with equal weighting and individual zones. Circular 168-observation blocks, 4,000 draws, seed 20261114, evaluate paired squared-deviation improvement. This is price-index validation, not a trading backtest.",
+    "limits": "The workbook has 8,760 indexed observations but clock time, time zone and DST alignment remain NOT VERIFIED. Price-index volatility is not investment return, dispatch profit or an executable hedge. Long-only weights use a stated ridge and were selected after inspecting this dataset.",
+    "change": [
+      "Authenticated timestamps and an untouched subsequent year.",
+      "A stable advantage across ridge choices, seasons and feasible contract weights.",
+      "Evidence that grid, settlement or basis costs remove the apparent diversification benefit."
+    ],
+    "decision": [
+      [
+        "Energy procurement",
+        "Treat weights as a stress-test benchmark",
+        "Timestamped settlement and load shape",
+        "No executable hedge is claimed."
+      ],
+      [
+        "Treasury",
+        "Measure basis risk explicitly",
+        "Contract-zone mapping and collateral terms",
+        "Price volatility is not P&L volatility."
+      ],
+      [
+        "Investment committee",
+        "Demand concentration diagnostics",
+        "Feasible constraints and new data",
+        "The optimiser assigns most weight to NO4."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "hedgeShare",
+        "label": "Frozen diversified share · %",
+        "value": 50,
+        "min": 0,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "priceShock",
+        "label": "Price shock · %",
+        "value": 0,
+        "min": -100,
+        "max": 200,
+        "step": 5
+      },
+      {
+        "id": "load",
+        "label": "Indexed load · MWh",
+        "value": 100,
+        "min": 1,
+        "max": 1000,
+        "step": 10
+      }
+    ],
+    "source": "https://zenodo.org/records/20052833"
+  },
+  {
+    "kind": "accounting",
+    "slug": "03-accounting",
+    "domain": "Accounting & Audit Intelligence",
+    "title": "The Capital-Intensity Memory Test",
+    "subtitle": "Does smoothing improve the audit-planning baseline?",
+    "brief": [
+      "The test contains 16 issuer-year holdouts across six SEC filers; each target uses only earlier annual facts for that issuer.",
+      "A trailing three-year median produces MAE 28.19 percentage points versus 22.64 for the last reported ratio.",
+      "The candidate is worse by 5.55 pp on average; smoothing does not improve the point estimate.",
+      "The issuer-cluster 95% interval for baseline-minus-model loss is -11.57 to 1.46 pp and includes zero."
+    ],
+    "mechanism": "Audit planning often smooths volatile ratios. But capital-intensity regimes can shift faster than a three-year median. A mechanically smoother series is useful only if it forecasts the next filing better than the last observed ratio.",
+    "method": "Six SEC Company Facts exports; USD, form 10-K, filing date no later than 14 November 2026, annual duration 330–380 days, period ends from 2015. CFO uses NetCashProvidedByUsedInOperatingActivities. Cash capex uses PaymentsToAcquirePropertyPlantAndEquipment with documented fallback to PaymentsToAcquireProductiveAssets. Ratio = cash capex / CFO for positive-CFO years. For the last three eligible years per issuer, forecast with the median of the preceding three ratios and compare with the immediately preceding ratio. Latest-filing vintage, not archived real time. Resample issuers as clusters, 4,000 draws, seed 20261114.",
+    "limits": "The ratio uses cash capex and CFO, not total economic investment. CFO includes working-capital effects; cash capex excludes some leases and noncash additions. Six issuers and issuer-cluster resampling cannot establish a universal forecasting law. Fiscal years differ.",
+    "change": [
+      "More issuer histories and pre-specified industry cohorts.",
+      "A stable median advantage in new filings and under alternate capex perimeters.",
+      "Footnote reconciliations showing that noncash investment reverses the measured regime shifts."
+    ],
+    "decision": [
+      [
+        "Audit planning",
+        "Retain last-value baseline",
+        "Footnote and commitment reconciliation",
+        "Smoothing is not automatically conservative."
+      ],
+      [
+        "Lender",
+        "Stress CFO and capex separately",
+        "Liquidity, leases and maturities",
+        "The ratio is not a solvency test."
+      ],
+      [
+        "Model governance",
+        "Log tag and filing vintage",
+        "Accession-level traceability",
+        "Latest-vintage restatements can alter history."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "cfoShock",
+        "label": "Operating cash-flow change · %",
+        "value": 0,
+        "min": -100,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "capexShock",
+        "label": "Cash-capex change · %",
+        "value": 0,
+        "min": -100,
+        "max": 200,
+        "step": 5
+      },
+      {
+        "id": "tolerance",
+        "label": "Audit review threshold · intensity %",
+        "value": 100,
+        "min": 0,
+        "max": 300,
+        "step": 10
+      }
+    ],
+    "source": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+  },
+  {
+    "kind": "governance",
+    "slug": "04-governance",
+    "domain": "Risk & Governance Intelligence",
+    "title": "The Stewardship-Cell Dominance Map",
+    "subtitle": "Single-name dependence inside country–industry review cells",
+    "brief": [
+      "The 30 June 2026 snapshot contains 7,077 listed-equity rows grouped into 446 country–industry cells.",
+      "Requiring at least three holdings leaves 318 analytical cells.",
+      "At a 50% top-name threshold, 138 cells qualify and represent 15.18% of exported listed-equity value.",
+      "At thresholds of 30%, 50% and 70%, flagged value shares are 31.59%, 15.18% and 7.73%, respectively."
+    ],
+    "mechanism": "Stewardship resources are often organised by market and sector. Inside such a review cell, one issuer can dominate both attention and value even when the total portfolio is broadly diversified. The map is a workflow diagnostic, not a legal-control or misconduct test.",
+    "method": "Read the NBIM 30 June 2026 equity snapshot in UTF-16, semicolon separated. Retain rows with numeric market value, country and industry. Group by reported country × reported industry. Within each cell calculate total value, number of holdings, top issuer share, HHI and effective number of names. Default eligibility requires at least three holdings; dominance requires top issuer share at least 50%. Denominator for value share is all exported listed-equity value. Sensitivity thresholds: 30/40/50/60/70%. Snapshot analysis; forecast backtesting is not applicable.",
+    "limits": "One 30 June 2026 listed-equity snapshot. A country-industry cell is an analytical grouping, not a legal or voting-control perimeter. Market value is not risk contribution. No return history means backtesting and causal claims are not applicable.",
+    "change": [
+      "Issuer-level stewardship records and legal share-class mappings.",
+      "Time-series holdings showing that dominance cells persist rather than reflect a single snapshot.",
+      "Risk-contribution estimates demonstrating that value share materially overstates or understates attention needs."
+    ],
+    "decision": [
+      [
+        "Stewardship lead",
+        "Prioritise cell-level review queues",
+        "Issuer and share-class verification",
+        "Dominance is not control."
+      ],
+      [
+        "Risk committee",
+        "Separate value from risk contribution",
+        "Returns, factors and liquidity",
+        "Market value is not marginal risk."
+      ],
+      [
+        "Data governance",
+        "Preserve grouping definitions",
+        "Stable country/industry taxonomy",
+        "Cell boundaries are analytical choices."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "threshold",
+        "label": "Top-name dominance threshold · %",
+        "value": 50,
+        "min": 10,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "minHoldings",
+        "label": "Minimum holdings per cell",
+        "value": 3,
+        "min": 1,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "id": "shock",
+        "label": "Uniform value shock · %",
+        "value": 0,
+        "min": -80,
+        "max": 100,
+        "step": 5
+      }
+    ],
+    "source": "https://www.nbim.no/en/investments/all-investments/"
+  },
+  {
+    "kind": "business",
+    "slug": "05-business",
+    "domain": "Business & Economic Intelligence",
+    "title": "Why the AI Pipeline Is Not a Funnel",
+    "subtitle": "Current use and “ever considered” are separate survey measures—not conversion stages",
+    "brief": [
+      "For enterprises with 10+ employees in 2025, reported AI use is 28.89% in Norway, 42.03% in Denmark, 37.82% in Finland and 35.04% in Sweden.",
+      "The corresponding separate “ever considered” measure is 10.80% in Norway, 16.25% in Denmark, 19.47% in Finland and 7.15% in Sweden.",
+      "In Norway, current use rises from 25.20% among firms with 10–49 employees to 66.04% among firms with 250+ employees.",
+      "Because the two indicators are not established as nested populations, their difference is descriptive and must not be interpreted as a conversion rate."
+    ],
+    "mechanism": "A dashboard can create a false funnel merely by placing “considered” before “using”. Survey routing, respondent populations and timing can make those percentages non-nested. The economically relevant lesson is measurement discipline: adoption momentum cannot be inferred from a ratio whose denominator relationship is unverified.",
+    "method": "Eurostat workbook dataset isoc_eb_ai. Select two exact indicators: enterprises using at least one listed AI technology and enterprises that ever considered using one. Pair only observations with identical geography, year and enterprise-size class. Preserve flags and missing years; no interpolation. Display both levels and their arithmetic difference, but do not call it a pipeline, conversion or adoption probability. Repeated cross-sections; supplied workbook contains no microdata or sampling standard errors. Econometric validation is not applicable to the definitional claim; inferential confidence intervals are NOT VERIFIED.",
+    "limits": "Separate survey indicators are compared within identical geography, year and size class. This is not a firm-level funnel: respondents and questionnaire routing may differ, and 'ever considered' is not assumed to contain every current user. Repeated cross-sections; no sampling errors or microdata were supplied, so inferential confidence intervals are NOT VERIFIED.",
+    "change": [
+      "Questionnaire routing documentation proving nested populations.",
+      "Firm-level transitions from consideration to production use.",
+      "Sampling errors and revision histories supporting uncertainty estimates."
+    ],
+    "decision": [
+      [
+        "Strategy team",
+        "Report the two indicators separately",
+        "Questionnaire routing and denominators",
+        "Do not manufacture a conversion rate."
+      ],
+      [
+        "Technology investor",
+        "Separate adoption from capability depth",
+        "Use-case and spend data",
+        "A percentage is not productivity."
+      ],
+      [
+        "Data governance",
+        "Retain source flags and size classes",
+        "Comparable survey vintages",
+        "Do not sum overlapping size categories."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "useGain",
+        "label": "Assumed annual use change · pp",
+        "value": 2,
+        "min": -20,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "id": "considerGain",
+        "label": "Assumed annual consideration change · pp",
+        "value": 0,
+        "min": -20,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "id": "horizon",
+        "label": "Scenario horizon · years",
+        "value": 3,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "source": "https://ec.europa.eu/eurostat/databrowser/view/isoc_eb_ai/default/table"
+  },
+  {
+    "kind": "public_finance",
+    "slug": "06-public-finance",
+    "domain": "Public Finance Intelligence",
+    "title": "The Fiscal-Balance Forecasting Trap",
+    "subtitle": "Component smoothing versus persistence in Norway’s nominal net lending",
+    "brief": [
+      "The retained consolidated general-government sample spans 1995–2024 and reconciles revenue minus expenditure to reported net lending within one NOK million in every year.",
+      "Across the last ten one-year origins, a five-year-median component rule has MAE NOK 321.80bn versus NOK 300.50bn for persistence.",
+      "The component rule is worse by NOK 21.30bn on the point estimate.",
+      "The two-year-block 95% interval for baseline-minus-model improvement is NOK -61.39bn to 16.90bn; it crosses zero."
+    ],
+    "mechanism": "Forecasting revenue and expenditure separately feels more structural than carrying forward the fiscal balance. In a petroleum-sensitive nominal system, however, component medians can miss abrupt revenue regimes and generate false precision. A more detailed model earns credibility only by beating persistence out of sample.",
+    "method": "SSB 10721, consolidated general government, nominal NOK million, 1995–2024. Reconcile A total revenue − E total expenditure = F net lending/borrowing. At each origin, forecast revenue and expenditure with their respective median growth rates over the preceding five observed years; subtract to obtain next-year net lending. Compare with prior-year net lending. Report the last ten expanding origins. Paired absolute-error improvement uses 4,000 circular draws, two-year blocks, seed 20261114. Latest-vintage test, not real-time archival validation. Change-variance shares use covariance with Δnet and sum to one algebraically; they are not causal attribution.",
+    "limits": "Nominal consolidated general-government flows, 1995–2024. This is not the structural non-oil budget balance, fiscal-rule headroom or a sovereign-credit model. The component rule is exploratory and latest-vintage; petroleum prices, inflation and revisions are not modelled. Variance contributions are accounting covariance shares, not causal effects.",
+    "change": [
+      "Real-time vintages and a pre-specified petroleum-price model that beats persistence.",
+      "Structural non-oil balance and inflation-adjusted series.",
+      "A stable advantage through new revenue regimes rather than only historical refits."
+    ],
+    "decision": [
+      [
+        "Fiscal analyst",
+        "Keep persistence as a baseline",
+        "Real-time vintages and oil-price assumptions",
+        "Nominal net lending is not fiscal space."
+      ],
+      [
+        "Risk committee",
+        "Stress revenue regimes explicitly",
+        "Structural and petroleum decomposition",
+        "Component detail is not automatic accuracy."
+      ],
+      [
+        "Public investor",
+        "Separate fund return from budget capacity",
+        "Fiscal-rule and transfer data",
+        "This is not a sovereign solvency model."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "revenueShock",
+        "label": "Annual revenue change · %",
+        "value": 0,
+        "min": -50,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "id": "spendingShock",
+        "label": "Annual expenditure change · %",
+        "value": 0,
+        "min": -20,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "id": "horizon",
+        "label": "Scenario horizon · years",
+        "value": 3,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/10721/"
+  }
+]

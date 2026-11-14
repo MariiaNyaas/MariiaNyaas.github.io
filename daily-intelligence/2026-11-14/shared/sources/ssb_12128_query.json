@@ -1,0 +1,46 @@
+[
+  {
+    "code": "OkonomiskRomslig",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "05",
+        "06",
+        "16",
+        "08",
+        "07"
+      ]
+    }
+  },
+  {
+    "code": "Inntekstgruppe",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "000",
+        "41",
+        "42",
+        "43",
+        "44"
+      ]
+    }
+  },
+  {
+    "code": "ContentsCode",
+    "selection": {
+      "filter": "item",
+      "values": [
+        "Personer"
+      ]
+    }
+  },
+  {
+    "code": "Tid",
+    "selection": {
+      "filter": "all",
+      "values": [
+        "*"
+      ]
+    }
+  }
+]

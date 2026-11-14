@@ -1,0 +1,3503 @@
+{
+  "date": "2026-11-14",
+  "independence": "Separate audit script rereads retained primary records; it shares the same research specification and is not external peer review.",
+  "checks": [
+    {
+      "name": "source-byte-readable:08551_20261112-143853.csv.gz",
+      "status": "PASS",
+      "detail": "3855bcff961726974972b519f71b74ee3c4668d0d6deb4a8f774b9ae589d9366"
+    },
+    {
+      "name": "source-byte-readable:10721_20261113-110703.csv",
+      "status": "PASS",
+      "detail": "ce7cd6e179a2c95a0786591787bf703ab790bf389ad195f99666f27725540282"
+    },
+    {
+      "name": "source-byte-readable:10721_20261113-110703.csv.gz",
+      "status": "PASS",
+      "detail": "2a0eba7a01742eaf26547654cdb0fcbc0edc394ff05f117096bb8183b07babdd"
+    },
+    {
+      "name": "source-byte-readable:Kraftmarkedet_NO_2025.xlsx",
+      "status": "PASS",
+      "detail": "168d5988f19c5d259fed82cf74dcf3398a11d40e5b4ad99c7a05877eba6fc8b5"
+    },
+    {
+      "name": "source-byte-readable:Kraftmarkedet_NO_2025.xlsx.gz",
+      "status": "PASS",
+      "detail": "5bee9648ea0f5a4a972d8cbfa986cb6e47862d92928e62b67b394438d3c967e0"
+    },
+    {
+      "name": "source-byte-readable:eq_20260630.csv",
+      "status": "PASS",
+      "detail": "716490d1579681c91fecf641968a36f549691ef1213fcc68832c86dcb0ec33da"
+    },
+    {
+      "name": "source-byte-readable:eq_20260630.csv.gz",
+      "status": "PASS",
+      "detail": "5bdf498bc950b1f633d29092031974e01475d39b4f40b133fb86735c647e6061"
+    },
+    {
+      "name": "source-byte-readable:isoc_eb_ai$defaultview_spreadsheet (1).xlsx",
+      "status": "PASS",
+      "detail": "783007ce897ee2860999a459f5947f19a72f27c25b68028c3f49c6d23bb9b349"
+    },
+    {
+      "name": "source-byte-readable:isoc_eb_ai$defaultview_spreadsheet (1).xlsx.gz",
+      "status": "PASS",
+      "detail": "8f14d435cbf69293b0fee88ff6386b2f0b1f21a1670f5491d09d7db44ae36eb1"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0000789019_2026-11-13.json",
+      "status": "PASS",
+      "detail": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0000789019_2026-11-13.json.gz",
+      "status": "PASS",
+      "detail": "f91f307747559598a1af6d62eeb756afaba688fad1f30547d172ea1c1aee9e3f"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001018724_2026-11-13.json",
+      "status": "PASS",
+      "detail": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001018724_2026-11-13.json.gz",
+      "status": "PASS",
+      "detail": "1c5b7c7c33afaf10eef002d7235d90e2d4246a8aae7068273e21ceed62067f32"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001045810_2026-11-13.json",
+      "status": "PASS",
+      "detail": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001045810_2026-11-13.json.gz",
+      "status": "PASS",
+      "detail": "610949569a9f9301fee04407e267f6e75494070c791992ce5df2f41ac1c7313c"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001326801_2026-11-13.json",
+      "status": "PASS",
+      "detail": "f8e539cea9d363752df2f9bb33078c19ae897ff7f34d49fe4d9a732d032b94f7"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001326801_2026-11-13.json.gz",
+      "status": "PASS",
+      "detail": "5fe5e5f2e9cd031f15f4cbf235c590b2aed08a45da14d9bce05e0824e997f267"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001341439_2026-11-13.json",
+      "status": "PASS",
+      "detail": "fe93b258bc0ba8f3076ddebb5d8bb91c46deaa1f7b06d2ff2e3eaed85fee8a63"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001341439_2026-11-13.json.gz",
+      "status": "PASS",
+      "detail": "29f56ecd8132366def0f708ac9990d182d4904f7bf51bbb940610883e2b306ac"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001652044_2026-11-13.json",
+      "status": "PASS",
+      "detail": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0"
+    },
+    {
+      "name": "source-byte-readable:sec_companyfacts_0001652044_2026-11-13.json.gz",
+      "status": "PASS",
+      "detail": "89540512b7cbce5bd3aa29fc6c01c858e290c2615c0bb20955b3fc1a26c7a235"
+    },
+    {
+      "name": "source-byte-readable:ssb_10745_metadata.json",
+      "status": "PASS",
+      "detail": "90a755200fd7a6b346d74c67136f10ee9b0b7374d814dd315bd7d081152ead5a"
+    },
+    {
+      "name": "source-byte-readable:ssb_10745_query.json",
+      "status": "PASS",
+      "detail": "e44c35b1e4e6a6459700dbf3fa6e6a6d0ae8fcd565b90ea6243fd60c96020e1d"
+    },
+    {
+      "name": "source-byte-readable:ssb_10745_response.json",
+      "status": "PASS",
+      "detail": "d8bb132357afc8b112a484f4d939b018a7f17d8ab413ead64a5a2624ac8428e9"
+    },
+    {
+      "name": "source-byte-readable:ssb_12128_metadata.json",
+      "status": "PASS",
+      "detail": "a3635a3370dceddde962bb5ae1f1d7616a59e01a9c9d62913c02bdd6a53773c4"
+    },
+    {
+      "name": "source-byte-readable:ssb_12128_query.json",
+      "status": "PASS",
+      "detail": "56a35e639b93c9f4144368de846e3b756f12f45d6b7032fa82b29da55d23cadc"
+    },
+    {
+      "name": "source-byte-readable:ssb_12128_response.json",
+      "status": "PASS",
+      "detail": "075d1289a374e4434bfb7dc5398be0024e8320bd9c683dcace2b51ed14bdf1db"
+    },
+    {
+      "name": "source-byte-readable:ssb_14783_metadata.json",
+      "status": "PASS",
+      "detail": "2a654065dad29cdd43115db348c013be1c05f596ad4c2d088715be6229f246e5"
+    },
+    {
+      "name": "source-byte-readable:ssb_14783_query.json",
+      "status": "PASS",
+      "detail": "19c566e487f137de3a63986cfc8f32e094023aff307fbabb5e2cc2fa8aead093"
+    },
+    {
+      "name": "source-byte-readable:ssb_14783_response.json",
+      "status": "PASS",
+      "detail": "3854b58b47a3f66ab323ae95647f3ba8de981a25f60e8c61a25fe9101c2d5090"
+    },
+    {
+      "name": "ssb-10745-dimension-product",
+      "status": "PASS",
+      "detail": "[2, 2, 1, 154] -> 616"
+    },
+    {
+      "name": "ssb-10745-metadata-title",
+      "status": "PASS",
+      "detail": "10745: Interest rates on outstanding loans (per cent), by type of loans, sector, contents and month"
+    },
+    {
+      "name": "ssb-10745-query-retained",
+      "status": "PASS",
+      "detail": "4 dimensions"
+    },
+    {
+      "name": "ssb-12128-dimension-product",
+      "status": "PASS",
+      "detail": "[5, 5, 1, 15] -> 375"
+    },
+    {
+      "name": "ssb-12128-metadata-title",
+      "status": "PASS",
+      "detail": "12128: Persons 16 years and older, by financial difficulties, income group, contents and year"
+    },
+    {
+      "name": "ssb-12128-query-retained",
+      "status": "PASS",
+      "detail": "4 dimensions"
+    },
+    {
+      "name": "ssb-14783-dimension-product",
+      "status": "PASS",
+      "detail": "[1, 2, 5, 1, 2, 4, 2] -> 160"
+    },
+    {
+      "name": "ssb-14783-metadata-title",
+      "status": "PASS",
+      "detail": "14783: Preliminary statistics on interest, income and expense, by region, tax components, age, sex, population, contents and year"
+    },
+    {
+      "name": "ssb-14783-query-retained",
+      "status": "PASS",
+      "detail": "7 dimensions"
+    },
+    {
+      "name": "credit-latest-rate",
+      "status": "PASS",
+      "detail": "5.31"
+    },
+    {
+      "name": "credit-latest-all",
+      "status": "PASS",
+      "detail": "1.6"
+    },
+    {
+      "name": "credit-latest-q1",
+      "status": "PASS",
+      "detail": "1.7"
+    },
+    {
+      "name": "credit-holdout-count",
+      "status": "PASS",
+      "detail": "8"
+    },
+    {
+      "name": "credit-mae",
+      "status": "PASS",
+      "detail": "0.17151559525441995"
+    },
+    {
+      "name": "credit-baseline-mae",
+      "status": "PASS",
+      "detail": "0.18750000000000003"
+    },
+    {
+      "name": "power-row-count",
+      "status": "PASS",
+      "detail": "8760"
+    },
+    {
+      "name": "power-weights-sum",
+      "status": "PASS",
+      "detail": "1.0"
+    },
+    {
+      "name": "power-model-vol",
+      "status": "PASS",
+      "detail": "262.23754431559206"
+    },
+    {
+      "name": "power-equal-vol",
+      "status": "PASS",
+      "detail": "265.20773286414806"
+    },
+    {
+      "name": "power-zone-mean:NO1",
+      "status": "PASS",
+      "detail": "684.283180936073"
+    },
+    {
+      "name": "power-zone-mean:NO2",
+      "status": "PASS",
+      "detail": "767.1922756849316"
+    },
+    {
+      "name": "power-zone-mean:NO3",
+      "status": "PASS",
+      "detail": "247.45424543379"
+    },
+    {
+      "name": "power-zone-mean:NO4",
+      "status": "PASS",
+      "detail": "102.32153538812787"
+    },
+    {
+      "name": "power-zone-mean:NO5",
+      "status": "PASS",
+      "detail": "549.5467260273973"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2016-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2017-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2018-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2019-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2020-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2021-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2022-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2023-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2024-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2025-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:MICROSOFT CORP:2026-06-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2015-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2016-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2017-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2018-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2019-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2020-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2021-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2022-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2023-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2024-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:AMAZON.COM, INC.:2025-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:NVIDIA CORP:2022-01-30",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:NVIDIA CORP:2023-01-29",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:NVIDIA CORP:2024-01-28",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:NVIDIA CORP:2025-01-26",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:NVIDIA CORP:2026-01-25",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2015-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2016-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2017-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2018-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2019-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2020-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2021-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2022-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2023-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2024-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Meta Platforms, Inc.:2025-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2016-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2017-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2018-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2019-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2020-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2021-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2022-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2023-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2024-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2025-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:ORACLE CORP:2026-05-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2015-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2016-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2017-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2018-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2019-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2020-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2021-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2022-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2023-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2024-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "sec-record:Alphabet Inc.:2025-12-31",
+      "status": "PASS",
+      "detail": "accession/tag/value traced"
+    },
+    {
+      "name": "accounting-mae",
+      "status": "PASS",
+      "detail": "16"
+    },
+    {
+      "name": "accounting-baseline-mae",
+      "status": "PASS",
+      "detail": "16"
+    },
+    {
+      "name": "governance-holdings",
+      "status": "PASS",
+      "detail": "7077"
+    },
+    {
+      "name": "governance-cell-count",
+      "status": "PASS",
+      "detail": "446"
+    },
+    {
+      "name": "governance-dominant-cells",
+      "status": "PASS",
+      "detail": "138"
+    },
+    {
+      "name": "governance-dominant-value",
+      "status": "PASS",
+      "detail": "15.179690327278077"
+    },
+    {
+      "name": "eurostat-pair:Austria:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Austria:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Belgium:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Bulgaria:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Croatia:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Cyprus:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Denmark:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Estonia:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026):2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:European Union - 27 countries (from 2020):2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Finland:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Germany:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Greece:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Hungary:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Italy:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Latvia:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Lithuania:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Luxembourg:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Malta:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Netherlands:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Norway:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Poland:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Portugal:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovakia:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Slovenia:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Spain:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2021:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2021:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2021:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2021:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2021:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2023:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2023:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2023:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2023:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2023:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:Sweden:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2024:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2024:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2024:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2024:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2024:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2025:10 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2025:250 persons employed or more",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2025:From 10 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2025:From 10 to 49 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "eurostat-pair:T\u00fcrkiye:2025:From 50 to 249 persons employed",
+      "status": "PASS",
+      "detail": "paired source cells"
+    },
+    {
+      "name": "fiscal-source-readable",
+      "status": "PASS",
+      "detail": "77 rows"
+    },
+    {
+      "name": "fiscal-reconciliation:1995",
+      "status": "PASS",
+      "detail": "-1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:1996",
+      "status": "PASS",
+      "detail": "-1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:1997",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:1998",
+      "status": "PASS",
+      "detail": "-1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:1999",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2000",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2001",
+      "status": "PASS",
+      "detail": "-1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2002",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2003",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2004",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2005",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2006",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2007",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2008",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2009",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2010",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2011",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2012",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2013",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2014",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2015",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2016",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2017",
+      "status": "PASS",
+      "detail": "1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2018",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2019",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2020",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2021",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2022",
+      "status": "PASS",
+      "detail": "1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2023",
+      "status": "PASS",
+      "detail": "-1.0"
+    },
+    {
+      "name": "fiscal-reconciliation:2024",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "name": "fiscal-model-mae",
+      "status": "PASS",
+      "detail": "10"
+    },
+    {
+      "name": "fiscal-baseline-mae",
+      "status": "PASS",
+      "detail": "10"
+    },
+    {
+      "name": "fiscal-variance-shares-sum",
+      "status": "PASS",
+      "detail": "{'revenue': 0.9608373878872577, 'negative_expenditure': 0.03916364472327379}"
+    },
+    {
+      "name": "six-study-config",
+      "status": "PASS",
+      "detail": "6"
+    },
+    {
+      "name": "html:01-credit-risk",
+      "status": "PASS",
+      "detail": "dashboard and methodology present"
+    },
+    {
+      "name": "section:01-credit-risk:Research Intelligence Brief",
+      "status": "PASS",
+      "detail": "Research Intelligence Brief"
+    },
+    {
+      "name": "section:01-credit-risk:Decision Matrix",
+      "status": "PASS",
+      "detail": "Decision Matrix"
+    },
+    {
+      "name": "section:01-credit-risk:What Would Change Our Mind",
+      "status": "PASS",
+      "detail": "What Would Change Our Mind"
+    },
+    {
+      "name": "section:01-credit-risk:Interactive playground",
+      "status": "PASS",
+      "detail": "Interactive playground"
+    },
+    {
+      "name": "section:01-credit-risk:Export selected evidence",
+      "status": "PASS",
+      "detail": "Export selected evidence"
+    },
+    {
+      "name": "control:01-credit-risk:rateShock",
+      "status": "PASS",
+      "detail": "Mortgage-rate shock \u00b7 percentage points"
+    },
+    {
+      "name": "control:01-credit-risk:passThrough",
+      "status": "PASS",
+      "detail": "Assumed strain response \u00b7 pp per rate pp"
+    },
+    {
+      "name": "control:01-credit-risk:incomeStress",
+      "status": "PASS",
+      "detail": "Additional survey-strain assumption \u00b7 pp"
+    },
+    {
+      "name": "html:02-financial",
+      "status": "PASS",
+      "detail": "dashboard and methodology present"
+    },
+    {
+      "name": "section:02-financial:Research Intelligence Brief",
+      "status": "PASS",
+      "detail": "Research Intelligence Brief"
+    },
+    {
+      "name": "section:02-financial:Decision Matrix",
+      "status": "PASS",
+      "detail": "Decision Matrix"
+    },
+    {
+      "name": "section:02-financial:What Would Change Our Mind",
+      "status": "PASS",
+      "detail": "What Would Change Our Mind"
+    },
+    {
+      "name": "section:02-financial:Interactive playground",
+      "status": "PASS",
+      "detail": "Interactive playground"
+    },
+    {
+      "name": "section:02-financial:Export selected evidence",
+      "status": "PASS",
+      "detail": "Export selected evidence"
+    },
+    {
+      "name": "control:02-financial:hedgeShare",
+      "status": "PASS",
+      "detail": "Frozen diversified share \u00b7 %"
+    },
+    {
+      "name": "control:02-financial:priceShock",
+      "status": "PASS",
+      "detail": "Price shock \u00b7 %"
+    },
+    {
+      "name": "control:02-financial:load",
+      "status": "PASS",
+      "detail": "Indexed load \u00b7 MWh"
+    },
+    {
+      "name": "html:03-accounting",
+      "status": "PASS",
+      "detail": "dashboard and methodology present"
+    },
+    {
+      "name": "section:03-accounting:Research Intelligence Brief",
+      "status": "PASS",
+      "detail": "Research Intelligence Brief"
+    },
+    {
+      "name": "section:03-accounting:Decision Matrix",
+      "status": "PASS",
+      "detail": "Decision Matrix"
+    },
+    {
+      "name": "section:03-accounting:What Would Change Our Mind",
+      "status": "PASS",
+      "detail": "What Would Change Our Mind"
+    },
+    {
+      "name": "section:03-accounting:Interactive playground",
+      "status": "PASS",
+      "detail": "Interactive playground"
+    },
+    {
+      "name": "section:03-accounting:Export selected evidence",
+      "status": "PASS",
+      "detail": "Export selected evidence"
+    },
+    {
+      "name": "control:03-accounting:cfoShock",
+      "status": "PASS",
+      "detail": "Operating cash-flow change \u00b7 %"
+    },
+    {
+      "name": "control:03-accounting:capexShock",
+      "status": "PASS",
+      "detail": "Cash-capex change \u00b7 %"
+    },
+    {
+      "name": "control:03-accounting:tolerance",
+      "status": "PASS",
+      "detail": "Audit review threshold \u00b7 intensity %"
+    },
+    {
+      "name": "html:04-governance",
+      "status": "PASS",
+      "detail": "dashboard and methodology present"
+    },
+    {
+      "name": "section:04-governance:Research Intelligence Brief",
+      "status": "PASS",
+      "detail": "Research Intelligence Brief"
+    },
+    {
+      "name": "section:04-governance:Decision Matrix",
+      "status": "PASS",
+      "detail": "Decision Matrix"
+    },
+    {
+      "name": "section:04-governance:What Would Change Our Mind",
+      "status": "PASS",
+      "detail": "What Would Change Our Mind"
+    },
+    {
+      "name": "section:04-governance:Interactive playground",
+      "status": "PASS",
+      "detail": "Interactive playground"
+    },
+    {
+      "name": "section:04-governance:Export selected evidence",
+      "status": "PASS",
+      "detail": "Export selected evidence"
+    },
+    {
+      "name": "control:04-governance:threshold",
+      "status": "PASS",
+      "detail": "Top-name dominance threshold \u00b7 %"
+    },
+    {
+      "name": "control:04-governance:minHoldings",
+      "status": "PASS",
+      "detail": "Minimum holdings per cell"
+    },
+    {
+      "name": "control:04-governance:shock",
+      "status": "PASS",
+      "detail": "Uniform value shock \u00b7 %"
+    },
+    {
+      "name": "html:05-business",
+      "status": "PASS",
+      "detail": "dashboard and methodology present"
+    },
+    {
+      "name": "section:05-business:Research Intelligence Brief",
+      "status": "PASS",
+      "detail": "Research Intelligence Brief"
+    },
+    {
+      "name": "section:05-business:Decision Matrix",
+      "status": "PASS",
+      "detail": "Decision Matrix"
+    },
+    {
+      "name": "section:05-business:What Would Change Our Mind",
+      "status": "PASS",
+      "detail": "What Would Change Our Mind"
+    },
+    {
+      "name": "section:05-business:Interactive playground",
+      "status": "PASS",
+      "detail": "Interactive playground"
+    },
+    {
+      "name": "section:05-business:Export selected evidence",
+      "status": "PASS",
+      "detail": "Export selected evidence"
+    },
+    {
+      "name": "control:05-business:useGain",
+      "status": "PASS",
+      "detail": "Assumed annual use change \u00b7 pp"
+    },
+    {
+      "name": "control:05-business:considerGain",
+      "status": "PASS",
+      "detail": "Assumed annual consideration change \u00b7 pp"
+    },
+    {
+      "name": "control:05-business:horizon",
+      "status": "PASS",
+      "detail": "Scenario horizon \u00b7 years"
+    },
+    {
+      "name": "html:06-public-finance",
+      "status": "PASS",
+      "detail": "dashboard and methodology present"
+    },
+    {
+      "name": "section:06-public-finance:Research Intelligence Brief",
+      "status": "PASS",
+      "detail": "Research Intelligence Brief"
+    },
+    {
+      "name": "section:06-public-finance:Decision Matrix",
+      "status": "PASS",
+      "detail": "Decision Matrix"
+    },
+    {
+      "name": "section:06-public-finance:What Would Change Our Mind",
+      "status": "PASS",
+      "detail": "What Would Change Our Mind"
+    },
+    {
+      "name": "section:06-public-finance:Interactive playground",
+      "status": "PASS",
+      "detail": "Interactive playground"
+    },
+    {
+      "name": "section:06-public-finance:Export selected evidence",
+      "status": "PASS",
+      "detail": "Export selected evidence"
+    },
+    {
+      "name": "control:06-public-finance:revenueShock",
+      "status": "PASS",
+      "detail": "Annual revenue change \u00b7 %"
+    },
+    {
+      "name": "control:06-public-finance:spendingShock",
+      "status": "PASS",
+      "detail": "Annual expenditure change \u00b7 %"
+    },
+    {
+      "name": "control:06-public-finance:horizon",
+      "status": "PASS",
+      "detail": "Scenario horizon \u00b7 years"
+    },
+    {
+      "name": "json-no-nan",
+      "status": "PASS",
+      "detail": "strict JSON"
+    }
+  ],
+  "summary": {
+    "pass": 690,
+    "fail": 0
+  },
+  "warnings": [
+    {
+      "study": "credit",
+      "status": "WARNING",
+      "detail": "Eight annual origins; confidence interval crosses zero; no PD or arrears-balance inference."
+    },
+    {
+      "study": "financial",
+      "status": "NOT VERIFIED",
+      "detail": "Workbook clock, time zone and DST alignment are not authenticated; no executable hedge claim."
+    },
+    {
+      "study": "accounting",
+      "status": "WARNING",
+      "detail": "Candidate smoothing rule underperforms last value; six-issuer perimeter."
+    },
+    {
+      "study": "governance",
+      "status": "WARNING",
+      "detail": "Snapshot cells are analytical groupings, not legal-control or risk-contribution measures."
+    },
+    {
+      "study": "business",
+      "status": "NOT VERIFIED",
+      "detail": "No sampling errors, microdata or proven nested indicator populations; no conversion claim."
+    },
+    {
+      "study": "public_finance",
+      "status": "WARNING",
+      "detail": "Component rule underperforms persistence; nominal latest-vintage series through 2024."
+    },
+    {
+      "scope": "review",
+      "status": "NOT VERIFIED",
+      "detail": "Automated same-session independent calculation path; no external human peer review."
+    },
+    {
+      "scope": "mobile",
+      "status": "NOT VERIFIED",
+      "detail": "Physical-device rendering requires post-deployment browser inspection."
+    }
+  ],
+  "publication_gate": "PASS WITH DISCLOSED WARNINGS"
+}
