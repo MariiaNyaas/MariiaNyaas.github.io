@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T05:23:15+00:00",
+  "checked_at": "2026-11-14T05:56:31+00:00",
   "countries": {
     "DNK": {
       "capital": {
@@ -192,16 +192,8 @@
       }
     }
   },
-  "errors": [
-    "NOR/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
-    "SWE/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
-    "SWE/FB.AST.NPER.ZS: TimeoutError: The read operation timed out",
-    "SWE/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
-    "DNK/SL.UEM.TOTL.ZS: TimeoutError: The read operation timed out",
-    "DNK/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
-    "FIN/FB.AST.NPER.ZS: TimeoutError: The read operation timed out"
-  ],
-  "failed_series": 7,
+  "errors": [],
+  "failed_series": 0,
   "indicators": {
     "capital": "FB.BNK.CAPA.ZS",
     "credit": "FS.AST.PRVT.GD.ZS",
@@ -210,9 +202,9 @@
     "npl": "FB.AST.NPER.ZS",
     "unemployment": "SL.UEM.TOTL.ZS"
   },
-  "last_success": "2026-11-14T05:23:15+00:00",
+  "last_success": "2026-11-14T05:56:31+00:00",
   "methodology": "Latest non-null observations per country and series. Annual vintages vary. No imputation, no predictive claims.",
   "source": "https://api.worldbank.org/v2/",
-  "status": "partial",
-  "successful_series": 23
+  "status": "ok",
+  "successful_series": 30
 }
