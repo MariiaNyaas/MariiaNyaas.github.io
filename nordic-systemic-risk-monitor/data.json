@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-17T06:08:34+00:00",
+  "checked_at": "2026-11-18T05:32:23+00:00",
   "countries": {
     "DNK": {
       "capital": {
@@ -193,16 +193,13 @@
     }
   },
   "errors": [
-    "NOR/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
-    "NOR/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
-    "FIN/FP.CPI.TOTL.ZG: TimeoutError: The read operation timed out",
-    "FIN/FS.AST.PRVT.GD.ZS: TimeoutError: The read operation timed out",
-    "FIN/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out",
-    "ISL/FP.CPI.TOTL.ZG: TimeoutError: The read operation timed out",
-    "ISL/FB.AST.NPER.ZS: TimeoutError: The read operation timed out",
-    "ISL/FB.BNK.CAPA.ZS: TimeoutError: The read operation timed out"
+    "NOR/FP.CPI.TOTL.ZG: TimeoutError: The read operation timed out",
+    "SWE/FP.CPI.TOTL.ZG: TimeoutError: The read operation timed out",
+    "SWE/NY.GDP.MKTP.KD.ZG: TimeoutError: The read operation timed out",
+    "DNK/SL.UEM.TOTL.ZS: TimeoutError: The read operation timed out",
+    "FIN/SL.UEM.TOTL.ZS: TimeoutError: The read operation timed out"
   ],
-  "failed_series": 8,
+  "failed_series": 5,
   "indicators": {
     "capital": "FB.BNK.CAPA.ZS",
     "credit": "FS.AST.PRVT.GD.ZS",
@@ -211,9 +208,9 @@
     "npl": "FB.AST.NPER.ZS",
     "unemployment": "SL.UEM.TOTL.ZS"
   },
-  "last_success": "2026-11-17T06:08:34+00:00",
+  "last_success": "2026-11-18T05:32:23+00:00",
   "methodology": "Latest non-null observations per country and series. Annual vintages vary. No imputation, no predictive claims.",
   "source": "https://api.worldbank.org/v2/",
   "status": "partial",
-  "successful_series": 22
+  "successful_series": 25
 }
