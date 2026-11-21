@@ -4,9 +4,10 @@ from __future__ import annotations
 import hashlib,json,math,pathlib,re,sys
 import numpy as np
 import pandas as pd
+from result_store import load_results
 
 SOURCE=pathlib.Path(sys.argv[1]).resolve(); RELEASE=pathlib.Path(sys.argv[2]).resolve()
-RESULT=json.loads((RELEASE/'shared/results.json').read_text()); STUDIES=json.loads((RELEASE/'shared/studies.json').read_text())
+RESULT=load_results(RELEASE/'shared'); STUDIES=json.loads((RELEASE/'shared/studies.json').read_text())
 checks=[]
 def check(name,condition,detail=''):
  checks.append({'name':name,'status':'PASS' if condition else 'FAIL','detail':str(detail)})

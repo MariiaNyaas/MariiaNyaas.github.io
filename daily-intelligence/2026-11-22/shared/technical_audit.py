@@ -13,6 +13,7 @@ import pathlib
 import subprocess
 from html.parser import HTMLParser
 from urllib.parse import urlparse
+from result_store import load_results
 
 HERE = pathlib.Path(__file__).resolve().parent
 RELEASE = HERE.parent
@@ -70,7 +71,7 @@ def finite_tree(value):
     return True
 
 
-results = json.loads((HERE / "results.json").read_text())
+results = load_results(HERE)
 studies = json.loads((HERE / "studies.json").read_text())
 manifest = json.loads((HERE / "extraction_manifest.json").read_text())
 calc = json.loads((HERE / "calculation_audit.json").read_text())

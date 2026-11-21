@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 import html,json,pathlib
+from result_store import load_results
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-D=json.loads((ROOT/'shared/results.json').read_text())['studies']
+D=load_results(ROOT/'shared')['studies']
 fmt=lambda x,d=2:f'{x:,.{d}f}'
 
 studies=[
