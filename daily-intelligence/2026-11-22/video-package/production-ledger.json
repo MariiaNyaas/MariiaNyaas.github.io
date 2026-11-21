@@ -1,0 +1,126 @@
+{
+  "release_date": "2026-11-22",
+  "timezone": "Europe/Oslo",
+  "brand_id": "8066818",
+  "accounts": {
+    "instagram": "nordveritas",
+    "tiktok": "bynordveritas",
+    "youtube": "UCGqMWQvduTBrYVZN16eXccA"
+  },
+  "presenter": {
+    "name": "Elodie",
+    "look": "Elodie Office 8",
+    "look_id": "bc0ac3d5ed0345e3819416cd1d6d4656",
+    "voice": "Renata — Clear & Professional",
+    "voice_id": "6567750df960424fb6556202d7206640",
+    "subtitles": false,
+    "aspect_ratio": "9:16",
+    "duration_seconds": 140
+  },
+  "qa_scope": {
+    "automated_media_checks": "PASS",
+    "contact_sheet_review": "PASS",
+    "full_human_listening": "NOT VERIFIED",
+    "instagram_oslo_location": "WARNING — supplied on create, omitted by Metricool on read-back"
+  },
+  "items": [
+    {
+      "number": 1,
+      "slug": "01-credit-risk",
+      "time": "10:00",
+      "heygen_video_id": "9ce9812b0a56356b49743dcef000b3a2",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "e3d7d0d5ecca384a0fbddf2e1a5b850caf462c7d62ad4903b17c796a8f2a8497",
+      "posts": {
+        "instagram": {"uuid": "-3395981480375205328", "status": "PENDING"},
+        "tiktok": {"uuid": "-7980603139016538848", "status": "PENDING"},
+        "youtube": {"uuid": "-1597104271325510477", "status": "PENDING"}
+      }
+    },
+    {
+      "number": 2,
+      "slug": "02-financial",
+      "time": "12:00",
+      "heygen_video_id": "1084e3986fb1dc75331166b443f25574",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "c26eca3e8f08474d0ba6fee1349b447156e8bb12c422d319622226b01950bf97",
+      "posts": {
+        "instagram": {"uuid": "-8754360909875951832", "status": "PENDING"},
+        "tiktok": {"uuid": "-7531323704540772175", "status": "PENDING"},
+        "youtube": {"uuid": "1654097281640514862", "status": "PENDING"}
+      }
+    },
+    {
+      "number": 3,
+      "slug": "03-accounting",
+      "time": "14:00",
+      "heygen_video_id": "574b0a6c485c069954a3adb6d3dd90e6",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "298aac7e6e6949672758dae2453d023769f5200640d0d17d9bb601fc125ca000",
+      "posts": {
+        "instagram": {"uuid": "-6084701612884147431", "status": "PENDING"},
+        "tiktok": {"uuid": "2861000841499463093", "status": "PENDING"},
+        "youtube": {"uuid": "-4378346065418499504", "status": "PENDING"}
+      }
+    },
+    {
+      "number": 4,
+      "slug": "04-governance",
+      "time": "16:00",
+      "heygen_video_id": "1ee35562bf734e2acdb555bc2916249e",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "c60eefe291afee0eacc7310823d38b53dae5f946f328edff11e676cfe5387ae1",
+      "posts": {
+        "instagram": {"uuid": "-6662543859049281822", "status": "PENDING"},
+        "tiktok": {"uuid": "-6616183449140310408", "status": "PENDING"},
+        "youtube": {"uuid": "-5428353178582826992", "status": "PENDING"}
+      }
+    },
+    {
+      "number": 5,
+      "slug": "05-business",
+      "time": "18:00",
+      "heygen_video_id": "cf32e3cf608db78712afb22591560f93",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "892f1b7026d9da8219ad511c057ae906639df32b90651c004fba622b6252b228",
+      "posts": {
+        "instagram": {"uuid": "-5004880664935448416", "status": "PENDING"},
+        "tiktok": {"uuid": "-7681193820090515076", "status": "PENDING"},
+        "youtube": {"uuid": "8022557920051611501", "status": "PENDING"}
+      }
+    },
+    {
+      "number": 6,
+      "slug": "06-public-finance",
+      "time": "20:00",
+      "heygen_video_id": "e20735cd66780101f8f5c422667cdc3b",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "bcfd23294607ca98afecb9f6706d71f04c6a877aa314d7c36c33c5441ee4c8f4",
+      "posts": {
+        "instagram": {"uuid": "2756142268815197373", "status": "PENDING"},
+        "tiktok": {"uuid": "-7102704493906803030", "status": "PENDING"},
+        "youtube": {"uuid": "4433208980357664030", "status": "PENDING"}
+      }
+    },
+    {
+      "number": 7,
+      "slug": "07-art-capital",
+      "time": "22:00",
+      "heygen_video_id": "471f44c9f289832f7b664bdcdd4b7d36",
+      "generation_status": "completed",
+      "final_duration_seconds": 140.0,
+      "sha256": "b03f39a69457b9bf61ad3e5aeef44d7c2bab8530eaf5a0771edcabe4db88a245",
+      "posts": {
+        "instagram": {"uuid": "8667955241667412159", "status": "PENDING"},
+        "tiktok": {"uuid": "-316859006332549525", "status": "PENDING"},
+        "youtube": {"uuid": "-406519725258553580", "status": "PENDING"}
+      }
+    }
+  ]
+}

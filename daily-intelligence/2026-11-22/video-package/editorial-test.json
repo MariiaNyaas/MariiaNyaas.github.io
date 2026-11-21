@@ -1,0 +1,11 @@
+{
+  "cycle": "2026-11-22",
+  "variable": "opening_hook_specificity",
+  "hypothesis": "A verified contradiction or result in the first sentence will improve comparable 72-hour retention without weakening accuracy.",
+  "implementation": "Each video opens with one research conflict or failed benchmark; no greeting and no generic promise.",
+  "visual_policy": "Approximately 60–65% observed evidence, validation charts and mechanism diagrams; 35–40% AI narrator.",
+  "comparison_window": ["72_hours", "7_days"],
+  "metrics": ["retention", "completions", "saves_per_1000_views", "shares_per_1000_views", "follows_per_1000_views"],
+  "status": "RESULT_PENDING",
+  "caution": "This is a package-level editorial change, not a clean randomized A/B test. Small samples will not establish causality."
+}

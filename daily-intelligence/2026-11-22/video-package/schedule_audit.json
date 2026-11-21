@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-21T18:00:00+01:00",
+  "release_date": "2026-11-22",
+  "timezone": "Europe/Oslo",
+  "brand_id": "8066818",
+  "expected_posts": 21,
+  "observed_posts": 21,
+  "all_pending": true,
+  "duplicate_network_posts": false,
+  "ai_disclosure_present": true,
+  "slots": {
+    "10:00": ["instagram", "tiktok", "youtube"],
+    "12:00": ["instagram", "tiktok", "youtube"],
+    "14:00": ["instagram", "tiktok", "youtube"],
+    "16:00": ["instagram", "tiktok", "youtube"],
+    "18:00": ["instagram", "tiktok", "youtube"],
+    "20:00": ["instagram", "tiktok", "youtube"],
+    "22:00": ["instagram", "tiktok", "youtube"]
+  },
+  "instagram_location": {
+    "requested": "Oslo",
+    "requested_place_id": "109415395844200",
+    "read_back_present": false,
+    "status": "WARNING",
+    "action": "No duplicate paid upload or repeated schedule mutation; disclose limitation."
+  },
+  "publication_status": "SCHEDULED_NOT_PUBLISHED",
+  "public_urls_available": false,
+  "story_reposts": "NOT YET APPLICABLE — native repost is only possible after confirmed publication"
+}

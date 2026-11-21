@@ -1,0 +1,103 @@
+{
+  "scope": "Automated container/stream QA; not a substitute for full human listening and motion review.",
+  "items": [
+    {
+      "slug": "01-credit-risk",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "e3d7d0d5ecca384a0fbddf2e1a5b850caf462c7d62ad4903b17c796a8f2a8497",
+      "bytes": 36470121
+    },
+    {
+      "slug": "02-financial",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "c26eca3e8f08474d0ba6fee1349b447156e8bb12c422d319622226b01950bf97",
+      "bytes": 33666747
+    },
+    {
+      "slug": "03-accounting",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "298aac7e6e6949672758dae2453d023769f5200640d0d17d9bb601fc125ca000",
+      "bytes": 33391633
+    },
+    {
+      "slug": "04-governance",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "c60eefe291afee0eacc7310823d38b53dae5f946f328edff11e676cfe5387ae1",
+      "bytes": 33447227
+    },
+    {
+      "slug": "05-business",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "892f1b7026d9da8219ad511c057ae906639df32b90651c004fba622b6252b228",
+      "bytes": 33398323
+    },
+    {
+      "slug": "06-public-finance",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "bcfd23294607ca98afecb9f6706d71f04c6a877aa314d7c36c33c5441ee4c8f4",
+      "bytes": 33472839
+    },
+    {
+      "slug": "07-art-capital",
+      "status": "PASS",
+      "duration": 140.0,
+      "checks": {
+        "duration_140": true,
+        "vertical_1080x1920": true,
+        "fps_30": true,
+        "audio_present": true,
+        "no_subtitle_track": true
+      },
+      "sha256": "b03f39a69457b9bf61ad3e5aeef44d7c2bab8530eaf5a0771edcabe4db88a245",
+      "bytes": 33472139
+    }
+  ]
+}
