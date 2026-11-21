@@ -1,0 +1,13 @@
+{
+  "release": "2026-11-22",
+  "cutoff": "2026-11-21T15:00:00+01:00",
+  "sources": [
+    {"owner":"Statistics Norway","tables":["08727","12128"],"purpose":"household interest burden and reported payment strain","observation_end":"2025","retrieval_date":"2026-11-21","revision_note":"latest published vintage; real-time archive not used"},
+    {"owner":"Norges Bank","series":["EXR/M.EUR.NOK.SP","IR/B.KPRA"],"purpose":"monthly EUR/NOK and key policy rate","observation_end":"2026-10","retrieval_date":"2026-11-21","unit":"NOK per EUR; percent"},
+    {"owner":"US Securities and Exchange Commission","endpoint":"Company Facts API","issuers":6,"purpose":"annual revenue, CFO, receivables, inventory and payables","filed_through":"2026-11-21","retrieval_date":"2026-11-21","revision_note":"latest filing vintage"},
+    {"owner":"Norges Bank Investment Management","report_date":"2026-06-30","purpose":"listed-equity market value, voting and ownership percentages","retrieval_date":"2026-11-21","unit":"NOK; percent"},
+    {"owner":"Eurostat","datasets":["isoc_e_dii","isoc_eb_ain2"],"purpose":"digital intensity and AI use in enterprises","observation_end":"2025","retrieval_date":"2026-11-21","unit":"percentage of enterprises"},
+    {"owner":"Statistics Norway","tables":["10721"],"purpose":"general-government interest income and expense","observation_end":"2024","retrieval_date":"2026-11-21","unit":"NOK million"},
+    {"owner":"Statistics Norway","tables":["09542","09539"],"purpose":"museum finance and visits","observation_end":"2024","retrieval_date":"2026-11-21","revision_note":"2025 visit questionnaire not bridged into the historical series"}
+  ]
+}

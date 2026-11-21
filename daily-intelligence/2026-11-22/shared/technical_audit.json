@@ -1,0 +1,368 @@
+{
+  "status": "PASS — PRE-DEPLOY STATIC; BROWSER GATE PENDING",
+  "pass": 69,
+  "fail": 0,
+  "not_verified": 3,
+  "checks": [
+    {
+      "name": "Exactly seven study specifications",
+      "status": "PASS",
+      "detail": "7"
+    },
+    {
+      "name": "Exactly seven result blocks",
+      "status": "PASS",
+      "detail": "7"
+    },
+    {
+      "name": "All numeric research results are finite",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Calculation audit has no failures",
+      "status": "PASS",
+      "detail": "593 PASS / 0 FAIL"
+    },
+    {
+      "name": "Source manifest is populated",
+      "status": "PASS",
+      "detail": "52 retained files"
+    },
+    {
+      "name": "JavaScript parses under Node",
+      "status": "PASS",
+      "detail": "syntax OK"
+    },
+    {
+      "name": "Design token #0E1929",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Design token #CEB382",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Design token #F4F1EB",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Design token #ACB8C6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Responsive CSS breakpoint exists",
+      "status": "PASS",
+      "detail": "responsive layout rule retained"
+    },
+    {
+      "name": "No literal NaN placeholder in app",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No literal undefined placeholder in app",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "01-credit-risk: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "01-credit-risk: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "burdenShift, incomeShock, persistenceDrift, strainElasticity"
+    },
+    {
+      "name": "01-credit-risk: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://www.ssb.no/en/statbank/table/08727/"
+    },
+    {
+      "name": "01-credit-risk: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "02-financial: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "02-financial: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "monthlyFxMove, rateSensitivity, rateShock"
+    },
+    {
+      "name": "02-financial: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"
+    },
+    {
+      "name": "02-financial: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "03-accounting: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "03-accounting: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "cfoChange, revenueChange, wcDrag"
+    },
+    {
+      "name": "03-accounting: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+    },
+    {
+      "name": "03-accounting: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "04-governance: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "04-governance: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "gapThreshold, minValueBn, valueShock"
+    },
+    {
+      "name": "04-governance: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://www.nbim.no/en/investments/all-investments/"
+    },
+    {
+      "name": "04-governance: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "05-business: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "05-business: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "adoptionMomentum, conversion, readinessGain"
+    },
+    {
+      "name": "05-business: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://ec.europa.eu/eurostat/databrowser/view/isoc_e_dii/default/table"
+    },
+    {
+      "name": "05-business: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "06-public-finance: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "06-public-finance: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "expensePassThrough, incomePassThrough, rateShock"
+    },
+    {
+      "name": "06-public-finance: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://www.ssb.no/en/statbank/table/10721/"
+    },
+    {
+      "name": "06-public-finance: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital: page and methodology exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital: required interactive regions",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "07-art-capital: every configured input is rendered",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "07-art-capital: input defaults and bounds are valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital: every input enters scenario formula",
+      "status": "PASS",
+      "detail": "ownChange, publicChange, visitChange"
+    },
+    {
+      "name": "07-art-capital: source URL is HTTPS",
+      "status": "PASS",
+      "detail": "https://www.ssb.no/en/statbank/table/09542/"
+    },
+    {
+      "name": "07-art-capital: methodology is separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All internal release links resolve",
+      "status": "PASS",
+      "detail": "0 broken"
+    },
+    {
+      "name": "Evidence selector event",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Scenario input event",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Reset handler",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Scenario JSON export",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Evidence CSV export",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Ready-state marker",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Rendered browser interaction before deployment",
+      "status": "NOT VERIFIED",
+      "detail": "NOT VERIFIED pre-deployment: the execution sandbox denies Chromium sockets and isolates the native browser from the local HTTP namespace. Public-commit browser QA is required before final gate."
+    },
+    {
+      "name": "Physical mobile-device test",
+      "status": "NOT VERIFIED",
+      "detail": "NOT VERIFIED; responsive browser viewport test is separate"
+    },
+    {
+      "name": "External human peer review",
+      "status": "NOT VERIFIED",
+      "detail": "NOT VERIFIED; automated same-session audit only"
+    }
+  ]
+}

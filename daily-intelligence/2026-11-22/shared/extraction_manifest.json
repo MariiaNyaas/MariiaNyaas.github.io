@@ -1,0 +1,314 @@
+[
+  {
+    "file": "eurostat_isoc_e_dii_BE.json",
+    "bytes": 11036,
+    "sha256": "1c28d7050c4728828b10a8ca2fce6976c33ba5581296c8e5f9f2144348a3ae9a",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_DE.json",
+    "bytes": 10324,
+    "sha256": "f408e66072435cd287db9c73a9a80b1a7e4c2934fdea538b57cde5f8d74b8ca0",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_DK.json",
+    "bytes": 10445,
+    "sha256": "823932bb72cc79b5fbe3563fca927118785d4057962daf8c4a9fabaa2314cd84",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_FI.json",
+    "bytes": 10336,
+    "sha256": "398b48abfb0054c481d3a3a47c681ce137eb5b3d0048e13a7e9ed30b759beaa4",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_FR.json",
+    "bytes": 10950,
+    "sha256": "50834202f4a7f38da48d9701d1a710988fb2dd43dae4dc772818aed764ee9230",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_IE.json",
+    "bytes": 10328,
+    "sha256": "f5d1131bcefaa566888ab5f97b7ebad5a2ab51cd4d599dc2a2c70317ae5d93f6",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_NL.json",
+    "bytes": 10749,
+    "sha256": "b8be13b3d93f2207715b6b4bccf96ed054deb606dcd9cd55b4bf9ead4515eab9",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_NO.json",
+    "bytes": 10332,
+    "sha256": "4426c310e7e98b117b4d317fef6c1fa60db090d616ec2223f569c53e5b5796f8",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_PL.json",
+    "bytes": 10314,
+    "sha256": "6575be32bdd64e4ee2fb124cf4092e36988f7ed8eb764b2c0b3e9d0bccc328bd",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_e_dii_SE.json",
+    "bytes": 12487,
+    "sha256": "2a469ed0bf6aff2e8ff220c2a032e74c20aafbedcbfcda7844b25f93072dbe2e",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_BE.json",
+    "bytes": 317846,
+    "sha256": "87eb4eb5772f9693e1c15a364312fa267f517036c7f53ae74deaab8412e8b2fd",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_DE.json",
+    "bytes": 251681,
+    "sha256": "59e23efa45d176ca5f1e2e51e2e45c9828eb8c1bcf3d3670d30931db0156273a",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_DK.json",
+    "bytes": 278713,
+    "sha256": "86ae17e9fb4d3764728ef66d00b5ab8075eda8ca9bdd3c3a055156855eddb42f",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_FI.json",
+    "bytes": 281875,
+    "sha256": "80be9c92fbc30b64a9aeb232ba09263b0691d75a2be92aa1b50440f4bd0ffa75",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_FR.json",
+    "bytes": 230230,
+    "sha256": "cdd5d45bda83497d36fc800f51a7d609c72a5522cadb0c8ded3bb78b6c8d58c4",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_IE.json",
+    "bytes": 183539,
+    "sha256": "d4fb297adb811aa692ce4ba60bb19145e412e0725110ed4c8f9939cfcfff6f89",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_NL.json",
+    "bytes": 335056,
+    "sha256": "1de8e2d6a56678bd7c72d0eefc13315efbc1bf48152a3c98490a6d172a517fd2",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_NO.json",
+    "bytes": 322836,
+    "sha256": "88cd225b851e2d8a56683f9ca212561306d0783c4a262c9450fc4c3e1d371684",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_PL.json",
+    "bytes": 329469,
+    "sha256": "4bc1c388a9fcbcc5b30a3ee4fc05ef5cbf32957fb42c3a77cf22b5190b151b73",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "eurostat_isoc_eb_ain2_SE.json",
+    "bytes": 369037,
+    "sha256": "156d7cd6ee18fe0f2e3b836ca9889109ff28af7392eaaf24aa0e2e76c78c0a24",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "nbim_all_investments_page.html",
+    "bytes": 29798,
+    "sha256": "6197974905e219b0690478c0449d181fa3a0d7d441ade1add92f8ab88f0c2127",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "nbim_equity_20260630.csv",
+    "bytes": 1168228,
+    "sha256": "716490d1579681c91fecf641968a36f549691ef1213fcc68832c86dcb0ec33da",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "nbim_investments_app.js",
+    "bytes": 3372387,
+    "sha256": "a00dd68a96a88ccfcbef520593288c813b5b8a1fab148d53d0fafb3d6a192957",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "norges_eurnok_monthly.csv",
+    "bytes": 39817,
+    "sha256": "8683c50dd856694b62c37047984c4be2ab6989191da8e8760fe62a31870739ab",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "norges_policy_rate.csv",
+    "bytes": 1567682,
+    "sha256": "99c273564e86f93c84d806403a85ef63daad8093639b14d7f0c4f5cb900436ba",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "sec_companyfacts_0000789019.json",
+    "bytes": 4938072,
+    "sha256": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "sec_companyfacts_0001018724.json",
+    "bytes": 4554378,
+    "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "sec_companyfacts_0001045810.json",
+    "bytes": 4092966,
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "sec_companyfacts_0001326801.json",
+    "bytes": 2810958,
+    "sha256": "f8e539cea9d363752df2f9bb33078c19ae897ff7f34d49fe4d9a732d032b94f7",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "sec_companyfacts_0001341439.json",
+    "bytes": 3964639,
+    "sha256": "fe93b258bc0ba8f3076ddebb5d8bb91c46deaa1f7b06d2ff2e3eaed85fee8a63",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "sec_companyfacts_0001652044.json",
+    "bytes": 3250837,
+    "sha256": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_07895_meta.json",
+    "bytes": 1745,
+    "sha256": "25a577089ac1ab66337b9a51197f737f93fd8773ca505a0ad35c09d925381e98",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_08727_meta.json",
+    "bytes": 1944,
+    "sha256": "443192f3484c695e13fd105e7b41043ba9a1fe9ef0288ee9d23ceff1670d4397",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_08727_query.json",
+    "bytes": 930,
+    "sha256": "f4acdd387858f9bfb224ce24e4476a92a1ca15a5e51fdb223b33788a50066476",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_08727_response.json",
+    "bytes": 9435,
+    "sha256": "b0079f24d4401911f12eded01a34f2ece4c78c8afed8ac9887262689ee175d63",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09122_meta.json",
+    "bytes": 2734,
+    "sha256": "3d263ac816e222ae8fc6ae5084f6431a5f4b0ba110638263ff8f8550c7d9ed61",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09538_meta.json",
+    "bytes": 1662,
+    "sha256": "53a97e7ee168160d44a94461d139eb13f4e285dbd0ea2805c42ef24d9df413c3",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09539_meta.json",
+    "bytes": 1696,
+    "sha256": "dbb96ea2eebc4a316e49d20eaddee686cee18a452b3e76b4d7a0c89d2adf3a69",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09539_query.json",
+    "bytes": 656,
+    "sha256": "f14086aa44dbea96568d7ff3d417dbcfd6714fce79148c7cfec087706e6ede3b",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09539_response.json",
+    "bytes": 3543,
+    "sha256": "f6ad2e5284246e73c533f8f5e9279ea02673e2d122dc7d3b9ae0dfa81cefeb74",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09542_meta.json",
+    "bytes": 1668,
+    "sha256": "5d605983344aa813b8e4f1ad7a7e3a20b109b966c1299fa65e966c47d9317f63",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09542_query.json",
+    "bytes": 533,
+    "sha256": "5a11cec159539b3d0e32342614d5488940599566d64a327b643be901f75c6dad",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_09542_response.json",
+    "bytes": 3615,
+    "sha256": "d4b6a07ccdde71feb58064e2a4c497dd7eec64f3b96ad2994655a7ddebd0abb7",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_10721_meta.json",
+    "bytes": 3852,
+    "sha256": "a8d6fb5adc8c547b79fc55a8b8e2aa65168a9b702668556f9c5b6b1f6dca1ea8",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_10721_query.json",
+    "bytes": 673,
+    "sha256": "8fa947b1ffd9df85aa6f6c824be450507ef9117dfeafb54a4c714fcc6851952f",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_10721_response.json",
+    "bytes": 3720,
+    "sha256": "13cc60b145a6fd8e2ff37ddccf96872a6f9a23b375587ec204dbac8fd281aea1",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_12128_meta.json",
+    "bytes": 1787,
+    "sha256": "a3635a3370dceddde962bb5ae1f1d7616a59e01a9c9d62913c02bdd6a53773c4",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_12128_query.json",
+    "bytes": 753,
+    "sha256": "4b9e275f52ea268b3fd28d341a61d3d7566f7ba27533a74b0b83ee2876e68fd3",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_12128_response.json",
+    "bytes": 4938,
+    "sha256": "387fe2efca239515147fe85fad805784e283708bcc8c5fe6c7ed447da32562e9",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_13908_meta.json",
+    "bytes": 1675,
+    "sha256": "3d1bf90db5c0818c8eb6845731b0f184596c2e5ea4a67cb8cbdf51b469424f36",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_13909_meta.json",
+    "bytes": 1491,
+    "sha256": "91d8569475f4356352d73c1b8c9441dfebecefaa789aab1631824f4eca806344",
+    "extracted": "2026-11-21"
+  },
+  {
+    "file": "ssb_13910_meta.json",
+    "bytes": 2459,
+    "sha256": "4f4d6c615b08539f193ed7e5880fb9ae0a18118d8e778a7b2505023d51721008",
+    "extracted": "2026-11-21"
+  }
+]

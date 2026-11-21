@@ -436,5 +436,68 @@
     "status": "published",
     "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-14/06-public-finance/",
     "topic": "The Fiscal-Balance Forecasting Trap"
+  },
+  {
+    "title": "The Interest-Burden Threshold Test",
+    "domain": "Credit Risk Intelligence",
+    "summary": "When household interest intensity rises, does reported payment strain become more predictable?",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/01-credit-risk/",
+    "topic": "The Interest-Burden Threshold Test"
+  },
+  {
+    "title": "The Policy-Rate Signal Test",
+    "domain": "Financial Intelligence",
+    "summary": "Can the Norwegian policy rate improve a monthly EUR/NOK random-walk baseline?",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/",
+    "topic": "The Policy-Rate Signal Test"
+  },
+  {
+    "title": "The Working-Capital Warning Test",
+    "domain": "Accounting & Audit Intelligence",
+    "summary": "Receivables, inventory and payables as a forward cash-conversion diagnostic",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/03-accounting/",
+    "topic": "The Working-Capital Warning Test"
+  },
+  {
+    "title": "The Voice-to-Capital Mismatch",
+    "domain": "Risk & Governance Intelligence",
+    "summary": "Where reported voting rights and economic ownership cease to be interchangeable",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/04-governance/",
+    "topic": "The Voice-to-Capital Mismatch"
+  },
+  {
+    "title": "The Digital-Readiness Conversion Test",
+    "domain": "Business & Economic Intelligence",
+    "summary": "Does basic digital intensity improve a next-year AI-adoption baseline?",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/05-business/",
+    "topic": "The Digital-Readiness Conversion Test"
+  },
+  {
+    "title": "The Sovereign Interest-Pass-Through Test",
+    "domain": "Public Finance Intelligence",
+    "summary": "Can the policy rate improve Norway’s next-year net-interest baseline?",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/06-public-finance/",
+    "topic": "The Sovereign Interest-Pass-Through Test"
+  },
+  {
+    "title": "The Museum Subsidy Resilience Test",
+    "domain": "Art & Capital Intelligence",
+    "summary": "Public funding, own revenue and the limits of predicting cultural demand",
+    "published": "2026-11-22",
+    "status": "published",
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/07-art-capital/",
+    "topic": "The Museum Subsidy Resilience Test"
   }
 ]

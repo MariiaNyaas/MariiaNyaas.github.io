@@ -1,0 +1,2974 @@
+{
+  "date": "2026-11-22",
+  "classification": "same-session automated independent source-record and score audit; not external human peer review",
+  "checks": [
+    {
+      "name": "Exactly seven studies",
+      "status": "PASS",
+      "detail": "7"
+    },
+    {
+      "name": "Exactly seven result objects",
+      "status": "PASS",
+      "detail": "7"
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_BE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_BE.json",
+      "status": "PASS",
+      "detail": "11036"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_BE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_DE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_DE.json",
+      "status": "PASS",
+      "detail": "10324"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_DE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_DK.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_DK.json",
+      "status": "PASS",
+      "detail": "10445"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_DK.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_FI.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_FI.json",
+      "status": "PASS",
+      "detail": "10336"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_FI.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_FR.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_FR.json",
+      "status": "PASS",
+      "detail": "10950"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_FR.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_IE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_IE.json",
+      "status": "PASS",
+      "detail": "10328"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_IE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_NL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_NL.json",
+      "status": "PASS",
+      "detail": "10749"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_NL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_NO.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_NO.json",
+      "status": "PASS",
+      "detail": "10332"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_NO.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_PL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_PL.json",
+      "status": "PASS",
+      "detail": "10314"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_PL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_e_dii_SE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_e_dii_SE.json",
+      "status": "PASS",
+      "detail": "12487"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_e_dii_SE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_BE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_BE.json",
+      "status": "PASS",
+      "detail": "317846"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_BE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_DE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_DE.json",
+      "status": "PASS",
+      "detail": "251681"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_DE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_DK.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_DK.json",
+      "status": "PASS",
+      "detail": "278713"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_DK.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_FI.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_FI.json",
+      "status": "PASS",
+      "detail": "281875"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_FI.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_FR.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_FR.json",
+      "status": "PASS",
+      "detail": "230230"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_FR.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_IE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_IE.json",
+      "status": "PASS",
+      "detail": "183539"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_IE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_NL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_NL.json",
+      "status": "PASS",
+      "detail": "335056"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_NL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_NO.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_NO.json",
+      "status": "PASS",
+      "detail": "322836"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_NO.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_PL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_PL.json",
+      "status": "PASS",
+      "detail": "329469"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_PL.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: eurostat_isoc_eb_ain2_SE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: eurostat_isoc_eb_ain2_SE.json",
+      "status": "PASS",
+      "detail": "369037"
+    },
+    {
+      "name": "Source SHA-256: eurostat_isoc_eb_ain2_SE.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: nbim_all_investments_page.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: nbim_all_investments_page.html",
+      "status": "PASS",
+      "detail": "29798"
+    },
+    {
+      "name": "Source SHA-256: nbim_all_investments_page.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: nbim_equity_20260630.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: nbim_equity_20260630.csv",
+      "status": "PASS",
+      "detail": "1168228"
+    },
+    {
+      "name": "Source SHA-256: nbim_equity_20260630.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: nbim_investments_app.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: nbim_investments_app.js",
+      "status": "PASS",
+      "detail": "3372387"
+    },
+    {
+      "name": "Source SHA-256: nbim_investments_app.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: norges_eurnok_monthly.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: norges_eurnok_monthly.csv",
+      "status": "PASS",
+      "detail": "39817"
+    },
+    {
+      "name": "Source SHA-256: norges_eurnok_monthly.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: norges_policy_rate.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: norges_policy_rate.csv",
+      "status": "PASS",
+      "detail": "1567682"
+    },
+    {
+      "name": "Source SHA-256: norges_policy_rate.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: sec_companyfacts_0000789019.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: sec_companyfacts_0000789019.json",
+      "status": "PASS",
+      "detail": "4938072"
+    },
+    {
+      "name": "Source SHA-256: sec_companyfacts_0000789019.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: sec_companyfacts_0001018724.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: sec_companyfacts_0001018724.json",
+      "status": "PASS",
+      "detail": "4554378"
+    },
+    {
+      "name": "Source SHA-256: sec_companyfacts_0001018724.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: sec_companyfacts_0001045810.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: sec_companyfacts_0001045810.json",
+      "status": "PASS",
+      "detail": "4092966"
+    },
+    {
+      "name": "Source SHA-256: sec_companyfacts_0001045810.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: sec_companyfacts_0001326801.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: sec_companyfacts_0001326801.json",
+      "status": "PASS",
+      "detail": "2810958"
+    },
+    {
+      "name": "Source SHA-256: sec_companyfacts_0001326801.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: sec_companyfacts_0001341439.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: sec_companyfacts_0001341439.json",
+      "status": "PASS",
+      "detail": "3964639"
+    },
+    {
+      "name": "Source SHA-256: sec_companyfacts_0001341439.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: sec_companyfacts_0001652044.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: sec_companyfacts_0001652044.json",
+      "status": "PASS",
+      "detail": "3250837"
+    },
+    {
+      "name": "Source SHA-256: sec_companyfacts_0001652044.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_07895_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_07895_meta.json",
+      "status": "PASS",
+      "detail": "1745"
+    },
+    {
+      "name": "Source SHA-256: ssb_07895_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_08727_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_08727_meta.json",
+      "status": "PASS",
+      "detail": "1944"
+    },
+    {
+      "name": "Source SHA-256: ssb_08727_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_08727_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_08727_query.json",
+      "status": "PASS",
+      "detail": "930"
+    },
+    {
+      "name": "Source SHA-256: ssb_08727_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_08727_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_08727_response.json",
+      "status": "PASS",
+      "detail": "9435"
+    },
+    {
+      "name": "Source SHA-256: ssb_08727_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09122_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09122_meta.json",
+      "status": "PASS",
+      "detail": "2734"
+    },
+    {
+      "name": "Source SHA-256: ssb_09122_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09538_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09538_meta.json",
+      "status": "PASS",
+      "detail": "1662"
+    },
+    {
+      "name": "Source SHA-256: ssb_09538_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09539_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09539_meta.json",
+      "status": "PASS",
+      "detail": "1696"
+    },
+    {
+      "name": "Source SHA-256: ssb_09539_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09539_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09539_query.json",
+      "status": "PASS",
+      "detail": "656"
+    },
+    {
+      "name": "Source SHA-256: ssb_09539_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09539_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09539_response.json",
+      "status": "PASS",
+      "detail": "3543"
+    },
+    {
+      "name": "Source SHA-256: ssb_09539_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09542_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09542_meta.json",
+      "status": "PASS",
+      "detail": "1668"
+    },
+    {
+      "name": "Source SHA-256: ssb_09542_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09542_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09542_query.json",
+      "status": "PASS",
+      "detail": "533"
+    },
+    {
+      "name": "Source SHA-256: ssb_09542_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_09542_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_09542_response.json",
+      "status": "PASS",
+      "detail": "3615"
+    },
+    {
+      "name": "Source SHA-256: ssb_09542_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_10721_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_10721_meta.json",
+      "status": "PASS",
+      "detail": "3852"
+    },
+    {
+      "name": "Source SHA-256: ssb_10721_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_10721_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_10721_query.json",
+      "status": "PASS",
+      "detail": "673"
+    },
+    {
+      "name": "Source SHA-256: ssb_10721_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_10721_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_10721_response.json",
+      "status": "PASS",
+      "detail": "3720"
+    },
+    {
+      "name": "Source SHA-256: ssb_10721_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_12128_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_12128_meta.json",
+      "status": "PASS",
+      "detail": "1787"
+    },
+    {
+      "name": "Source SHA-256: ssb_12128_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_12128_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_12128_query.json",
+      "status": "PASS",
+      "detail": "753"
+    },
+    {
+      "name": "Source SHA-256: ssb_12128_query.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_12128_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_12128_response.json",
+      "status": "PASS",
+      "detail": "4938"
+    },
+    {
+      "name": "Source SHA-256: ssb_12128_response.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_13908_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_13908_meta.json",
+      "status": "PASS",
+      "detail": "1675"
+    },
+    {
+      "name": "Source SHA-256: ssb_13908_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_13909_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_13909_meta.json",
+      "status": "PASS",
+      "detail": "1491"
+    },
+    {
+      "name": "Source SHA-256: ssb_13909_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source exists: ssb_13910_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source byte size: ssb_13910_meta.json",
+      "status": "PASS",
+      "detail": "2459"
+    },
+    {
+      "name": "Source SHA-256: ssb_13910_meta.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Credit latest \u226515% burden recomputed",
+      "status": "PASS",
+      "detail": "20.000000000000004"
+    },
+    {
+      "name": "Credit model MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Credit baseline MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Financial latest month reread",
+      "status": "PASS",
+      "detail": "2026-10"
+    },
+    {
+      "name": "Financial latest EUR/NOK reread",
+      "status": "PASS",
+      "detail": "10.5914"
+    },
+    {
+      "name": "Financial model MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Financial baseline MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2016-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2016-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2016-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2016-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2016-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2016-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2017-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2017-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2017-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2017-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2017-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2017-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2018-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2018-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2018-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2018-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2018-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2018-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2019-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2019-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2019-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2019-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2019-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2019-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2020-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2020-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2020-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2020-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2020-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2020-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2021-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2021-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2021-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2021-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2021-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2021-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2022-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2022-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2022-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2022-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2022-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2022-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2023-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2023-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2023-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2023-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2023-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2023-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2024-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2024-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2024-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2024-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2024-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2024-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2025-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2025-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2025-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2025-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2025-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2025-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2026-06-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2026-06-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2026-06-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2026-06-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace MICROSOFT CORP 2026-06-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula MICROSOFT CORP 2026-06-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2014-12-31 revenue",
+      "status": "PASS",
+      "detail": "SalesRevenueNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2014-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2014-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2014-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2014-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2014-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2015-12-31 revenue",
+      "status": "PASS",
+      "detail": "SalesRevenueNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2015-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2015-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2015-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2015-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2015-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2016-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2016-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2016-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2016-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2016-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2016-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2017-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2017-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2017-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2017-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2017-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2017-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2018-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2018-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2018-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2018-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2018-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2018-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2019-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2019-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2019-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2019-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2019-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2019-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2020-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2020-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2020-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2020-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2020-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2020-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2021-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2021-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2021-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2021-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2021-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2021-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2022-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2022-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2022-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2022-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2022-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2022-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2023-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2023-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2023-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2023-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2023-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2023-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2024-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2024-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2024-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2024-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2024-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2024-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2025-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2025-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2025-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2025-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace AMAZON.COM, INC. 2025-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula AMAZON.COM, INC. 2025-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2014-01-26 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2014-01-26 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2014-01-26 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2014-01-26 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2014-01-26 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2014-01-26",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2015-01-25 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2015-01-25 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2015-01-25 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2015-01-25 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2015-01-25 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2015-01-25",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2016-01-31 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2016-01-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2016-01-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2016-01-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2016-01-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2016-01-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2017-01-29 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2017-01-29 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2017-01-29 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2017-01-29 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2017-01-29 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2017-01-29",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2018-01-28 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2018-01-28 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2018-01-28 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2018-01-28 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2018-01-28 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2018-01-28",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2019-01-27 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2019-01-27 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2019-01-27 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2019-01-27 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2019-01-27 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2019-01-27",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2020-01-26 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2020-01-26 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2020-01-26 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2020-01-26 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2020-01-26 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2020-01-26",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2021-01-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2021-01-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2021-01-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2021-01-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2021-01-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2021-01-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2022-01-30 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2022-01-30 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2022-01-30 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2022-01-30 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2022-01-30 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2022-01-30",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2023-01-29 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2023-01-29 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2023-01-29 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2023-01-29 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2023-01-29 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2023-01-29",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2024-01-28 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2024-01-28 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2024-01-28 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2024-01-28 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2024-01-28 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2024-01-28",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2025-01-26 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2025-01-26 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2025-01-26 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2025-01-26 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2025-01-26 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2025-01-26",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2026-01-25 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2026-01-25 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2026-01-25 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2026-01-25 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace NVIDIA CORP 2026-01-25 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula NVIDIA CORP 2026-01-25",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2016-05-31 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2016-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2016-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2016-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2016-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2016-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2017-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2017-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2017-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2017-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2017-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2017-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2018-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2018-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2018-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2018-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2018-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2018-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2019-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2019-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2019-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2019-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2019-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2019-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2020-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2020-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2020-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2020-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2020-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2020-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2021-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2021-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2021-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2021-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2021-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2021-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2022-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2022-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2022-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2022-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2022-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2022-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2023-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2023-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2023-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2023-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2023-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2023-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2024-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2024-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2024-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2024-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2024-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2024-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2025-05-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2025-05-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2025-05-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2025-05-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace ORACLE CORP 2025-05-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula ORACLE CORP 2025-05-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2015-12-31 revenue",
+      "status": "PASS",
+      "detail": "Revenues"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2015-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2015-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2015-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2015-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2015-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2016-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2016-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2016-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2016-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2016-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2016-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2017-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2017-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2017-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2017-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2017-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2017-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2018-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2018-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2018-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2018-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2018-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2018-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2019-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2019-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2019-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2019-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2019-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2019-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2020-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2020-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2020-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2020-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2020-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2020-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2021-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2021-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2021-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2021-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2021-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2021-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2022-12-31 revenue",
+      "status": "PASS",
+      "detail": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2022-12-31 cfo",
+      "status": "PASS",
+      "detail": "NetCashProvidedByUsedInOperatingActivities"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2022-12-31 ar",
+      "status": "PASS",
+      "detail": "AccountsReceivableNetCurrent"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2022-12-31 inventory",
+      "status": "PASS",
+      "detail": "InventoryNet"
+    },
+    {
+      "name": "SEC fact trace Alphabet Inc. 2022-12-31 ap",
+      "status": "PASS",
+      "detail": "AccountsPayableCurrent"
+    },
+    {
+      "name": "CFO margin formula Alphabet Inc. 2022-12-31",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Accounting model MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Accounting baseline MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Governance holdings count reread",
+      "status": "PASS",
+      "detail": "7077"
+    },
+    {
+      "name": "Governance weighted absolute gap recomputed",
+      "status": "PASS",
+      "detail": "0.09303493749714623"
+    },
+    {
+      "name": "Business Norway 2024 AI source value",
+      "status": "PASS",
+      "detail": "20.77"
+    },
+    {
+      "name": "Business Norway 2025 AI source value",
+      "status": "PASS",
+      "detail": "28.89"
+    },
+    {
+      "name": "Business model MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Business baseline MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Public interest income reread",
+      "status": "PASS",
+      "detail": "254540.0"
+    },
+    {
+      "name": "Public interest expense reread",
+      "status": "PASS",
+      "detail": "79751.0"
+    },
+    {
+      "name": "Public net-interest identity",
+      "status": "PASS",
+      "detail": "174789.0"
+    },
+    {
+      "name": "Public model MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Public baseline MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Art total visits independent sum",
+      "status": "PASS",
+      "detail": "11527161.0"
+    },
+    {
+      "name": "Art subsidy share independent formula",
+      "status": "PASS",
+      "detail": "71.12954690491385"
+    },
+    {
+      "name": "Art model MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Art baseline MAE rescored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 01-credit-risk",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 01-credit-risk",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk control: burdenShift",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk control: strainElasticity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk control: incomeShock",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk control: persistenceDrift",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "01-credit-risk no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 02-financial",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 02-financial",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial control: rateShock",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial control: rateSensitivity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial control: monthlyFxMove",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "02-financial no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 03-accounting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 03-accounting",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting control: revenueChange",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting control: cfoChange",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting control: wcDrag",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "03-accounting no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 04-governance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 04-governance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance control: gapThreshold",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance control: minValueBn",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance control: valueShock",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "04-governance no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 05-business",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 05-business",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business control: readinessGain",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business control: conversion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business control: adoptionMomentum",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "05-business no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 06-public-finance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 06-public-finance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance control: rateShock",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance control: incomePassThrough",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance control: expensePassThrough",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "06-public-finance no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard exists: 07-art-capital",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Methodology exists: 07-art-capital",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital section: Research Intelligence Brief",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital section: Decision Matrix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital section: What Would Change Our Mind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital section: Interactive playground",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital section: Sources &amp; reproducibility",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital control: publicChange",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital control: ownChange",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital control: visitChange",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital explicit scenario classification",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "07-art-capital no placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON contains no NaN/Infinity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Research catalog contains seven release URLs",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "pass": 593,
+  "fail": 0,
+  "status": "PASS"
+}

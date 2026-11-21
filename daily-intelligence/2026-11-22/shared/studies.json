@@ -1,0 +1,486 @@
+[
+  {
+    "kind": "credit",
+    "slug": "01-credit-risk",
+    "domain": "Credit Risk Intelligence",
+    "title": "The Interest-Burden Threshold Test",
+    "subtitle": "When household interest intensity rises, does reported payment strain become more predictable?",
+    "brief": [
+      "In the latest matched year (2024), 20.0% of households paid at least 15% of total income in interest; 5.4% of persons reported housing-payment problems.",
+      "Across 8 expanding one-year origins, the burden-plus-persistence rule records MAE 0.573 pp versus 0.475 pp for persistence.",
+      "The candidate is worse by 0.098 pp on the point estimate.",
+      "The 95% two-year-block interval for baseline-minus-model improvement is -0.318 to 0.050 pp; predictive superiority is not established."
+    ],
+    "mechanism": "High interest payments compress household cash flow, but distributional burden and realised payment problems are not the same object. Income recovery, liquid buffers and refinancing can break the apparent pass-through. The test therefore asks whether the burden share adds forward information beyond simply carrying the last strain reading forward.",
+    "method": "SSB 08727: household share by interest paid as a percentage of total income, 2006–2024. Sum the disjoint 15–20, 20–30, 30–40 and 40+ bins. SSB 12128: percentage reporting problems paying housing costs, all income groups, 2011–2025. Match common years. At each origin fit next-year strain on the current strain and current ≥15% burden share using only earlier rows; compare with persistence. Retain the last eight eligible origins. Circular two-year blocks, 5,000 draws, seed 20261122.",
+    "limits": "Household percentages are survey/distribution measures, not exposure-weighted arrears, PD or loss. The interest-burden table ends in 2024 and the housing-payment series in 2025; the forward test is latest-vintage, not an archived real-time backtest. Household categories are not borrower records.",
+    "change": [
+      "Exposure-weighted arrears and balances tied to the same households.",
+      "An untouched sequence of survey vintages with a stable loss advantage.",
+      "A result robust to alternative burden thresholds, income groups and real-time revisions."
+    ],
+    "decision": [
+      [
+        "Credit risk",
+        "Retain persistence as reference",
+        "Borrower-level arrears and exposures",
+        "Survey strain is not PD."
+      ],
+      [
+        "Affordability",
+        "Use burden segments as monitoring prompts",
+        "Income and liquidity buffers",
+        "Household types are not loan cohorts."
+      ],
+      [
+        "Model governance",
+        "Shadow-run the candidate",
+        "Longer genuine forward record",
+        "Interval crosses zero."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "burdenShift",
+        "label": "Interest-burden shift · pp",
+        "value": 0,
+        "min": -20,
+        "max": 30,
+        "step": 0.5
+      },
+      {
+        "id": "strainElasticity",
+        "label": "Assumed strain response · pp per burden pp",
+        "value": 0.1,
+        "min": 0,
+        "max": 2,
+        "step": 0.05
+      },
+      {
+        "id": "incomeShock",
+        "label": "Additional income shock · pp",
+        "value": 0,
+        "min": -5,
+        "max": 15,
+        "step": 0.25
+      },
+      {
+        "id": "persistenceDrift",
+        "label": "Annual scenario drift · pp",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 0.1
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/08727/"
+  },
+  {
+    "kind": "financial",
+    "slug": "02-financial",
+    "domain": "Financial Intelligence",
+    "title": "The Policy-Rate Signal Test",
+    "subtitle": "Can the Norwegian policy rate improve a monthly EUR/NOK random-walk baseline?",
+    "brief": [
+      "The retained monthly history runs through 2026-10: EUR/NOK 10.5914 and an average policy rate of 4.50%.",
+      "Across 71 expanding monthly origins, the signal model has MAE 1.406% versus 1.471% for a zero-return random walk.",
+      "Directional accuracy is 59.2%.",
+      "The three-month-block 95% interval for mean MAE improvement is -0.032 to 0.168 percentage points; it crosses zero."
+    ],
+    "mechanism": "A higher domestic rate can support a currency through carry, yet the same rate can signal inflation or macro stress. EUR/NOK also absorbs foreign rates, energy prices and global risk appetite. A statistically richer story earns credibility only if it improves the next-month random-walk baseline.",
+    "method": "Norges Bank monthly EUR/NOK middle rates and daily key policy-rate observations, January 2000–October 2026. Aggregate the policy rate to monthly mean; compute monthly log EUR/NOK changes. At every one of the final 71 origins, re-estimate next-month change on the current change, current rate change and current rate level using only earlier rows. Compare with zero return. Circular three-month blocks, 5,000 draws, seed 20261122.",
+    "limits": "Monthly Norges Bank middle rates are indicative, not executable returns. The model omits foreign rates, risk appetite, energy prices and intervention expectations. The 72-month evaluation is latest-vintage and repeatedly re-estimated; it is not a trading strategy and includes no transaction costs.",
+    "change": [
+      "Foreign policy rates, energy prices and risk factors in a pre-specified model.",
+      "A stable net advantage after spreads, slippage and new untouched months.",
+      "Evidence that the effect survives alternative horizons and rate aggregations."
+    ],
+    "decision": [
+      [
+        "Treasury",
+        "Keep random walk visible",
+        "Executable quotes and hedge mandate",
+        "Middle rates are indicative."
+      ],
+      [
+        "FX risk",
+        "Treat rate signal as a scenario input",
+        "Foreign-rate and energy controls",
+        "No carry-return claim."
+      ],
+      [
+        "Model governance",
+        "Monitor loss differential",
+        "New untouched monthly record",
+        "Confidence interval crosses zero."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "rateShock",
+        "label": "Policy-rate shock · pp",
+        "value": 0,
+        "min": -5,
+        "max": 5,
+        "step": 0.25
+      },
+      {
+        "id": "rateSensitivity",
+        "label": "Assumed monthly FX response · % per rate pp",
+        "value": -0.2,
+        "min": -5,
+        "max": 5,
+        "step": 0.1
+      },
+      {
+        "id": "monthlyFxMove",
+        "label": "Other monthly EUR/NOK move · %",
+        "value": 0,
+        "min": -10,
+        "max": 10,
+        "step": 0.25
+      }
+    ],
+    "source": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"
+  },
+  {
+    "kind": "accounting",
+    "slug": "03-accounting",
+    "domain": "Accounting & Audit Intelligence",
+    "title": "The Working-Capital Warning Test",
+    "subtitle": "Receivables, inventory and payables as a forward cash-conversion diagnostic",
+    "brief": [
+      "The panel contains 5 SEC issuers and 15 issuer-year holdouts.",
+      "The working-capital model records MAE 5.41 pp of CFO margin versus 4.87 pp for the prior-year margin.",
+      "The candidate is worse by 0.54 pp on the point estimate.",
+      "The issuer-cluster 95% interval for baseline-minus-model improvement is -1.89 to 0.81 pp and includes zero."
+    ],
+    "mechanism": "Working-capital absorption can precede weaker cash conversion, but receivables and inventory may also finance real growth. A warning indicator is useful only if it improves the next filing beyond the prior cash-flow margin and remains stable across issuers.",
+    "method": "SEC Company Facts for Microsoft, Alphabet, Amazon, Meta, NVIDIA and Oracle, USD, form 10-K, filed no later than 21 November 2026. Annual flow duration 330–380 days. CFO margin = operating cash flow / revenue. Working-capital absorption = (Δreceivables + Δinventory − Δcurrent payables) / revenue. For the final three eligible targets per issuer, fit a pooled ridge model on earlier non-holdout issuer-years using lag CFO margin and lag absorption; compare with lag CFO margin. Resample issuers as clusters, 5,000 draws.",
+    "limits": "Six technology issuers are not a representative economy-wide panel. Company Facts tags, fiscal calendars and restatements differ. Working-capital absorption covers receivables, inventory and current payables only; it excludes deferred revenue, contract assets and other accruals. Latest-vintage SEC facts are not an archived real-time backtest.",
+    "change": [
+      "Footnote-reconciled working capital including contract balances and deferred revenue.",
+      "A pre-specified sector expansion with an untouched filing period.",
+      "A stable advantage under alternative tag fallbacks and restatement vintages."
+    ],
+    "decision": [
+      [
+        "Audit planning",
+        "Retain prior margin as baseline",
+        "Footnote and accession review",
+        "Candidate does not outperform."
+      ],
+      [
+        "Credit analyst",
+        "Separate growth from deterioration",
+        "Orders, ageing and inventory quality",
+        "Absorption is not distress."
+      ],
+      [
+        "Data governance",
+        "Preserve tags and filing dates",
+        "Restatement lineage",
+        "Latest vintage is not real time."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "revenueChange",
+        "label": "Revenue change · %",
+        "value": 0,
+        "min": -60,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "cfoChange",
+        "label": "Operating cash-flow change · %",
+        "value": 0,
+        "min": -100,
+        "max": 150,
+        "step": 5
+      },
+      {
+        "id": "wcDrag",
+        "label": "Working-capital drag · pp of margin",
+        "value": 0,
+        "min": -20,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "source": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+  },
+  {
+    "kind": "governance",
+    "slug": "04-governance",
+    "domain": "Risk & Governance Intelligence",
+    "title": "The Voice-to-Capital Mismatch",
+    "subtitle": "Where reported voting rights and economic ownership cease to be interchangeable",
+    "brief": [
+      "The 30 June 2026 NBIM equity snapshot contains 7,077 holdings with both voting and ownership percentages.",
+      "The capital-weighted absolute voting–ownership gap is 0.093 percentage points; the raw correlation is 0.981.",
+      "At a 0.10 pp gap threshold, 410 holdings qualify and represent 12.89% of analysed market value.",
+      "Value with a voting discount beyond 0.10 pp represents 11.02% of value, versus 1.87% with a voting premium."
+    ],
+    "mechanism": "Stewardship teams often use capital exposure as a proxy for voice. Dual-class structures, share lending and market rules can break that equivalence. The map identifies where a value-based queue may misstate formal voting capacity; it does not infer influence or governance quality.",
+    "method": "NBIM listed-equity holdings report dated 30 June 2026, UTF-16 semicolon-separated CSV. Retain rows with numeric market value, voting percentage and ownership percentage. Gap = voting − ownership; report absolute gap, value-weighted absolute gap and threshold sensitivity at 0.10/0.25/0.50/1.00/2.00 pp. Denominator is market value of retained rows. Snapshot analysis; forecast backtesting is not applicable.",
+    "limits": "One 30 June 2026 holdings snapshot. Reported voting and ownership percentages are not legal opinions, expected influence, engagement intensity or realised governance outcomes. Share classes, lending, local rules and meeting-specific eligibility may matter; no time-series persistence test is possible from this extract.",
+    "change": [
+      "Meeting-specific vote eligibility and share-class legal mappings.",
+      "Time-series holdings proving that gaps persist.",
+      "Engagement outcomes demonstrating that formal vote gaps alter stewardship effectiveness."
+    ],
+    "decision": [
+      [
+        "Stewardship",
+        "Flag large voice gaps",
+        "Share-class and meeting verification",
+        "Gap is not influence."
+      ],
+      [
+        "Risk committee",
+        "Separate capital from vote capacity",
+        "Securities lending and local rules",
+        "Snapshot only."
+      ],
+      [
+        "Data governance",
+        "Retain both fields",
+        "Issuer/share-class identifiers",
+        "Do not substitute ownership for voting."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "gapThreshold",
+        "label": "Absolute voice-gap threshold · pp",
+        "value": 0.1,
+        "min": 0,
+        "max": 10,
+        "step": 0.05
+      },
+      {
+        "id": "minValueBn",
+        "label": "Minimum holding value · NOK bn",
+        "value": 0,
+        "min": 0,
+        "max": 500,
+        "step": 1
+      },
+      {
+        "id": "valueShock",
+        "label": "Uniform value shock · %",
+        "value": 0,
+        "min": -80,
+        "max": 100,
+        "step": 5
+      }
+    ],
+    "source": "https://www.nbim.no/en/investments/all-investments/"
+  },
+  {
+    "kind": "business",
+    "slug": "05-business",
+    "domain": "Business & Economic Intelligence",
+    "title": "The Digital-Readiness Conversion Test",
+    "subtitle": "Does basic digital intensity improve a next-year AI-adoption baseline?",
+    "brief": [
+      "Across ten European countries, the correlation between 2024 basic digital intensity and 2025 AI use is 0.937.",
+      "Leave-one-country-out MAE is 2.46 pp for the readiness model versus 8.76 pp for 2024 AI-use persistence.",
+      "The cross-country resampling interval for mean baseline-minus-model improvement is 3.79 to 8.71 pp.",
+      "Norway moves from 20.77% AI use in 2024 to 28.89% in 2025, with 83.45% at basic digital intensity in 2024."
+    ],
+    "mechanism": "Digital readiness can lower implementation friction, but it does not guarantee useful AI deployment. The model tests whether a broad capability measure adds cross-country information beyond last year’s adoption level. The design validates across countries, not across an untouched future year.",
+    "method": "Eurostat dissemination datasets isoc_e_dii and isoc_eb_ain2. Ten countries: Norway, Denmark, Sweden, Finland, Germany, France, Netherlands, Belgium, Ireland and Poland. Retain enterprises with 10+ persons, all covered non-financial activities, percentage of enterprises. DII version 4 at least-basic level in 2024; AI use in 2024 and 2025. For each country, fit on the other nine and predict its 2025 AI use from 2024 DII and 2024 AI use. Compare with 2024 AI-use persistence. Country resampling, 5,000 draws.",
+    "limits": "Ten-country leave-one-country-out validation, using 2024 DII version 4 and 2024 AI use to estimate 2025 AI use. This is cross-country validation, not a new-year temporal backtest. Repeated enterprise surveys are not firm-level transitions, and supplied dissemination data do not include microdata or sampling standard errors. The interval is descriptive, not a design-based survey interval.",
+    "change": [
+      "A genuinely untouched 2026 survey vintage using unchanged definitions.",
+      "Firm-level transitions and AI-spend/productivity outcomes.",
+      "Sampling errors supporting design-based inference."
+    ],
+    "decision": [
+      [
+        "Strategy",
+        "Use readiness as a screening variable",
+        "Use-case and productivity data",
+        "Readiness is not ROI."
+      ],
+      [
+        "Investor",
+        "Separate capability from adoption",
+        "Spend, margins and implementation depth",
+        "Cross-country holdout only."
+      ],
+      [
+        "Data governance",
+        "Lock DII version and scope",
+        "Survey revision documentation",
+        "Do not mix versions."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "readinessGain",
+        "label": "Annual readiness change · pp",
+        "value": 2,
+        "min": -20,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "id": "conversion",
+        "label": "Assumed AI response per readiness pp",
+        "value": 0.3,
+        "min": 0,
+        "max": 2,
+        "step": 0.05
+      },
+      {
+        "id": "adoptionMomentum",
+        "label": "Other annual AI momentum · pp",
+        "value": 3,
+        "min": -20,
+        "max": 30,
+        "step": 1
+      }
+    ],
+    "source": "https://ec.europa.eu/eurostat/databrowser/view/isoc_e_dii/default/table"
+  },
+  {
+    "kind": "public_finance",
+    "slug": "06-public-finance",
+    "domain": "Public Finance Intelligence",
+    "title": "The Sovereign Interest-Pass-Through Test",
+    "subtitle": "Can the policy rate improve Norway’s next-year net-interest baseline?",
+    "brief": [
+      "In 2024, consolidated government interest income was NOK 254.54bn and interest expense NOK 79.75bn.",
+      "The resulting net interest position was NOK 174.79bn with an annual-average policy rate of 4.50%.",
+      "Across the final ten origins, the rate-signal model has MAE NOK 17.03bn versus NOK 15.94bn for persistence.",
+      "The two-year-block 95% interval for baseline-minus-model improvement is NOK -5.00bn to 2.99bn; it crosses zero."
+    ],
+    "mechanism": "A higher policy rate does not reprice public assets and liabilities symmetrically. Maturity, currency and asset composition determine pass-through. The test asks whether a coarse rate signal adds next-year forecasting information beyond the observed net interest position.",
+    "method": "SSB 10721, consolidated general government, nominal NOK million, interest income A51 and interest expense B41, 1995–2024. Norges Bank daily key policy rate aggregated to annual mean from 2000. Net position = income − expense. At each origin fit next-year net interest on current net interest, current rate level and rate change using only earlier rows; compare with persistence. Retain final ten origins. Circular two-year blocks, 5,000 draws.",
+    "limits": "Nominal consolidated general-government interest flows are not the structural non-oil balance, fiscal-rule headroom, debt duration or sovereign solvency. Annual average policy rates are a coarse signal; asset composition, currency, maturity, GPFG income and accounting classifications are omitted. Latest-vintage, not real-time-vintage validation.",
+    "change": [
+      "Instrument-level maturity, currency and duration data.",
+      "Real-time fiscal vintages and an untouched new year.",
+      "A stable advantage after separating GPFG and mainland government exposures."
+    ],
+    "decision": [
+      [
+        "Fiscal analyst",
+        "Retain persistence reference",
+        "Duration and currency map",
+        "Not fiscal-rule headroom."
+      ],
+      [
+        "Treasury",
+        "Stress income and expense separately",
+        "Instrument repricing schedule",
+        "Policy rate is coarse."
+      ],
+      [
+        "Risk committee",
+        "Avoid sovereign-solvency inference",
+        "Balance sheet and structural balance",
+        "Nominal flow only."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "rateShock",
+        "label": "Sustained rate shock · pp",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 0.25
+      },
+      {
+        "id": "incomePassThrough",
+        "label": "Income pass-through · % per rate pp",
+        "value": 5,
+        "min": -20,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "id": "expensePassThrough",
+        "label": "Expense pass-through · % per rate pp",
+        "value": 5,
+        "min": -20,
+        "max": 40,
+        "step": 1
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/10721/"
+  },
+  {
+    "kind": "art",
+    "slug": "07-art-capital",
+    "domain": "Art & Capital Intelligence",
+    "title": "The Museum Subsidy Resilience Test",
+    "subtitle": "Public funding, own revenue and the limits of predicting cultural demand",
+    "brief": [
+      "In 2024, Norwegian museums recorded 11.53 million individual-plus-group visits.",
+      "Public contributions were NOK 5.57bn, equal to 71.1% of total nominal revenue.",
+      "Own revenue was NOK 2.26bn, or approximately NOK 196 per visit.",
+      "Across the final ten origins, the subsidy-share model has MAE 1.442m visits versus 1.319m for persistence; the interval crosses zero."
+    ],
+    "mechanism": "Public subsidy can stabilise cultural institutions without mechanically generating visitors. Funding may rise precisely when earned income or attendance is weak, creating reverse causality. The study separates financial resilience from demand prediction and treats the subsidy share as a signal, not an intervention effect.",
+    "method": "SSB 09542 national museum revenue, expenditure and public contributions, and SSB 09539 visits, 2001–2024. Total visits = individual visits + group visits; paying visits overlap and are not added. Subsidy share = public contributions / total revenue; own revenue = total revenue − public contributions. At each origin fit next-year total visits on current visits and subsidy share using only earlier rows; compare with persistence. Retain final ten origins; report pandemic-excluded MAE separately. Circular two-year blocks, 5,000 draws.",
+    "limits": "National museum aggregates combine institutions and changing populations. Individual and group visits are summed as disjoint categories; paying visits overlap and are not added. Nominal revenue is not deflated. Public contributions may respond to need, creating endogeneity; the exercise is predictive, not causal. The 2025 questionnaire revision prevents extending the same visit definition without a documented bridge.",
+    "change": [
+      "Institution-level panel data with consistent museum population.",
+      "Deflated revenue, ticket prices and exhibition-level demand.",
+      "An exogenous funding design separating subsidy causality from need-based allocation."
+    ],
+    "decision": [
+      [
+        "Museum board",
+        "Separate resilience from demand",
+        "Institution and exhibition data",
+        "Subsidy share is not attendance causality."
+      ],
+      [
+        "Public funder",
+        "Monitor own revenue per visit",
+        "Access, quality and distribution goals",
+        "Commercialisation is not the sole objective."
+      ],
+      [
+        "Cultural investor",
+        "Treat aggregates as sector context",
+        "Institution-level balance sheets",
+        "No art-return claim."
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "publicChange",
+        "label": "Public-contribution change · %",
+        "value": 0,
+        "min": -50,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "id": "ownChange",
+        "label": "Own-revenue change · %",
+        "value": 0,
+        "min": -80,
+        "max": 150,
+        "step": 5
+      },
+      {
+        "id": "visitChange",
+        "label": "Visit change · %",
+        "value": 0,
+        "min": -80,
+        "max": 100,
+        "step": 5
+      }
+    ],
+    "source": "https://www.ssb.no/en/statbank/table/09542/"
+  }
+]
