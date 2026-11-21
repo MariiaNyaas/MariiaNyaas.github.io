@@ -1,8 +1,8 @@
 {
-  "status": "PASS — PRE-DEPLOY STATIC; BROWSER GATE PENDING",
-  "pass": 69,
+  "status": "PASS",
+  "pass": 79,
   "fail": 0,
-  "not_verified": 3,
+  "not_verified": 2,
   "checks": [
     {
       "name": "Exactly seven study specifications",
@@ -350,9 +350,54 @@
       "detail": ""
     },
     {
-      "name": "Rendered browser interaction before deployment",
-      "status": "NOT VERIFIED",
-      "detail": "NOT VERIFIED pre-deployment: the execution sandbox denies Chromium sockets and isolates the native browser from the local HTTP namespace. Public-commit browser QA is required before final gate."
+      "name": "Exact-commit GitHub Actions deployment",
+      "status": "PASS",
+      "detail": "https://github.com/MariiaNyaas/MariiaNyaas.github.io/actions/runs/44921307702"
+    },
+    {
+      "name": "01-credit-risk: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "02-financial: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "03-accounting: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "04-governance: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "05-business: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "06-public-finance: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "07-art-capital: public browser interactions",
+      "status": "PASS",
+      "detail": "3 charts; input, reset, selector, JSON and CSV exports"
+    },
+    {
+      "name": "Latest Research contains all seven",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All seven thematic catalogs contain the new study",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "name": "Physical mobile-device test",

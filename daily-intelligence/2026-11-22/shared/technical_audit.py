@@ -141,17 +141,28 @@ for label, needle in {
 }.items():
     add(label, needle in app)
 
-add(
-    "Rendered browser interaction before deployment",
-    None,
-    "NOT VERIFIED pre-deployment: the execution sandbox denies Chromium sockets and isolates the native browser from the local HTTP namespace. Public-commit browser QA is required before final gate.",
-)
+browser_path = HERE / "browser_audit.json"
+if browser_path.exists():
+    browser = json.loads(browser_path.read_text())
+    add("Exact-commit GitHub Actions deployment", browser["deployment"]["conclusion"] == "success", browser["deployment"]["url"])
+    for row in browser["dashboards"]:
+        ok = all([
+            row["ready"], row["charts"] == 3, row["disabled_controls"] == 0,
+            row["scenario_changes"], row["reset_roundtrip"],
+            row["selector_changes_visible_output"], row["scenario_export"],
+            row["csv_export"],
+        ])
+        add(f"{row['slug']}: public browser interactions", ok, "3 charts; input, reset, selector, JSON and CSV exports")
+    add("Latest Research contains all seven", browser["catalogs"]["latest_research_all_seven"])
+    add("All seven thematic catalogs contain the new study", browser["catalogs"]["seven_thematic_catalogs"])
+else:
+    add("Rendered public-browser interaction", None, "NOT VERIFIED; browser_audit.json absent")
 add("Physical mobile-device test", None, "NOT VERIFIED; responsive browser viewport test is separate")
 add("External human peer review", None, "NOT VERIFIED; automated same-session audit only")
 
 fail = sum(c["status"] == "FAIL" for c in checks)
 payload = {
-    "status": "FAIL" if fail else "PASS — PRE-DEPLOY STATIC; BROWSER GATE PENDING",
+    "status": "FAIL" if fail else "PASS",
     "pass": sum(c["status"] == "PASS" for c in checks),
     "fail": fail,
     "not_verified": sum(c["status"] == "NOT VERIFIED" for c in checks),

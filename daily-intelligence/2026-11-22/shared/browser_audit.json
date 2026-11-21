@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "tested_at": "2026-11-21T16:53:00+01:00",
+  "commit": "20fa516f9cf9a902aa91e1e08e54a92f11d7ce24",
+  "deployment": {
+    "workflow": "Build and publish research library",
+    "run_id": 44921307702,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/MariiaNyaas/MariiaNyaas.github.io/actions/runs/44921307702"
+  },
+  "method": "Public GitHub Pages pages tested through a controlled Chromium session after deployment. Every dashboard was loaded from its final HTTPS URL; inputs, reset, selectors and both exports were exercised. Browser-extension metadata errors were excluded from application runtime status.",
+  "dashboards": [
+    {"slug":"01-credit-risk","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true},
+    {"slug":"02-financial","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true},
+    {"slug":"03-accounting","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true},
+    {"slug":"04-governance","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true},
+    {"slug":"05-business","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true},
+    {"slug":"06-public-finance","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true},
+    {"slug":"07-art-capital","ready":true,"charts":3,"disabled_controls":0,"scenario_changes":true,"reset_roundtrip":true,"selector_changes_visible_output":true,"scenario_export":true,"csv_export":true}
+  ],
+  "catalogs": {
+    "latest_research_all_seven": true,
+    "seven_thematic_catalogs": true
+  },
+  "limitations": [
+    "Physical-device testing was not performed.",
+    "Responsive rules were checked statically; the controlled browser run used a desktop viewport.",
+    "This is automated technical verification, not external human review."
+  ]
+}
