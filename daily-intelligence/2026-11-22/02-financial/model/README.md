@@ -1,102 +1,112 @@
-# EUR/NOK Research Lab — version 2.0
+# Currency Risk & Treasury Decisions — version 3.0
 
-Research frozen on 24 November 2026; completed-month cap: **October 2026**.
+**Current canonical page:** [decision dashboard](https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/).
 
-**Decision:** retain the random walk as the operational reference. The full model is useful for diagnostics and explicit conditional scenarios, but has not demonstrated a robust forecast advantage. No trading strategy or dependable risk limit has been established.
+This release replaces the former standalone policy-rate study at the same address. The original page/archive and obsolete download have been withdrawn. Existing `dashboard.html` and `methodology-v2.html` links route to the current product and methods. Frozen numerical evidence is retained as supporting research, with its own original version and hash.
 
-## Read the research
+## Research question and decision
 
-- [Dashboard](../dashboard.html), [English methodology](../methodology-v2.html), [Russian note](RESEARCH_NOTE_RU.md).
-- [Frozen protocol](PROTOCOL.md), [original monthly-average experiment](https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/original.html).
-- [Results](output/results.json), [full comparison CSV](output/model_comparison.csv), [audit](output/audit.json).
+How can a treasury or portfolio team make a defensible currency decision when a reliable directional forecast advantage has not been established?
 
-## Actual results
+The answer is a transparent combination of observed currency evidence, explicit exposure and contract data, budget constraints, policy comparisons, reverse stress and separate collateral sensitivity. The dashboard distinguishes current market observations, dated public facts, hypothetical examples, user-supplied contracts and statistical research results.
 
-MAE in percentage points of log EUR/NOK return; lower is better.
+No validated trading edge, calibrated probability of budget breach, complete dealer valuation or institution-specific hedge recommendation is claimed. The useful outputs are consequences and feasible policies under stated assumptions. Current policy is the decision comparator; random walk remains a forecasting comparator only.
 
-| Horizon, months | Origins | Random walk | AR(1) | Full | Fixed ensemble |
+## Current evidence
+
+Latest Norges Bank reference observations: **23 November 2026**. Snapshot retrieved **24 November 2026**. Every rate is NOK per **one** foreign unit:
+
+| EUR | USD | GBP | SEK | CHF | JPY |
 |---:|---:|---:|---:|---:|---:|
-| 1 | 141 | 2.033 | 2.012 | 2.157 | 2.038 |
-| 3 | 139 | 2.826 | 2.804 | 3.083 | 2.798 |
-| 6 | 136 | 3.578 | 3.580 | 4.170 | 3.448 |
+| 10.7285 | 9.8076 | 12.8219 | 0.9547 | 11.6792 | 0.061655 |
 
-Full-model improvement intervals versus random walk: 1m: [-0.293, +0.036]; 3m: [-0.648, +0.126]; 6m: [-1.411, +0.215] pp. All include zero; no declared advantage survives the 45-comparison Holm adjustment. The full model's six-month empirical 5th/95th residual band covered **74/107 = 69.16%**, not a dependable 90%.
+The full daily panel contains 6,772 observed dates and 40,632 foreign-currency observations from January 2000. CHF, SEK and JPY source quotes are per 100 units; `UNIT_MULT` normalization is explicit. NOK=1 is an arithmetic identity, not an additional observed currency series. Reference rates are indicative, not executable prices. The November history endpoint is a partial-month observation.
 
-## Design
+Three historical FX-only replay windows preserve exact observed start/end quotes. They do not invent equity/bond returns or reconstruct a user's historical contracts. The data also retain the observed 2025 NBIM bridge: NOK 2,362bn accounting return − 1,155bn currency translation + 319bn net inflow = 1,526bn increase in fund value. The 2025 Q1 collateral survey is labelled as a hypothetical stress reported by ten other Norwegian managers, not NBIM's margin requirement.
 
-The monthly panel contains 11 observed series; the full model uses 12 derived features. Nine models are compared at 1/3/6 months. The common feature sample begins 2006-03. Evaluation uses expanding windows from 2015-01, identical samples, at least 60 mature labels and direct-horizon targets. A label is eligible only when its target month is no later than the forecast origin.
+[Full data provenance](DECISION_DATA.md) · [decision input JSON](../decision-data.json) · [daily FX CSV](data/decision_fx_daily.csv) · [source manifest](data/decision_manifest.json).
 
-The target uses the last Norges Bank daily fixing of each month, not a monthly average. Original and v2 MAEs therefore are not a before/after performance comparison. Positive log EUR/NOK returns mean NOK depreciation.
+## Decision arithmetic
 
-Policy/FX inputs are available through the origin; Brent, VIX and broad USD inputs are lagged one month, and HICP/industry inputs two months. Latest-vintage revisions remain a limitation. Standardisation uses training data only; multivariate ridge alpha=10 and ensemble weights (50% RW, 25% AR1, 25% full) are fixed. Four independently refitted ablations remove rates, energy, risk or macro. Circular-block bootstrap: 3,000 draws; length max(3,h), sensitivity max(6,2h). Ablations and regimes are exploratory.
+Treasury cash cost is signed: payable positive, receivable negative. With original amount A, scenario realised amount Q, fixed hedged amount H, budget rate B, contract rate F and settlement rate S:
 
-## Reproduce the frozen numerical model
+`signed cash cost = direction × [Q × S + H × (F − S)]`.
 
-Verified environment: **Python 3.12.14, NumPy 2.3.5, pandas 2.2.3**. The optional ECB workbook collector also uses **openpyxl 3.1.5**. No scikit-learn or statsmodels is required.
+Budget, volume, FX and hedge effects reconcile exactly. A forecast-volume shock does not resize a contract, so cancellation can create overhedging. Settlement dates and entity information remain in the cash-flow timeline. Aggregation does not imply legal netting or frictionless intercompany cash transfers.
 
-From this `model` directory, using the retained normalised inputs and manifests:
+Reverse stress solves a linear budget constraint and returns a feasible hedge interval, an upper bound or no feasible policy as appropriate. A common-FX boundary is a specified joint shock. Alternative policies are counterfactual comparisons at the supplied forward terms, not executable unwind offers.
+
+Portfolio return retains the multiplicative interaction:
+
+`(1 + local asset return) × (1 + FX return) − 1`.
+
+The local-asset, currency, interaction and fixed-unit hedge effects reconcile to scenario NAV. The currency-policy benchmark uses the same positions with a stated hedge share; it is not the actual GPFG benchmark. Currency of denomination is not a complete economic look-through exposure for a multinational company.
+
+Collateral is a separate liquidity calculation. Explicit stressed forward marks are supported. The fallback is a clearly labelled undiscounted settlement-payoff proxy, not a dealer mark-to-market. Offsetting is limited to supplied entity/netting-set groups. Thresholds, posted collateral, eligible collateral, haircuts, cash and facilities are explicit assumptions. Immediate collateral and terminal settlement cash are not added as if both were permanent losses.
+
+[Detailed methodology](../methodology.html) · [engine API and assumptions](DECISION_ENGINE.md) · [decision engine](../decision-engine.js).
+
+## Use and reproduce
+
+Open the published page, or serve the extracted research directory with a static HTTP server. Browser fetch restrictions can prevent a `file://` page from loading JSON inputs.
+
+```bash
+python -m http.server 8000
+```
+
+Example books are explicitly illustrative. CSV import and saved-scenario JSON use the browser's local file interface; they are not uploaded to a research server. Check import errors before replacing a book. A scenario save contains the supplied book and assumptions; treat the exported file accordingly. A print view prepares a decision memo with provenance and limitations.
+
+Run decision-engine verification from this `model` directory:
+
+```bash
+node scripts/test_decision_engine.cjs
+```
+
+The engine has no third-party JavaScript dependencies. To rebuild the observed decision dataset from retained raw cache or the precise source queries:
+
+```bash
+python scripts/build_decision_data.py --end-date 2026-11-23
+```
+
+`--refresh` deliberately retrieves a new vintage; an explicit later end date advances the observation cutoff. Revised history may change hashes. Refreshing market data does not re-estimate the frozen monthly forecasting experiment.
+
+## Frozen forecasting evidence
+
+The preserved statistical protocol was frozen on 24 November 2026, with completed-month observations through October 2026. It uses 11 raw series, 12 full-model factors, nine specifications and 1/3/6-month direct forecasts. Common features begin March 2006; expanding-window evaluation starts January 2015. Only matured labels are eligible. Train-only scaling, ridge alpha=10 and ensemble weights (50% random walk, 25% AR1, 25% full) are fixed.
+
+| Horizon | Origins | Random walk MAE | AR(1) | Full | Fixed ensemble |
+|---:|---:|---:|---:|---:|---:|
+| 1 month | 141 | 2.0335 | 2.0116 | 2.1572 | 2.0385 |
+| 3 months | 139 | 2.8258 | 2.8044 | 3.0834 | 2.7982 |
+| 6 months | 136 | 3.5776 | 3.5801 | 4.1699 | 3.4481 |
+
+MAE units: percentage points of cumulative log EUR/NOK return. All candidate improvement intervals against random walk include zero. No advantage survives 45-comparison Holm adjustment. Full-model six-month residual-band coverage is **74/107 = 69.16%**; a 5th–95th percentile construction is not a dependable 90% future risk limit. Latest-vintage macro revisions remain a limitation.
+
+The October model output was calculated on 24 November, not issued in October. The first prospective origin after the freeze is **30 November 2026**. No automated monthly scheduler is configured.
+
+Numerical reproduction with retained normalized inputs:
 
 ```bash
 python scripts/run_model.py
 ```
 
-This writes forecast results, comparisons, feature data, snapshot values and chronological predictions. Generated timestamps change on rerun; numerical values should reproduce with the stated versions and unchanged inputs/protocol. The script is [run_model.py](scripts/run_model.py).
+Verified statistical runtime: Python 3.12.14, NumPy 2.3.5, pandas 2.2.3; optional ECB workbook collector openpyxl 3.1.5. Source-dependent audits and the historical ECB event module require the raw records, retrievable with `collect_market.py` and `collect_macro.py`. A source refresh can revise historical observations.
 
-## Retrieve sources and run source-dependent modules
+The ECB event study has 292 matched historical events through October 2025; all three Bonferroni-adjusted intervals include zero. Its OIS repricing is not equivalent to an isolated policy-rate change, and it is not a current forecast feature.
 
-Public packaging excludes raw vendor quote dumps. Normalised inputs, their provenance and analytical outputs are retained. Source auditing and the event module additionally require the original raw records. In a separate working copy, retrieve them with the supplied collectors:
+## Validation and release
+
+- [Decision-engine tests](output/decision_validation.json): financial identities, signs, boundary conditions, cancellation, portfolio interaction, netting isolation and input validation.
+- [Source manifest](data/decision_manifest.json): unit roundtrips, exact history/replay identities, source receipts and hashes.
+- [Frozen statistical audit](output/audit.json): eight groups covering source identity, chronology, matched samples, arithmetic, interval maturity, multiplicity, perturbations and truncated-history reproduction.
+- [Release manifest](release_manifest.json): exact packaged files and SHA-256 hashes.
+
+Checks are performed within the research session; they do not constitute external peer review. Actual exposures, legally enforceable agreements and executable contract quotes are necessary for institution-specific deployment. No paid quote dataset or private institutional holdings have been inferred or substituted.
+
+Package the current page, normalized inputs, documentation, code and outputs:
 
 ```bash
-python scripts/collect_market.py
-python scripts/collect_macro.py
-python scripts/run_model.py
-python scripts/run_event_study.py
-python scripts/audit_model.py
+python scripts/package_release.py
 ```
 
-The collectors reuse cached raw records when available. A deliberate refresh is optional:
-
-```bash
-python scripts/collect_market.py --refresh
-python scripts/collect_macro.py --refresh
-```
-
-**A refresh can retrieve revised history.** Its output is a new source vintage and may no longer reproduce the frozen results or hashes. Defaults retain the October 2026 observation cap; refreshing does not silently advance the research horizon. Preserve the frozen package before running collection. Source reuse/redistribution remains subject to the publishers' terms.
-
-- [Market collector](scripts/collect_market.py), [macro/ECB collector](scripts/collect_macro.py).
-- [Event module](scripts/run_event_study.py), [independent audit code](scripts/audit_model.py).
-- The recorded audit passed eight groups in the same research session: source integrity, calendar/quote identity, mature labels/common samples, metric/ablation/scenario arithmetic, band maturity/coverage, multiplicity/timestamps, input timing perturbations and truncated-history reproduction. This is not an external audit or peer review.
-
-## Historical ECB event module
-
-The retained EA-MPD workbook is updated 4 November 2025 and ends 30 October 2025. It is excluded from the current complete-sample forecast block. The module uses one prespecified tenor (OIS1Y), one window (Monetary Event Window), a baseline fixing strictly before each event and outcomes at the first/fifth/twentieth fixing strictly after it.
-
-| Subsequent fixings | Events | Association per +10 bp, % | Bonferroni interval, % |
-|---:|---:|---:|---:|
-| 1 | 292 | +0.246 | [-0.014, +0.527] |
-| 5 | 292 | +0.354 | [-0.117, +1.035] |
-| 20 | 292 | +0.431 | [-0.221, +1.115] |
-
-All Bonferroni 98.333% per-horizon intervals include zero. The nominal three-horizon family confidence is 95%; dependence and exploratory-inference limitations remain. Twenty-fixing windows overlap for 148 adjacent event pairs. OIS repricing includes guidance/information and is not equivalent to a policy-rate hike. No causal identification or trading profitability follows.
-
-## Files and provenance
-
-| Artifact | Purpose |
-|---|---|
-| [market.csv](data/market.csv), [macro.csv](data/macro.csv) | Frozen observation-dated inputs; missing values retained |
-| [features.csv](data/features.csv) | Transformed, information-lagged feature matrix |
-| [market_manifest.json](data/market_manifest.json), [macro_manifest.json](data/macro_manifest.json) | URLs, exact series, units, coverage, hashes and retrieval metadata |
-| [predictions.json](output/predictions.json), [ablation_predictions.json](output/ablation_predictions.json) | Origin/target dates, forecasts and paired audit records |
-| [history.json](output/history.json), [snapshot_forecasts.csv](output/snapshot_forecasts.csv) | Dashboard input history and October snapshot |
-| [ea_mpd_events.csv](data/ea_mpd_events.csv), [ea_mpd_manifest.json](data/ea_mpd_manifest.json) | Observed ECB event inputs and actual file coverage |
-| [event_study.json](output/event_study.json), [event_observations.csv](output/event_observations.csv) | Event regression, uncertainty and exact fixing-date pairs |
-
-Official references: [Norges Bank FX](https://www.norges-bank.no/en/topics/Statistics/exchange_rates/), [ECB rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html), [EIA Brent via FRED](https://fred.stlouisfed.org/series/DCOILBRENTEU), [Cboe VIX via FRED](https://fred.stlouisfed.org/series/VIXCLS), [Federal Reserve broad USD](https://fred.stlouisfed.org/series/DTWEXBGS), [Eurostat HICP](https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en), [Eurostat industry](https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table?lang=en), [ECB EA-MPD](https://www.ecb.europa.eu/pub/pdf/annex/Dataset_EA-MPD.xlsx).
-
-## Remaining data and prospective gate
-
-Unacquired inputs are Norway/EA OIS and FRA curves and Norwegian announcement surprises, consensus forecasts with release timestamps, historical real-time vintages, and executable forward quotes/spreads. Ordinary policy changes do not replace surprises. No paid data was purchased.
-
-EA20 is fixed-composition, Norwegian industry includes extraction, and HICP methodology may change at January 2026. Scenario associations and user-entered treasury assumptions are not causal forecasts or executable hedge recommendations.
-
-The October snapshot was calculated **24 November 2026**, not issued in October. The first genuinely prospective origin after the protocol freeze is **30 November 2026**. Store its forecasts before subsequent outcomes mature. **No automated monthly scheduler is configured.**
+The resulting `currency-risk-decisions.zip` excludes raw provider caches. Original source queries, receipts and rights notes remain in the manifests.

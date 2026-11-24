@@ -1,14 +1,15 @@
 {
-  "title": "The Policy-Rate Signal Test",
+  "title": "Currency Risk & Treasury Decisions",
   "domain": "Financial Intelligence",
-  "summary": "Can the Norwegian policy rate improve a monthly EUR/NOK random-walk baseline?",
+  "summary": "Real currency evidence, budget boundaries, hedge-policy comparisons and liquidity stress for treasury and portfolio decisions.",
   "published": "2026-11-22",
+  "updated": "2026-11-24",
   "status": "published",
   "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/",
-  "topic": "The Policy-Rate Signal Test",
-  "latest_version": "2.0",
-  "updated": "2026-11-24",
-  "latest_version_url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/dashboard.html",
-  "latest_version_title": "EUR/NOK Research Lab",
-  "validation_status": "No validated forecasting edge; diagnostic research model"
+  "topic": "Currency Risk & Treasury Decisions",
+  "latest_version": "3.0",
+  "latest_version_url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/",
+  "latest_version_title": "Currency Risk & Treasury Decisions",
+  "validation_status": "Verified deterministic scenarios; historical forecasting edge not established",
+  "externally_managed": true
 }

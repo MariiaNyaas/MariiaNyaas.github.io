@@ -1,0 +1,249 @@
+{
+  "title": "Deterministic decision-engine financial validation",
+  "engineVersion": "3.0.0",
+  "generatedUtc": "2026-11-24T09:34:34.932Z",
+  "engineSha256": "4f336933376c13854ebaca5eee9479c775b22e669f930c8374c98d7bac36eb9c",
+  "status": "PASS",
+  "testCount": 39,
+  "passed": 39,
+  "failed": 0,
+  "groups": [
+    {
+      "group": "cash_flow",
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "group": "policies",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "group": "reverse_stress",
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "group": "portfolio",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "group": "collateral",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "group": "validation",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "group": "purity",
+      "passed": 1,
+      "failed": 0
+    }
+  ],
+  "tests": [
+    {
+      "group": "cash_flow",
+      "name": "Independent 10m EUR stress cases, all four hedge ratios",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Receivable cash sign and adverse NOK appreciation",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Budget/volume/FX/hedge waterfall reconciles across two currencies",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Committed volume is unchanged by forecast uncertainty",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Forecast cancellation leaves the original hedge alive",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Forecast growth does not automatically scale the hedge",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Fully hedged fixed notional removes FX payoff sensitivity",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Natural opposite flows remain gross without explicit matching consent",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Netting requires the same entity, set, currency and due date",
+      "status": "PASS"
+    },
+    {
+      "group": "cash_flow",
+      "name": "Timeline is chronologically sorted and reconciles to book total",
+      "status": "PASS"
+    },
+    {
+      "group": "policies",
+      "name": "Reference is current policy under the same scenario",
+      "status": "PASS"
+    },
+    {
+      "group": "policies",
+      "name": "New-policy rates can be supplied independently of current contracts",
+      "status": "PASS"
+    },
+    {
+      "group": "policies",
+      "name": "Missing hedge quote prevents invented hedged alternatives",
+      "status": "PASS"
+    },
+    {
+      "group": "policies",
+      "name": "NOK-only cash is not assigned a fictitious foreign currency hedge",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Importer minimum ratio includes forward points",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Exporter downside uses the correct sign",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Adverse entered forward can impose a maximum hedge ratio",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Exactly 100 percent endpoint is feasible",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Impossible limit is not clipped to a feasible answer",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Hedge-independent scenario returns all feasible or none",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Common-FX threshold reproduces the direct cash book boundary",
+      "status": "PASS"
+    },
+    {
+      "group": "reverse_stress",
+      "name": "Common shock gives exporter lower bound and fully hedged flat case",
+      "status": "PASS"
+    },
+    {
+      "group": "portfolio",
+      "name": "Local and FX shocks include their interaction",
+      "status": "PASS"
+    },
+    {
+      "group": "portfolio",
+      "name": "100 percent initial-unit hedge cancels FX only for unchanged local value",
+      "status": "PASS"
+    },
+    {
+      "group": "portfolio",
+      "name": "Same-holdings currency benchmark isolates policy difference",
+      "status": "PASS"
+    },
+    {
+      "group": "portfolio",
+      "name": "Portfolio waterfall reconciles across currencies and row overrides",
+      "status": "PASS"
+    },
+    {
+      "group": "portfolio",
+      "name": "Unmapped imported asset class is disclosed as held constant",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Long EUR proxy loses on NOK appreciation and is labelled proxy",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Stressed forward and explicit discount factor determine the mark",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Continuous discount uses actual days over 365 and rejects expired positions",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Threshold, posted collateral, haircut and minimum transfer reconcile",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Opposite positions net only inside the same entity and CSA",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Missing CSA terms are unknown, not a zero-threshold margin assumption",
+      "status": "PASS"
+    },
+    {
+      "group": "collateral",
+      "name": "Release in one CSA does not fund another CSA automatically",
+      "status": "PASS"
+    },
+    {
+      "group": "validation",
+      "name": "Blank amount, hedge share and required forward are never zero",
+      "status": "PASS"
+    },
+    {
+      "group": "validation",
+      "name": "Scenario blanks and invalid boundaries reject stale calculations",
+      "status": "PASS"
+    },
+    {
+      "group": "validation",
+      "name": "Extreme numerical overflow returns no valid monetary result",
+      "status": "PASS"
+    },
+    {
+      "group": "validation",
+      "name": "Invalid dates and blank collateral assumptions cannot become valid marks",
+      "status": "PASS"
+    },
+    {
+      "group": "purity",
+      "name": "Inputs remain unchanged and repeated results are deterministic",
+      "status": "PASS"
+    }
+  ],
+  "limits": [
+    "Same-session implementation verification, not external model validation.",
+    "Deterministic scenario arithmetic is tested; no probabilities, forecast superiority, live prices, legal netting enforceability or executable trading strategy are certified.",
+    "The historical prediction model has its own retained validation and remains separate."
+  ]
+}

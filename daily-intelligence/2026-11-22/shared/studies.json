@@ -79,69 +79,11 @@
     "kind": "financial",
     "slug": "02-financial",
     "domain": "Financial Intelligence",
-    "title": "The Policy-Rate Signal Test",
-    "subtitle": "Can the Norwegian policy rate improve a monthly EUR/NOK random-walk baseline?",
-    "brief": [
-      "The retained monthly history runs through 2026-10: EUR/NOK 10.5914 and an average policy rate of 4.50%.",
-      "Across 71 expanding monthly origins, the signal model has MAE 1.406% versus 1.471% for a zero-return random walk.",
-      "Directional accuracy is 59.2%.",
-      "The three-month-block 95% interval for mean MAE improvement is -0.032 to 0.168 percentage points; it crosses zero."
-    ],
-    "mechanism": "A higher domestic rate can support a currency through carry, yet the same rate can signal inflation or macro stress. EUR/NOK also absorbs foreign rates, energy prices and global risk appetite. A statistically richer story earns credibility only if it improves the next-month random-walk baseline.",
-    "method": "Norges Bank monthly EUR/NOK middle rates and daily key policy-rate observations, January 2000–October 2026. Aggregate the policy rate to monthly mean; compute monthly log EUR/NOK changes. At every one of the final 71 origins, re-estimate next-month change on the current change, current rate change and current rate level using only earlier rows. Compare with zero return. Circular three-month blocks, 5,000 draws, seed 20261122.",
-    "limits": "Monthly Norges Bank middle rates are indicative, not executable returns. The model omits foreign rates, risk appetite, energy prices and intervention expectations. The 72-month evaluation is latest-vintage and repeatedly re-estimated; it is not a trading strategy and includes no transaction costs.",
-    "change": [
-      "Foreign policy rates, energy prices and risk factors in a pre-specified model.",
-      "A stable net advantage after spreads, slippage and new untouched months.",
-      "Evidence that the effect survives alternative horizons and rate aggregations."
-    ],
-    "decision": [
-      [
-        "Treasury",
-        "Keep random walk visible",
-        "Executable quotes and hedge mandate",
-        "Middle rates are indicative."
-      ],
-      [
-        "FX risk",
-        "Treat rate signal as a scenario input",
-        "Foreign-rate and energy controls",
-        "No carry-return claim."
-      ],
-      [
-        "Model governance",
-        "Monitor loss differential",
-        "New untouched monthly record",
-        "Confidence interval crosses zero."
-      ]
-    ],
-    "inputs": [
-      {
-        "id": "rateShock",
-        "label": "Policy-rate shock · pp",
-        "value": 0,
-        "min": -5,
-        "max": 5,
-        "step": 0.25
-      },
-      {
-        "id": "rateSensitivity",
-        "label": "Assumed monthly FX response · % per rate pp",
-        "value": -0.2,
-        "min": -5,
-        "max": 5,
-        "step": 0.1
-      },
-      {
-        "id": "monthlyFxMove",
-        "label": "Other monthly EUR/NOK move · %",
-        "value": 0,
-        "min": -10,
-        "max": 10,
-        "step": 0.25
-      }
-    ],
-    "source": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"
+    "title": "Currency Risk & Treasury Decisions",
+    "subtitle": "Real currency evidence, budget boundaries, hedge-policy comparisons and liquidity stress for treasury and portfolio decisions.",
+    "externally_managed": true,
+    "url": "https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/",
+    "updated": "2026-11-24"
   },
   {
     "kind": "accounting",

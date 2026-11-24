@@ -1,0 +1,439 @@
+{
+  "version": "3.0",
+  "generatedAt": "2026-11-24T09:49:53.152589+00:00",
+  "status": "passed_with_stated_scope",
+  "scope": "Independent financial arithmetic and targeted static product review within the same research session. This reviewer did not implement decision-engine.js or decision-app.js. Data normalization was checked separately using Python csv/Decimal. This is not an external assurance opinion.",
+  "artifactSha256": {
+    "decision-engine.js": "4f336933376c13854ebaca5eee9479c775b22e669f930c8374c98d7bac36eb9c",
+    "decision-app.js": "b23e30cc59dcd4510173fc91eed2f89a7fab74f7b94993c35bab976890b84d99",
+    "decision-data.json": "3dc722a58425bc0ed46821894c7eb91371eb539bbf105ce50290ae8407f8b040",
+    "model/data/decision_fx_daily.csv": "559dcf9382f4c052558db09949ea25144a438e3b38883892768a843cee3ba2d2",
+    "model/data/decision_manifest.json": "a8e79caed4046559db9f60497801fdfc9133a694ff3d166f0ba3642ad8130205",
+    "model/DECISION_ENGINE.md": "39603f3967a9614ebf8dff1ff72beb2b978813c1e9bc0966a02663fe31c2e725",
+    "methodology.html": "8d1dc3414a7eecac2d177b1410588fda496bbdeb6801f77d3b206f09b278ea2e"
+  },
+  "summary": {
+    "numericalAndBehavioralChecks": 44,
+    "passed": 44,
+    "failed": 0,
+    "targetedStaticChecks": 17,
+    "resolvedMaterialFindings": 10,
+    "remainingMaterialFindingsInReviewedScope": 0
+  },
+  "referenceCase": {
+    "kind": "illustrative-not-a-trade",
+    "currency": "EUR",
+    "amount": 10000000,
+    "referenceSpot": 10.7285,
+    "referenceDate": "2026-11-23",
+    "budgetRate": 10.7285,
+    "assumedForwardRate": 10.8285,
+    "hedgePct": 80,
+    "fxShockPct": 10,
+    "allowedBudgetOverrunNok": 2000000,
+    "scenarioCashNok": 110230700,
+    "budgetNok": 107285000,
+    "adverseBudgetChangeNok": 2945700,
+    "minimumFeasibleHedgePctExactDecimal": "89.720923061109112401706326771855887",
+    "minimumFeasibleHedgePctDisplayedAtOneDecimal": 89.8,
+    "maxCommonShockPctExactDecimal": "5.5925805098569231486228270494477327",
+    "safeDisplayedMaxShockPctAtThreeDecimals": 5.592
+  },
+  "checks": [
+    {
+      "id": "treasury.budgetNok",
+      "expected": "107285000",
+      "actual": 107285000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "treasury.baselineCashNok",
+      "expected": "108085000",
+      "actual": 108085000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "treasury.scenarioCashNok",
+      "expected": "110230700",
+      "actual": 110230700,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "treasury.changeVsBudgetNok",
+      "expected": "2945700",
+      "actual": 2945700,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "treasury.changeVsCurrentBaselineNok",
+      "expected": "2145700",
+      "actual": 2145700,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "treasury.forwardPointsEffectNok",
+      "expected": "800000",
+      "actual": 799999.9999999972,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "treasury.marketFxEffectNok",
+      "expected": "2145700",
+      "actual": 2145700.0000000014,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "minimumHedgePct",
+      "expected": "89.720923061109112401706326771855887",
+      "actual": 89.72092306110916,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "maxCommonShockPct",
+      "expected": "5.5925805098569231486228270494477327",
+      "actual": 5.592580509856923,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "hedge89_7Adverse",
+      "expected": "2002035.5",
+      "actual": 2002035.5,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "hedge89_8Adverse",
+      "expected": "1992307",
+      "actual": 1992307,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "receivable",
+      "expected": "-110230700",
+      "actual": -110230700,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "cancelledCash",
+      "expected": "-7782800",
+      "actual": -7782800.000000008,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "cancelledFixedHedge",
+      "expected": "8000000",
+      "actual": 8000000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "committedUnaffected",
+      "expected": "110230700",
+      "actual": 110230700,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.initialValueNok",
+      "expected": "49038000",
+      "actual": 49038000.00000001,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.unhedgedValueNok",
+      "expected": "45114960",
+      "actual": 45114960,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.scenarioValueNok",
+      "expected": "41687110",
+      "actual": 41687110,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.localAssetEffectNok",
+      "expected": "-9807600",
+      "actual": -9807600.000000002,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.fxTranslationEffectNok",
+      "expected": "7355700",
+      "actual": 7355700.000000001,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.interactionEffectNok",
+      "expected": "-1471140",
+      "actual": -1471140.0000000002,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.hedgeEffectNok",
+      "expected": "-3427850",
+      "actual": -3427850.0000000014,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.activeVsBenchmarkNok",
+      "expected": "-3427850",
+      "actual": -3427850,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "portfolio.benchmarkReturnPct",
+      "expected": "-8",
+      "actual": -8.000000000000014,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "margin.netMarkNok",
+      "expected": "-490000",
+      "actual": -490000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "margin.knownMarginCallNok",
+      "expected": "340000",
+      "actual": 340000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "margin.eligibleCollateralUsedNok",
+      "expected": "90000",
+      "actual": 90000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "margin.immediateCashNeedNok",
+      "expected": "250000",
+      "actual": 250000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "sameCsa.netMarkNok",
+      "expected": "0",
+      "actual": 0,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "sameCsa.immediateCashNeedNok",
+      "expected": "0",
+      "actual": 0,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "crossEntity.netMarkNok",
+      "expected": "0",
+      "actual": 0,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "crossEntity.immediateCashNeedNok",
+      "expected": "250000",
+      "actual": 250000,
+      "absoluteTolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "id": "defaultValid",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "reverseValid",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "impossibleLimit",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "overhedgingFlag",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "currentPolicyIdentity",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "noForwardAlternativesUnassessed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "unknownTermsRemainNull",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "incompleteCsaRejected",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "expiredForwardRejected",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "expiredProxyRejected",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "blankAmountRejected",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "omittedAssetReturnDisclosed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "targetedStaticChecks": {
+    "unknownAlternativesLabelledNotAssessed": true,
+    "reverseChecksFeasibilityBeforeInequality": true,
+    "reverseDisplayBoundsRoundInward": true,
+    "hedgeDisplayBoundsRoundInward": true,
+    "invalidHeatmapCellsAreNA": true,
+    "cashEquivalentsNotGrossContractualLegs": true,
+    "sourceQuoteUnitCountUses100NotExponent2": true,
+    "unknownCollateralMemoIsPartial": true,
+    "unsupportedAssetClassRejected": true,
+    "marksNamespacedByMode": true,
+    "newBooksClearStaleMarks": true,
+    "currencyChangeClearsStaleMark": true,
+    "syntheticForwardProvenanceReset": true,
+    "partialMonthHistoryExplained": true,
+    "methodSeparatesScenarioProbability": true,
+    "methodKeepsPortfolioInteraction": true,
+    "methodSeparatesCollateralFromLoss": true
+  },
+  "resolvedFindings": [
+    {
+      "id": "incomplete-csa",
+      "status": "resolved",
+      "finding": "An agreement ID alone initially defaulted missing numerical terms to zero.",
+      "resolution": "All numerical agreement fields require explicit finite inputs; unknown agreements retain null requirements."
+    },
+    {
+      "id": "expired-hedge",
+      "status": "resolved",
+      "finding": "Known expired collateral positions were initially rejected only in the rate-derived discount branch.",
+      "resolution": "Expiry is checked against valuation date in every valuation mode."
+    },
+    {
+      "id": "missing-local-return",
+      "status": "resolved",
+      "finding": "An unmapped asset class could be held flat without a visible assumption.",
+      "resolution": "Engine emits an assumed-zero warning; UI imports require an explicitly supported class-return mapping."
+    },
+    {
+      "id": "gross-settlement-label",
+      "status": "resolved",
+      "finding": "Per-exposure net cash equivalents were described as gross contractual payment legs.",
+      "resolution": "Timeline and memo distinguish net cash equivalents from gross contractual legs and intraday liquidity."
+    },
+    {
+      "id": "unknown-versus-infeasible",
+      "status": "resolved",
+      "finding": "Missing forward quotes could classify alternatives as above allowance or infeasible.",
+      "resolution": "Unknown alternatives and reverse calculations are not assessed; feasibility is checked before displaying an inequality; invalid heatmap cells are N/A."
+    },
+    {
+      "id": "rounding-feasibility",
+      "status": "resolved",
+      "finding": "Ordinary rounding could present an infeasible minimum hedge as feasible.",
+      "resolution": "Lower feasible bounds round upward and upper bounds downward. The audit case requires 89.7209230611%; 89.7% breaches the allowance, while 89.8% satisfies it."
+    },
+    {
+      "id": "source-unit-label",
+      "status": "resolved",
+      "finding": "The source unit exponent could be displayed as the foreign-unit count.",
+      "resolution": "CHF, SEK and JPY labels use sourceUnits=100; actual numerical rates remain NOK per one unit."
+    },
+    {
+      "id": "unknown-collateral-export",
+      "status": "resolved",
+      "finding": "A zero known subtotal could be mistaken for a known total obligation in an exported memo.",
+      "resolution": "The memo labels partial known-agreement subtotals and states that the total obligation is not assessed."
+    },
+    {
+      "id": "stale-mark-assumptions",
+      "status": "resolved",
+      "finding": "A replaced row or another mode could inherit a stressed forward identified only by the old row ID.",
+      "resolution": "Marks are keyed by mode and row ID and cleared on replacement, deletion and currency change; full-scenario restore preserves its complete assumptions."
+    },
+    {
+      "id": "forward-source-attribution",
+      "status": "resolved",
+      "finding": "An automatically changed illustrative forward could retain a prior imported source attribution.",
+      "resolution": "Currency and manual forward changes reset provenance to an explicit illustrative/user-entered assumption."
+    }
+  ],
+  "dataChecks": {
+    "normalizedQuoteDecimalChecksPreviouslyPassed": 40632,
+    "historyIdentityChecksPreviouslyPassed": 2622,
+    "historicalEndpointChecksPreviouslyPassed": 18,
+    "rawDownloadHashesReverified": 3,
+    "normalizedCsvAndManifestHashesReverified": true,
+    "freshReferenceDate": "2026-11-23",
+    "sourceUnitCaution": "CHF, SEK and JPY source quotes are per 100 foreign units. NOK is an arithmetic identity, not a seventh observed series.",
+    "nbim2025Bridge": "2362 - 1155 + 319 = 1526 NOK billion, per the dated primary release; no current holdings implied."
+  },
+  "limits": [
+    "Live browser interaction, responsive layout, print rendering and publication checks are performed separately by the lead agent.",
+    "Static UI checks verify the reported implementation paths and text at the recorded hash; they do not substitute for live interaction.",
+    "Scenario values have no assigned probabilities; the budget allowance and hedge terms are user assumptions.",
+    "The fixed-policy comparison excludes contract unwind and execution costs.",
+    "Collateral proxies and aggregate cash buffers are not a live CSA valuation, a complete intraday liquidity forecast, or proof of cross-entity transferability.",
+    "Historical FX replay contains no invented asset returns; the v2 forecasting evidence remains frozen through October 2026."
+  ]
+}

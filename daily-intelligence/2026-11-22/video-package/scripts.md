@@ -24,27 +24,11 @@ A stronger second-stage design would connect each household’s refinancing date
 
 The full research and interactive playground are available at the address in the description.
 
-## 02 — The Policy-Rate Signal Test
+## 02 — Currency Risk & Treasury Decisions
 
-A central-bank signal can be economically persuasive and still fail as a trading rule.
+The earlier financial-study script is withdrawn. The replacement research, published on 24 November 2026 at the same address, combines observed currency data, deterministic treasury and portfolio scenarios, budget boundaries, policy comparisons and collateral sensitivity. Hypothetical exposures are labelled separately from market observations. Historical forecast comparisons remain a supporting evidence layer and do not establish a validated trading signal.
 
-This study tests whether the Norges Bank policy-rate differential contains usable information for the next movement in EUR–NOK. We align official policy-rate observations with dated exchange-rate data, preserve publication timing, and compare the signal with a no-change benchmark on a forward holdout.
-
-The candidate model’s mean absolute percentage error was 1.406 percent. The naive benchmark delivered 1.471 percent. That is a modest numerical improvement, not a decisive victory. The confidence interval around the difference includes zero, which means this sample cannot support a strong claim that the rate signal reliably adds forecasting value.
-
-Why does this matter? Because the krone is not a one-factor asset. Rate differentials interact with petroleum terms of trade, global risk appetite, liquidity, hedging flows, and the credibility of the expected policy path. A statistically fragile edge can disappear once transaction costs, timing, and revised expectations are considered.
-
-The dashboard separates three layers. Observed history shows what actually happened. The hypothesis layer states the proposed transmission mechanism. The scenario playground lets you change the policy differential, risk premium, and oil-price impulse without presenting those choices as empirical forecasts.
-
-For treasury and asset-allocation teams, the implication is disciplined. Use the policy-rate differential as one conditional input, not as an autonomous directional signal. Require stability across sub-periods and a meaningful improvement over the no-change rule before allocating risk.
-
-The principal limitation is that this is a latest-vintage holdout rather than a reconstructed real-time expectation dataset. It tests a usable relationship, not a fully tradable strategy.
-
-What would change our mind? A longer out-of-sample record, stable coefficients across regimes, and performance that survives costs and alternative baselines.
-
-The next useful test is not another in-sample fit. It is a locked forecast made before policy and exchange-rate observations arrive, with the transaction rule and cost assumption declared.
-
-The full research and interactive playground are available at the address in the description.
+Current study: https://mariianyaas.github.io/daily-intelligence/2026-11-22/02-financial/
 
 ## 03 — The Working-Capital Warning Test
 

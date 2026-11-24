@@ -1,0 +1,214 @@
+{
+  "version": "3.0",
+  "dataset": "Observed currency reference data for the decision dashboard",
+  "generatedAt": "2026-11-24T09:28:34.028676+00:00",
+  "requestedStart": "2000-01-01",
+  "requestedEnd": "2026-11-23",
+  "baseCurrency": "NOK",
+  "normalizedUnit": "NOK per one foreign currency unit",
+  "normalization": {
+    "EUR": {
+      "observedUnitMultipliers": [
+        0
+      ],
+      "formula": "NOK per one foreign unit = OBS_VALUE / 10**UNIT_MULT",
+      "latestRawQuote": 10.7285,
+      "latestPerOneQuote": 10.7285
+    },
+    "USD": {
+      "observedUnitMultipliers": [
+        0
+      ],
+      "formula": "NOK per one foreign unit = OBS_VALUE / 10**UNIT_MULT",
+      "latestRawQuote": 9.8076,
+      "latestPerOneQuote": 9.8076
+    },
+    "GBP": {
+      "observedUnitMultipliers": [
+        0
+      ],
+      "formula": "NOK per one foreign unit = OBS_VALUE / 10**UNIT_MULT",
+      "latestRawQuote": 12.8219,
+      "latestPerOneQuote": 12.8219
+    },
+    "SEK": {
+      "observedUnitMultipliers": [
+        2
+      ],
+      "formula": "NOK per one foreign unit = OBS_VALUE / 10**UNIT_MULT",
+      "latestRawQuote": 95.47,
+      "latestPerOneQuote": 0.9547
+    },
+    "CHF": {
+      "observedUnitMultipliers": [
+        2
+      ],
+      "formula": "NOK per one foreign unit = OBS_VALUE / 10**UNIT_MULT",
+      "latestRawQuote": 1167.92,
+      "latestPerOneQuote": 11.6792
+    },
+    "JPY": {
+      "observedUnitMultipliers": [
+        2
+      ],
+      "formula": "NOK per one foreign unit = OBS_VALUE / 10**UNIT_MULT",
+      "latestRawQuote": 6.1655,
+      "latestPerOneQuote": 0.061655
+    }
+  },
+  "missingValuePolicy": "Missing source observations remain empty. No interpolation, forward-fill, backward-fill or synthetic cross-rate construction.",
+  "vintage": "Latest source vintage on the recorded retrieval dates. Historical corrections may revise a later download; this is not an archived point-in-time data set.",
+  "quoteMeaning": "Indicative reference middle rates, not executable bid/ask quotes. Source collection field refers to the ECB concertation time of 14:15; Norges Bank daily publication is approximately 16:00 local time. Observation date and download time are distinct.",
+  "quoteReference": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/",
+  "sources": {
+    "fx_all": {
+      "url": "https://data.norges-bank.no/api/data/EXR/B.EUR+USD+GBP+SEK+CHF+JPY.NOK.SP?format=csv&startPeriod=2000-01-01&endPeriod=2026-11-23&locale=en",
+      "publisher": "Norges Bank",
+      "seriesIds": [
+        "EXR/B.EUR.NOK.SP",
+        "EXR/B.USD.NOK.SP",
+        "EXR/B.GBP.NOK.SP",
+        "EXR/B.SEK.NOK.SP",
+        "EXR/B.CHF.NOK.SP",
+        "EXR/B.JPY.NOK.SP"
+      ],
+      "referenceUrl": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/",
+      "requested_url": "https://data.norges-bank.no/api/data/EXR/B.EUR+USD+GBP+SEK+CHF+JPY.NOK.SP?format=csv&startPeriod=2000-01-01&endPeriod=2026-11-23&locale=en",
+      "actual_download_url": "https://data.norges-bank.no/api/data/EXR/B.EUR+USD+GBP+SEK+CHF+JPY.NOK.SP?format=csv&startPeriod=2000-01-01&endPeriod=2026-11-23&locale=en",
+      "retrieved_utc": "2026-11-24T09:24:02.553442+00:00",
+      "bytes": 5032424,
+      "sha256": "7cd78d0693a4f3d2cb76a735dfd914477247cdecc4ab7a0260a9859f720edad2",
+      "content_type": "text/csv;charset=UTF-8",
+      "last_modified": null,
+      "rawCache": "raw/decision_fx_all.csv"
+    },
+    "nb_policy": {
+      "url": "https://data.norges-bank.no/api/data/IR/B.KPRA.SD.R?format=csv&startPeriod=2026-01-01&endPeriod=2026-11-23&locale=en",
+      "publisher": "Norges Bank",
+      "seriesIds": [
+        "IR/B.KPRA.SD.R"
+      ],
+      "referenceUrl": "https://www.norges-bank.no/en/topics/Monetary-policy/Policy-rate/",
+      "requested_url": "https://data.norges-bank.no/api/data/IR/B.KPRA.SD.R?format=csv&startPeriod=2026-01-01&endPeriod=2026-11-23&locale=en",
+      "actual_download_url": "https://data.norges-bank.no/api/data/IR/B.KPRA.SD.R?format=csv&startPeriod=2026-01-01&endPeriod=2026-11-23&locale=en",
+      "retrieved_utc": "2026-11-24T09:24:49.297034+00:00",
+      "bytes": 19544,
+      "sha256": "be5d3f28e3a383af8a6a94ecaef3c21f9100607c4e426271ece58587b2b146ad",
+      "content_type": "text/csv;charset=UTF-8",
+      "last_modified": null,
+      "rawCache": "raw/decision_nb_policy.csv"
+    },
+    "ecb_policy": {
+      "url": "https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.4F.KR.DFR+MRR_FR+MRR_RT.LEV?startPeriod=2026-01-01&endPeriod=2026-11-23&format=csvdata",
+      "publisher": "European Central Bank",
+      "seriesIds": [
+        "FM.D.U2.EUR.4F.KR.DFR.LEV",
+        "FM.D.U2.EUR.4F.KR.MRR_FR.LEV",
+        "FM.D.U2.EUR.4F.KR.MRR_RT.LEV"
+      ],
+      "referenceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+      "requested_url": "https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.4F.KR.DFR+MRR_FR+MRR_RT.LEV?startPeriod=2026-01-01&endPeriod=2026-11-23&format=csvdata",
+      "actual_download_url": "https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.4F.KR.DFR+MRR_FR+MRR_RT.LEV?startPeriod=2026-01-01&endPeriod=2026-11-23&format=csvdata",
+      "retrieved_utc": "2026-11-24T09:24:50.840760+00:00",
+      "bytes": 337814,
+      "sha256": "ce83b3a7e597a95e7ce7894506dc289f95b4ed16c1f38f9fb1bb1c2fd9c531e3",
+      "content_type": "text/csv",
+      "last_modified": "Tue, 24 Nov 2026 00:37:13 GMT",
+      "rawCache": "raw/decision_ecb_policy.csv"
+    }
+  },
+  "dailyFile": {
+    "path": "model/data/decision_fx_daily.csv",
+    "sha256": "559dcf9382f4c052558db09949ea25144a438e3b38883892768a843cee3ba2d2",
+    "bytes": 370800,
+    "rows": 6772,
+    "columns": [
+      "date",
+      "EUR",
+      "USD",
+      "GBP",
+      "SEK",
+      "CHF",
+      "JPY"
+    ],
+    "firstDate": "2000-01-03",
+    "lastDate": "2026-11-23",
+    "commonCompleteRows": 6772,
+    "missingByCurrency": {
+      "EUR": 0,
+      "USD": 0,
+      "GBP": 0,
+      "SEK": 0,
+      "CHF": 0,
+      "JPY": 0
+    }
+  },
+  "historicalScenarioFormula": "100 * (observed end quote / observed start quote - 1); positive means more NOK per foreign unit. Exact actual common fixing dates; no asset returns or model forecasts included.",
+  "validation": {
+    "positiveFiniteQuotes": true,
+    "duplicateCurrencyDates": 0,
+    "unitNormalizationRoundTrips": 40632,
+    "historicalShockBackCalculations": 18,
+    "futureObservationsUsed": 0,
+    "latestCurrencyDatesEqual": true,
+    "ecbMroOverlapRowsChecked": 327
+  },
+  "sourceFacts": [
+    {
+      "id": "currency-translation",
+      "kind": "source-fact",
+      "title": "NOK translation is not investment alpha",
+      "text": "NBIM reports returns in NOK and in its benchmark currency basket. Changes in NOK affect the reported NOK result but do not, by themselves, change the fund's international purchasing power.",
+      "asOf": "2026-11-24",
+      "source": "Norges Bank Investment Management",
+      "url": "https://www.nbim.no/en/investments/returns/methodology-for-the-calculation-of-returns/",
+      "dateMeaning": "Source verified on this date; this is a methodological statement, not a market observation."
+    },
+    {
+      "id": "hedge-liquidity",
+      "kind": "source-fact",
+      "title": "A hedge can protect value and demand liquidity",
+      "text": "In Norges Bank's survey of 10 Norwegian asset managers, a hypothetical sudden 20% NOK depreciation implied NOK 104 billion of variation margin at 2025 Q1, against approximately NOK 680 billion of hedged assets. This is an industry survey scenario, not NBIM's margin requirement or an observed cash outflow.",
+      "asOf": "2025-03-31",
+      "source": "Norges Bank, Financial Stability Report 2025-1",
+      "url": "https://www.norges-bank.no/en/news-events/publications/Financial-Stability-report/2025-1-financial-stability/web-report-2025-1-financial-stability/",
+      "dateMeaning": "Survey reference quarter end; the stated cash requirement is conditional on a stress scenario.",
+      "metrics": {
+        "managerCount": 10,
+        "hedgedAssetsNokBillionApprox": 680,
+        "variationMarginNokBillion": 104,
+        "assumedNokDepreciationPercent": 20
+      }
+    },
+    {
+      "id": "multiple-risk-lenses",
+      "kind": "source-fact",
+      "title": "Assess value, concentrations and liquidity together",
+      "text": "NBIM's market-risk policy covers absolute and benchmark-relative risk using concentration, volatility and correlation, factor, and liquidity dimensions. Its policy calls for several approaches and regular stress testing.",
+      "asOf": "2024-06-12",
+      "source": "Norges Bank Investment Management, Market Risk Management policy",
+      "url": "https://www.nbim.no/en/about-us/about-the-fund/governance-structure/policies/market-risk-management/",
+      "dateMeaning": "Last-updated date displayed on the policy; verified 24 November 2026."
+    }
+  ],
+  "reportedActuals": {
+    "nbimBridge": {
+      "period": "2025",
+      "publishedAt": "2026-01-29",
+      "kind": "reported-historical-fund-fact",
+      "investmentReturnNokBn": 2362,
+      "investmentReturnLabel": "Accounting return",
+      "fxTranslationNokBn": -1155,
+      "netFlowsNokBn": 319,
+      "netFlowsLabel": "Inflow after management costs",
+      "valueChangeNokBn": 1526,
+      "returnPct": 15.1,
+      "closingFundValueNokBn": 21268,
+      "source": "Norges Bank Investment Management, Strong return in 2025",
+      "url": "https://www.nbim.no/en/news-and-insights/the-press/press-releases/2026/strong-return-in-2025/",
+      "verifiedAt": "2026-11-24",
+      "note": "Published calendar-2025 fund totals in NOK billions, rounded by the source. Accounting return + FX translation + inflow after management costs = change in fund value. The 15.1% reported return is a return measure, not the percentage change in the NOK fund value. This historical bridge supplies no current portfolio holdings or trading signal."
+    }
+  },
+  "researchSeparation": "The v2 EUR/NOK model remains frozen through October 2026. Updated reference quotes and historical replays here do not rerun or validate that forecasting model."
+}

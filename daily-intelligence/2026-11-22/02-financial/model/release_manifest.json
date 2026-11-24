@@ -1,28 +1,48 @@
 {
-  "version": "2.0",
+  "version": "3.0",
   "release_date": "2026-11-24",
-  "entry": "dashboard.html",
+  "entry": "index.html",
   "raw_cache_included": false,
   "files": [
     {
       "path": "dashboard.css",
-      "bytes": 17821,
-      "sha256": "2a1d136acf968c03d8dcbb44ec44c8229a95da83ba9e18598a960d8c83881d25"
+      "bytes": 23310,
+      "sha256": "ff27ecccfb48d759bd67601d49965f7033b7b6c393c944dfe2078ca088e76395"
     },
     {
-      "path": "dashboard.html",
-      "bytes": 16920,
-      "sha256": "856b8d1ec4d372e141a771fe7dc086b3684cbd017c2cba1a35c4b70042ef8863"
+      "path": "decision-app.js",
+      "bytes": 73923,
+      "sha256": "b23e30cc59dcd4510173fc91eed2f89a7fab74f7b94993c35bab976890b84d99"
     },
     {
-      "path": "dashboard.js",
-      "bytes": 42530,
-      "sha256": "23499a1b306290813981b33cec641a0796db664b3473fcb2a582b467fdf45303"
+      "path": "decision-data.json",
+      "bytes": 55288,
+      "sha256": "3dc722a58425bc0ed46821894c7eb91371eb539bbf105ce50290ae8407f8b040"
     },
     {
-      "path": "methodology-v2.html",
-      "bytes": 11781,
-      "sha256": "2bba4eafb94f856dfec4158619f0728e86891bb68503f16c3a65b8f97c875bab"
+      "path": "decision-engine.js",
+      "bytes": 33544,
+      "sha256": "4f336933376c13854ebaca5eee9479c775b22e669f930c8374c98d7bac36eb9c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 17365,
+      "sha256": "a2d768e55d1fd3bc04d9272b332d6598b6b25c566e6ac993f39ecd2b8f895d90"
+    },
+    {
+      "path": "methodology.html",
+      "bytes": 13754,
+      "sha256": "8d1dc3414a7eecac2d177b1410588fda496bbdeb6801f77d3b206f09b278ea2e"
+    },
+    {
+      "path": "model/DECISION_DATA.md",
+      "bytes": 8352,
+      "sha256": "6acb461273e99f9edc4aa5a745ae59f1eabe759153481661c51f0d5664159345"
+    },
+    {
+      "path": "model/DECISION_ENGINE.md",
+      "bytes": 15964,
+      "sha256": "39603f3967a9614ebf8dff1ff72beb2b978813c1e9bc0966a02663fe31c2e725"
     },
     {
       "path": "model/PROTOCOL.md",
@@ -31,13 +51,23 @@
     },
     {
       "path": "model/README.md",
-      "bytes": 8387,
-      "sha256": "28ac658c3d22943fa9bc26527eca9e739bd9a8854004a4d74268f4d8e949fef4"
+      "bytes": 9117,
+      "sha256": "fb394d8fcb5c57686f5b54d1d08b3898b33b7045e841cfad0c335246322adcab"
     },
     {
       "path": "model/RESEARCH_NOTE_RU.md",
-      "bytes": 8137,
-      "sha256": "47f4a8ec78a52fb89494f7a9e87cad70d2e73ea643b50eaec80577c537cdd57d"
+      "bytes": 11584,
+      "sha256": "52a64387b621f31eabc52f7fab2d0d02947b52af72caf9c95563ac296d24369b"
+    },
+    {
+      "path": "model/data/decision_fx_daily.csv",
+      "bytes": 370800,
+      "sha256": "559dcf9382f4c052558db09949ea25144a438e3b38883892768a843cee3ba2d2"
+    },
+    {
+      "path": "model/data/decision_manifest.json",
+      "bytes": 10149,
+      "sha256": "a8e79caed4046559db9f60497801fdfc9133a694ff3d166f0ba3642ad8130205"
     },
     {
       "path": "model/data/ea_mpd_events.csv",
@@ -85,6 +115,11 @@
       "sha256": "b8bbb0d4a8664972f0104eaa0b414c721afe231dd231842cb27a9dbe787db631"
     },
     {
+      "path": "model/output/decision_validation.json",
+      "bytes": 6801,
+      "sha256": "1043e9fec21b0a7fe98290699274305b6130e0a957bd6edb1717ee0e61ba2e76"
+    },
+    {
       "path": "model/output/event_observations.csv",
       "bytes": 90200,
       "sha256": "3315a30b14d9bcc34e58287a17cffa0073f43172b844795e4f25e0027cca4a82"
@@ -98,6 +133,11 @@
       "path": "model/output/history.json",
       "bytes": 72104,
       "sha256": "63bfacb9af5cd7a0f1b987d64632ff3984411892221cfda9be7b3be84f14274c"
+    },
+    {
+      "path": "model/output/independent_decision_audit.json",
+      "bytes": 14159,
+      "sha256": "592147f4e96408234138cea92425885b108a9f84c8015a862d48025220e9137f"
     },
     {
       "path": "model/output/model_comparison.csv",
@@ -130,6 +170,11 @@
       "sha256": "6083e43e32cd7a7c2740523379e095d6072d18817721aede95dff5b02d29c941"
     },
     {
+      "path": "model/scripts/build_decision_data.py",
+      "bytes": 20375,
+      "sha256": "b4dca6274714af63c8db8d23697b6e46057c819ce726feda336a89680eca2f3d"
+    },
+    {
       "path": "model/scripts/collect_macro.py",
       "bytes": 13081,
       "sha256": "ad82b8203e3bc4227cf9aefeea8e958e633500d26f09896c5a4fc8a12960c2d5"
@@ -141,8 +186,8 @@
     },
     {
       "path": "model/scripts/package_release.py",
-      "bytes": 2111,
-      "sha256": "895122c57a0439589c33c14f5812352037a66461a28ec31ea9c6a93d749661d5"
+      "bytes": 1659,
+      "sha256": "d225e9a430c328c6733726354eaa5ee48c4dbc0e5c429ceb17636485d7daaa5c"
     },
     {
       "path": "model/scripts/run_event_study.py",
@@ -153,6 +198,16 @@
       "path": "model/scripts/run_model.py",
       "bytes": 22667,
       "sha256": "9ff4436e15825abd3317fd9e0380fd526cef2696ab5839480db84e8d8d0eae8e"
+    },
+    {
+      "path": "model/scripts/test_decision_engine.cjs",
+      "bytes": 18551,
+      "sha256": "7293e886da4fe025f5247efd78642d7a66081e632fff8ca153c16d9bb69764c1"
+    },
+    {
+      "path": "project.json",
+      "bytes": 775,
+      "sha256": "06141ce56438c52f8144d24a4b9a76ccd1a7997befe86c28b94d38cc9bce2fdd"
     }
   ]
 }
