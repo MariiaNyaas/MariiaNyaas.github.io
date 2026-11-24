@@ -1,0 +1,212 @@
+{
+  "title": "ECB announcement repricing and subsequent EUR/NOK fixings",
+  "module": "historical_event_association",
+  "generated_utc": "2026-11-24T08:41:56.074926+00:00",
+  "question": "How is ECB-event one-year OIS repricing associated with EUR/NOK changes through 1, 5 and 20 subsequent Norges Bank business-day fixings?",
+  "predictor": {
+    "column": "ois_1y_bp",
+    "tenor": "1 year",
+    "window": "Monetary Event Window",
+    "units": "basis points",
+    "interpretation": "ECB-event market repricing proxy; includes policy, guidance and information components"
+  },
+  "outcome": {
+    "formula": "100 * log(S_outcome / S_baseline)",
+    "units": "percent log return",
+    "quote": "NOK per EUR",
+    "positive_means": "NOK weakens",
+    "baseline": "Last Norges Bank fixing strictly before the event date",
+    "target": "Nth Norges Bank fixing strictly after the event date, N=1,5,20",
+    "same_day_fixing_used": false
+  },
+  "coverage": {
+    "fx_first_fixing": "2000-01-03",
+    "fx_last_fixing": "2026-10-30",
+    "fx_fixings": 6756,
+    "ecb_first_event": "1999-01-07",
+    "ecb_last_event": "2025-10-30",
+    "ecb_events_in_selected_window": 315,
+    "missing_ois_1y_quotes": 0,
+    "exclusion_reason_counts_at_1d": {
+      "no_pre_event_fixing": 23
+    },
+    "ecb_workbook_update": "2025-11-04"
+  },
+  "estimation": {
+    "model": "Univariate OLS with intercept",
+    "reported_scale": "percent log EUR/NOK return per +10 bp OIS1Y repricing, with +25 bp and one-sample-SD scalings also retained",
+    "primary_interval": "Descriptive 95% percentile interval from paired chronological circular event-block bootstrap",
+    "block_length_events": 3,
+    "bootstrap_draws": 3000,
+    "seed_base": 20261124,
+    "seed_per_horizon": "seed_base + horizon_business_days",
+    "secondary_interval": "HC3 heteroskedasticity-robust asymptotic normal 95% interval; not robust to serial dependence",
+    "multiple_horizons": "Three prespecified horizons. In addition to marginal 95% intervals, report Bonferroni-adjusted 98.333333% percentile intervals per horizon (bootstrap quantiles 0.833333% and 99.166667%) for a nominal 95% three-horizon family. Bootstrap/dependence limitations still apply; all results are exploratory.",
+    "bonferroni_number_of_comparisons": 3,
+    "bonferroni_per_horizon_confidence_level": 0.9833333333333333
+  },
+  "results": [
+    {
+      "horizon_business_days": 1,
+      "n": 292,
+      "coefficient_pct_per_25bp": 0.6147632304131176,
+      "coefficient_pct_per_10bp": 0.2459052921652471,
+      "coefficient_pct_per_predictor_sd": 0.11216498277083643,
+      "block_bootstrap_ci95": [
+        0.07147874075509716,
+        1.175271413174551
+      ],
+      "block_bootstrap_ci95_per_10bp": [
+        0.028591496302038867,
+        0.4701085652698204
+      ],
+      "bonferroni_ci98_333_per_10bp": [
+        -0.013707869592972046,
+        0.5266034108332358
+      ],
+      "bonferroni_ci98_333_per_25bp": [
+        -0.03426967398243011,
+        1.3165085270830896
+      ],
+      "bonferroni_ci_crosses_zero": true,
+      "hc3_ci95": [
+        0.08214768200367423,
+        1.1473787788225613
+      ],
+      "intercept_pct": -0.051489399245556705,
+      "r2": 0.025747457623946923,
+      "pearson_correlation": 0.16046014341245937,
+      "predictor_mean_bp": 0.17248261307528567,
+      "predictor_std_bp": 4.561308208668488,
+      "predictor_min_bp": -17.6,
+      "predictor_max_bp": 20.3,
+      "outcome_mean_pct": -0.047247960509386316,
+      "outcome_std_pct": 0.6990208308771029,
+      "block_ci_crosses_zero": false,
+      "interpretation": "Association in percent log EUR/NOK return per 10 bp higher ECB-event OIS1Y repricing; positive means NOK weakens against EUR. A 25 bp coefficient scale is retained for comparison, not labelled as a policy-rate hike.",
+      "first_event": "2000-01-05",
+      "last_event": "2025-10-30",
+      "first_outcome_fixing": "2000-01-06",
+      "last_outcome_fixing": "2025-10-31",
+      "adjacent_outcome_window_overlap_count": 0
+    },
+    {
+      "horizon_business_days": 5,
+      "n": 292,
+      "coefficient_pct_per_25bp": 0.885012407242151,
+      "coefficient_pct_per_10bp": 0.35400496289686045,
+      "coefficient_pct_per_predictor_sd": 0.1614725743170833,
+      "block_bootstrap_ci95": [
+        -0.11595950643956898,
+        2.118427394942382
+      ],
+      "block_bootstrap_ci95_per_10bp": [
+        -0.046383802575827596,
+        0.8473709579769528
+      ],
+      "bonferroni_ci98_333_per_10bp": [
+        -0.1166467393450399,
+        1.0346961995325787
+      ],
+      "bonferroni_ci98_333_per_25bp": [
+        -0.2916168483625997,
+        2.586740498831447
+      ],
+      "bonferroni_ci_crosses_zero": true,
+      "hc3_ci95": [
+        -0.19550154317278992,
+        1.9655263576570923
+      ],
+      "intercept_pct": 0.04830370841463712,
+      "r2": 0.013873022424425563,
+      "pearson_correlation": 0.11778379525395623,
+      "predictor_mean_bp": 0.17248261307528567,
+      "predictor_std_bp": 4.561308208668488,
+      "predictor_min_bp": -17.6,
+      "predictor_max_bp": 20.3,
+      "outcome_mean_pct": 0.054409678518844116,
+      "outcome_std_pct": 1.370923512601447,
+      "block_ci_crosses_zero": true,
+      "interpretation": "Association in percent log EUR/NOK return per 10 bp higher ECB-event OIS1Y repricing; positive means NOK weakens against EUR. A 25 bp coefficient scale is retained for comparison, not labelled as a policy-rate hike.",
+      "first_event": "2000-01-05",
+      "last_event": "2025-10-30",
+      "first_outcome_fixing": "2000-01-12",
+      "last_outcome_fixing": "2025-11-06",
+      "adjacent_outcome_window_overlap_count": 2
+    },
+    {
+      "horizon_business_days": 20,
+      "n": 292,
+      "coefficient_pct_per_25bp": 1.0777321580231232,
+      "coefficient_pct_per_10bp": 0.4310928632092492,
+      "coefficient_pct_per_predictor_sd": 0.19663474156547503,
+      "block_bootstrap_ci95": [
+        -0.24550795826220845,
+        2.424645795639295
+      ],
+      "block_bootstrap_ci95_per_10bp": [
+        -0.09820318330488338,
+        0.969858318255718
+      ],
+      "bonferroni_ci98_333_per_10bp": [
+        -0.22083848448163745,
+        1.1146343857908976
+      ],
+      "bonferroni_ci98_333_per_25bp": [
+        -0.5520962112040936,
+        2.7865859644772444
+      ],
+      "bonferroni_ci_crosses_zero": true,
+      "hc3_ci95": [
+        -0.19798889101230194,
+        2.353453207058548
+      ],
+      "intercept_pct": 0.06266837645246631,
+      "r2": 0.010307456418257144,
+      "pearson_correlation": 0.10152564414106001,
+      "predictor_mean_bp": 0.17248261307528567,
+      "predictor_std_bp": 4.561308208668488,
+      "predictor_min_bp": -17.6,
+      "predictor_max_bp": 20.3,
+      "outcome_mean_pct": 0.07010397880491014,
+      "outcome_std_pct": 1.936798758865988,
+      "block_ci_crosses_zero": true,
+      "interpretation": "Association in percent log EUR/NOK return per 10 bp higher ECB-event OIS1Y repricing; positive means NOK weakens against EUR. A 25 bp coefficient scale is retained for comparison, not labelled as a policy-rate hike.",
+      "first_event": "2000-01-05",
+      "last_event": "2025-10-30",
+      "first_outcome_fixing": "2000-02-02",
+      "last_outcome_fixing": "2025-11-27",
+      "adjacent_outcome_window_overlap_count": 148
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "Norges Bank",
+      "url": "https://data.norges-bank.no/api/data/EXR/B.EUR.NOK.SP?format=csv&startPeriod=2000-01-01&endPeriod=2026-10-31&locale=en",
+      "source_page": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/",
+      "file": "raw/market_fx.csv",
+      "sha256": "6499d0c7b8a1bff9de1beffe9c9f79536b3b72948bc40781aaa0be3e3ab71ce0",
+      "retrieved_utc": "2026-11-24T08:31:06.643186+00:00"
+    },
+    {
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/pub/pdf/annex/Dataset_EA-MPD.xlsx",
+      "file": "data/ea_mpd_events.csv",
+      "sha256": "93e2ced5764262815189cb75e23168dc24b4635f4f21944260ad5fe7c34bdf5f",
+      "raw_workbook_sha256": "f417fb861a305e3cbb871a7571c4899ba6bca003d9e087024d2f3f0744426cef",
+      "retrieved_utc": "2026-11-24T08:32:06.014536+00:00",
+      "actual_workbook_last_update": "2025-11-04"
+    }
+  ],
+  "limitations": [
+    "Association only. No exogenous causal monetary-policy shock is identified, and Norwegian news, global risk and other simultaneous information can confound the relationship.",
+    "The predictor includes information and forward-guidance effects as well as policy repricing; a +25 bp OIS1Y move is not necessarily a +25 bp ECB policy-rate shock.",
+    "Twenty-five basis points is a coefficient reporting scale, not a claim that a +25 bp event was observed. The retained predictor range and sample standard deviation are reported beside the coefficients.",
+    "Norges Bank reference fixings are at 14:15 CET and may precede parts of ECB announcements. A strictly pre-event baseline and strictly later target avoid labelling a same-day fixing as the complete event reaction, but include unrelated overnight and multi-day news.",
+    "Twenty-business-day response windows can overlap. Three-event circular blocks address local dependence heuristically; neither these descriptive bootstrap intervals nor HC3 ensure valid inference under arbitrary longer dependence or regime changes.",
+    "Marginal 95% intervals are shown alongside Bonferroni-adjusted 98.333333% intervals for three prespecified horizons. These are exploratory descriptive bootstrap intervals; the adjustment does not remove confounding, regime instability or arbitrary serial dependence. Statistical association is not a demonstrated forecast or trading advantage.",
+    "The retained ECB workbook ends on 30 October 2025. This historical module is excluded from the current complete-sample forecasting model; missing later events are not imputed as zero.",
+    "Reference middle rates are indicative, not executable bid/ask prices; carry, spreads and transaction costs are excluded."
+  ],
+  "observation_file": "event_observations.csv"
+}

@@ -1,0 +1,23 @@
+{
+  "source": "European Central Bank",
+  "dataset": "Euro Area Monetary Policy Event-Study Database (EA-MPD)",
+  "url": "https://www.ecb.europa.eu/pub/pdf/annex/Dataset_EA-MPD.xlsx",
+  "raw_file": "raw/macro_ea_mpd.xlsx",
+  "bytes": 377116,
+  "sha256": "f417fb861a305e3cbb871a7571c4899ba6bca003d9e087024d2f3f0744426cef",
+  "retrieved_utc": "2026-11-24T08:32:06.014536+00:00",
+  "fetch_mode": "retained_snapshot",
+  "first_event": "1999-01-07",
+  "last_event": "2025-10-30",
+  "events_per_window": {
+    "Monetary Event Window": 315,
+    "Press Conference Window": 315,
+    "Press Release Window": 315
+  },
+  "units": "OIS rate changes in basis points, per workbook Notes sheet",
+  "workbook_update_note": "4 November 2025, per retained workbook Notes sheet. This observed file vintage takes precedence over newer dates displayed on referring web pages.",
+  "missing_value_policy": "Missing event quotes are retained as NaN. No non-event months or unobserved future periods are manufactured or set to zero.",
+  "intended_role": "Optional historical event-study extension. Excluded from the current complete-sample forecast block because coverage ends before the current macro panel and Norway counterpart is not acquired.",
+  "interpretation": "Observed intraday OIS repricing around ECB events is a market expectations proxy, not an observed pure exogenous policy shock; policy, forward-guidance and information effects may be mixed.",
+  "reference": "Altavilla, Brugnolini, Gurkaynak, Motto and Ragusa (2019), Measuring Euro Area Monetary Policy, Journal of Monetary Economics."
+}

@@ -1,0 +1,3424 @@
+{
+  "metadata": {
+    "title": "EUR/NOK Research Lab",
+    "version": "2.0",
+    "as_of": "2026-11-24",
+    "generated_utc": "2026-11-24T08:38:38.564577+00:00",
+    "sample_start": "2000-01",
+    "sample_end": "2026-10",
+    "feature_sample_start": "2006-03",
+    "latest_spot": 10.312,
+    "latest_origin": "2026-10",
+    "information_cutoff": "2026-10-31",
+    "target_definition": "100 × log(end-of-month EUR/NOK at t+h / end-of-month EUR/NOK at t)",
+    "validation_label": "Latest-vintage, expanding-window pseudo-out-of-sample",
+    "forecast_timestamp_warning": "October snapshot calculated on 24 November; not an October-issued historical live forecast.",
+    "first_prospective_origin": "2026-11-30",
+    "observation_months": 322,
+    "core_series": 11,
+    "feature_count_full": 12,
+    "horizons": [
+      1,
+      3,
+      6
+    ],
+    "model_count": 9,
+    "ridge_alpha": 10.0,
+    "bootstrap_draws": 3000,
+    "protocol_sha256": "d0a61a71637275d68fe493d87b42ddf52b2ff261ddd0ad238f7378e75ccdf36f"
+  },
+  "sources": [
+    {
+      "id": "fx",
+      "label": "Norges Bank",
+      "url": "https://www.norges-bank.no/en/topics/Statistics/exchange_rates/",
+      "series": "EXR/B.EUR.NOK.SP",
+      "retrieved_utc": "2026-11-24T08:31:06.643186+00:00",
+      "status": "Used in core model"
+    },
+    {
+      "id": "nb",
+      "label": "Norges Bank",
+      "url": "https://www.norges-bank.no/en/topics/Monetary-policy/Policy-rate/",
+      "series": "IR/B.KPRA.SD.R",
+      "retrieved_utc": "2026-11-24T08:31:06.501145+00:00",
+      "status": "Used in core model"
+    },
+    {
+      "id": "ecb",
+      "label": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+      "series": [
+        "FM.D.U2.EUR.4F.KR.DFR.LEV",
+        "FM.D.U2.EUR.4F.KR.MRR_FR.LEV",
+        "FM.D.U2.EUR.4F.KR.MRR_RT.LEV"
+      ],
+      "retrieved_utc": "2026-11-24T08:31:08.351883+00:00",
+      "status": "Used in core model"
+    },
+    {
+      "id": "brent",
+      "label": "US Energy Information Administration, distributed by FRED",
+      "url": "https://www.eia.gov/dnav/pet/hist/RBRTED.htm",
+      "series": "DCOILBRENTEU",
+      "retrieved_utc": "2026-11-24T08:32:09.784869+00:00",
+      "status": "Used in core model"
+    },
+    {
+      "id": "vix",
+      "label": "Cboe, distributed by FRED",
+      "url": "https://www.cboe.com/tradable_products/vix/vix_historical_data/",
+      "series": "VIXCLS",
+      "retrieved_utc": "2026-11-24T08:32:09.664927+00:00",
+      "status": "Used in core model"
+    },
+    {
+      "id": "usd",
+      "label": "Board of Governors of the Federal Reserve System, distributed by FRED",
+      "url": "https://www.federalreserve.gov/releases/h10/",
+      "series": "DTWEXBGS",
+      "retrieved_utc": "2026-11-24T08:32:09.374687+00:00",
+      "status": "Used in core model"
+    },
+    {
+      "id": "no_hicp_yoy",
+      "label": "Norway all-items HICP, annual rate of change",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
+      "series": "prc_hicp_minr",
+      "retrieved_utc": "2026-11-24T08:32:07.155820+00:00",
+      "status": "Used with two-month lag"
+    },
+    {
+      "id": "ea_hicp_yoy",
+      "label": "Euro area 20-country fixed-composition all-items HICP, annual rate of change",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
+      "series": "prc_hicp_minr",
+      "retrieved_utc": "2026-11-24T08:32:07.154902+00:00",
+      "status": "Used with two-month lag"
+    },
+    {
+      "id": "no_ip_yoy",
+      "label": "Norway industrial production, NACE B-D, seasonally and calendar adjusted",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table?lang=en",
+      "series": "sts_inpr_m",
+      "retrieved_utc": "2026-11-24T08:34:05.415169+00:00",
+      "status": "Used with two-month lag"
+    },
+    {
+      "id": "ea_ip_yoy",
+      "label": "Euro area 20-country fixed-composition industrial production, NACE B-D, seasonally and calendar adjusted",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table?lang=en",
+      "series": "sts_inpr_m",
+      "retrieved_utc": "2026-11-24T08:34:05.072501+00:00",
+      "status": "Used with two-month lag"
+    },
+    {
+      "id": "ea_mpd",
+      "label": "ECB public event-study OIS repricing",
+      "url": "https://www.ecb.europa.eu/pub/pdf/annex/Dataset_EA-MPD.xlsx",
+      "series": "EA-MPD",
+      "status": "Downloaded; historical extension only (ends October 2025)"
+    },
+    {
+      "id": "norway_surprises",
+      "label": "Norway OIS/FRA surprises and consensus inflation surprises",
+      "url": "https://www.norges-bank.no/en/news-events/publications/Staff-Memo/2026/staff-memo-5-2026-macroeconomic-news/",
+      "series": "LSEG Tick History / Bloomberg consensus in cited research",
+      "status": "Not acquired; not substituted or simulated"
+    }
+  ],
+  "data_coverage": [
+    {
+      "series": "spot_eurnok",
+      "start": "2000-01",
+      "end": "2026-10",
+      "count": 322,
+      "missing": 0,
+      "lag_months": 0
+    },
+    {
+      "series": "nb_policy",
+      "start": "2000-01",
+      "end": "2026-10",
+      "count": 322,
+      "missing": 0,
+      "lag_months": 0
+    },
+    {
+      "series": "ecb_dfr",
+      "start": "2000-01",
+      "end": "2026-10",
+      "count": 322,
+      "missing": 0,
+      "lag_months": 0
+    },
+    {
+      "series": "ecb_mro",
+      "start": "2000-01",
+      "end": "2026-10",
+      "count": 322,
+      "missing": 0,
+      "lag_months": 0
+    },
+    {
+      "series": "brent",
+      "start": "2000-01",
+      "end": "2026-10",
+      "count": 322,
+      "missing": 0,
+      "lag_months": 1
+    },
+    {
+      "series": "vix",
+      "start": "2000-01",
+      "end": "2026-10",
+      "count": 322,
+      "missing": 0,
+      "lag_months": 1
+    },
+    {
+      "series": "usd_broad",
+      "start": "2006-01",
+      "end": "2026-10",
+      "count": 250,
+      "missing": 72,
+      "lag_months": 1
+    },
+    {
+      "series": "no_hicp_yoy",
+      "start": "2001-01",
+      "end": "2026-10",
+      "count": 310,
+      "missing": 12,
+      "lag_months": 2
+    },
+    {
+      "series": "ea_hicp_yoy",
+      "start": "2000-12",
+      "end": "2026-10",
+      "count": 311,
+      "missing": 11,
+      "lag_months": 2
+    },
+    {
+      "series": "no_ip_yoy",
+      "start": "2000-01",
+      "end": "2026-09",
+      "count": 321,
+      "missing": 1,
+      "lag_months": 2
+    },
+    {
+      "series": "ea_ip_yoy",
+      "start": "2000-01",
+      "end": "2026-09",
+      "count": 321,
+      "missing": 1,
+      "lag_months": 2
+    }
+  ],
+  "limitations": [
+    "No robust edge is assumed. Assess paired loss intervals, AR(1) comparisons, block ablations and multiple-testing-adjusted evidence.",
+    "Latest-vintage macro and dollar-index records can contain revisions unavailable historically; publication lags do not solve vintage bias.",
+    "Reference FX fixings are indicative, not executable quotes. No bid–ask spread, carry, funding, slippage or net trading profitability has been demonstrated.",
+    "Norwegian and ECB administered rates are not market-implied OIS paths or announcement surprises. Norwegian high-frequency surprises have not been acquired.",
+    "EA-MPD is downloaded through October 2025 only and is excluded from the current complete-sample forecasting block.",
+    "Industrial production includes Norwegian extraction; it is not mainland GDP. Euro-area macro data use fixed EA20 composition.",
+    "HICP uses the current ECOICOP-v2 series; Eurostat flags possible January 2026 classification/methodology changes.",
+    "Three- and six-month targets overlap. Block resampling helps describe dependence but small-sample and model-selection uncertainty remain.",
+    "The October month-end snapshot was calculated in November. First genuinely prospective test origin after protocol freeze: 30 November 2026.",
+    "Scenario coefficients describe conditional association. A causal monetary-policy conclusion requires identified surprises and a separate event/structural design.",
+    "Tail bands use up to 60 matured prior forecast errors, with only 24 required; they are empirical bands without a coverage guarantee."
+  ],
+  "horizons": {
+    "1": {
+      "models": [
+        {
+          "id": "rw",
+          "label": "Random walk",
+          "n": 141,
+          "mae": 2.033474085170836,
+          "rmse": 2.589519784691271,
+          "direction_accuracy": null,
+          "win_rate": 0.0,
+          "bias": 0.10975670465694184,
+          "interval_n": 117,
+          "interval_coverage": 0.8717948717948718,
+          "improvement_vs_rw": 0.0,
+          "improvement_ci": [
+            0.0,
+            0.0
+          ],
+          "improvement_vs_ar1": -0.02192207619386277,
+          "ar1_improvement_ci": [
+            -0.07297870871838878,
+            0.02672832696025895
+          ],
+          "p_rw": 1.0,
+          "p_ar1": 0.3865378207264245,
+          "longer_block_ci": [
+            0.0,
+            0.0
+          ],
+          "block_months": 3
+        },
+        {
+          "id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 141,
+          "mae": 2.0115520089769734,
+          "rmse": 2.572018268564238,
+          "direction_accuracy": 0.5460992907801419,
+          "win_rate": 0.5106382978723404,
+          "bias": -0.03342750405848465,
+          "interval_n": 117,
+          "interval_coverage": 0.8547008547008547,
+          "improvement_vs_rw": 0.02192207619386277,
+          "improvement_ci": [
+            -0.02766306534607343,
+            0.06718078200139395
+          ],
+          "improvement_vs_ar1": 0.0,
+          "ar1_improvement_ci": [
+            0.0,
+            0.0
+          ],
+          "p_rw": 0.38020659780073307,
+          "p_ar1": 1.0,
+          "longer_block_ci": [
+            -0.028192581031605355,
+            0.0677184993518809
+          ],
+          "block_months": 3,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "domestic",
+          "label": "Domestic rates",
+          "n": 141,
+          "mae": 2.0175852312403224,
+          "rmse": 2.6042035563442774,
+          "direction_accuracy": 0.48936170212765956,
+          "win_rate": 0.45390070921985815,
+          "bias": -0.04879825878988967,
+          "interval_n": 117,
+          "interval_coverage": 0.8803418803418803,
+          "improvement_vs_rw": 0.01588885393051376,
+          "improvement_ci": [
+            -0.05308363895374787,
+            0.08472099679004788
+          ],
+          "improvement_vs_ar1": -0.0060332222633490236,
+          "ar1_improvement_ci": [
+            -0.06380233187580223,
+            0.05826276002869547
+          ],
+          "p_rw": 0.6447850716427858,
+          "p_ar1": 0.8443852049316894,
+          "longer_block_ci": [
+            -0.041911875189568744,
+            0.07542156477608285
+          ],
+          "block_months": 3,
+          "p_rw_holm": 1.0,
+          "p_ar1_holm": 1.0
+        },
+        {
+          "id": "rates",
+          "label": "Relative rates",
+          "n": 141,
+          "mae": 2.0677888707028873,
+          "rmse": 2.64580732973615,
+          "direction_accuracy": 0.5177304964539007,
+          "win_rate": 0.48936170212765956,
+          "bias": 0.02272600740404176,
+          "interval_n": 117,
+          "interval_coverage": 0.8803418803418803,
+          "improvement_vs_rw": -0.03431478553205127,
+          "improvement_ci": [
+            -0.15562765941527376,
+            0.0768615314056554
+          ],
+          "improvement_vs_ar1": -0.056236861725914064,
+          "ar1_improvement_ci": [
+            -0.16083552017964045,
+            0.04832316044122593
+          ],
+          "p_rw": 0.5691436187937354,
+          "p_ar1": 0.2842385871376208,
+          "longer_block_ci": [
+            -0.15533983563655268,
+            0.07786476286700726
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "energy",
+          "label": "Rates + energy",
+          "n": 141,
+          "mae": 2.0708389765004274,
+          "rmse": 2.64871695887258,
+          "direction_accuracy": 0.5531914893617021,
+          "win_rate": 0.5035460992907801,
+          "bias": -0.01343870413998433,
+          "interval_n": 117,
+          "interval_coverage": 0.8717948717948718,
+          "improvement_vs_rw": -0.03736489132959104,
+          "improvement_ci": [
+            -0.16293119289080787,
+            0.08184558289819417
+          ],
+          "improvement_vs_ar1": -0.05928696752345383,
+          "ar1_improvement_ci": [
+            -0.16862295365819682,
+            0.04651489771863967
+          ],
+          "p_rw": 0.5681439520159947,
+          "p_ar1": 0.29690103298900367,
+          "longer_block_ci": [
+            -0.17254875084716537,
+            0.08216747117668695
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "risk",
+          "label": "Rates + energy + risk",
+          "n": 141,
+          "mae": 2.138377777170986,
+          "rmse": 2.78240668712452,
+          "direction_accuracy": 0.5390070921985816,
+          "win_rate": 0.46099290780141844,
+          "bias": -0.027646398491349033,
+          "interval_n": 117,
+          "interval_coverage": 0.8547008547008547,
+          "improvement_vs_rw": -0.10490369200014904,
+          "improvement_ci": [
+            -0.2765010787137656,
+            0.04950861934252833
+          ],
+          "improvement_vs_ar1": -0.12682576819401184,
+          "ar1_improvement_ci": [
+            -0.2922832412976082,
+            0.01859010550868034
+          ],
+          "p_rw": 0.218593802065978,
+          "p_ar1": 0.10529823392202599,
+          "longer_block_ci": [
+            -0.26838281247980417,
+            0.04186299098205066
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "full",
+          "label": "Full multidimensional model",
+          "n": 141,
+          "mae": 2.1572027898268122,
+          "rmse": 2.7949110717611676,
+          "direction_accuracy": 0.5531914893617021,
+          "win_rate": 0.48226950354609927,
+          "bias": -0.08267027318316664,
+          "interval_n": 117,
+          "interval_coverage": 0.8547008547008547,
+          "improvement_vs_rw": -0.12372870465597588,
+          "improvement_ci": [
+            -0.2933397913207979,
+            0.03608058344773022
+          ],
+          "improvement_vs_ar1": -0.14565078084983865,
+          "ar1_improvement_ci": [
+            -0.3062124859884092,
+            0.004896415672768967
+          ],
+          "p_rw": 0.13795401532822393,
+          "p_ar1": 0.06664445184938354,
+          "longer_block_ci": [
+            -0.2880638328595433,
+            0.030246187666553348
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "regime",
+          "label": "Full + stress interactions",
+          "n": 141,
+          "mae": 2.1701983450327225,
+          "rmse": 2.8417031022379904,
+          "direction_accuracy": 0.5460992907801419,
+          "win_rate": 0.475177304964539,
+          "bias": -0.08237331307837635,
+          "interval_n": 117,
+          "interval_coverage": 0.8547008547008547,
+          "improvement_vs_rw": -0.13672425986188644,
+          "improvement_ci": [
+            -0.31081115113765373,
+            0.026285622889349294
+          ],
+          "improvement_vs_ar1": -0.15864633605574924,
+          "ar1_improvement_ci": [
+            -0.3484530809239429,
+            -0.0009776089922895492
+          ],
+          "p_rw": 0.11562812395868044,
+          "p_ar1": 0.07564145284905031,
+          "longer_block_ci": [
+            -0.30525288057912464,
+            0.013380750389006366
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 141,
+          "mae": 2.038490683427742,
+          "rmse": 2.599559396232816,
+          "direction_accuracy": 0.5035460992907801,
+          "win_rate": 0.46808510638297873,
+          "bias": 0.02585390801805808,
+          "interval_n": 117,
+          "interval_coverage": 0.8888888888888888,
+          "improvement_vs_rw": -0.005016598256905318,
+          "improvement_ci": [
+            -0.0537811947674506,
+            0.042858721336171586
+          ],
+          "improvement_vs_ar1": -0.026938674450768096,
+          "ar1_improvement_ci": [
+            -0.07759900356748216,
+            0.0167658268228723
+          ],
+          "p_rw": 0.8427190936354548,
+          "p_ar1": 0.2582472509163612,
+          "longer_block_ci": [
+            -0.05388574576066681,
+            0.042527566162763174
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        }
+      ],
+      "ablations": [
+        {
+          "block": "rates",
+          "label": "Rates",
+          "full_mae": 2.1572027898268122,
+          "without_mae": 2.115816428261729,
+          "incremental_gain": -0.041386361565083435,
+          "ci": [
+            -0.159732004923062,
+            0.0717761469607198
+          ],
+          "n": 141,
+          "exploratory": 1
+        },
+        {
+          "block": "energy",
+          "label": "Energy",
+          "full_mae": 2.1572027898268122,
+          "without_mae": 2.136988994693662,
+          "incremental_gain": -0.020213795133149807,
+          "ci": [
+            -0.07796838855608096,
+            0.02958889636124487
+          ],
+          "n": 141,
+          "exploratory": 1
+        },
+        {
+          "block": "risk",
+          "label": "Risk",
+          "full_mae": 2.1572027898268122,
+          "without_mae": 2.0901904043693706,
+          "incremental_gain": -0.06701238545744129,
+          "ci": [
+            -0.20110770007924292,
+            0.03864780567870721
+          ],
+          "n": 141,
+          "exploratory": 1
+        },
+        {
+          "block": "macro",
+          "label": "Macro",
+          "full_mae": 2.1572027898268122,
+          "without_mae": 2.138377777170986,
+          "incremental_gain": -0.018825012655826846,
+          "ci": [
+            -0.06532435737241456,
+            0.023988768358561764
+          ],
+          "n": 141,
+          "exploratory": 1
+        }
+      ],
+      "regimes": [
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 126,
+          "mae": 1.9594137220834573,
+          "baseline_mae": 1.985417839325393,
+          "gain": 0.02600411724193563,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 126,
+          "mae": 2.0189653742006723,
+          "baseline_mae": 1.985417839325393,
+          "gain": -0.033547534875279394,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 126,
+          "mae": 2.030141745534388,
+          "baseline_mae": 1.985417839325393,
+          "gain": -0.04472390620899502,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 126,
+          "mae": 2.037694226166792,
+          "baseline_mae": 1.985417839325393,
+          "gain": -0.052276386841399125,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 126,
+          "mae": 1.9702850225386883,
+          "baseline_mae": 1.985417839325393,
+          "gain": 0.01513281678670464,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 15,
+          "mae": 2.4495136188825084,
+          "baseline_mae": 2.4371465502725593,
+          "gain": -0.012367068609949072,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 15,
+          "mae": 2.477906241321496,
+          "baseline_mae": 2.4371465502725593,
+          "gain": -0.04075969104893673,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 15,
+          "mae": 3.2245155618831745,
+          "baseline_mae": 2.4371465502725593,
+          "gain": -0.7873690116106151,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 15,
+          "mae": 3.28323294350654,
+          "baseline_mae": 2.4371465502725593,
+          "gain": -0.8460863932339806,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 15,
+          "mae": 2.611418234895791,
+          "baseline_mae": 2.4371465502725593,
+          "gain": -0.1742716846232315,
+          "small_sample": 1
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 141,
+          "mae": 2.0115520089769734,
+          "baseline_mae": 2.033474085170836,
+          "gain": 0.02192207619386277,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 141,
+          "mae": 2.0677888707028873,
+          "baseline_mae": 2.033474085170836,
+          "gain": -0.03431478553205114,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 141,
+          "mae": 2.1572027898268122,
+          "baseline_mae": 2.033474085170836,
+          "gain": -0.12372870465597607,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 141,
+          "mae": 2.1701983450327225,
+          "baseline_mae": 2.033474085170836,
+          "gain": -0.1367242598618863,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 141,
+          "mae": 2.038490683427742,
+          "baseline_mae": 2.033474085170836,
+          "gain": -0.005016598256905702,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 78,
+          "mae": 1.9113120113311481,
+          "baseline_mae": 1.94806142399551,
+          "gain": 0.036749412664361936,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 78,
+          "mae": 1.9914420840947935,
+          "baseline_mae": 1.94806142399551,
+          "gain": -0.04338066009928343,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 78,
+          "mae": 1.98096475127531,
+          "baseline_mae": 1.94806142399551,
+          "gain": -0.03290332727979983,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 78,
+          "mae": 1.9750011832173526,
+          "baseline_mae": 1.94806142399551,
+          "gain": -0.026939759221842552,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 78,
+          "mae": 1.9255827199384783,
+          "baseline_mae": 1.94806142399551,
+          "gain": 0.022478704057031784,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 63,
+          "mae": 2.135658672728948,
+          "baseline_mae": 2.1392230942450485,
+          "gain": 0.003564421516100591,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 63,
+          "mae": 2.162313463646243,
+          "baseline_mae": 2.1392230942450485,
+          "gain": -0.023090369401194355,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 63,
+          "mae": 2.375402266128672,
+          "baseline_mae": 2.1392230942450485,
+          "gain": -0.23617917188362325,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 63,
+          "mae": 2.411871021566039,
+          "baseline_mae": 2.1392230942450485,
+          "gain": -0.2726479273209903,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 63,
+          "mae": 2.1782814953668304,
+          "baseline_mae": 2.1392230942450485,
+          "gain": -0.03905840112178183,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 60,
+          "mae": 1.648465297071233,
+          "baseline_mae": 1.679364638781721,
+          "gain": 0.030899341710487915,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 60,
+          "mae": 1.6559123705222398,
+          "baseline_mae": 1.679364638781721,
+          "gain": 0.0234522682594811,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 60,
+          "mae": 1.6020029217651557,
+          "baseline_mae": 1.679364638781721,
+          "gain": 0.07736171701656525,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 60,
+          "mae": 1.6109496134175838,
+          "baseline_mae": 1.679364638781721,
+          "gain": 0.06841502536413713,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 60,
+          "mae": 1.631304735466551,
+          "baseline_mae": 1.679364638781721,
+          "gain": 0.04805990331516985,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 24,
+          "mae": 2.6503720033452756,
+          "baseline_mae": 2.625596878694625,
+          "gain": -0.02477512465065068,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 24,
+          "mae": 2.4034998283635716,
+          "baseline_mae": 2.625596878694625,
+          "gain": 0.22209705033105331,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 24,
+          "mae": 2.89793391854498,
+          "baseline_mae": 2.625596878694625,
+          "gain": -0.2723370398503553,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 24,
+          "mae": 2.924697253674245,
+          "baseline_mae": 2.625596878694625,
+          "gain": -0.29910037497961994,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 24,
+          "mae": 2.6573760630543455,
+          "baseline_mae": 2.625596878694625,
+          "gain": -0.0317791843597206,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 24,
+          "mae": 2.6355389759813135,
+          "baseline_mae": 2.7067812079583553,
+          "gain": 0.07124223197704183,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 24,
+          "mae": 2.8445977752455303,
+          "baseline_mae": 2.7067812079583553,
+          "gain": -0.13781656728717495,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 24,
+          "mae": 2.9090997062790827,
+          "baseline_mae": 2.7067812079583553,
+          "gain": -0.20231849832072735,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 24,
+          "mae": 2.933278300246157,
+          "baseline_mae": 2.7067812079583553,
+          "gain": -0.22649709228780157,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 24,
+          "mae": 2.723511314899333,
+          "baseline_mae": 2.7067812079583553,
+          "gain": -0.016730106940977763,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 33,
+          "mae": 1.753304604170945,
+          "baseline_mae": 1.756996775833732,
+          "gain": 0.003692171662786903,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 33,
+          "mae": 2.00754988033801,
+          "baseline_mae": 1.756996775833732,
+          "gain": -0.25055310450427815,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 33,
+          "mae": 2.081109426178597,
+          "baseline_mae": 1.756996775833732,
+          "gain": -0.324112650344865,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 33,
+          "mae": 2.0833205015293714,
+          "baseline_mae": 1.756996775833732,
+          "gain": -0.3263237256956395,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 33,
+          "mae": 1.8305334898312193,
+          "baseline_mae": 1.756996775833732,
+          "gain": -0.0735367139974874,
+          "small_sample": 0
+        }
+      ],
+      "latest_forecasts": [
+        {
+          "model_id": "rw",
+          "label": "Random walk",
+          "prediction": 0.0,
+          "lower": -4.197275756618046,
+          "upper": 4.885675947433948,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.5166666666666667,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "prediction": 0.9586648187618239,
+          "lower": -3.552128231700299,
+          "upper": 5.512845059559012,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.6666666666666666,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "domestic",
+          "label": "Domestic rates",
+          "prediction": 0.8385682762401457,
+          "lower": -4.087014882583613,
+          "upper": 4.9642955706374225,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.6166666666666667,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "rates",
+          "label": "Relative rates",
+          "prediction": 1.0927476609424849,
+          "lower": -3.409335417037102,
+          "upper": 6.258777316110387,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.5666666666666667,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "energy",
+          "label": "Rates + energy",
+          "prediction": 1.2331944439430065,
+          "lower": -3.262319910463322,
+          "upper": 6.49231292480442,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.6,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "risk",
+          "label": "Rates + energy + risk",
+          "prediction": 1.8806058930497882,
+          "lower": -2.667821601797435,
+          "upper": 7.138913077490935,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.7,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "prediction": 2.1060715666851872,
+          "lower": -2.8413385012478396,
+          "upper": 7.090937779336249,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.7333333333333333,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "prediction": 2.314127580064081,
+          "lower": -2.58098552352302,
+          "upper": 7.29239455910187,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.7333333333333333,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "prediction": 0.7661840963617528,
+          "lower": -3.7678657196499343,
+          "upper": 5.33037260765871,
+          "target_month": "2026-11",
+          "prob_nok_depreciation": 0.6,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        }
+      ],
+      "scenario": {
+        "model_id": "full",
+        "label": "Full multidimensional model",
+        "baseline_prediction": 2.1060715666851872,
+        "intercept": 2.236479620600087,
+        "features": [
+          {
+            "name": "return_lag1",
+            "label": "Last monthly EUR/NOK return",
+            "value": -5.559212880907927,
+            "coefficient": -0.14828280473595648,
+            "unit": "% log return",
+            "min": -5.559212880907927,
+            "max": 6.152519888192628,
+            "historical_min": -10.434734434521964,
+            "historical_max": 10.248791996170636,
+            "step": 0.25,
+            "block": "own FX dynamics"
+          },
+          {
+            "name": "policy_diff",
+            "label": "Norway minus ECB deposit rate",
+            "value": 2.0,
+            "coefficient": 0.39058318368407147,
+            "unit": "percentage points",
+            "min": 0.11499999999999999,
+            "max": 2.5,
+            "historical_min": 0.0,
+            "historical_max": 2.75,
+            "step": 0.25,
+            "block": "rates"
+          },
+          {
+            "name": "diff_change",
+            "label": "Monthly change in rate differential",
+            "value": 0.0,
+            "coefficient": 0.6447944036146852,
+            "unit": "percentage points",
+            "min": -0.77,
+            "max": 0.5,
+            "historical_min": -1.25,
+            "historical_max": 1.0,
+            "step": 0.25,
+            "block": "rates"
+          },
+          {
+            "name": "ecb_corridor",
+            "label": "ECB MRO minus deposit rate",
+            "value": 0.1499999999999999,
+            "coefficient": -0.24491306270980365,
+            "unit": "percentage points",
+            "min": 0.1499999999999999,
+            "max": 1.0,
+            "historical_min": 0.1499999999999999,
+            "historical_max": 1.0,
+            "step": 0.05,
+            "block": "rates"
+          },
+          {
+            "name": "oil_ret1",
+            "label": "Lagged 1-month Brent change",
+            "value": 22.58986869562314,
+            "coefficient": -0.011877934581404405,
+            "unit": "% log change",
+            "min": -30.879502131369026,
+            "max": 26.035338125494935,
+            "historical_min": -55.49094503606722,
+            "historical_max": 46.90968388384351,
+            "step": 1.0,
+            "block": "energy"
+          },
+          {
+            "name": "oil_ret3",
+            "label": "Lagged 3-month Brent change",
+            "value": 29.025755409625198,
+            "coefficient": 0.013854302234282464,
+            "unit": "% log change",
+            "min": -75.68445172046347,
+            "max": 48.07208065752512,
+            "historical_min": -124.214640610511,
+            "historical_max": 85.56347637955577,
+            "step": 1.0,
+            "block": "energy"
+          },
+          {
+            "name": "log_vix",
+            "label": "Lagged log VIX level",
+            "value": 2.7584552225921763,
+            "coefficient": -0.9986183808430967,
+            "unit": "natural log of index",
+            "min": 2.3364017005241653,
+            "max": 4.011324259077154,
+            "historical_min": 2.3150525058120657,
+            "historical_max": 4.137866067701714,
+            "step": 0.05,
+            "block": "risk"
+          },
+          {
+            "name": "vix_change",
+            "label": "Lagged VIX monthly change",
+            "value": 0.5459307399999993,
+            "coefficient": 0.025468934495924824,
+            "unit": "index points",
+            "min": -10.422092931,
+            "max": 15.205279005599992,
+            "historical_min": -16.28300866,
+            "historical_max": 38.10787081,
+            "step": 1.0,
+            "block": "risk"
+          },
+          {
+            "name": "usd_return",
+            "label": "Lagged broad-dollar change",
+            "value": 2.005100213998734,
+            "coefficient": 0.08777716833046616,
+            "unit": "% log change",
+            "min": -3.480364902646805,
+            "max": 4.389921905457102,
+            "historical_min": -4.951767095194182,
+            "historical_max": 7.694817112867636,
+            "step": 0.25,
+            "block": "risk"
+          },
+          {
+            "name": "fx_vol6",
+            "label": "Trailing 6-month FX volatility",
+            "value": 3.557227454503742,
+            "coefficient": 0.20564108478692864,
+            "unit": "% monthly log-return stdev",
+            "min": 0.6663603599381065,
+            "max": 6.797329844225087,
+            "historical_min": 0.6414945050298986,
+            "historical_max": 6.957224648185501,
+            "step": 0.25,
+            "block": "risk"
+          },
+          {
+            "name": "inflation_gap",
+            "label": "Lagged Norway minus EA HICP inflation",
+            "value": 0.0,
+            "coefficient": -0.14102479513704985,
+            "unit": "percentage points",
+            "min": -2.8539999999999996,
+            "max": 3.9619999999999975,
+            "historical_min": -2.9,
+            "historical_max": 4.8,
+            "step": 0.25,
+            "block": "macro"
+          },
+          {
+            "name": "ip_gap",
+            "label": "Lagged Norway minus EA industry growth",
+            "value": 0.3674171399999999,
+            "coefficient": 0.0006584797300424088,
+            "unit": "percentage points",
+            "min": -20.8775936942,
+            "max": 22.671563981599988,
+            "historical_min": -41.77566796,
+            "historical_max": 36.59758119,
+            "step": 1.0,
+            "block": "macro"
+          }
+        ],
+        "residual_quantiles": [
+          -4.947410067933027,
+          4.9848662126510614
+        ],
+        "origin_spot": 10.312,
+        "origin": "2026-10",
+        "interpretation": "Conditional fitted association; not an identified causal shock or a guaranteed forecast."
+      },
+      "first_origin": "2015-01",
+      "last_origin": "2026-09",
+      "last_target": "2026-10"
+    },
+    "3": {
+      "models": [
+        {
+          "id": "rw",
+          "label": "Random walk",
+          "n": 139,
+          "mae": 2.8257681786207876,
+          "rmse": 3.7470373209052954,
+          "direction_accuracy": null,
+          "win_rate": 0.0,
+          "bias": 0.44151255568040354,
+          "interval_n": 113,
+          "interval_coverage": 0.8584070796460177,
+          "improvement_vs_rw": 0.0,
+          "improvement_ci": [
+            0.0,
+            0.0
+          ],
+          "improvement_vs_ar1": -0.021394482561144592,
+          "ar1_improvement_ci": [
+            -0.11634359691517374,
+            0.08144496018896943
+          ],
+          "p_rw": 1.0,
+          "p_ar1": 0.6744418527157614,
+          "longer_block_ci": [
+            0.0,
+            0.0
+          ],
+          "block_months": 3
+        },
+        {
+          "id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 139,
+          "mae": 2.804373696059643,
+          "rmse": 3.7115145020878706,
+          "direction_accuracy": 0.5683453237410072,
+          "win_rate": 0.5179856115107914,
+          "bias": -0.010306178682829917,
+          "interval_n": 113,
+          "interval_coverage": 0.8407079646017699,
+          "improvement_vs_rw": 0.021394482561144592,
+          "improvement_ci": [
+            -0.07819296410256761,
+            0.12040155057709434
+          ],
+          "improvement_vs_ar1": 0.0,
+          "ar1_improvement_ci": [
+            0.0,
+            0.0
+          ],
+          "p_rw": 0.6654448517160947,
+          "p_ar1": 1.0,
+          "longer_block_ci": [
+            -0.06730240252592228,
+            0.1135790968706934
+          ],
+          "block_months": 3,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "domestic",
+          "label": "Domestic rates",
+          "n": 139,
+          "mae": 2.877395660797613,
+          "rmse": 3.784851430688134,
+          "direction_accuracy": 0.5179856115107914,
+          "win_rate": 0.43884892086330934,
+          "bias": 0.009401033982866876,
+          "interval_n": 113,
+          "interval_coverage": 0.8407079646017699,
+          "improvement_vs_rw": -0.05162748217682578,
+          "improvement_ci": [
+            -0.20676734658525192,
+            0.10545106579064678
+          ],
+          "improvement_vs_ar1": -0.07302196473797036,
+          "ar1_improvement_ci": [
+            -0.2092331411021183,
+            0.07789608678267793
+          ],
+          "p_rw": 0.5081639453515495,
+          "p_ar1": 0.3052315894701766,
+          "longer_block_ci": [
+            -0.2128099346651423,
+            0.10446258786727702
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "rates",
+          "label": "Relative rates",
+          "n": 139,
+          "mae": 2.979690733822819,
+          "rmse": 3.9138259217954303,
+          "direction_accuracy": 0.5539568345323741,
+          "win_rate": 0.4460431654676259,
+          "bias": 0.470261857834545,
+          "interval_n": 113,
+          "interval_coverage": 0.8053097345132744,
+          "improvement_vs_rw": -0.1539225552020318,
+          "improvement_ci": [
+            -0.46321366381088763,
+            0.13561758514184397
+          ],
+          "improvement_vs_ar1": -0.1753170377631764,
+          "ar1_improvement_ci": [
+            -0.4779944239931072,
+            0.11731700044840553
+          ],
+          "p_rw": 0.31922692435854716,
+          "p_ar1": 0.24791736087970676,
+          "longer_block_ci": [
+            -0.48554809507994134,
+            0.15460740090476008
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "energy",
+          "label": "Rates + energy",
+          "n": 139,
+          "mae": 2.9653923619055442,
+          "rmse": 3.9176268360223765,
+          "direction_accuracy": 0.5539568345323741,
+          "win_rate": 0.460431654676259,
+          "bias": 0.40293043627068514,
+          "interval_n": 113,
+          "interval_coverage": 0.8230088495575221,
+          "improvement_vs_rw": -0.1396241832847569,
+          "improvement_ci": [
+            -0.47830025829488154,
+            0.19311503364328797
+          ],
+          "improvement_vs_ar1": -0.16101866584590152,
+          "ar1_improvement_ci": [
+            -0.501487657048624,
+            0.17489040194520405
+          ],
+          "p_rw": 0.4111962679106964,
+          "p_ar1": 0.3335554815061646,
+          "longer_block_ci": [
+            -0.5416514992324168,
+            0.23049745399166044
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "risk",
+          "label": "Rates + energy + risk",
+          "n": 139,
+          "mae": 3.012064900091253,
+          "rmse": 3.962872478395095,
+          "direction_accuracy": 0.5539568345323741,
+          "win_rate": 0.4460431654676259,
+          "bias": 0.5813517874298131,
+          "interval_n": 113,
+          "interval_coverage": 0.831858407079646,
+          "improvement_vs_rw": -0.18629672147046572,
+          "improvement_ci": [
+            -0.5833631813590308,
+            0.1868726554091953
+          ],
+          "improvement_vs_ar1": -0.20769120403161037,
+          "ar1_improvement_ci": [
+            -0.6007055851922666,
+            0.17257004330745107
+          ],
+          "p_rw": 0.3408863712095968,
+          "p_ar1": 0.3045651449516828,
+          "longer_block_ci": [
+            -0.5579629334850729,
+            0.205449589456478
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "full",
+          "label": "Full multidimensional model",
+          "n": 139,
+          "mae": 3.083370764842634,
+          "rmse": 4.012085764616312,
+          "direction_accuracy": 0.5251798561151079,
+          "win_rate": 0.4316546762589928,
+          "bias": 0.5625644197564678,
+          "interval_n": 113,
+          "interval_coverage": 0.8230088495575221,
+          "improvement_vs_rw": -0.25760258622184673,
+          "improvement_ci": [
+            -0.6476055279074828,
+            0.12566863697886752
+          ],
+          "improvement_vs_ar1": -0.2789970687829913,
+          "ar1_improvement_ci": [
+            -0.6736384653993102,
+            0.1461364423172762
+          ],
+          "p_rw": 0.20293235588137287,
+          "p_ar1": 0.1846051316227924,
+          "longer_block_ci": [
+            -0.6394276586773763,
+            0.16316974062637202
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "regime",
+          "label": "Full + stress interactions",
+          "n": 139,
+          "mae": 3.125348116288237,
+          "rmse": 4.065840100444123,
+          "direction_accuracy": 0.539568345323741,
+          "win_rate": 0.4460431654676259,
+          "bias": 0.5392900378280819,
+          "interval_n": 113,
+          "interval_coverage": 0.8141592920353983,
+          "improvement_vs_rw": -0.2995799376674496,
+          "improvement_ci": [
+            -0.7062178475825391,
+            0.09419395687924068
+          ],
+          "improvement_vs_ar1": -0.32097442022859424,
+          "ar1_improvement_ci": [
+            -0.7285153104687859,
+            0.10930839613274734
+          ],
+          "p_rw": 0.14461846051316227,
+          "p_ar1": 0.13195601466177942,
+          "longer_block_ci": [
+            -0.6995384920084283,
+            0.1092350706910337
+          ],
+          "block_months": 3,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 139,
+          "mae": 2.798209869701681,
+          "rmse": 3.6874652319004717,
+          "direction_accuracy": 0.5251798561151079,
+          "win_rate": 0.4892086330935252,
+          "bias": 0.35882083810861126,
+          "interval_n": 113,
+          "interval_coverage": 0.8407079646017699,
+          "improvement_vs_rw": 0.027558308919106985,
+          "improvement_ci": [
+            -0.07187009506669018,
+            0.13368632103145417
+          ],
+          "improvement_vs_ar1": 0.006163826357962383,
+          "ar1_improvement_ci": [
+            -0.11276621869520914,
+            0.13493827104190345
+          ],
+          "p_rw": 0.6151282905698101,
+          "p_ar1": 0.9243585471509497,
+          "longer_block_ci": [
+            -0.07602092318852852,
+            0.13233798626535784
+          ],
+          "block_months": 3,
+          "p_rw_holm": 1.0,
+          "p_ar1_holm": 1.0
+        }
+      ],
+      "ablations": [
+        {
+          "block": "rates",
+          "label": "Rates",
+          "full_mae": 3.083370764842634,
+          "without_mae": 2.905901106606151,
+          "incremental_gain": -0.17746965823648303,
+          "ci": [
+            -0.5471306955849946,
+            0.20821536788909278
+          ],
+          "n": 139,
+          "exploratory": 1
+        },
+        {
+          "block": "energy",
+          "label": "Energy",
+          "full_mae": 3.083370764842634,
+          "without_mae": 3.061992506625933,
+          "incremental_gain": -0.021378258216701546,
+          "ci": [
+            -0.09931712603711303,
+            0.05580981463744748
+          ],
+          "n": 139,
+          "exploratory": 1
+        },
+        {
+          "block": "risk",
+          "label": "Risk",
+          "full_mae": 3.083370764842634,
+          "without_mae": 3.0129237580335686,
+          "incremental_gain": -0.07044700680906524,
+          "ci": [
+            -0.2864172556450254,
+            0.13643977096505255
+          ],
+          "n": 139,
+          "exploratory": 1
+        },
+        {
+          "block": "macro",
+          "label": "Macro",
+          "full_mae": 3.083370764842634,
+          "without_mae": 3.012064900091253,
+          "incremental_gain": -0.07130586475138102,
+          "ci": [
+            -0.14495844325708543,
+            -0.0032566578703471277
+          ],
+          "n": 139,
+          "exploratory": 1
+        }
+      ],
+      "regimes": [
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 124,
+          "mae": 2.759318419619916,
+          "baseline_mae": 2.7616898222823623,
+          "gain": 0.002371402662446176,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 124,
+          "mae": 2.9584138757229383,
+          "baseline_mae": 2.7616898222823623,
+          "gain": -0.19672405344057609,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 124,
+          "mae": 3.0176701260374608,
+          "baseline_mae": 2.7616898222823623,
+          "gain": -0.2559803037550985,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 124,
+          "mae": 3.031821065658675,
+          "baseline_mae": 2.7616898222823623,
+          "gain": -0.27013124337631256,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 124,
+          "mae": 2.7536429816470465,
+          "baseline_mae": 2.7616898222823623,
+          "gain": 0.0080468406353158,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 15,
+          "mae": 3.176830647961384,
+          "baseline_mae": 3.3554825910184323,
+          "gain": 0.17865194305704835,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 15,
+          "mae": 3.155579427448499,
+          "baseline_mae": 3.3554825910184323,
+          "gain": 0.1999031635699331,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 15,
+          "mae": 3.626496045632067,
+          "baseline_mae": 3.3554825910184323,
+          "gain": -0.2710134546136347,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 15,
+          "mae": 3.8985050681592863,
+          "baseline_mae": 3.3554825910184323,
+          "gain": -0.543022477140854,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 15,
+          "mae": 3.1666294776199853,
+          "baseline_mae": 3.3554825910184323,
+          "gain": 0.18885311339844701,
+          "small_sample": 1
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 139,
+          "mae": 2.804373696059643,
+          "baseline_mae": 2.8257681786207876,
+          "gain": 0.021394482561144734,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 139,
+          "mae": 2.979690733822819,
+          "baseline_mae": 2.8257681786207876,
+          "gain": -0.15392255520203157,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 139,
+          "mae": 3.083370764842634,
+          "baseline_mae": 2.8257681786207876,
+          "gain": -0.2576025862218465,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 139,
+          "mae": 3.125348116288237,
+          "baseline_mae": 2.8257681786207876,
+          "gain": -0.2995799376674495,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 139,
+          "mae": 2.798209869701681,
+          "baseline_mae": 2.8257681786207876,
+          "gain": 0.02755830891910671,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 77,
+          "mae": 2.708458407195176,
+          "baseline_mae": 2.782547713427876,
+          "gain": 0.07408930623269994,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 77,
+          "mae": 2.9155572652784225,
+          "baseline_mae": 2.782547713427876,
+          "gain": -0.13300955185054653,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 77,
+          "mae": 3.098713024089899,
+          "baseline_mae": 2.782547713427876,
+          "gain": -0.316165310662023,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 77,
+          "mae": 3.1491944940844556,
+          "baseline_mae": 2.782547713427876,
+          "gain": -0.36664678065657963,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 77,
+          "mae": 2.781842426872625,
+          "baseline_mae": 2.782547713427876,
+          "gain": 0.000705286555251039,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 62,
+          "mae": 2.9234942967461586,
+          "baseline_mae": 2.879445207973274,
+          "gain": -0.04404908877288438,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 62,
+          "mae": 3.059340364111829,
+          "baseline_mae": 2.879445207973274,
+          "gain": -0.17989515613855467,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 62,
+          "mae": 3.064316668680708,
+          "baseline_mae": 2.879445207973274,
+          "gain": -0.18487146070743377,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 62,
+          "mae": 3.0957324535413204,
+          "baseline_mae": 2.879445207973274,
+          "gain": -0.21628724556804624,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 62,
+          "mae": 2.818537177731314,
+          "baseline_mae": 2.879445207973274,
+          "gain": 0.06090803024196001,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 60,
+          "mae": 2.5522837468139628,
+          "baseline_mae": 2.5814613906473296,
+          "gain": 0.02917764383336685,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 60,
+          "mae": 2.5561740723698523,
+          "baseline_mae": 2.5814613906473296,
+          "gain": 0.025287318277477322,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 60,
+          "mae": 2.6575984310136085,
+          "baseline_mae": 2.5814613906473296,
+          "gain": -0.07613704036627889,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 60,
+          "mae": 2.717189615657896,
+          "baseline_mae": 2.5814613906473296,
+          "gain": -0.13572822501056647,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 60,
+          "mae": 2.535786088783766,
+          "baseline_mae": 2.5814613906473296,
+          "gain": 0.04567530186356361,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 24,
+          "mae": 3.4217763272903547,
+          "baseline_mae": 3.3698097146833823,
+          "gain": -0.05196661260697244,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 24,
+          "mae": 3.046134639198117,
+          "baseline_mae": 3.3698097146833823,
+          "gain": 0.3236750754852653,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 24,
+          "mae": 3.101842343818874,
+          "baseline_mae": 3.3698097146833823,
+          "gain": 0.2679673708645085,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 24,
+          "mae": 3.213609550735773,
+          "baseline_mae": 3.3698097146833823,
+          "gain": 0.15620016394760938,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 24,
+          "mae": 3.1680145411653107,
+          "baseline_mae": 3.3698097146833823,
+          "gain": 0.20179517351807164,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 24,
+          "mae": 3.7227714241650887,
+          "baseline_mae": 3.918820483064524,
+          "gain": 0.19604905889943547,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 24,
+          "mae": 3.655638718304232,
+          "baseline_mae": 3.918820483064524,
+          "gain": 0.2631817647602923,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 24,
+          "mae": 3.93922479907911,
+          "baseline_mae": 3.918820483064524,
+          "gain": -0.0204043160145857,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 24,
+          "mae": 3.9366474468455728,
+          "baseline_mae": 3.918820483064524,
+          "gain": -0.017826963781048644,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 24,
+          "mae": 3.849912926151703,
+          "baseline_mae": 3.918820483064524,
+          "gain": 0.06890755691282102,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 31,
+          "mae": 2.103282997049095,
+          "baseline_mae": 2.0311925368870933,
+          "gain": -0.0720904601620016,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 31,
+          "mae": 3.2246453896491722,
+          "baseline_mae": 2.0311925368870933,
+          "gain": -1.193452852762079,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 31,
+          "mae": 3.2305490007341295,
+          "baseline_mae": 2.0311925368870933,
+          "gain": -1.1993564638470362,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 31,
+          "mae": 3.2188981704077064,
+          "baseline_mae": 2.0311925368870933,
+          "gain": -1.187705633520613,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 31,
+          "mae": 2.2056047530935254,
+          "baseline_mae": 2.0311925368870933,
+          "gain": -0.1744122162064321,
+          "small_sample": 0
+        }
+      ],
+      "latest_forecasts": [
+        {
+          "model_id": "rw",
+          "label": "Random walk",
+          "prediction": 0.0,
+          "lower": -4.865166509895975,
+          "upper": 6.712472345888326,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.55,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "prediction": 1.3671957877855283,
+          "lower": -4.0002893068313226,
+          "upper": 7.606438340370631,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.6333333333333333,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "domestic",
+          "label": "Domestic rates",
+          "prediction": 1.2801575702792989,
+          "lower": -4.881127028293662,
+          "upper": 6.906995141879154,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.5333333333333333,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "rates",
+          "label": "Relative rates",
+          "prediction": 2.0559646605349693,
+          "lower": -4.9270815347237145,
+          "upper": 8.90200594779081,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.7,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "energy",
+          "label": "Rates + energy",
+          "prediction": 3.0891469303222316,
+          "lower": -3.8023033020696997,
+          "upper": 10.082756428282266,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.7833333333333333,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "risk",
+          "label": "Rates + energy + risk",
+          "prediction": 4.353355813497324,
+          "lower": -2.3470977454206894,
+          "upper": 11.784197860368582,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.85,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "prediction": 4.917165188240965,
+          "lower": -1.7344669357364202,
+          "upper": 12.430448175133272,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.8666666666666667,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "prediction": 4.507771026305175,
+          "lower": -2.0908944601598867,
+          "upper": 11.973368983725788,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.8333333333333334,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "prediction": 1.5710902440066232,
+          "lower": -3.7201323024291564,
+          "upper": 8.367292321151096,
+          "target_month": "2027-01",
+          "prob_nok_depreciation": 0.6666666666666666,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        }
+      ],
+      "scenario": {
+        "model_id": "full",
+        "label": "Full multidimensional model",
+        "baseline_prediction": 4.917165188240965,
+        "intercept": 7.435669278548391,
+        "features": [
+          {
+            "name": "return_lag1",
+            "label": "Last monthly EUR/NOK return",
+            "value": -5.559212880907927,
+            "coefficient": -0.2207663625466928,
+            "unit": "% log return",
+            "min": -5.559212880907927,
+            "max": 6.1584026806712595,
+            "historical_min": -10.434734434521964,
+            "historical_max": 10.248791996170636,
+            "step": 0.25,
+            "block": "own FX dynamics"
+          },
+          {
+            "name": "policy_diff",
+            "label": "Norway minus ECB deposit rate",
+            "value": 2.0,
+            "coefficient": 1.3912782339834728,
+            "unit": "percentage points",
+            "min": 0.10999999999999999,
+            "max": 2.5,
+            "historical_min": 0.0,
+            "historical_max": 2.75,
+            "step": 0.25,
+            "block": "rates"
+          },
+          {
+            "name": "diff_change",
+            "label": "Monthly change in rate differential",
+            "value": 0.0,
+            "coefficient": -0.9856486165420772,
+            "unit": "percentage points",
+            "min": -0.78,
+            "max": 0.5,
+            "historical_min": -1.25,
+            "historical_max": 1.0,
+            "step": 0.25,
+            "block": "rates"
+          },
+          {
+            "name": "ecb_corridor",
+            "label": "ECB MRO minus deposit rate",
+            "value": 0.1499999999999999,
+            "coefficient": 0.26836669743389796,
+            "unit": "percentage points",
+            "min": 0.1499999999999999,
+            "max": 1.0,
+            "historical_min": 0.1499999999999999,
+            "historical_max": 1.0,
+            "step": 0.05,
+            "block": "rates"
+          },
+          {
+            "name": "oil_ret1",
+            "label": "Lagged 1-month Brent change",
+            "value": 22.58986869562314,
+            "coefficient": 0.05119915153804791,
+            "unit": "% log change",
+            "min": -30.888808858399177,
+            "max": 26.274016544318513,
+            "historical_min": -55.49094503606722,
+            "historical_max": 46.90968388384351,
+            "step": 1.0,
+            "block": "energy"
+          },
+          {
+            "name": "oil_ret3",
+            "label": "Lagged 3-month Brent change",
+            "value": 29.025755409625198,
+            "coefficient": -0.009592313616641162,
+            "unit": "% log change",
+            "min": -75.74003377097074,
+            "max": 48.156596827246936,
+            "historical_min": -124.214640610511,
+            "historical_max": 85.56347637955577,
+            "step": 1.0,
+            "block": "energy"
+          },
+          {
+            "name": "log_vix",
+            "label": "Lagged log VIX level",
+            "value": 2.7584552225921763,
+            "coefficient": -3.518933573775532,
+            "unit": "natural log of index",
+            "min": 2.3360664674613116,
+            "max": 4.013262120279193,
+            "historical_min": 2.3150525058120657,
+            "historical_max": 4.137866067701714,
+            "step": 0.05,
+            "block": "risk"
+          },
+          {
+            "name": "vix_change",
+            "label": "Lagged VIX monthly change",
+            "value": 0.5459307399999993,
+            "coefficient": 0.06109232500209048,
+            "unit": "index points",
+            "min": -10.427950174,
+            "max": 15.231207328400005,
+            "historical_min": -16.28300866,
+            "historical_max": 38.10787081,
+            "step": 1.0,
+            "block": "risk"
+          },
+          {
+            "name": "usd_return",
+            "label": "Lagged broad-dollar change",
+            "value": 2.005100213998734,
+            "coefficient": 0.03301752243545231,
+            "unit": "% log change",
+            "min": -3.486975838700314,
+            "max": 4.402197524068301,
+            "historical_min": -4.951767095194182,
+            "historical_max": 7.694817112867636,
+            "step": 0.25,
+            "block": "risk"
+          },
+          {
+            "name": "fx_vol6",
+            "label": "Trailing 6-month FX volatility",
+            "value": 3.557227454503742,
+            "coefficient": 0.6095336139937358,
+            "unit": "% monthly log-return stdev",
+            "min": 0.6663274122703692,
+            "max": 6.7985666972173675,
+            "historical_min": 0.6414945050298986,
+            "historical_max": 6.957224648185501,
+            "step": 0.25,
+            "block": "risk"
+          },
+          {
+            "name": "inflation_gap",
+            "label": "Lagged Norway minus EA HICP inflation",
+            "value": 0.0,
+            "coefficient": -0.2978125857489232,
+            "unit": "percentage points",
+            "min": -2.8559999999999994,
+            "max": 3.9680000000000004,
+            "historical_min": -2.9,
+            "historical_max": 4.8,
+            "step": 0.25,
+            "block": "macro"
+          },
+          {
+            "name": "ip_gap",
+            "label": "Lagged Norway minus EA industry growth",
+            "value": 0.3674171399999999,
+            "coefficient": -0.021080568141354734,
+            "unit": "percentage points",
+            "min": -20.9230656588,
+            "max": 22.7011951224,
+            "historical_min": -41.77566796,
+            "historical_max": 36.59758119,
+            "step": 1.0,
+            "block": "macro"
+          }
+        ],
+        "residual_quantiles": [
+          -6.651632123977385,
+          7.513282986892306
+        ],
+        "origin_spot": 10.312,
+        "origin": "2026-10",
+        "interpretation": "Conditional fitted association; not an identified causal shock or a guaranteed forecast."
+      },
+      "first_origin": "2015-01",
+      "last_origin": "2026-07",
+      "last_target": "2026-10"
+    },
+    "6": {
+      "models": [
+        {
+          "id": "rw",
+          "label": "Random walk",
+          "n": 136,
+          "mae": 3.5775501439637405,
+          "rmse": 4.76036953919621,
+          "direction_accuracy": null,
+          "win_rate": 0.0,
+          "bias": 1.0034751565748368,
+          "interval_n": 107,
+          "interval_coverage": 0.822429906542056,
+          "improvement_vs_rw": 0.0,
+          "improvement_ci": [
+            0.0,
+            0.0
+          ],
+          "improvement_vs_ar1": 0.0025687321612632985,
+          "ar1_improvement_ci": [
+            -0.23756222168960003,
+            0.2589922033193681
+          ],
+          "p_rw": 1.0,
+          "p_ar1": 0.9816727757414195,
+          "longer_block_ci": [
+            0.0,
+            0.0
+          ],
+          "block_months": 6
+        },
+        {
+          "id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 136,
+          "mae": 3.5801188761250033,
+          "rmse": 4.728175487980711,
+          "direction_accuracy": 0.5955882352941176,
+          "win_rate": 0.5367647058823529,
+          "bias": 0.12322365180705867,
+          "interval_n": 107,
+          "interval_coverage": 0.8130841121495327,
+          "improvement_vs_rw": -0.0025687321612632985,
+          "improvement_ci": [
+            -0.2517445450366927,
+            0.2488954222116399
+          ],
+          "improvement_vs_ar1": 0.0,
+          "ar1_improvement_ci": [
+            0.0,
+            0.0
+          ],
+          "p_rw": 0.9836721092969011,
+          "p_ar1": 1.0,
+          "longer_block_ci": [
+            -0.25604755404631313,
+            0.268067325300345
+          ],
+          "block_months": 6,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "domestic",
+          "label": "Domestic rates",
+          "n": 136,
+          "mae": 3.7339891101954,
+          "rmse": 4.843525966254425,
+          "direction_accuracy": 0.5147058823529411,
+          "win_rate": 0.4411764705882353,
+          "bias": 0.1973543140956858,
+          "interval_n": 107,
+          "interval_coverage": 0.794392523364486,
+          "improvement_vs_rw": -0.1564389662316607,
+          "improvement_ci": [
+            -0.49199410505713737,
+            0.1902888600312176
+          ],
+          "improvement_vs_ar1": -0.15387023407039743,
+          "ar1_improvement_ci": [
+            -0.46861070062016147,
+            0.14719054120533498
+          ],
+          "p_rw": 0.3768743752082639,
+          "p_ar1": 0.3275574808397201,
+          "longer_block_ci": [
+            -0.5697971530799305,
+            0.2271787504296267
+          ],
+          "block_months": 6,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "rates",
+          "label": "Relative rates",
+          "n": 136,
+          "mae": 4.081790758790665,
+          "rmse": 5.263537691796466,
+          "direction_accuracy": 0.5735294117647058,
+          "win_rate": 0.4852941176470588,
+          "bias": 0.905900916661088,
+          "interval_n": 107,
+          "interval_coverage": 0.7289719626168224,
+          "improvement_vs_rw": -0.5042406148269246,
+          "improvement_ci": [
+            -1.384840605821447,
+            0.30784759354509095
+          ],
+          "improvement_vs_ar1": -0.5016718826656614,
+          "ar1_improvement_ci": [
+            -1.3401245258793724,
+            0.2899570095977439
+          ],
+          "p_rw": 0.23358880373208932,
+          "p_ar1": 0.23358880373208932,
+          "longer_block_ci": [
+            -1.6421363646581026,
+            0.4946223169336022
+          ],
+          "block_months": 6,
+          "p_rw_holm": 1.0,
+          "p_ar1_holm": 1.0
+        },
+        {
+          "id": "energy",
+          "label": "Rates + energy",
+          "n": 136,
+          "mae": 4.163657011245949,
+          "rmse": 5.339601946539904,
+          "direction_accuracy": 0.5661764705882353,
+          "win_rate": 0.4485294117647059,
+          "bias": 0.8527795544802497,
+          "interval_n": 107,
+          "interval_coverage": 0.7102803738317757,
+          "improvement_vs_rw": -0.5861068672822087,
+          "improvement_ci": [
+            -1.4803375083567805,
+            0.19609542982231382
+          ],
+          "improvement_vs_ar1": -0.5835381351209453,
+          "ar1_improvement_ci": [
+            -1.371944331233083,
+            0.21420065515680292
+          ],
+          "p_rw": 0.16261246251249584,
+          "p_ar1": 0.14728423858713763,
+          "longer_block_ci": [
+            -1.708989753709434,
+            0.4017259246586846
+          ],
+          "block_months": 6,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "risk",
+          "label": "Rates + energy + risk",
+          "n": 136,
+          "mae": 4.092284465781869,
+          "rmse": 5.3651228219675335,
+          "direction_accuracy": 0.5808823529411765,
+          "win_rate": 0.4264705882352941,
+          "bias": 1.382530060262246,
+          "interval_n": 107,
+          "interval_coverage": 0.6728971962616822,
+          "improvement_vs_rw": -0.5147343218181294,
+          "improvement_ci": [
+            -1.3626300139520362,
+            0.3183924613916985
+          ],
+          "improvement_vs_ar1": -0.5121655896568661,
+          "ar1_improvement_ci": [
+            -1.2980302324397188,
+            0.24571192404769726
+          ],
+          "p_rw": 0.22892369210263244,
+          "p_ar1": 0.20426524491836054,
+          "longer_block_ci": [
+            -1.4683096744899913,
+            0.3653703723276382
+          ],
+          "block_months": 6,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "full",
+          "label": "Full multidimensional model",
+          "n": 136,
+          "mae": 4.169948221631696,
+          "rmse": 5.352599254943115,
+          "direction_accuracy": 0.5514705882352942,
+          "win_rate": 0.38235294117647056,
+          "bias": 1.2969192257359428,
+          "interval_n": 107,
+          "interval_coverage": 0.6915887850467289,
+          "improvement_vs_rw": -0.5923980776679558,
+          "improvement_ci": [
+            -1.4106026767509856,
+            0.2149067134013865
+          ],
+          "improvement_vs_ar1": -0.5898293455066925,
+          "ar1_improvement_ci": [
+            -1.3998388321040443,
+            0.15767176883054337
+          ],
+          "p_rw": 0.1546151282905698,
+          "p_ar1": 0.1299566811062979,
+          "longer_block_ci": [
+            -1.58595359100375,
+            0.3603433339450437
+          ],
+          "block_months": 6,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "regime",
+          "label": "Full + stress interactions",
+          "n": 136,
+          "mae": 4.210031014832742,
+          "rmse": 5.384912522306729,
+          "direction_accuracy": 0.5514705882352942,
+          "win_rate": 0.375,
+          "bias": 1.2860876239081502,
+          "interval_n": 107,
+          "interval_coverage": 0.6822429906542056,
+          "improvement_vs_rw": -0.6324808708690018,
+          "improvement_ci": [
+            -1.4352793061243283,
+            0.19253010598679515
+          ],
+          "improvement_vs_ar1": -0.6299121387077384,
+          "ar1_improvement_ci": [
+            -1.3750865327377826,
+            0.14480413645951642
+          ],
+          "p_rw": 0.12862379206931024,
+          "p_ar1": 0.10429856714428523,
+          "longer_block_ci": [
+            -1.6520051437611754,
+            0.30225373284470824
+          ],
+          "block_months": 6,
+          "p_ar1_holm": 1.0,
+          "p_rw_holm": 1.0
+        },
+        {
+          "id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 136,
+          "mae": 3.448052647683385,
+          "rmse": 4.6115207727943694,
+          "direction_accuracy": 0.6176470588235294,
+          "win_rate": 0.5588235294117647,
+          "bias": 0.8567732976731688,
+          "interval_n": 107,
+          "interval_coverage": 0.8037383177570093,
+          "improvement_vs_rw": 0.12949749628035573,
+          "improvement_ci": [
+            -0.12150689385261088,
+            0.3697129803171856
+          ],
+          "improvement_vs_ar1": 0.13206622844161903,
+          "ar1_improvement_ci": [
+            -0.13971029996067388,
+            0.4415081817952182
+          ],
+          "p_rw": 0.29090303232255915,
+          "p_ar1": 0.37754081972675774,
+          "longer_block_ci": [
+            -0.16824077330971565,
+            0.43229281344081594
+          ],
+          "block_months": 6,
+          "p_rw_holm": 1.0,
+          "p_ar1_holm": 1.0
+        }
+      ],
+      "ablations": [
+        {
+          "block": "rates",
+          "label": "Rates",
+          "full_mae": 4.169948221631696,
+          "without_mae": 3.4986786840715745,
+          "incremental_gain": -0.6712695375601219,
+          "ci": [
+            -1.4580828615130368,
+            0.0575355301182259
+          ],
+          "n": 136,
+          "exploratory": 1
+        },
+        {
+          "block": "energy",
+          "label": "Energy",
+          "full_mae": 4.169948221631696,
+          "without_mae": 4.169180709161664,
+          "incremental_gain": -0.0007675124700322153,
+          "ci": [
+            -0.07286275946002697,
+            0.07613001179675308
+          ],
+          "n": 136,
+          "exploratory": 1
+        },
+        {
+          "block": "risk",
+          "label": "Risk",
+          "full_mae": 4.169948221631696,
+          "without_mae": 4.165055411611911,
+          "incremental_gain": -0.004892810019784111,
+          "ci": [
+            -0.48125737458501944,
+            0.4127245294988878
+          ],
+          "n": 136,
+          "exploratory": 1
+        },
+        {
+          "block": "macro",
+          "label": "Macro",
+          "full_mae": 4.169948221631696,
+          "without_mae": 4.092284465781869,
+          "incremental_gain": -0.07766375584982649,
+          "ci": [
+            -0.24786684692749875,
+            0.08770142166846598
+          ],
+          "n": 136,
+          "exploratory": 1
+        }
+      ],
+      "regimes": [
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 121,
+          "mae": 3.2668212598407433,
+          "baseline_mae": 3.2957481080040627,
+          "gain": 0.028926848163319363,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 121,
+          "mae": 3.9410934236907056,
+          "baseline_mae": 3.2957481080040627,
+          "gain": -0.6453453156866429,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 121,
+          "mae": 3.858318075599604,
+          "baseline_mae": 3.2957481080040627,
+          "gain": -0.5625699675955413,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 121,
+          "mae": 3.875622061310103,
+          "baseline_mae": 3.2957481080040627,
+          "gain": -0.5798739533060404,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX below 25",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 121,
+          "mae": 3.2091846290530808,
+          "baseline_mae": 3.2957481080040627,
+          "gain": 0.08656347895098193,
+          "small_sample": 0
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 15,
+          "mae": 6.107386314151373,
+          "baseline_mae": 5.850753234038478,
+          "gain": -0.25663308011289576,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 15,
+          "mae": 5.216749261930336,
+          "baseline_mae": 5.850753234038478,
+          "gain": 0.6340039721081414,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 15,
+          "mae": 6.6837647329572345,
+          "baseline_mae": 5.850753234038478,
+          "gain": -0.8330114989187569,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 15,
+          "mae": 6.907596573248705,
+          "baseline_mae": 5.850753234038478,
+          "gain": -1.0568433392102277,
+          "small_sample": 1
+        },
+        {
+          "regime": "Risk: VIX at least 25",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 15,
+          "mae": 5.374921331301169,
+          "baseline_mae": 5.850753234038478,
+          "gain": 0.47583190273730835,
+          "small_sample": 1
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 136,
+          "mae": 3.5801188761250033,
+          "baseline_mae": 3.5775501439637405,
+          "gain": -0.0025687321612628544,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 136,
+          "mae": 4.081790758790665,
+          "baseline_mae": 3.5775501439637405,
+          "gain": -0.5042406148269243,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 136,
+          "mae": 4.169948221631696,
+          "baseline_mae": 3.5775501439637405,
+          "gain": -0.5923980776679554,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 136,
+          "mae": 4.210031014832742,
+          "baseline_mae": 3.5775501439637405,
+          "gain": -0.6324808708690015,
+          "small_sample": 0
+        },
+        {
+          "regime": "Rates: Norway premium",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 136,
+          "mae": 3.448052647683385,
+          "baseline_mae": 3.5775501439637405,
+          "gain": 0.12949749628035567,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 76,
+          "mae": 3.4399833162482016,
+          "baseline_mae": 3.4551154311986436,
+          "gain": 0.015132114950441977,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 76,
+          "mae": 3.8035819453665694,
+          "baseline_mae": 3.4551154311986436,
+          "gain": -0.34846651416792573,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 76,
+          "mae": 3.819071284940675,
+          "baseline_mae": 3.4551154311986436,
+          "gain": -0.36395585374203154,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 76,
+          "mae": 3.8635554521456053,
+          "baseline_mae": 3.4551154311986436,
+          "gain": -0.40844002094696163,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month rising",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 76,
+          "mae": 3.2574952128872887,
+          "baseline_mae": 3.4551154311986436,
+          "gain": 0.1976202183113549,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 60,
+          "mae": 3.7576239186356184,
+          "baseline_mae": 3.732634113466197,
+          "gain": -0.02498980516942151,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 60,
+          "mae": 4.434188589127853,
+          "baseline_mae": 3.732634113466197,
+          "gain": -0.7015544756616561,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 60,
+          "mae": 4.614392341440322,
+          "baseline_mae": 3.732634113466197,
+          "gain": -0.881758227974125,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 60,
+          "mae": 4.648900060903117,
+          "baseline_mae": 3.732634113466197,
+          "gain": -0.9162659474369197,
+          "small_sample": 0
+        },
+        {
+          "regime": "Oil: prior month falling",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 60,
+          "mae": 3.6894253984251058,
+          "baseline_mae": 3.732634113466197,
+          "gain": 0.04320871504109114,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 60,
+          "mae": 3.473404664600387,
+          "baseline_mae": 3.7457129813905703,
+          "gain": 0.2723083167901832,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 60,
+          "mae": 3.379033012231119,
+          "baseline_mae": 3.7457129813905703,
+          "gain": 0.36667996915945134,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 60,
+          "mae": 3.0287520293811583,
+          "baseline_mae": 3.7457129813905703,
+          "gain": 0.716960952009412,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 60,
+          "mae": 3.1016591264717315,
+          "baseline_mae": 3.7457129813905703,
+          "gain": 0.6440538549188388,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2015–2019",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 60,
+          "mae": 3.3940872670843327,
+          "baseline_mae": 3.7457129813905703,
+          "gain": 0.35162571430623757,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 24,
+          "mae": 3.610506534906801,
+          "baseline_mae": 3.081954605072157,
+          "gain": -0.5285519298346442,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 24,
+          "mae": 2.129408931789369,
+          "baseline_mae": 3.081954605072157,
+          "gain": 0.9525456732827879,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 24,
+          "mae": 3.5009032429556792,
+          "baseline_mae": 3.081954605072157,
+          "gain": -0.4189486378835223,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 24,
+          "mae": 3.311894038318481,
+          "baseline_mae": 3.081954605072157,
+          "gain": -0.22993943324632404,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2020–2021",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 24,
+          "mae": 2.4936021912665978,
+          "baseline_mae": 3.081954605072157,
+          "gain": 0.5883524138055591,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 24,
+          "mae": 4.484059456767418,
+          "baseline_mae": 4.700938363178488,
+          "gain": 0.2168789064110701,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 24,
+          "mae": 5.309189268846725,
+          "baseline_mae": 4.700938363178488,
+          "gain": -0.6082509056682373,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 24,
+          "mae": 5.6701589270290915,
+          "baseline_mae": 4.700938363178488,
+          "gain": -0.9692205638506035,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 24,
+          "mae": 5.867585267908427,
+          "baseline_mae": 4.700938363178488,
+          "gain": -1.166646904729939,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2022–2023",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 24,
+          "mae": 4.6254134892836465,
+          "baseline_mae": 4.700938363178488,
+          "gain": 0.07552487389484153,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "n": 28,
+          "mae": 3.00793940988557,
+          "baseline_mae": 2.6790931949149632,
+          "gain": -0.3288462149706066,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "rates",
+          "label": "Relative rates",
+          "n": 28,
+          "mae": 6.209114487371324,
+          "baseline_mae": 2.6790931949149632,
+          "gain": -3.530021292456361,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "n": 28,
+          "mae": 5.902940867835953,
+          "baseline_mae": 2.6790931949149632,
+          "gain": -3.22384767292099,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "n": 28,
+          "mae": 5.934184538553686,
+          "baseline_mae": 2.6790931949149632,
+          "gain": -3.255091343638723,
+          "small_sample": 0
+        },
+        {
+          "regime": "Period: 2024 onward",
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "n": 28,
+          "mae": 3.3726267045240887,
+          "baseline_mae": 2.6790931949149632,
+          "gain": -0.6935335096091255,
+          "small_sample": 0
+        }
+      ],
+      "latest_forecasts": [
+        {
+          "model_id": "rw",
+          "label": "Random walk",
+          "prediction": 0.0,
+          "lower": -4.736787599063961,
+          "upper": 9.968263286858294,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.5333333333333333,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "ar1",
+          "label": "Own FX dynamics · AR(1)",
+          "prediction": 1.6138148375483505,
+          "lower": -4.238888627063908,
+          "upper": 10.915794541095384,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.6166666666666667,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "domestic",
+          "label": "Domestic rates",
+          "prediction": 1.2340266784592437,
+          "lower": -6.0693207414212305,
+          "upper": 9.622588509106105,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.43333333333333335,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "rates",
+          "label": "Relative rates",
+          "prediction": 3.0698850882217696,
+          "lower": -7.29172344514969,
+          "upper": 12.718393872905079,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.65,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "energy",
+          "label": "Rates + energy",
+          "prediction": 3.2099197835336595,
+          "lower": -7.57153880975859,
+          "upper": 12.972479624955259,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.6666666666666666,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "risk",
+          "label": "Rates + energy + risk",
+          "prediction": 5.279154430550741,
+          "lower": -5.017375137976416,
+          "upper": 15.948956668813558,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.8166666666666667,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "full",
+          "label": "Full multidimensional model",
+          "prediction": 6.629908865304251,
+          "lower": -3.5354113603188937,
+          "upper": 15.841331026451172,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.85,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "regime",
+          "label": "Full + stress interactions",
+          "prediction": 7.021238515997191,
+          "lower": -3.331648964999153,
+          "upper": 16.985454992432484,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.85,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        },
+        {
+          "model_id": "ensemble",
+          "label": "Conservative fixed ensemble",
+          "prediction": 2.0609309257131505,
+          "lower": -4.913457301827007,
+          "upper": 11.703146826877695,
+          "target_month": "2027-04",
+          "prob_nok_depreciation": 0.7,
+          "calibration_n": 60,
+          "origin": "2026-10"
+        }
+      ],
+      "scenario": {
+        "model_id": "full",
+        "label": "Full multidimensional model",
+        "baseline_prediction": 6.629908865304251,
+        "intercept": 11.673534712347045,
+        "features": [
+          {
+            "name": "return_lag1",
+            "label": "Last monthly EUR/NOK return",
+            "value": -5.559212880907927,
+            "coefficient": -0.2169725411944775,
+            "unit": "% log return",
+            "min": -5.559212880907927,
+            "max": 6.167226869389202,
+            "historical_min": -10.434734434521964,
+            "historical_max": 10.248791996170636,
+            "step": 0.25,
+            "block": "own FX dynamics"
+          },
+          {
+            "name": "policy_diff",
+            "label": "Norway minus ECB deposit rate",
+            "value": 2.0,
+            "coefficient": 2.1618965154270082,
+            "unit": "percentage points",
+            "min": 0.10250000000000004,
+            "max": 2.5,
+            "historical_min": 0.0,
+            "historical_max": 2.75,
+            "step": 0.25,
+            "block": "rates"
+          },
+          {
+            "name": "diff_change",
+            "label": "Monthly change in rate differential",
+            "value": 0.0,
+            "coefficient": -0.19771148231303334,
+            "unit": "percentage points",
+            "min": -0.7949999999999999,
+            "max": 0.5,
+            "historical_min": -1.25,
+            "historical_max": 1.0,
+            "step": 0.25,
+            "block": "rates"
+          },
+          {
+            "name": "ecb_corridor",
+            "label": "ECB MRO minus deposit rate",
+            "value": 0.1499999999999999,
+            "coefficient": -0.39198985094611777,
+            "unit": "percentage points",
+            "min": 0.1499999999999999,
+            "max": 1.0,
+            "historical_min": 0.1499999999999999,
+            "historical_max": 1.0,
+            "step": 0.05,
+            "block": "rates"
+          },
+          {
+            "name": "oil_ret1",
+            "label": "Lagged 1-month Brent change",
+            "value": 22.58986869562314,
+            "coefficient": 0.023380502958464645,
+            "unit": "% log change",
+            "min": -30.902768948944406,
+            "max": 26.63203417255371,
+            "historical_min": -55.49094503606722,
+            "historical_max": 46.90968388384351,
+            "step": 1.0,
+            "block": "energy"
+          },
+          {
+            "name": "oil_ret3",
+            "label": "Lagged 3-month Brent change",
+            "value": 29.025755409625198,
+            "coefficient": -0.016849251277633738,
+            "unit": "% log change",
+            "min": -75.82340684673164,
+            "max": 44.25669339376661,
+            "historical_min": -124.214640610511,
+            "historical_max": 85.56347637955577,
+            "step": 1.0,
+            "block": "energy"
+          },
+          {
+            "name": "log_vix",
+            "label": "Lagged log VIX level",
+            "value": 2.7584552225921763,
+            "coefficient": -5.227058707048171,
+            "unit": "natural log of index",
+            "min": 2.3355636178670305,
+            "max": 4.016168912082249,
+            "historical_min": 2.3150525058120657,
+            "historical_max": 4.137866067701714,
+            "step": 0.05,
+            "block": "risk"
+          },
+          {
+            "name": "vix_change",
+            "label": "Lagged VIX monthly change",
+            "value": 0.5459307399999993,
+            "coefficient": 0.022056052261586804,
+            "unit": "index points",
+            "min": -10.4367360385,
+            "max": 15.270099812600007,
+            "historical_min": -16.28300866,
+            "historical_max": 38.10787081,
+            "step": 1.0,
+            "block": "risk"
+          },
+          {
+            "name": "usd_return",
+            "label": "Lagged broad-dollar change",
+            "value": 2.005100213998734,
+            "coefficient": 0.3585871537746726,
+            "unit": "% log change",
+            "min": -3.496892242780577,
+            "max": 4.420610951985088,
+            "historical_min": -4.951767095194182,
+            "historical_max": 7.694817112867636,
+            "step": 0.25,
+            "block": "risk"
+          },
+          {
+            "name": "fx_vol6",
+            "label": "Trailing 6-month FX volatility",
+            "value": 3.557227454503742,
+            "coefficient": 0.8887079655686322,
+            "unit": "% monthly log-return stdev",
+            "min": 0.6662779907687632,
+            "max": 6.800421976705787,
+            "historical_min": 0.6414945050298986,
+            "historical_max": 6.957224648185501,
+            "step": 0.25,
+            "block": "risk"
+          },
+          {
+            "name": "inflation_gap",
+            "label": "Lagged Norway minus EA HICP inflation",
+            "value": 0.0,
+            "coefficient": -0.6632006081444588,
+            "unit": "percentage points",
+            "min": -2.8589999999999995,
+            "max": 3.9770000000000008,
+            "historical_min": -2.9,
+            "historical_max": 4.8,
+            "step": 0.25,
+            "block": "macro"
+          },
+          {
+            "name": "ip_gap",
+            "label": "Lagged Norway minus EA industry growth",
+            "value": 0.3674171399999999,
+            "coefficient": -0.07536510714606574,
+            "unit": "percentage points",
+            "min": -20.9912736057,
+            "max": 22.745641833600004,
+            "historical_min": -41.77566796,
+            "historical_max": 36.59758119,
+            "step": 1.0,
+            "block": "macro"
+          }
+        ],
+        "residual_quantiles": [
+          -10.165320225623145,
+          9.21142216114692
+        ],
+        "origin_spot": 10.312,
+        "origin": "2026-10",
+        "interpretation": "Conditional fitted association; not an identified causal shock or a guaranteed forecast."
+      },
+      "first_origin": "2015-01",
+      "last_origin": "2026-04",
+      "last_target": "2026-10"
+    }
+  },
+  "multiplicity": {
+    "method": "Holm",
+    "family_size": 45,
+    "family": "All nontrivial declared model comparisons against random walk and AR(1), across 1/3/6 months.",
+    "p_value_method": "Approximate two-sided centred circular-block bootstrap; not exact small-sample inference."
+  }
+}

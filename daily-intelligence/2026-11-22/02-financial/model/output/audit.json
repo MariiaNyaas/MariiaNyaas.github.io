@@ -1,0 +1,102 @@
+{
+  "generated_utc": "2026-11-24T08:39:43.780827+00:00",
+  "status": "PASS",
+  "check_count": 8,
+  "failure_count": 0,
+  "scope": "Independent artifact arithmetic, chronological eligibility, source retention, input availability perturbations and truncated-history reproduction. No claim of a causal or real-time-vintage validation.",
+  "checks": [
+    {
+      "name": "retained_source_integrity",
+      "status": "PASS",
+      "detail": {
+        "retained_sources_verified": 10,
+        "market_panel_hash_verified": true,
+        "protocol_hash_verified": true
+      }
+    },
+    {
+      "name": "continuous_calendar_and_month_end_quote_provenance",
+      "status": "PASS",
+      "detail": {
+        "months": 322,
+        "last_daily_quote_identities": 322,
+        "target_is_month_end_not_month_average": true
+      }
+    },
+    {
+      "name": "mature_training_labels_and_equal_model_samples",
+      "status": "PASS",
+      "detail": {
+        "prediction_rows_verified_including_ablations": 5408,
+        "models_share_sample": true,
+        "training_labels_mature_at_origin": true
+      }
+    },
+    {
+      "name": "forecast_metric_ablation_and_scenario_arithmetic",
+      "status": "PASS",
+      "detail": {
+        "model_metric_sets_verified": 27,
+        "ablation_and_scenario_arithmetic_verified": true
+      }
+    },
+    {
+      "name": "empirical_band_maturity_and_coverage",
+      "status": "PASS",
+      "detail": {
+        "mature_empirical_bands_checked": 3033,
+        "missing_early_bands_excluded_from_coverage": true
+      }
+    },
+    {
+      "name": "multiplicity_and_historical_timestamp_disclosures",
+      "status": "PASS",
+      "detail": {
+        "holm_family_size": 45,
+        "snapshot_and_vintage_warnings_present": true
+      }
+    },
+    {
+      "name": "future_and_unreleased_input_perturbations",
+      "status": "PASS",
+      "detail": {
+        "perturbation_cutoffs": 3,
+        "post_origin_changes_do_not_change_past_features": true,
+        "declared_publication_lags_verified_by_perturbation": true,
+        "forecast_origin_excluded_from_fitting": true
+      }
+    },
+    {
+      "name": "forecast_reproduction_after_removing_entire_future",
+      "status": "PASS",
+      "detail": {
+        "forecast_and_band_reproductions": 54,
+        "future_removed_cutoffs": [
+          "2020-12",
+          "2023-12"
+        ],
+        "horizons": [
+          1,
+          3,
+          6
+        ]
+      }
+    }
+  ],
+  "artifact_sha256": {
+    "scripts/run_model.py": "cfaebeec10e4beca2c37e3762bbfdaebafaa10db83acd22a86e773293eaee86c",
+    "scripts/audit_model.py": "6083e43e32cd7a7c2740523379e095d6072d18817721aede95dff5b02d29c941",
+    "PROTOCOL.md": "d0a61a71637275d68fe493d87b42ddf52b2ff261ddd0ad238f7378e75ccdf36f",
+    "data/market.csv": "3cee95352a2f15cc9d1eb55ec099be40721893c87c275a671db8e6c2f45e22dd",
+    "data/macro.csv": "5920c84baab54c53f9ff624add1bf636a41c5f1189e8b5af6133a544115abf11",
+    "output/results.json": "aa7fb293d7f78eb3a111a6f802ec8f22c5ff70d5d4f0b4d0c5b27a6a3849a502",
+    "output/predictions.json": "5573f5e6f8578f5c101c405ba1e4a8ce309dff80cb2dbebd2f6b73bae7d0e8b3",
+    "output/ablation_predictions.json": "ad4d9eacf3e00f61cea62d7ecb4e525bde0c74d788d45dd0e6db2eaa9da10cdd"
+  },
+  "interpretation_boundaries": [
+    "Passing these checks does not establish predictive value; use the reported loss comparisons and adjusted uncertainty.",
+    "This is latest-vintage pseudo-out-of-sample validation; publication lags cannot restore historical data vintages.",
+    "The original monthly-average return target and this end-month target differ. Their MAEs cannot be read as a before/after performance comparison.",
+    "Empirical residual-based probabilities and bands are descriptive and not externally calibrated guarantees."
+  ]
+}

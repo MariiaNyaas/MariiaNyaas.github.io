@@ -1,0 +1,158 @@
+{
+  "version": "2.0",
+  "release_date": "2026-11-24",
+  "entry": "dashboard.html",
+  "raw_cache_included": false,
+  "files": [
+    {
+      "path": "dashboard.css",
+      "bytes": 17821,
+      "sha256": "2a1d136acf968c03d8dcbb44ec44c8229a95da83ba9e18598a960d8c83881d25"
+    },
+    {
+      "path": "dashboard.html",
+      "bytes": 16920,
+      "sha256": "856b8d1ec4d372e141a771fe7dc086b3684cbd017c2cba1a35c4b70042ef8863"
+    },
+    {
+      "path": "dashboard.js",
+      "bytes": 42530,
+      "sha256": "23499a1b306290813981b33cec641a0796db664b3473fcb2a582b467fdf45303"
+    },
+    {
+      "path": "methodology-v2.html",
+      "bytes": 11781,
+      "sha256": "2bba4eafb94f856dfec4158619f0728e86891bb68503f16c3a65b8f97c875bab"
+    },
+    {
+      "path": "model/PROTOCOL.md",
+      "bytes": 5397,
+      "sha256": "d0a61a71637275d68fe493d87b42ddf52b2ff261ddd0ad238f7378e75ccdf36f"
+    },
+    {
+      "path": "model/README.md",
+      "bytes": 8387,
+      "sha256": "28ac658c3d22943fa9bc26527eca9e739bd9a8854004a4d74268f4d8e949fef4"
+    },
+    {
+      "path": "model/RESEARCH_NOTE_RU.md",
+      "bytes": 8137,
+      "sha256": "47f4a8ec78a52fb89494f7a9e87cad70d2e73ea643b50eaec80577c537cdd57d"
+    },
+    {
+      "path": "model/data/ea_mpd_events.csv",
+      "bytes": 98117,
+      "sha256": "93e2ced5764262815189cb75e23168dc24b4635f4f21944260ad5fe7c34bdf5f"
+    },
+    {
+      "path": "model/data/ea_mpd_manifest.json",
+      "bytes": 1581,
+      "sha256": "6eb900caaa0f2e13cfbbccb70a9b3b7337fad97ef2925e568c1dd570e789d4af"
+    },
+    {
+      "path": "model/data/features.csv",
+      "bytes": 72225,
+      "sha256": "3fe89406a10ee02e2202e7d526e4955ea123a77d6f30610fdf78d66343a06f47"
+    },
+    {
+      "path": "model/data/macro.csv",
+      "bytes": 16895,
+      "sha256": "5920c84baab54c53f9ff624add1bf636a41c5f1189e8b5af6133a544115abf11"
+    },
+    {
+      "path": "model/data/macro_manifest.json",
+      "bytes": 10431,
+      "sha256": "b8e1da4bd1e2cb3dc27111fe8528a70732930f7b7383f31aaf2c2c311b6d38a5"
+    },
+    {
+      "path": "model/data/market.csv",
+      "bytes": 17524,
+      "sha256": "3cee95352a2f15cc9d1eb55ec099be40721893c87c275a671db8e6c2f45e22dd"
+    },
+    {
+      "path": "model/data/market_manifest.json",
+      "bytes": 145464,
+      "sha256": "b71ee5ab44c0ad189404ee0e8997f86e60b8bbca44220d37cb3cb1c5cbff21d6"
+    },
+    {
+      "path": "model/output/ablation_predictions.json",
+      "bytes": 465977,
+      "sha256": "2ceeb818e2f8fb6eaf1d9243e6ce5b08eed33318d8a0b50ece498b0cf597c3a1"
+    },
+    {
+      "path": "model/output/audit.json",
+      "bytes": 3799,
+      "sha256": "b8bbb0d4a8664972f0104eaa0b414c721afe231dd231842cb27a9dbe787db631"
+    },
+    {
+      "path": "model/output/event_observations.csv",
+      "bytes": 90200,
+      "sha256": "3315a30b14d9bcc34e58287a17cffa0073f43172b844795e4f25e0027cca4a82"
+    },
+    {
+      "path": "model/output/event_study.json",
+      "bytes": 10050,
+      "sha256": "5f8936c114a7b9b1ef55d6110e9d1feb04038e8ec9ca89f90316b2d1051e35e4"
+    },
+    {
+      "path": "model/output/history.json",
+      "bytes": 72104,
+      "sha256": "63bfacb9af5cd7a0f1b987d64632ff3984411892221cfda9be7b3be84f14274c"
+    },
+    {
+      "path": "model/output/model_comparison.csv",
+      "bytes": 9768,
+      "sha256": "d526f158fddeabe726c78e0950751488f10759e84ecf5f728c4517fe61067301"
+    },
+    {
+      "path": "model/output/predictions.json",
+      "bytes": 1294229,
+      "sha256": "61e98414a67d9c173f06e9fa48488addefde64e5bece3e9119e4fd0f291a68d1"
+    },
+    {
+      "path": "model/output/results.json",
+      "bytes": 109361,
+      "sha256": "aa7fb293d7f78eb3a111a6f802ec8f22c5ff70d5d4f0b4d0c5b27a6a3849a502"
+    },
+    {
+      "path": "model/output/snapshot_forecasts.csv",
+      "bytes": 4152,
+      "sha256": "57da7ef3009416cdaf294dd9cb3561aa2101cf029199946e466fa6c1a23ae5d2"
+    },
+    {
+      "path": "model/requirements.txt",
+      "bytes": 43,
+      "sha256": "9910c8258efd493a347793709947428633e0693af6dee0e1327de67a718befba"
+    },
+    {
+      "path": "model/scripts/audit_model.py",
+      "bytes": 18719,
+      "sha256": "6083e43e32cd7a7c2740523379e095d6072d18817721aede95dff5b02d29c941"
+    },
+    {
+      "path": "model/scripts/collect_macro.py",
+      "bytes": 13081,
+      "sha256": "ad82b8203e3bc4227cf9aefeea8e958e633500d26f09896c5a4fc8a12960c2d5"
+    },
+    {
+      "path": "model/scripts/collect_market.py",
+      "bytes": 16066,
+      "sha256": "aa42738ec6ec3eff94b75803938511f407ef19c3bcd14b220fabfca637dca235"
+    },
+    {
+      "path": "model/scripts/package_release.py",
+      "bytes": 2111,
+      "sha256": "895122c57a0439589c33c14f5812352037a66461a28ec31ea9c6a93d749661d5"
+    },
+    {
+      "path": "model/scripts/run_event_study.py",
+      "bytes": 14490,
+      "sha256": "14116caaf06dcb1b08715aecd0defa1a48c1969c83cd5cb7af438ea3ceb7fd7b"
+    },
+    {
+      "path": "model/scripts/run_model.py",
+      "bytes": 22667,
+      "sha256": "9ff4436e15825abd3317fd9e0380fd526cef2696ab5839480db84e8d8d0eae8e"
+    }
+  ]
+}

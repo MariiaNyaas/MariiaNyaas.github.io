@@ -1,0 +1,241 @@
+{
+  "created_utc": "2026-11-24T08:34:47.770559+00:00",
+  "observation_end_cap": "2026-10",
+  "panel_file": "data/macro.csv",
+  "panel_rows": 322,
+  "publication_lags_applied_here": false,
+  "recommended_model_lag_months": 2,
+  "revision_warning": "Latest vintage only; apparent backtests are pseudo out-of-sample, not real-time vintage tests.",
+  "sources": [
+    {
+      "column": "no_hicp_yoy",
+      "source": "Eurostat",
+      "dataset": "prc_hicp_minr",
+      "label": "Norway all-items HICP, annual rate of change",
+      "unit": "percent year-on-year",
+      "filters": {
+        "freq": "M",
+        "unit": "RCH_A",
+        "coicop18": "TOTAL",
+        "geo": "NO",
+        "sinceTimePeriod": "2000-01"
+      },
+      "resolved_dimensions": {
+        "freq": {
+          "M": 0
+        },
+        "unit": {
+          "RCH_A": 0
+        },
+        "coicop18": {
+          "TOTAL": 0
+        },
+        "geo": {
+          "NO": 0
+        }
+      },
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?lang=en&freq=M&unit=RCH_A&coicop18=TOTAL&geo=NO&sinceTimePeriod=2000-01",
+      "source_page": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
+      "raw_file": "raw/macro_no_hicp.json",
+      "bytes": 18289,
+      "sha256": "464f7c6eff227df8b80d14a6999c62e9abc99e139b357ae23ad2c5c8a2f9d4be",
+      "retrieved_utc": "2026-11-24T08:32:07.155820+00:00",
+      "fetch_mode": "retained_snapshot",
+      "source_updated": "2026-11-18T11:00:00+0100",
+      "first_observation": "2001-01",
+      "last_observation": "2026-10",
+      "observations": 310,
+      "release_lag_months": 2,
+      "lag_policy": "Conservative uniform two-calendar-month publication lag in forecasting; raw panel remains observation-dated.",
+      "vintage": "Latest downloaded vintage; publication lags do not eliminate historical revisions.",
+      "geography_note": "EA20 is a fixed 20-country aggregate, including historical backcasts; it is not the changing-membership euro area. Norway is NO.",
+      "missing_value_policy": "Preserved as missing. No interpolation, forward fill or invented observations.",
+      "observation_flags": {},
+      "definition_note": "Current prc_hicp_minr TOTAL series with ECOICOP v2, annual percent change. Replaces discontinued prc_hicp_manr. Eurostat notes possible January 2026 classification/methodology breaks. No manual splice used."
+    },
+    {
+      "column": "ea_hicp_yoy",
+      "source": "Eurostat",
+      "dataset": "prc_hicp_minr",
+      "label": "Euro area 20-country fixed-composition all-items HICP, annual rate of change",
+      "unit": "percent year-on-year",
+      "filters": {
+        "freq": "M",
+        "unit": "RCH_A",
+        "coicop18": "TOTAL",
+        "geo": "EA20",
+        "sinceTimePeriod": "2000-01"
+      },
+      "resolved_dimensions": {
+        "freq": {
+          "M": 0
+        },
+        "unit": {
+          "RCH_A": 0
+        },
+        "coicop18": {
+          "TOTAL": 0
+        },
+        "geo": {
+          "EA20": 0
+        }
+      },
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?lang=en&freq=M&unit=RCH_A&coicop18=TOTAL&geo=EA20&sinceTimePeriod=2000-01",
+      "source_page": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
+      "raw_file": "raw/macro_ea_hicp.json",
+      "bytes": 18340,
+      "sha256": "b64f3a59bdeeac4c6bcd9a97d77509e3097454fde9da6d139bde10aef98c1a51",
+      "retrieved_utc": "2026-11-24T08:32:07.154902+00:00",
+      "fetch_mode": "retained_snapshot",
+      "source_updated": "2026-11-18T11:00:00+0100",
+      "first_observation": "2000-12",
+      "last_observation": "2026-10",
+      "observations": 311,
+      "release_lag_months": 2,
+      "lag_policy": "Conservative uniform two-calendar-month publication lag in forecasting; raw panel remains observation-dated.",
+      "vintage": "Latest downloaded vintage; publication lags do not eliminate historical revisions.",
+      "geography_note": "EA20 is a fixed 20-country aggregate, including historical backcasts; it is not the changing-membership euro area. Norway is NO.",
+      "missing_value_policy": "Preserved as missing. No interpolation, forward fill or invented observations.",
+      "observation_flags": {},
+      "definition_note": "Current prc_hicp_minr TOTAL series with ECOICOP v2, annual percent change. Replaces discontinued prc_hicp_manr. Eurostat notes possible January 2026 classification/methodology breaks. No manual splice used."
+    },
+    {
+      "column": "no_ip_yoy",
+      "source": "Eurostat",
+      "dataset": "sts_inpr_m",
+      "label": "Norway industrial production, NACE B-D, seasonally and calendar adjusted",
+      "unit": "percent year-on-year, derived from 2021=100 index",
+      "filters": {
+        "freq": "M",
+        "nace_r2": "B-D",
+        "unit": "I21",
+        "s_adj": "SCA",
+        "geo": "NO",
+        "sinceTimePeriod": "1999-01"
+      },
+      "resolved_dimensions": {
+        "freq": {
+          "M": 0
+        },
+        "indic_bt": {
+          "PRD": 0
+        },
+        "nace_r2": {
+          "B-D": 0
+        },
+        "s_adj": {
+          "SCA": 0
+        },
+        "unit": {
+          "I21": 0
+        },
+        "geo": {
+          "NO": 0
+        }
+      },
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?lang=en&freq=M&nace_r2=B-D&unit=I21&s_adj=SCA&geo=NO&sinceTimePeriod=1999-01",
+      "source_page": "https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table?lang=en",
+      "raw_file": "raw/macro_no_ip.json",
+      "bytes": 18768,
+      "sha256": "265a86ebd2f380ba55480abbf9354fb941f79f0d83a93aa85bc299104411a027",
+      "retrieved_utc": "2026-11-24T08:34:05.415169+00:00",
+      "fetch_mode": "retained_snapshot",
+      "source_updated": "2026-11-19T11:00:00+0100",
+      "first_observation": "2000-01",
+      "last_observation": "2026-09",
+      "observations": 321,
+      "release_lag_months": 2,
+      "lag_policy": "Conservative uniform two-calendar-month publication lag in forecasting; raw panel remains observation-dated.",
+      "vintage": "Latest downloaded vintage; publication lags do not eliminate historical revisions.",
+      "geography_note": "EA20 is a fixed 20-country aggregate, including historical backcasts; it is not the changing-membership euro area. Norway is NO.",
+      "missing_value_policy": "Preserved as missing. No interpolation, forward fill or invented observations.",
+      "observation_flags": {},
+      "definition_note": "100*(I_t/I_(t-12)-1), from seasonally and calendar adjusted index 2021=100; total industry excluding construction. Norway includes extractive industries, so the differential is not mainland GDP growth."
+    },
+    {
+      "column": "ea_ip_yoy",
+      "source": "Eurostat",
+      "dataset": "sts_inpr_m",
+      "label": "Euro area 20-country fixed-composition industrial production, NACE B-D, seasonally and calendar adjusted",
+      "unit": "percent year-on-year, derived from 2021=100 index",
+      "filters": {
+        "freq": "M",
+        "nace_r2": "B-D",
+        "unit": "I21",
+        "s_adj": "SCA",
+        "geo": "EA20",
+        "sinceTimePeriod": "1999-01"
+      },
+      "resolved_dimensions": {
+        "freq": {
+          "M": 0
+        },
+        "indic_bt": {
+          "PRD": 0
+        },
+        "nace_r2": {
+          "B-D": 0
+        },
+        "s_adj": {
+          "SCA": 0
+        },
+        "unit": {
+          "I21": 0
+        },
+        "geo": {
+          "EA20": 0
+        }
+      },
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?lang=en&freq=M&nace_r2=B-D&unit=I21&s_adj=SCA&geo=EA20&sinceTimePeriod=1999-01",
+      "source_page": "https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table?lang=en",
+      "raw_file": "raw/macro_ea_ip.json",
+      "bytes": 18868,
+      "sha256": "3f5e1f9a529ba3b51f450c053438c78a3a35d4d0002d3a72155718d9c3792683",
+      "retrieved_utc": "2026-11-24T08:34:05.072501+00:00",
+      "fetch_mode": "retained_snapshot",
+      "source_updated": "2026-11-19T11:00:00+0100",
+      "first_observation": "2000-01",
+      "last_observation": "2026-09",
+      "observations": 321,
+      "release_lag_months": 2,
+      "lag_policy": "Conservative uniform two-calendar-month publication lag in forecasting; raw panel remains observation-dated.",
+      "vintage": "Latest downloaded vintage; publication lags do not eliminate historical revisions.",
+      "geography_note": "EA20 is a fixed 20-country aggregate, including historical backcasts; it is not the changing-membership euro area. Norway is NO.",
+      "missing_value_policy": "Preserved as missing. No interpolation, forward fill or invented observations.",
+      "observation_flags": {
+        "0": "i",
+        "1": "i",
+        "2": "i",
+        "3": "i",
+        "4": "i",
+        "5": "i",
+        "6": "i",
+        "7": "i",
+        "8": "i",
+        "9": "i",
+        "10": "i",
+        "11": "i",
+        "332": "i"
+      },
+      "definition_note": "100*(I_t/I_(t-12)-1), from seasonally and calendar adjusted index 2021=100; total industry excluding construction. Norway includes extractive industries, so the differential is not mainland GDP growth."
+    }
+  ],
+  "unavailable_inputs": [
+    {
+      "input": "Norway policy-event OIS/FRA surprises",
+      "status": "Not acquired; no public downloadable replication table located on the inspected official publication pages",
+      "source_page": "https://www.norges-bank.no/en/news-events/publications/Staff-Memo/2025/staff-memo-3-2025/",
+      "note": "Underlying high-frequency market expectations quotes are not replaced by ordinary policy-rate changes."
+    },
+    {
+      "input": "Relative Norway/euro-area inflation and monetary news instruments",
+      "status": "Not acquired",
+      "source_page": "https://www.norges-bank.no/en/news-events/publications/Staff-Memo/2026/staff-memo-5-2026-macroeconomic-news/",
+      "note": "Staff Memo 5/2026 uses LSEG Tick History (including NOK1YOIS/EUREON1Y) and Bloomberg survey consensus; official page offers paper but no downloadable source table was found."
+    }
+  ],
+  "definition_references": [
+    "https://webgate.ec.europa.eu/eurostat/cache/metadata/en/prc_hicp_esms.htm",
+    "https://ec.europa.eu/eurostat/cache/metadata/en/sts_inpr_esms.htm"
+  ]
+}
