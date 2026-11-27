@@ -41,6 +41,12 @@ def main():
     if p.is_file() and p.suffix.lower() in {'.html','.css','.js','.json','.xml','.txt','.png','.jpg','.jpeg','.webp','.svg','.ico','.pdf'}:
       shutil.copy2(p,OUT/p.name)
     elif p.is_dir() and (p.name in allowed_folders or p.name in {'assets','images'}):shutil.copytree(p,OUT/p.name)
+  # Publish only the explicit public OAuth notice; keep other factory files excluded.
+  notice=ROOT/'odette-factory'/'privacy.html'
+  if notice.is_file():
+    target=OUT/'odette-factory'/'privacy.html'
+    target.parent.mkdir(exist_ok=True)
+    shutil.copy2(notice,target)
   # Expand validated daily research bundles into the publication staging area.
   from ingest_bundles import ingest
   ingest(ROOT/'inbox', OUT)
